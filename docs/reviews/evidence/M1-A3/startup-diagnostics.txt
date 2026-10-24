@@ -1,0 +1,5 @@
+CreatorOutput errors/warnings in A3 time window:
+No matching script errors/warnings observed.
+Platform asset delivery: observed HTTP403 for avatar assets 203785492 and81504106; platform telemetry timeouts. Not a clean-all-platform-log claim.
+CUA stale menu/screenshot recovered via exposed menu Cancel action; no alternate automation.
+Rojo loopback initial sandbox bind denied; narrow authorized escalation succeeded.

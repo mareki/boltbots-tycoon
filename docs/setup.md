@@ -1,7 +1,7 @@
 # Lokales Setup — geführt durch Codex
 
 > Artifact ID: `BOLTBOTS-SETUP-001`
-> Revision: 2 · Status: A2 lokal geprüft, Studio-Spielstart folgt in A3
+> Revision: 3 · Status: A2 und A3 lokal nachgewiesen
 
 Nach einem Checkout übernimmt Codex Werkzeugprüfung, Installation, Build und die verfügbare Studio-Bedienung. Der Human liefert Ideen, prüft Qualität und erledigt bei Bedarf persönliche Anmeldung oder Systembestätigung. Passwörter, Roblox-Cookies und API-Schlüssel gehören nicht in Chat oder Repository.
 
@@ -29,15 +29,21 @@ Die Rojo-Auswahl richtet sich nach der ausführenden Python-Architektur. Ein unt
 
 `build` erzeugt `build/BoltBots.rbxlx` und gibt den SHA256 aus. `build/` ist generiert und ignoriert; `src/` plus `default.project.json` sind die Quelle. Die aktive A2-Basis stammt bewusst aus fünf Dateien des unveränderten v0.2-Imports. Sie ist noch **keine** abgenommene M1-Spiellogik oder Premium-Szene: aktuelle Kaufverträge, Sammlung, Persistenz und Gestaltung folgen in B1–B5. `development-a2` ist ein Entwicklungslabel, keine veröffentlichte Produktversion.
 
-## Danach: Studio starten und lokal verbinden — A3
+## Studio starten und lokal verbinden — A3, tatsächlich geprüft
 
-Codex öffnet den gebauten Place, startet Play und prüft Output sowie sichtbaren Zustand. Für Live-Sync:
+Codex hat den folgenden Ablauf auf diesem Mac tatsächlich ausgeführt:
+
+1. In Studio File → Open from File / Cmd-O; `build/BoltBots.rbxlx` öffnen. Im nativen Pfaddialog funktionierte das gezielte Setzen des Pfadfelds zuverlässig. Vor Play ist die Ansicht leer, weil die Diagnosewelt erst serverseitig erzeugt wird.
+2. Play über das Dreieck oben links starten. Client-/Server-Tabs erscheinen. Start abwarten; HUD, Fabrik und Spieler werden sichtbar. Diagnosebasis erzeugte Roboter und schrieb automatisch Cash gut: beobachtet 17/425, anschließend 20/500. Stop über das rote Quadrat.
+3. Lokalen Rojo-Server starten:
 
 ```bash
 python3 scripts/dev.py serve
 ```
 
-Der Server bindet ausschließlich `127.0.0.1`. Im Rojo-Plugin `localhost`, Port `34872`, dann Connect verwenden. [Offizieller Build-/Live-Sync-Ablauf](https://rojo.space/docs/v7/getting-started/new-game/). Rojo benötigt für diesen lokalen Ablauf kein eigenes Konto. Eine Verbindung gilt erst bei tatsächlicher Studio-Bestätigung als erfolgreich. Server mit Ctrl-C beenden. A2 hat weder eine Verbindung noch Play nachgewiesen.
+Der Server bindet ausschließlich `127.0.0.1`. Im Rojo-Plugin `localhost`, Port `34872`, dann Connect verwenden. [Offizieller Build-/Live-Sync-Ablauf](https://rojo.space/docs/v7/getting-started/new-game/). Rojo benötigt für diesen lokalen Ablauf kein eigenes Konto. Studio zeigte tatsächlich „Connected to session BoltBotsTycoon at localhost:34872“ und Disconnect. Eine ausschließlich im Dateisystem ergänzte Kommentar-Markierung in GameConfig kam im echten Studio-Quelltext an; nach Entfernen der Markierung bestätigte Studio auch die Wiederherstellung. Source und Buildhash blieben anschließend gleich. Für künftiges Aufräumen empfiehlt sich: zuerst Disconnect im Plugin, danach Ctrl-C; andernfalls kann das Plugin den beendeten Server als WebSocketfehler anzeigen. Beobachtet wurde hier der Serverstopp zuerst. Server mit Ctrl-C beenden; der beobachtete Python-Wrapper endete dabei mit normalem Interrupt/Exit130. Ein bloß gestarteter Server reicht weiterhin nicht als Verbindungsbeleg.
+
+A3-Nachweis: [Screens/Logs und Hashbindung](reviews/evidence/M1-A3/studio-verification.json). CreatorOutput meldete Serverboot, Clientboot und ersten Roboter. Keine passenden Produktskriptfehler im untersuchten Zeitfenster; Avatar-Asset-403 und Plattform-Telemetrie-Timeouts wurden separat beobachtet. Keine pauschale Fehlerfreiheit behauptet. Die native Bedienung und visuelle Prüfung gelten für diesen beobachteten Studio-Stand. Bei offenem Menü und fehlendem Screenshot half dessen exponierte Cancel-Aktion, ohne neue Automatisierung.
 
 ## Spiel und Speichern — weitere M1-Schritte
 

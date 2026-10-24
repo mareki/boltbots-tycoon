@@ -1,0 +1,53 @@
+{
+  "recorded_at": "2026-10-24T20:53:51.356507+00:00",
+  "run": "BOLTBOTS-RUN-M1-A3-001",
+  "source_commit": "89f255eb8862232f7c70092dfb96d673eb8a8b90",
+  "runtime_source_commit": "42c4c6daab6b3dc6dff6a3e319c6179f7332b8bb",
+  "build_sha256": "f7642a8dea683cd8b65b4312a2670c8ee87f82dacc8706fa2c6c8e822a255937",
+  "studio_version": "0.744.0.7441077",
+  "rojo_version": "7.7.1",
+  "play": {
+    "actual_ui": true,
+    "client_server_boot": true,
+    "first_robot_event": true,
+    "observations": [
+      {
+        "screenshot": "play-running.png",
+        "cash": 425,
+        "robots": 17
+      },
+      {
+        "screenshot": "play-production.png",
+        "cash": 500,
+        "robots": 20
+      }
+    ],
+    "stopped": true
+  },
+  "rojo": {
+    "address": "127.0.0.1:34872",
+    "plugin_connected_ui": true,
+    "source_marker": "BOLTBOTS_A3_SYNC_20261024",
+    "source_seen_in_studio": true,
+    "verification_method": "Through native Studio command bar, read actual GameConfig.Source; CreatorOutput logged true after file-only marker change, then true after restoration. No direct HTTP claim substitutes for Studio evidence.",
+    "source_restored_in_studio": true,
+    "git_src_diff_empty": true,
+    "build_hash_unchanged": true,
+    "server_stopped_exit": 130
+  },
+  "limits": [
+    "Diagnostic basis only; premium scene/complete Factory contracts/persistence remain B1–B5",
+    "One local client, no multiplayer/Save-Rejoin/security proof",
+    "No public/private Roblox upload or DataStore action",
+    "Platform avatar asset HTTP403 and telemetry timeouts observed; no claim of globally error-free platform logs",
+    "No API/credentials read; runtime player identifier redacted"
+  ],
+  "evidence_hashes": {
+    "loaded.png": "cb93070bab2594f1830a46f396a8f81d05ef8000d1d3e558e2a19d61180e0d30",
+    "play-production.png": "7a837f5f70c86d92e07b23ad5cecf526c2067a712b8aab9e3fe6daf7dcdab29d",
+    "play-running.png": "6bcf74cb6da6194d4364186f3391a744942d37871317d138db972f258d9a817a",
+    "rojo-connected.png": "45dcc0595ffb361c34806eca2e1a97c5398365066f6fdfe959f2aa9d63d28a64",
+    "startup-diagnostics.txt": "6741326aaf0572e0f9604f94a44b696f1b008b33c6bb1de047c03fd1f1453aa5",
+    "studio-runtime.log": "a08ec317dc03ce687509fd1a897287295fbef3122f4611a59b63655da6e8f903"
+  }
+}
