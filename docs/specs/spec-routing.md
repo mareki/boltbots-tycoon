@@ -28,3 +28,11 @@ the effective Domain Foundation and active Product Vision Brief when they exist.
 - Human-provided input: `product-input/README.md` and named files beneath `product-input/`
 
 Initialization replaces this initial map with narrow routes to actual global specs, Product/Vision Brief, Domain Module Entry Maps, public contracts, orchestration, design, planning, work, reviews, evidence, and proposals. Do not add routes to empty or hypothetical directories.
+
+## BoltBots Domain-Phase
+
+- Aktive Autorität, Arbeitsliste und Kontrollen: [Domain-Run](../work/runs/boltbots-domain-foundation-001.md).
+- Benannte alternative Humanquelle, statt eines künstlich duplizierten product-input/prd.md: [unveränderter PRD-Snapshot](../product/reference/boltbots-v0.2/docs/PRD.md), [Inputmanifest](../product/input-snapshot-manifest.json), [Gesprächsergänzungen](../product/human-input.md).
+- Alle importierten Playbooks, Roadmaps, Architektur- und Codevorlagen sind nicht normative Eingaben. Es gilt der installierte Core mit dem aktuellen Humanauftrag.
+- Fachlicher Kandidat (noch nicht wirksam): [Domain Foundation, Kontext CTX-FACTORY und gebundene Diagramme](../domains/domain-foundation.md).
+- Human-Domain-Entscheidung und unabhängige Review: [Review-Paket](../reviews/20261024-1.5.3-boltbots-domain-foundation-review.md). Der Run hält den offenen Validatorbefund F-02 und den sicheren Wiederaufnahmestand.

@@ -1,31 +1,25 @@
 # Product Handover
 
-> Artifact class: Navigation  
-> Linked owners: `docs/harness-state/bootstrap-and-installation.md` and future active Work/Run/checkpoint artifacts
+> Artifact class: Navigation
+> Linked owners: Bootstrap state, Domain Run, Domain Foundation, independent Review
 
-## Current State
+## Stand und Entscheidung
 
-- Product lifecycle: `installed_uninitialized`
-- Product/Vision Brief: `not_available` — initialization has not run.
-- Domain Foundation: `not_available` — domain modeling has not run.
-- Milestone / Delivery Slice / Work Package / Execution Run: `not_available` — no product work is authorized.
-- Canonical Bootstrap State: `docs/harness-state/bootstrap-and-installation.md`.
-- Last verified state: installed Harness integrity must be checked against `.agentic-harness/manifest.md` and the external trust anchor recorded in Bootstrap State.
-- Checkpoint: `non_transferable` until repository and Harness release have an immutable pushed baseline.
-- External side effects: none known.
+- **40% der gesamten Initialisierung.** Die fachliche Vorbereitungsphase ist zur Human-Entscheidung vorgelegt; die Gesamtinitialisierung ist noch nicht abgeschlossen.
+- Kanonischer Zustand: [Bootstrap](harness-state/bootstrap-and-installation.md), `awaiting_human_domain_gate`.
+- Führende Arbeitsliste, Fortschrittsbelege, Driftchecks und Wiederaufnahme: [Domain-Run Revision 2](work/runs/boltbots-domain-foundation-001.md), Status `verification`.
+- [Foundation Revision 1](domains/domain-foundation.md): unabhängig empfohlen, noch nicht wirksam. [Kurzes Entscheidungs-/Review-Paket](reviews/20261024-1.5.3-boltbots-domain-foundation-review.md): Review `approved`, Human `pending`.
+- Vollständig erfasste [Human-Anforderungen](product/human-input.md), [unveränderter Import mit 39 Dateien](product/input-snapshot-manifest.json).
 
-## Human Gate Or Blocker
+## Offene Grenze und nächster sicherer Schritt
 
-- Required PRD may not yet exist at `product-input/prd.md`.
-- No detailed Product conception or delivery-intended implementation is authorized before the
-  Human Domain Decision and Human Initialization Gate.
+Human entscheidet über die verlinkte genaue Foundation samt drei Empfehlungen: automatische Cash-Gutschrift, keine Blueprint-XP im ersten Horizont, Orbit an Starter-Assembler-Level 2. Erst anschließend kommt die detaillierte Initialisierung in einem eigenen Run und mit späterem Human Initialization Gate.
 
-## Next Safe Action
+**Harnessbefund F-02:** Die vollständige Strukturprüfung vor dem Gateübergang bestand mit 0 Fehlern/0 Warnungen. Der direkte Check am vorgeschriebenen Wartezustand scheitert mit `AHV-RUN-CHECK-001`, weil Harness 1.5.3 nur frühere Bootstrapzustände akzeptiert. Das unabhängige Review dokumentiert den Widerspruch. Kein finaler Validator-PASS; keine betroffene weitere Admission vor Klärung. Die Foundation und ihre fachliche Empfehlung bleiben davon unberührt. Der geschützte Core wurde nicht verändert.
 
-Verify the installed manifest. Then report that Harness installation is complete, request the
-required PRD and optional inputs, provide the command “Initialize this product from the provided
-PRD and optional inputs,” and stop. Product initialization begins
-only after that separate explicit human instruction. It starts the Domain Foundation Run; stop at its Human Domain Decision before
-the separate Bootstrap Initialization Run.
+## Sicherung und Nebenwirkungen
 
-This file is an operational index. It MUST link future canonical product specs, plans, reviews, and checkpoints rather than duplicate them.
+- Branch `codex/initialize-boltbots`; lokale Sicherung mit Commit-Nachricht `Prepare BoltBots domain foundation for human review`. Kein Push des neuen Stands; noch kein übertragbarer Checkpoint. Die Installationsbaseline `8d8d1cf` war bereits gepusht.
+- Keine Tools installiert, keine Produktskripte ausgeführt, keine externe Veröffentlichung.
+- Auf Humanauftrag temporäre Wachhaltung mit `caffeinate`; eigene Assertion am 2026-10-24T15:23:12Z beendet und per pmset verifiziert. Ergebnis im Run dokumentiert. Keine dauerhafte Energie-/Sicherheitseinstellung geändert.
+- Die ursprüngliche Arbeitsgrenze endet am 2026-10-24 um16:35:46UTC. Zwei von drei Korrekturzyklen verbraucht; keine automatische Verlängerung oder Rücksetzung bei Wiederaufnahme.

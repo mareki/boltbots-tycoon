@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680">
+<title>BoltBots Tycoon — fachliche Kontextansicht, Revision 1</title>
+<desc>Ein Kontext für Fabrikfortschritt mit zwei internen Konsistenzgrenzen. Client, Roblox-Identität und dauerhafter Speicher sind externe Nachbarn.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 Z" fill="#37536d"/></marker></defs>
+<rect width="1200" height="680" fill="#f7fafc"/>
+<g id="CTX-FACTORY"><rect x="290" y="55" width="560" height="520" rx="10" fill="#e6f6fa" stroke="#37536d" stroke-width="2"/>
+<text x="304" y="83" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#152d43">CTX-FACTORY · Fabrikfortschritt</text>
+<text x="304" y="108" font-family="Arial, sans-serif" font-size="14" font-weight="normal" fill="#152d43">Ein logisches Modul: MOD-FACTORY</text>
+</g>
+<g id="AG-FACTORY"><rect x="315" y="155" width="245" height="185" rx="10" fill="#ffffff" stroke="#37536d" stroke-width="2"/>
+<text x="329" y="183" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#152d43">AG-FACTORY</text>
+<text x="329" y="208" font-family="Arial, sans-serif" font-size="14" font-weight="normal" fill="#152d43">1 dauerhafter Besitzer</text>
+<text x="329" y="233" font-family="Arial, sans-serif" font-size="14" font-weight="normal" fill="#152d43">Cash + Maschinen</text>
+<text x="329" y="258" font-family="Arial, sans-serif" font-size="14" font-weight="normal" fill="#152d43">Freischaltungen + Auswahl</text>
+<text x="329" y="283" font-family="Arial, sans-serif" font-size="14" font-weight="normal" fill="#152d43">Kauf wirkt gemeinsam</text>
+</g>
+<g id="AG-PLOTS"><rect x="585" y="155" width="240" height="185" rx="10" fill="#ffffff" stroke="#37536d" stroke-width="2"/>
+<text x="599" y="183" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#152d43">AG-PLOTS</text>
+<text x="599" y="208" font-family="Arial, sans-serif" font-size="14" font-weight="normal" fill="#152d43">Sitzungsplätze</text>
+<text x="599" y="233" font-family="Arial, sans-serif" font-size="14" font-weight="normal" fill="#152d43">Je Slot 0..1 Fabrik</text>
+<text x="599" y="258" font-family="Arial, sans-serif" font-size="14" font-weight="normal" fill="#152d43">Je Fabrik 0..1 aktiv</text>
+<text x="599" y="283" font-family="Arial, sans-serif" font-size="14" font-weight="normal" fill="#152d43">Exklusive Zuordnung</text>
+</g>
+<g id="VO-CATALOG"><rect x="315" y="395" width="510" height="130" rx="10" fill="#ffffff" stroke="#37536d" stroke-width="2"/>
+<text x="329" y="423" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#152d43">VO-CATALOG · gültige Definitionen</text>
+<text x="329" y="448" font-family="Arial, sans-serif" font-size="14" font-weight="normal" fill="#152d43">Maschinentypen, 5 Roboterfamilien und Regeln</text>
+<text x="329" y="473" font-family="Arial, sans-serif" font-size="14" font-weight="normal" fill="#152d43">Interne Konsistenzgrenzen, keine neuen Kontexte</text>
+</g>
+<g id="EXT-CLIENT"><rect x="20" y="205" width="220" height="145" rx="10" fill="#ffffff" stroke="#37536d" stroke-width="2"/>
+<text x="34" y="233" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#152d43">EXT-CLIENT</text>
+<text x="34" y="258" font-family="Arial, sans-serif" font-size="14" font-weight="normal" fill="#152d43">Spielerabsichten</text>
+<text x="34" y="283" font-family="Arial, sans-serif" font-size="14" font-weight="normal" fill="#152d43">Eigene / öffentliche</text>
+<text x="34" y="308" font-family="Arial, sans-serif" font-size="14" font-weight="normal" fill="#152d43">Ansicht; keine Cash-</text>
+<text x="34" y="333" font-family="Arial, sans-serif" font-size="14" font-weight="normal" fill="#152d43">Autorität</text>
+</g>
+<g id="EXT-ROBLOX-IDENTITY"><rect x="900" y="85" width="280" height="130" rx="10" fill="#ffffff" stroke="#37536d" stroke-width="2"/>
+<text x="914" y="113" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#152d43">EXT-ROBLOX-IDENTITY</text>
+<text x="914" y="138" font-family="Arial, sans-serif" font-size="14" font-weight="normal" fill="#152d43">Vertrauenswürdige Identität</text>
+<text x="914" y="163" font-family="Arial, sans-serif" font-size="14" font-weight="normal" fill="#152d43">Keine eigene Konto-</text>
+<text x="914" y="188" font-family="Arial, sans-serif" font-size="14" font-weight="normal" fill="#152d43">oder Passwortverwaltung</text>
+</g>
+<g id="EXT-STORE"><rect x="900" y="405" width="280" height="145" rx="10" fill="#ffffff" stroke="#37536d" stroke-width="2"/>
+<text x="914" y="433" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#152d43">EXT-STORE</text>
+<text x="914" y="458" font-family="Arial, sans-serif" font-size="14" font-weight="normal" fill="#152d43">Bestätigter Fortschritt</text>
+<text x="914" y="483" font-family="Arial, sans-serif" font-size="14" font-weight="normal" fill="#152d43">Lade-/Sicherungsfehler</text>
+<text x="914" y="508" font-family="Arial, sans-serif" font-size="14" font-weight="normal" fill="#152d43">werden sichtbar; keine</text>
+<text x="914" y="533" font-family="Arial, sans-serif" font-size="14" font-weight="normal" fill="#152d43">neuen Defaults auf Fehler</text>
+</g>
+<line x1="240" y1="280" x2="290" y2="280" stroke="#37536d" stroke-width="2" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<line x1="850" y1="145" x2="900" y2="145" stroke="#37536d" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="850" y1="470" x2="900" y2="470" stroke="#37536d" stroke-width="2" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<text x="20" y="30" font-family="Arial, sans-serif" font-size="13" fill="#37536d">BoltBots Tycoon · vorgeschlagene Domain Foundation · Revision 1 · Human-Freigabe ausstehend</text>
+<text x="20" y="380" font-family="Arial, sans-serif" font-size="13" fill="#37536d">Absicht → Kontext</text>
+<text x="20" y="405" font-family="Arial, sans-serif" font-size="13" fill="#37536d">Ansicht ← Kontext</text>
+<text x="900" y="250" font-family="Arial, sans-serif" font-size="13" fill="#37536d">Identität verwenden</text>
+<text x="900" y="585" font-family="Arial, sans-serif" font-size="13" fill="#37536d">Laden / Sichern</text>
+<text x="290" y="615" font-family="Arial, sans-serif" font-size="13" fill="#37536d">Keine Einzelroboter-Inventare, Zahlungen oder Offline-Erträge im Horizont.</text>
+<text x="290" y="642" font-family="Arial, sans-serif" font-size="13" fill="#37536d">Semantik und vollständige Kardinalitäten: domain-foundation.md (C1–C3).</text>
+</svg>

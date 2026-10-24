@@ -1,0 +1,17 @@
+.DS_Store
+*.log
+logs/*
+!logs/.gitkeep
+build/
+*.rbxl
+*.rbxlx
+*.rbxm
+*.rbxmx
+.env
+.env.*
+*.pem
+*.key
+*secret*
+sourcemap.json
+.idea/
+.vscode/

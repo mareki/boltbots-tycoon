@@ -1,0 +1,204 @@
+{
+  "foundation_id": "BOLTBOTS-DOMAIN-FOUNDATION-001",
+  "revision": 1,
+  "generator": "render_context.py v1; Python3 standard library",
+  "size": [
+    1200,
+    680
+  ],
+  "boxes": [
+    {
+      "id": "CTX-FACTORY",
+      "bounds": [
+        290,
+        55,
+        560,
+        520
+      ],
+      "context": true,
+      "lines": [
+        "CTX-FACTORY · Fabrikfortschritt",
+        "Ein logisches Modul: MOD-FACTORY"
+      ]
+    },
+    {
+      "id": "AG-FACTORY",
+      "bounds": [
+        315,
+        155,
+        245,
+        185
+      ],
+      "lines": [
+        "AG-FACTORY",
+        "1 dauerhafter Besitzer",
+        "Cash + Maschinen",
+        "Freischaltungen + Auswahl",
+        "Kauf wirkt gemeinsam"
+      ]
+    },
+    {
+      "id": "AG-PLOTS",
+      "bounds": [
+        585,
+        155,
+        240,
+        185
+      ],
+      "lines": [
+        "AG-PLOTS",
+        "Sitzungsplätze",
+        "Je Slot 0..1 Fabrik",
+        "Je Fabrik 0..1 aktiv",
+        "Exklusive Zuordnung"
+      ]
+    },
+    {
+      "id": "VO-CATALOG",
+      "bounds": [
+        315,
+        395,
+        510,
+        130
+      ],
+      "lines": [
+        "VO-CATALOG · gültige Definitionen",
+        "Maschinentypen, 5 Roboterfamilien und Regeln",
+        "Interne Konsistenzgrenzen, keine neuen Kontexte"
+      ]
+    },
+    {
+      "id": "EXT-CLIENT",
+      "bounds": [
+        20,
+        205,
+        220,
+        145
+      ],
+      "lines": [
+        "EXT-CLIENT",
+        "Spielerabsichten",
+        "Eigene / öffentliche",
+        "Ansicht; keine Cash-",
+        "Autorität"
+      ]
+    },
+    {
+      "id": "EXT-ROBLOX-IDENTITY",
+      "bounds": [
+        900,
+        85,
+        280,
+        130
+      ],
+      "lines": [
+        "EXT-ROBLOX-IDENTITY",
+        "Vertrauenswürdige Identität",
+        "Keine eigene Konto-",
+        "oder Passwortverwaltung"
+      ]
+    },
+    {
+      "id": "EXT-STORE",
+      "bounds": [
+        900,
+        405,
+        280,
+        145
+      ],
+      "lines": [
+        "EXT-STORE",
+        "Bestätigter Fortschritt",
+        "Lade-/Sicherungsfehler",
+        "werden sichtbar; keine",
+        "neuen Defaults auf Fehler"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "EXT-CLIENT",
+      "to": "CTX-FACTORY",
+      "line": [
+        240,
+        280,
+        290,
+        280
+      ],
+      "both": true
+    },
+    {
+      "from": "CTX-FACTORY",
+      "to": "EXT-ROBLOX-IDENTITY",
+      "line": [
+        850,
+        145,
+        900,
+        145
+      ],
+      "both": false
+    },
+    {
+      "from": "CTX-FACTORY",
+      "to": "EXT-STORE",
+      "line": [
+        850,
+        470,
+        900,
+        470
+      ],
+      "both": true
+    }
+  ],
+  "notes": [
+    {
+      "position": [
+        20,
+        30
+      ],
+      "text": "BoltBots Tycoon · vorgeschlagene Domain Foundation · Revision 1 · Human-Freigabe ausstehend"
+    },
+    {
+      "position": [
+        20,
+        380
+      ],
+      "text": "Absicht → Kontext"
+    },
+    {
+      "position": [
+        20,
+        405
+      ],
+      "text": "Ansicht ← Kontext"
+    },
+    {
+      "position": [
+        900,
+        250
+      ],
+      "text": "Identität verwenden"
+    },
+    {
+      "position": [
+        900,
+        585
+      ],
+      "text": "Laden / Sichern"
+    },
+    {
+      "position": [
+        290,
+        615
+      ],
+      "text": "Keine Einzelroboter-Inventare, Zahlungen oder Offline-Erträge im Horizont."
+    },
+    {
+      "position": [
+        290,
+        642
+      ],
+      "text": "Semantik und vollständige Kardinalitäten: domain-foundation.md (C1–C3)."
+    }
+  ]
+}

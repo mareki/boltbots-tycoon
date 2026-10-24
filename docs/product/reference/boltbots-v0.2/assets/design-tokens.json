@@ -1,0 +1,19 @@
+{
+  "version": "0.1",
+  "palette": {
+    "inkDeep": "#101B35",
+    "inkPanel": "#172B4D",
+    "brandCyan": "#48D8F4",
+    "brandAmber": "#FFCE53",
+    "brandCoral": "#FF956B",
+    "brandViolet": "#A784F7",
+    "positive": "#5AD9A6",
+    "danger": "#F4747B",
+    "textMain": "#F4F8FF",
+    "textMuted": "#B9C8DB",
+    "surfaceLight": "#E7F3FF"
+  },
+  "radii": { "card": 16, "button": 12, "pill": 999 },
+  "touchTargetLogicalPixelsTarget": 44,
+  "layoutRule": "Scale by viewport + safe area; do not treat references as pixel-exact."
+}

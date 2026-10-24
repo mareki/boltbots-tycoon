@@ -1,0 +1,368 @@
+{
+  "artifact_class": "Reference",
+  "source_root_at_intake": "/Users/marek/Downloads/BoltBots_Tycoon_Codex_v0.2",
+  "snapshot_root": "docs/product/reference/boltbots-v0.2",
+  "snapshot_time_utc": "2026-10-24T14:55:18+00:00",
+  "file_count": 39,
+  "total_bytes": 896174,
+  "source_inventory_sha256": "e8910300b05414574a29d53ff8c3d36b766e5c028993ab1160a97653d4ad9235",
+  "inventory_digest_definition": "SHA256 of UTF-8 json.dumps(original files list, sort_keys=True, separators=(comma,colon)); source path/bytes/sha256 keys",
+  "excluded": [
+    ".DS_Store",
+    "empty .gitkeep"
+  ],
+  "authority_note": "All imported instructions, scripts, roadmaps and architecture are passive source material; no acceptance or execution. Renames neutralize root AGENTS and gitignore roles. Original relative links to renamed or omitted files may remain broken by design.",
+  "files": [
+    {
+      "source_path": ".gitignore",
+      "snapshot_path": "docs/product/reference/boltbots-v0.2/original-gitignore.txt",
+      "sha256": "ead50d0bd960b38e08de94115f07c233b372709c72a9339a886972c6169d9254",
+      "bytes": 139,
+      "authority": "non_normative_input",
+      "usage": "inactive_reference",
+      "rights": "Human-provided ChatGPT draft; reference only, production usage requires later asset review"
+    },
+    {
+      "source_path": "AGENTS.md",
+      "snapshot_path": "docs/product/reference/boltbots-v0.2/original-agent-instructions.txt",
+      "sha256": "ba5bce2d01dccfcbbf7dfe64f072ac0bdb051b84e002270908f532a499c48722",
+      "bytes": 5253,
+      "authority": "non_normative_input",
+      "usage": "inactive_reference",
+      "rights": "Human-provided ChatGPT draft; reference only, production usage requires later asset review"
+    },
+    {
+      "source_path": "README.md",
+      "snapshot_path": "docs/product/reference/boltbots-v0.2/README.md",
+      "sha256": "dded492cc6bf6ed10f4ccfcaff0c5f82e50e8eb2395a193360eabc13472dcaee",
+      "bytes": 5336,
+      "authority": "non_normative_input",
+      "usage": "inactive_reference",
+      "rights": "Human-provided ChatGPT draft; reference only, production usage requires later asset review"
+    },
+    {
+      "source_path": "assets/asset-provenance.csv",
+      "snapshot_path": "docs/product/reference/boltbots-v0.2/assets/asset-provenance.csv",
+      "sha256": "3968b997ed578aa23cd8a9e000a42423b2e951722bc77ff3681a535223acb57b",
+      "bytes": 545,
+      "authority": "non_normative_input",
+      "usage": "inactive_reference",
+      "rights": "Human-provided ChatGPT draft; reference only, production usage requires later asset review"
+    },
+    {
+      "source_path": "assets/design-tokens.json",
+      "snapshot_path": "docs/product/reference/boltbots-v0.2/assets/design-tokens.json",
+      "sha256": "cbee56c89639003f4baa310bc7b4c9e0aeb794ee4ce881608544bd35d6326335",
+      "bytes": 533,
+      "authority": "non_normative_input",
+      "usage": "inactive_reference",
+      "rights": "Human-provided ChatGPT draft; reference only, production usage requires later asset review"
+    },
+    {
+      "source_path": "assets/mockups/01_factory_world_concept.png",
+      "snapshot_path": "docs/product/reference/boltbots-v0.2/assets/mockups/01_factory_world_concept.png",
+      "sha256": "63cf8665984b7c7903b7450b7f7da709ab29422dba9fb52cb748acc34e2be2f9",
+      "bytes": 328965,
+      "authority": "non_normative_input",
+      "usage": "ai_concept_image",
+      "rights": "PENDING production use; see original assets/asset-provenance.csv"
+    },
+    {
+      "source_path": "assets/mockups/02_hud_concept.png",
+      "snapshot_path": "docs/product/reference/boltbots-v0.2/assets/mockups/02_hud_concept.png",
+      "sha256": "ec821ec67922a81b8fcc5070af512251c0864235e862bfe726c8021414bea84f",
+      "bytes": 236100,
+      "authority": "non_normative_input",
+      "usage": "ai_concept_image",
+      "rights": "PENDING production use; see original assets/asset-provenance.csv"
+    },
+    {
+      "source_path": "assets/mockups/03_robot_shop_concept.png",
+      "snapshot_path": "docs/product/reference/boltbots-v0.2/assets/mockups/03_robot_shop_concept.png",
+      "sha256": "83f4f508d59aa35b1e43c0dc78696ab92ea6f8f8a548a16034c2a26a1ac57592",
+      "bytes": 203884,
+      "authority": "non_normative_input",
+      "usage": "ai_concept_image",
+      "rights": "PENDING production use; see original assets/asset-provenance.csv"
+    },
+    {
+      "source_path": "assets/visual_reference_board.html",
+      "snapshot_path": "docs/product/reference/boltbots-v0.2/assets/visual_reference_board.html",
+      "sha256": "2ed7a4bd9600fd25f6f87efe19037533ad55e5ac284195bacd15445aac16a160",
+      "bytes": 1994,
+      "authority": "non_normative_input",
+      "usage": "inactive_reference",
+      "rights": "Human-provided ChatGPT draft; reference only, production usage requires later asset review"
+    },
+    {
+      "source_path": "default.project.json",
+      "snapshot_path": "docs/product/reference/boltbots-v0.2/default.project.json",
+      "sha256": "f6a3816f633f9fe1e6c345658da05c2a73e12079cd8cca738fb2fe29d1192bce",
+      "bytes": 498,
+      "authority": "non_normative_input",
+      "usage": "inactive_reference",
+      "rights": "Human-provided ChatGPT draft; reference only, production usage requires later asset review"
+    },
+    {
+      "source_path": "docs/AGENT_PLAYBOOK.md",
+      "snapshot_path": "docs/product/reference/boltbots-v0.2/docs/AGENT_PLAYBOOK.md",
+      "sha256": "9066915872e7b09bc806db3e090042932fc4fcf39612a4ac84542508b4774561",
+      "bytes": 6173,
+      "authority": "non_normative_input",
+      "usage": "inactive_reference",
+      "rights": "Human-provided ChatGPT draft; reference only, production usage requires later asset review"
+    },
+    {
+      "source_path": "docs/ARCHITECTURE.md",
+      "snapshot_path": "docs/product/reference/boltbots-v0.2/docs/ARCHITECTURE.md",
+      "sha256": "575def4557bed2706514b6b06142b8ea4d53ffef97f0d44c8788b32c21273cec",
+      "bytes": 6080,
+      "authority": "non_normative_input",
+      "usage": "inactive_reference",
+      "rights": "Human-provided ChatGPT draft; reference only, production usage requires later asset review"
+    },
+    {
+      "source_path": "docs/BOOTSTRAP_MACOS.md",
+      "snapshot_path": "docs/product/reference/boltbots-v0.2/docs/BOOTSTRAP_MACOS.md",
+      "sha256": "5479edb3c3b64cf687e7d2df6c8067efbedb5ce0b689ec80e5084a3dbf4930b0",
+      "bytes": 6934,
+      "authority": "non_normative_input",
+      "usage": "inactive_reference",
+      "rights": "Human-provided ChatGPT draft; reference only, production usage requires later asset review"
+    },
+    {
+      "source_path": "docs/COMPETITOR_BENCHMARK.md",
+      "snapshot_path": "docs/product/reference/boltbots-v0.2/docs/COMPETITOR_BENCHMARK.md",
+      "sha256": "fd3dac124437f5ae20d63066d62f4950c2c57d51eff6ba6d4cbfa8f83ff3681f",
+      "bytes": 6380,
+      "authority": "non_normative_input",
+      "usage": "inactive_reference",
+      "rights": "Human-provided ChatGPT draft; reference only, production usage requires later asset review"
+    },
+    {
+      "source_path": "docs/COMPETITOR_OBSERVATION_LOG.md",
+      "snapshot_path": "docs/product/reference/boltbots-v0.2/docs/COMPETITOR_OBSERVATION_LOG.md",
+      "sha256": "d067daacf2d360530cd60daac5c12265b4889ee9d9869013db17cbd806f5758a",
+      "bytes": 1035,
+      "authority": "non_normative_input",
+      "usage": "inactive_reference",
+      "rights": "Human-provided ChatGPT draft; reference only, production usage requires later asset review"
+    },
+    {
+      "source_path": "docs/DECISIONS.md",
+      "snapshot_path": "docs/product/reference/boltbots-v0.2/docs/DECISIONS.md",
+      "sha256": "6927c9eedc9e2619062dbb564d64e8b6db938ae530380a8ec25b9c199e5efa3c",
+      "bytes": 1962,
+      "authority": "non_normative_input",
+      "usage": "inactive_reference",
+      "rights": "Human-provided ChatGPT draft; reference only, production usage requires later asset review"
+    },
+    {
+      "source_path": "docs/FIRST_CODEX_TASK.md",
+      "snapshot_path": "docs/product/reference/boltbots-v0.2/docs/FIRST_CODEX_TASK.md",
+      "sha256": "5111c5c5a5fa141884d419d6cf6e999b5a4c77d20404133ff27bc359686cf359",
+      "bytes": 3408,
+      "authority": "non_normative_input",
+      "usage": "inactive_reference",
+      "rights": "Human-provided ChatGPT draft; reference only, production usage requires later asset review"
+    },
+    {
+      "source_path": "docs/GDD.md",
+      "snapshot_path": "docs/product/reference/boltbots-v0.2/docs/GDD.md",
+      "sha256": "1e0681833e8ef665693338b6166b06925b9e4347650a1201f41dae7c6fd4b569",
+      "bytes": 9911,
+      "authority": "non_normative_input",
+      "usage": "inactive_reference",
+      "rights": "Human-provided ChatGPT draft; reference only, production usage requires later asset review"
+    },
+    {
+      "source_path": "docs/IMPLEMENTATION_LOG.md",
+      "snapshot_path": "docs/product/reference/boltbots-v0.2/docs/IMPLEMENTATION_LOG.md",
+      "sha256": "3dc1f74c6242772a1b4b918def6ada2bdcd976c4e2294f29a9b04e18c261ea5d",
+      "bytes": 1469,
+      "authority": "non_normative_input",
+      "usage": "inactive_reference",
+      "rights": "Human-provided ChatGPT draft; reference only, production usage requires later asset review"
+    },
+    {
+      "source_path": "docs/MONETIZATION_LIVEOPS.md",
+      "snapshot_path": "docs/product/reference/boltbots-v0.2/docs/MONETIZATION_LIVEOPS.md",
+      "sha256": "685bedf026374781520dc3045af141aa875b3d006f396086f1aef4fc25b96c66",
+      "bytes": 5312,
+      "authority": "non_normative_input",
+      "usage": "inactive_reference",
+      "rights": "Human-provided ChatGPT draft; reference only, production usage requires later asset review"
+    },
+    {
+      "source_path": "docs/PRD.md",
+      "snapshot_path": "docs/product/reference/boltbots-v0.2/docs/PRD.md",
+      "sha256": "97d742c2dace4cb5a8e198c199a2ec35d904fa26e9324b8a5a12377dac8e6e02",
+      "bytes": 9254,
+      "authority": "non_normative_input",
+      "usage": "inactive_reference",
+      "rights": "Human-provided ChatGPT draft; reference only, production usage requires later asset review"
+    },
+    {
+      "source_path": "docs/QA_RELEASE.md",
+      "snapshot_path": "docs/product/reference/boltbots-v0.2/docs/QA_RELEASE.md",
+      "sha256": "201439cac4fd4628b718a0be5e8b9b62ea037356b161e98915c6fdc9c88cafbf",
+      "bytes": 5632,
+      "authority": "non_normative_input",
+      "usage": "inactive_reference",
+      "rights": "Human-provided ChatGPT draft; reference only, production usage requires later asset review"
+    },
+    {
+      "source_path": "docs/ROADMAP.md",
+      "snapshot_path": "docs/product/reference/boltbots-v0.2/docs/ROADMAP.md",
+      "sha256": "ec8c34382a01f672674090251d1f235c33290ad182b01dc1b791f416477b382f",
+      "bytes": 2739,
+      "authority": "non_normative_input",
+      "usage": "inactive_reference",
+      "rights": "Human-provided ChatGPT draft; reference only, production usage requires later asset review"
+    },
+    {
+      "source_path": "docs/SOURCES.md",
+      "snapshot_path": "docs/product/reference/boltbots-v0.2/docs/SOURCES.md",
+      "sha256": "bcb398294130ab53ec813215fa3f90fad80e46c53382535a96f163c1959e7ff3",
+      "bytes": 2672,
+      "authority": "non_normative_input",
+      "usage": "inactive_reference",
+      "rights": "Human-provided ChatGPT draft; reference only, production usage requires later asset review"
+    },
+    {
+      "source_path": "docs/SPRINT_01.md",
+      "snapshot_path": "docs/product/reference/boltbots-v0.2/docs/SPRINT_01.md",
+      "sha256": "cc267ae307d6606efa2358e6fa0fcf96958fb3e769d55f701339ee282e54cda9",
+      "bytes": 2708,
+      "authority": "non_normative_input",
+      "usage": "inactive_reference",
+      "rights": "Human-provided ChatGPT draft; reference only, production usage requires later asset review"
+    },
+    {
+      "source_path": "docs/VISUAL_DESIGN_BIBLE.md",
+      "snapshot_path": "docs/product/reference/boltbots-v0.2/docs/VISUAL_DESIGN_BIBLE.md",
+      "sha256": "d57bdad22f5607f17c1bbd0622754338b6b50d5e8b68f112c58bc7b8e1855b9c",
+      "bytes": 7310,
+      "authority": "non_normative_input",
+      "usage": "inactive_reference",
+      "rights": "Human-provided ChatGPT draft; reference only, production usage requires later asset review"
+    },
+    {
+      "source_path": "rokit.toml",
+      "snapshot_path": "docs/product/reference/boltbots-v0.2/rokit.toml",
+      "sha256": "615025a4372c38deb6b977cb8defebab3acd1b55e8fc1424c105462cadf2df35",
+      "bytes": 37,
+      "authority": "non_normative_input",
+      "usage": "inactive_reference",
+      "rights": "Human-provided ChatGPT draft; reference only, production usage requires later asset review"
+    },
+    {
+      "source_path": "scripts/bootstrap-macos.sh",
+      "snapshot_path": "docs/product/reference/boltbots-v0.2/scripts/bootstrap-macos.sh",
+      "sha256": "e2af20baf98d509cbc3225da8f752c2efce9878ce03848980b73ac9202400540",
+      "bytes": 3739,
+      "authority": "non_normative_input",
+      "usage": "inactive_reference",
+      "rights": "Human-provided ChatGPT draft; reference only, production usage requires later asset review"
+    },
+    {
+      "source_path": "scripts/build.sh",
+      "snapshot_path": "docs/product/reference/boltbots-v0.2/scripts/build.sh",
+      "sha256": "502d34ffa89814dd7b3006e29bfa9d40e33d7c800ba980c8532b40b524076f2c",
+      "bytes": 491,
+      "authority": "non_normative_input",
+      "usage": "inactive_reference",
+      "rights": "Human-provided ChatGPT draft; reference only, production usage requires later asset review"
+    },
+    {
+      "source_path": "scripts/check-sources.sh",
+      "snapshot_path": "docs/product/reference/boltbots-v0.2/scripts/check-sources.sh",
+      "sha256": "4541ad1e6d2aabbed0b2606bffc3051922f5615694db44a459d49fd7a0356f6d",
+      "bytes": 1438,
+      "authority": "non_normative_input",
+      "usage": "inactive_reference",
+      "rights": "Human-provided ChatGPT draft; reference only, production usage requires later asset review"
+    },
+    {
+      "source_path": "scripts/doctor-macos.sh",
+      "snapshot_path": "docs/product/reference/boltbots-v0.2/scripts/doctor-macos.sh",
+      "sha256": "d16137081e9a74d60d414ca3e7413a836b3fcb4c3d45e0dbf744eb05e044fe67",
+      "bytes": 1314,
+      "authority": "non_normative_input",
+      "usage": "inactive_reference",
+      "rights": "Human-provided ChatGPT draft; reference only, production usage requires later asset review"
+    },
+    {
+      "source_path": "scripts/start-codex-macos.sh",
+      "snapshot_path": "docs/product/reference/boltbots-v0.2/scripts/start-codex-macos.sh",
+      "sha256": "62b6856dec12930b64c2bbf946a786bfa91e581d841780ae4ab155ab538eddb7",
+      "bytes": 665,
+      "authority": "non_normative_input",
+      "usage": "inactive_reference",
+      "rights": "Human-provided ChatGPT draft; reference only, production usage requires later asset review"
+    },
+    {
+      "source_path": "scripts/studio-smoke.luau",
+      "snapshot_path": "docs/product/reference/boltbots-v0.2/scripts/studio-smoke.luau",
+      "sha256": "9b58822995ff00e412eaf9dc22ef00a47491c8a63a94b40dc4c12b826b0e5eee",
+      "bytes": 1704,
+      "authority": "non_normative_input",
+      "usage": "inactive_reference",
+      "rights": "Human-provided ChatGPT draft; reference only, production usage requires later asset review"
+    },
+    {
+      "source_path": "scripts/studio-smoke.sh",
+      "snapshot_path": "docs/product/reference/boltbots-v0.2/scripts/studio-smoke.sh",
+      "sha256": "07e3f25a40087e9ff03fae69f5fba819aaf111f7fb5a19d477c01a40bb88fa05",
+      "bytes": 1123,
+      "authority": "non_normative_input",
+      "usage": "inactive_reference",
+      "rights": "Human-provided ChatGPT draft; reference only, production usage requires later asset review"
+    },
+    {
+      "source_path": "src/ReplicatedStorage/Shared/EconomyRules.luau",
+      "snapshot_path": "docs/product/reference/boltbots-v0.2/src/ReplicatedStorage/Shared/EconomyRules.luau",
+      "sha256": "98b16081d3c685a1b3f8ef8c7b79e58668feaa84da079c94dfb3c0d77f3b7c95",
+      "bytes": 1787,
+      "authority": "non_normative_input",
+      "usage": "inactive_reference",
+      "rights": "Human-provided ChatGPT draft; reference only, production usage requires later asset review"
+    },
+    {
+      "source_path": "src/ReplicatedStorage/Shared/GameConfig.luau",
+      "snapshot_path": "docs/product/reference/boltbots-v0.2/src/ReplicatedStorage/Shared/GameConfig.luau",
+      "sha256": "f8368100e05b11948a9e647f554fc21e78826cb9f6ce62bdbf8aba47db45e8a6",
+      "bytes": 570,
+      "authority": "non_normative_input",
+      "usage": "inactive_reference",
+      "rights": "Human-provided ChatGPT draft; reference only, production usage requires later asset review"
+    },
+    {
+      "source_path": "src/ServerScriptService/Main.server.luau",
+      "snapshot_path": "docs/product/reference/boltbots-v0.2/src/ServerScriptService/Main.server.luau",
+      "sha256": "25ff325ffbb3c24fce3eea0a94a043932e6ada3b626b190e04c29f0520ab9356",
+      "bytes": 6872,
+      "authority": "non_normative_input",
+      "usage": "inactive_reference",
+      "rights": "Human-provided ChatGPT draft; reference only, production usage requires later asset review"
+    },
+    {
+      "source_path": "src/ServerScriptService/Services/WorldBuilder.luau",
+      "snapshot_path": "docs/product/reference/boltbots-v0.2/src/ServerScriptService/Services/WorldBuilder.luau",
+      "sha256": "8abe929d04838ce9cbb1ccd6aab7ee5b9420edbf1413da134618fc1a01806f94",
+      "bytes": 7448,
+      "authority": "non_normative_input",
+      "usage": "inactive_reference",
+      "rights": "Human-provided ChatGPT draft; reference only, production usage requires later asset review"
+    },
+    {
+      "source_path": "src/StarterPlayer/StarterPlayerScripts/Client.client.luau",
+      "snapshot_path": "docs/product/reference/boltbots-v0.2/src/StarterPlayer/StarterPlayerScripts/Client.client.luau",
+      "sha256": "a5b0dc03cb466f4f560aa0ffc4ca7a62837df7b093003720be4829cb52a6b21e",
+      "bytes": 6760,
+      "authority": "non_normative_input",
+      "usage": "inactive_reference",
+      "rights": "Human-provided ChatGPT draft; reference only, production usage requires later asset review"
+    }
+  ]
+}
