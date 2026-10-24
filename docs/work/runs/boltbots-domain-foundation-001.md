@@ -6,7 +6,7 @@
 > Revision: 2
 > Governing specifications: AH-SPEC-DOMAIN-001, AH-SPEC-WORK-001, AH-SPEC-COLLABORATION-001, AH-SPEC-ORDINARY-ADMISSION-001
 > Decision Authority: Human Product Authority; operative Vertragsableitung durch /root/init_review
-> Target completion level: Domain Review Pack bereit; Human Domain Decision pending
+> Target completion level: Domain Review Pack und Humanentscheidung vorhanden; technische Admission-Grenze F-02 offen
 > Work status: verification
 
 ## Human Authority
@@ -127,7 +127,7 @@ Angrenzende Befunde werden als nicht blockierende Folgearbeit mit Trigger festge
 | Gespräch: Setup, Autonomie, Design in zwei Stufen, echte Spieltests | Setup/Design in vorhandener Human-Notiz | Autonomie/Spieltests erfasst; Domain-Triage folgt |
 | Domain§3–8: C1–C3 für MVP-/Sechswochenhorizont | Kandidat Revision1 in_review: docs/domains/domain-foundation.md | Unabhängige Review; keine Vorabfreigabe |
 | Domain§7: Context Map und source/render binding | docs/domains/diagrams/context-map.json + SVG + Generator; Hashes in Foundation, XML/Bounds geprüft | Unabhängige Source-/Renderprüfung; optisch nicht geprüft |
-| Domain§8–9: unabhängige Inhaltsreview + Human Review Pack | Erfüllt: BOLTBOTS-DOMAIN-REVIEW-001, recommendation approved; Human pending | Konkrete Human-Entscheidung abwarten; Foundation bleibt unverändert |
+| Domain§8–9: unabhängige Inhaltsreview + Human Review Pack | Erfüllt: BOLTBOTS-DOMAIN-REVIEW-001, recommendation und Humanentscheidung approved | Humanentscheidung approved protokolliert; Foundation bleibt unverändert |
 | Gesamtautorität: Phase B und erster Umsetzungsvorschlag | offen / noch durch Domain-Gate gesperrt | Nach exakter Human Domain Decision im separaten Run fortsetzen |
 | Spätere Umsetzung mit Setup und Referenzszene | ausdrücklich noch nicht begonnen | Initialisierung/benannter erster Run müssen vorher freigegeben sein |
 
@@ -185,7 +185,7 @@ Angrenzende Befunde werden als nicht blockierende Folgearbeit mit Trigger festge
     },
     "human_gates": {
       "state": "satisfied",
-      "evidence": "Unabhängige Domain-Review approved; exakte Foundation Revision1 SHA2562cd9c514b3f1aefc1f7955e5389e75f9912a6f1edd5af1ca84ddbe70359b540f dem Human zur Entscheidung vorbereitet. Human pending, Foundation nicht wirksam, Bootstrap awaiting_human_domain_gate; Run verification. Keine abhängige Fortsetzung."
+      "evidence": "Marek hat die vorliegende Foundation Revision1 mit unveränderter Kandidaten-SHA256 ausdrücklich im Sprachgespräch freigegeben; Human approved im Review protokolliert, keine Overrides. Bootstrap domain_foundation_effective. F-02 verhindert weiterhin betroffene Folge-Admission; zweites Human Initialization Gate bleibt offen."
     },
     "capability": {
       "state": "satisfied",
@@ -212,7 +212,7 @@ Angrenzende Befunde werden als nicht blockierende Folgearbeit mit Trigger festge
 - Autoritativer Korrekturvorrat dieses Runs: 3 Zyklen; verbraucht 2; verbleibend 1. Zyklus 1 konsolidiert die operative Vorprüfung (Bootstrap-Übergang, ehrliche Renderer-Evidenz und Scope-Lock); durch die folgenden Closure-Metadaten abgeschlossen. Initiale Produktreview einmal, je notwendiger materieller Korrektur höchstens eine fokussierte Closure.
 - Gesamtfortschritt bezieht sich auf die ganze beauftragte Initialisierung, nicht nur Phase A. Die frühere abgeschlossene Leseaufgabe ist kein fortzusetzender Run; ihre Quellenkenntnis wird als vorhandene Evidenz genutzt. Phase A beansprucht bei Gate-Vorlage voraussichtlich etwa 40%, nie künstlich 100%.
 - Driftchecks bei 20/40/60/80/100; 40/80 durch zugewiesenen, dafür freigegebenen unabhängigen Reviewer. Jede Prüfung benennt Ziel, Scope, Belege, Komplexität, verbrauchten/übrigen Aufwand und continue/simplify/stop.
-- Nächste einzelne sichere Aktion: dem Human exakte Foundation Revision1 zur Entscheidung vorlegen; keine weitere Admission, bis Human-Gate und betroffene Harness-Prüfgrenze geklärt sind.
+- Nächste einzelne sichere Aktion: betroffene Harness-Prüfgrenze F-02 klären; die Humanfreigabe der exakten Foundation Revision1 ist inzwischen erteilt. Keine weitere Admission bis technischer Klärung.
 
 
 ## Start- und Operativfreigaben
@@ -275,3 +275,9 @@ Aktueller Stand wird mit ausschließlich erlaubten Dateien auf `codex/initialize
 2026-10-24T15:23:12Z: Vollständige Strukturprüfung im endgültigen Wartezustand: genau bekannter F-02/AHV-RUN-CHECK-001,0Warnungen; keine weiteren strukturellen Befunde. Foundation/Quellbindung unverändert. Eigene caffeinate-Assertion PID52601 per gezieltem SIGTERM beendet; pmset bestätigt, dass diese Assertion nicht mehr vorhanden ist. Keine dauerhaften Einstellungen verändert. Rund47von120Minuten verbraucht, sicher am Human-Gate gestoppt; Gesamtfortschritt40%,1Korrekturzyklus verbleibt.
 
 Lokale Sicherung: subprocess-Aufrufe für ps/Git im eingeschränkten Pythonprozess waren nicht erlaubt; kein Cleanup-/Commit-Erfolg daraus behauptet. Direkter erlaubter Kill-/Git-Aufruf war erfolgreich; ausschließlich eigene Assertion und50erlaubte Dateien betroffen.
+
+## Humanentscheidung protokolliert
+
+2026-10-24T16:20:04Z: Marek beantwortete die konkrete Frage nach Freigabe der vorliegenden fachlichen Grundlage einschließlich automatischer Cash-Gutschrift, zunächst ohne Blueprint-XP und Orbit ab Starter-Assembler-Level2 mit „Ja“. Review-Humanentscheidung daher approved für exakt dieselben Foundationbytes (2cd9c514b3f1aefc1f7955e5389e75f9912a6f1edd5af1ca84ddbe70359b540f), ohne Overrides. Das ist eine mechanische Protokollierung des ausdrücklichen Humanentscheids, keine Modellkorrektur, kein neuer D3-Agentenentscheid und kein weiterer Korrekturzyklus. Coreintegrität beim erneuten Lesen bestätigt; voller Check weiterhin genau bekannter F-02,0Warnungen.
+
+Bootstrap fachlich domain_foundation_effective; Foundation-Payload bleibt als exakt genehmigter Kandidat eingefroren. Keine Folge-Run-Admission oder technische Aktivierung trotz F-02. Human-Gate ist erfüllt, keine erneute Fachfreigabe derselben Bytes nötig. Gesamtfortschritt bleibt40%; die ursprüngliche Zeitgrenze und2/3verbrauchten Korrekturzyklen bleiben unverändert. Nächster Schritt ist die gesonderte Klärung der Harness-Grenze vor Phase B.

@@ -5,15 +5,15 @@
 
 ## Stand und Entscheidung
 
-- **40% der gesamten Initialisierung.** Die fachliche Vorbereitungsphase ist zur Human-Entscheidung vorgelegt; die Gesamtinitialisierung ist noch nicht abgeschlossen.
-- Kanonischer Zustand: [Bootstrap](harness-state/bootstrap-and-installation.md), `awaiting_human_domain_gate`.
+- **40% der gesamten Initialisierung.** Die fachliche Grundlage ist vom Human freigegeben; die Gesamtinitialisierung ist noch nicht abgeschlossen.
+- Kanonischer Zustand: [Bootstrap](harness-state/bootstrap-and-installation.md), `domain_foundation_effective`.
 - Führende Arbeitsliste, Fortschrittsbelege, Driftchecks und Wiederaufnahme: [Domain-Run Revision 2](work/runs/boltbots-domain-foundation-001.md), Status `verification`.
-- [Foundation Revision 1](domains/domain-foundation.md): unabhängig empfohlen, noch nicht wirksam. [Kurzes Entscheidungs-/Review-Paket](reviews/20261024-1.5.3-boltbots-domain-foundation-review.md): Review `approved`, Human `pending`.
+- [Foundation Revision 1](domains/domain-foundation.md): unabhängig empfohlen und am 24. Oktober 2026 vom Human ausdrücklich freigegeben; Kandidatenbytes unverändert. [Kurzes Entscheidungs-/Review-Paket](reviews/20261024-1.5.3-boltbots-domain-foundation-review.md): Review `approved`, Human `approved`.
 - Vollständig erfasste [Human-Anforderungen](product/human-input.md), [unveränderter Import mit 39 Dateien](product/input-snapshot-manifest.json).
 
 ## Offene Grenze und nächster sicherer Schritt
 
-Human entscheidet über die verlinkte genaue Foundation samt drei Empfehlungen: automatische Cash-Gutschrift, keine Blueprint-XP im ersten Horizont, Orbit an Starter-Assembler-Level 2. Erst anschließend kommt die detaillierte Initialisierung in einem eigenen Run und mit späterem Human Initialization Gate.
+Human hat die verlinkte genaue Foundation samt drei Empfehlungen freigegeben: automatische Cash-Gutschrift, keine Blueprint-XP im ersten Horizont, Orbit an Starter-Assembler-Level 2. Diese Entscheidung nicht erneut erfragen. Vor dem separaten Run zur detaillierten Initialisierung ist die technische Admission-Grenze F-02 zu klären; das spätere Human Initialization Gate bleibt bestehen.
 
 **Harnessbefund F-02:** Die vollständige Strukturprüfung vor dem Gateübergang bestand mit 0 Fehlern/0 Warnungen. Der direkte Check am vorgeschriebenen Wartezustand scheitert mit `AHV-RUN-CHECK-001`, weil Harness 1.5.3 nur frühere Bootstrapzustände akzeptiert. Das unabhängige Review dokumentiert den Widerspruch. Kein finaler Validator-PASS; keine betroffene weitere Admission vor Klärung. Die Foundation und ihre fachliche Empfehlung bleiben davon unberührt. Der geschützte Core wurde nicht verändert.
 
