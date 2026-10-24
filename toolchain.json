@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "rojo": {
+    "version": "7.7.1",
+    "source": "https://github.com/rojo-rbx/rojo/releases/tag/v7.7.1",
+    "macos": {
+      "arm64": {
+        "url": "https://github.com/rojo-rbx/rojo/releases/download/v7.7.1/rojo-7.7.1-macos-aarch64.zip",
+        "sha256": "a702659940f6ca061a62df34aa0002ff024aa264efb859007ba890e9524753a4"
+      },
+      "x86_64": {
+        "url": "https://github.com/rojo-rbx/rojo/releases/download/v7.7.1/rojo-7.7.1-macos-x86_64.zip",
+        "sha256": "e69796edea5a0f28d5092e78b901024762b495238fce93c7015289926a9762a2"
+      }
+    },
+    "plugin": {
+      "url": "https://github.com/rojo-rbx/rojo/releases/download/v7.7.1/Rojo.rbxm",
+      "sha256": "50a8d83db87deab4d65fd6100eb74396de232355b1ae89c641035d02c49db6f4",
+      "cli_embedded_sha256": "9412c5ce010e18342a4470a48f516772127649216aa3fbf55b8fe1369ca5db7f"
+    }
+  },
+  "luau": {
+    "version": "0.744",
+    "source": "https://github.com/luau-lang/luau/releases/tag/0.744",
+    "macos": {
+      "url": "https://github.com/luau-lang/luau/releases/download/0.744/luau-macos.zip",
+      "sha256": "ae34a55253bd7eb291723ffdf0143d59128a42b6e62f774ee6f6fbfbef8e5a06"
+    }
+  }
+}

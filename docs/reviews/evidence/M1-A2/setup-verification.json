@@ -1,0 +1,93 @@
+{
+  "recorded_at": "2026-10-24T19:38:11.012711+00:00",
+  "run": "BOLTBOTS-RUN-M1-A2-001",
+  "tool_pins": "toolchain.json",
+  "installed_tools": {
+    "toolchain_sha256": "0e1dca8613a6e1b3e7704d83e31c4b2ddfc68dd9b4be1d48fb3f4c986c8821d4",
+    "python_process_arch": "x86_64",
+    "binaries": {
+      "rojo": "0139bf43a175b230fd3364cd4bc9bc00d67aa54f405804db50356a655deeefcc",
+      "luau": "d351177a98f55a5a23532fdaf668d6b0a7ca26fa158d5f405d8ceb94c3467152",
+      "luau-compile": "a2c683d4ff49f96f3246be672019a7de42df98a268278f5a8bba8852e693fbcd",
+      "luau-analyze": "386f8aa7a10cb9bb44da3bbde652952ea7ff74145cd3b5e4f8ea7489861fb678"
+    }
+  },
+  "studio_version": "0.744.0.7441077",
+  "plugin": {
+    "version": "7.7.1",
+    "path": "~/Documents/Roblox/Plugins/RojoManagedPlugin.rbxm",
+    "sha256": "9412c5ce010e18342a4470a48f516772127649216aa3fbf55b8fe1369ca5db7f",
+    "ui_observed": true,
+    "screenshot": "studio-rojo-7.7.1.png",
+    "temporary_document": "Place1, File/New only; discarded via Don't Save; no BoltBots code loaded or Play/Connect/Save/Upload"
+  },
+  "commands": [
+    {
+      "command": "bash scripts/doctor.sh",
+      "exit_code": 0,
+      "log": "doctor.txt"
+    },
+    {
+      "command": "bash scripts/check.sh",
+      "exit_code": 0,
+      "log": "check.txt"
+    },
+    {
+      "command": "bash scripts/build.sh",
+      "exit_code": 0,
+      "log": "build.txt"
+    }
+  ],
+  "build": {
+    "path": "build/BoltBots.rbxlx",
+    "sha256": "f7642a8dea683cd8b65b4312a2670c8ee87f82dacc8706fa2c6c8e822a255937",
+    "bytes": 25586
+  },
+  "adoption": [
+    {
+      "path": "src/ReplicatedStorage/Shared/EconomyRules.luau",
+      "source": "docs/product/reference/boltbots-v0.2/src/ReplicatedStorage/Shared/EconomyRules.luau",
+      "source_sha256": "98b16081d3c685a1b3f8ef8c7b79e58668feaa84da079c94dfb3c0d77f3b7c95",
+      "active_sha256": "98b16081d3c685a1b3f8ef8c7b79e58668feaa84da079c94dfb3c0d77f3b7c95",
+      "changed": false
+    },
+    {
+      "path": "src/ReplicatedStorage/Shared/GameConfig.luau",
+      "source": "docs/product/reference/boltbots-v0.2/src/ReplicatedStorage/Shared/GameConfig.luau",
+      "source_sha256": "f8368100e05b11948a9e647f554fc21e78826cb9f6ce62bdbf8aba47db45e8a6",
+      "active_sha256": "6fa0eef8d8d1e908e196b876588cf88c86be40da197d89eed3a7165a6046edd6",
+      "changed": true
+    },
+    {
+      "path": "src/ServerScriptService/Main.server.luau",
+      "source": "docs/product/reference/boltbots-v0.2/src/ServerScriptService/Main.server.luau",
+      "source_sha256": "25ff325ffbb3c24fce3eea0a94a043932e6ada3b626b190e04c29f0520ab9356",
+      "active_sha256": "279c62a0eebdd95434f887b80d5955de67ad3cedff7a353f27499416651615d0",
+      "changed": true
+    },
+    {
+      "path": "src/ServerScriptService/Services/WorldBuilder.luau",
+      "source": "docs/product/reference/boltbots-v0.2/src/ServerScriptService/Services/WorldBuilder.luau",
+      "source_sha256": "8abe929d04838ce9cbb1ccd6aab7ee5b9420edbf1413da134618fc1a01806f94",
+      "active_sha256": "8abe929d04838ce9cbb1ccd6aab7ee5b9420edbf1413da134618fc1a01806f94",
+      "changed": false
+    },
+    {
+      "path": "src/StarterPlayer/StarterPlayerScripts/Client.client.luau",
+      "source": "docs/product/reference/boltbots-v0.2/src/StarterPlayer/StarterPlayerScripts/Client.client.luau",
+      "source_sha256": "a5b0dc03cb466f4f560aa0ffc4ca7a62837df7b093003720be4829cb52a6b21e",
+      "active_sha256": "a5b0dc03cb466f4f560aa0ffc4ca7a62837df7b093003720be4829cb52a6b21e",
+      "changed": false
+    }
+  ],
+  "clean_checkout": {
+    "status": "pending"
+  },
+  "limits": [
+    "A3 Studio load/Play/Rojo connection not performed",
+    "Roblox API typing/multiplayer/security and complete Factory contracts not proven by baseline tests",
+    "No persistence, premium scene or actual agent gameplay",
+    "Second machine and Intel Mac not tested"
+  ],
+  "initial_review": "pending"
+}

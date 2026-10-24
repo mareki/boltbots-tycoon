@@ -1,29 +1,50 @@
 # Lokales Setup — geführt durch Codex
 
-> Artifact ID: `BOLTBOTS-SETUP-001` · Revision: 1 · Status: candidate guide für M1
+> Artifact ID: `BOLTBOTS-SETUP-001`
+> Revision: 2 · Status: A2 lokal geprüft, Studio-Spielstart folgt in A3
 
-Dieser Guide soll eine andere Person nach einem frischen Checkout bis zum selbst testbaren Spiel führen. Codex prüft und erstellt die Umgebung; der Human meldet sich persönlich an und beurteilt Ergebnisse. **Aktuell befindet sich das Repository in der Initialisierung.** Die folgenden Produktbefehle entstehen in M1 und sind noch keine heute vorhandenen Startbefehle.
+Nach einem Checkout übernimmt Codex Werkzeugprüfung, Installation, Build und die verfügbare Studio-Bedienung. Der Human liefert Ideen, prüft Qualität und erledigt bei Bedarf persönliche Anmeldung oder Systembestätigung. Passwörter, Roblox-Cookies und API-Schlüssel gehören nicht in Chat oder Repository.
 
-## Aktuell belegter Stand auf Mareks Mac
+## Neuer Mac: bis zum lokalen Build
 
-- Git vorhanden. Roblox- und Roblox-Studio-Dateien unter `/Applications/` gefunden; Dateifund allein war kein Nachweis einer nutzbaren Installation.
-- Human meldet am 24.10.2026, Studio aktualisiert zu haben und sich anschließend anzumelden. Agent hat Start/Login noch nicht bestätigt.
-- Rojo/Rokit/Luau-Prüfer/Blender zuvor nicht im PATH gefunden; das ist kein vollständiges Inventar aller Mac-Dateien. Vor Installation erneut prüfen.
-- Import liegt unverändert unter `docs/product/reference/boltbots-v0.2/`; seine Skripte wurden nicht ausgeführt. Fehlender historischer `START_HERE.command` wird nicht als verfügbares Werkzeug ausgegeben.
+1. Repository in Codex öffnen und README/Handover lesen lassen. Codex prüft macOS, Python 3 und Git. Falls eine Voraussetzung fehlt, richtet Codex sie über die jeweilige offizielle Quelle ein; Konto-/Administratorbestätigung bleibt gegebenenfalls beim Human. Das Skript unten setzt ein ausführbares Python 3 voraus. Homebrew, Node, Rokit, Aftman, Foreman und Blender sind für diesen Build keine Pflicht.
+2. Roblox Studio unter `/Applications/RobloxStudio.app` oder `~/Applications/RobloxStudio.app` prüfen und tatsächlich starten. Wenn fehlend, über die [offizielle Studio-Einrichtung](https://create.roblox.com/docs/studio/setup) installieren. Persönliche Roblox-Anmeldung durch den Human, anschließend arbeitet Codex weiter.
+3. Im Repository folgende Befehle ausführen lassen:
 
-## Ablauf nach Umsetzungsfreigabe
+```bash
+python3 scripts/dev.py setup
+python3 scripts/dev.py plugin-install
+bash scripts/doctor.sh
+bash scripts/check.sh
+bash scripts/build.sh
+```
 
-1. **Checkout und Auftrag:** Repository öffnen, README/Handover lesen, gewünschte freigegebene Spielrevision wählen. Codex erfasst OS/Architektur, Git und benötigte Werkzeuge mit tatsächlicher Version und Probelauf. macOS ist das erste unterstützte Entwicklungsziel; Windows-Anleitung erst nach überprüftem Weg.
-2. **Studio:** vorhandene App identifizieren und tatsächlich starten. Wenn fehlend: offizielle Installation; Human führt persönliche Anmeldung durch. Codex übernimmt anschließend Place-/Projektbedienung soweit Werkzeugzugriff nachgewiesen ist. [Offizielle Studio-Einrichtung](https://create.roblox.com/docs/studio/setup).
-3. **Rojo:** Projektpin prüfen, CLI und passendes Studio-Plugin einrichten. Die Quellreferenz nennt Rojo 7.7.1. Tatsächliche Kompatibilität und Installationsweg in M1 verifizieren; Versionen protokollieren. Rokit ist eine mögliche Verwaltung, kein Selbstzweck. [Rojo-v7-Installation](https://rojo.space/docs/v7/getting-started/installation/).
-4. **Build:** M1 erstellt am Repositoryroot `default.project.json` und `scripts/doctor.sh`, `scripts/build.sh`, `scripts/check.sh`. Erst sobald sie vorhanden sind, lautet der vorgesehene Weg `bash scripts/doctor.sh`, `bash scripts/check.sh`, `bash scripts/build.sh`; Ergebnis `build/BoltBots.rbxlx`. Generierte Artefakte sind nicht die Quelle.
-5. **Studio testen:** erzeugten Place öffnen, Play starten, Output prüfen. Für laufende Bearbeitung `rojo serve` und Studio-Plugin verbinden; Erfolg anhand tatsächlicher Verbindung, nicht des gestarteten CLI-Prozesses behaupten. [Rojo-Build/Serve](https://rojo.space/docs/v7/getting-started/new-game/).
-6. **Spielprobe:** erster Scout, automatische Cash-Gutschrift, Upgrade/Abbruch und sichtbare Wirkung. Zweiten Client für Plotisolation. Codex hält Build, Aktionen und echte Screenshots/Logs fest. Human kann denselben Stand selbst spielen.
-7. **Speichern:** nur in einer gesonderten autorisierten privaten Testexperience mit passend eingerichtetem DataStore-Zugriff. Keine produktive Experience für Studio-Speichertests. Save/Rejoin und Fehlerpfad tatsächlich ausführen; ohne diesen Schritt ist Persistenz nicht abgenommen.
-8. **Handover:** genaue funktionierende Befehle, Versionen, Testumgebung, offene Grenzen und nächste Arbeit speichern. Zweiter Rechner prüft denselben Ablauf ohne private Pfade von Mareks Mac.
+`setup` lädt ausschließlich die offiziellen, in `toolchain.json` gepinnten Release-Archive: Rojo 7.7.1 und Luau 0.744. SHA256 wird vor der Ausführung geprüft. Binaries, Downloadcache und lokaler Installationsbeleg liegen unter `.tools/` und werden nicht eingecheckt. Kein Administratorzugriff und keine globale PATH-Änderung für diese Werkzeuge nötig. Der Rojo-Build nutzt stets `.tools/bin/rojo` aus diesem Checkout.
 
-## Wenn ein Schritt scheitert
+Die Rojo-Auswahl richtet sich nach der ausführenden Python-Architektur. Ein unter Rosetta laufendes Intel-Python wählt das ausführbare x86_64-Rojo; natives ARM-Python die ARM-Ausgabe. Das Luau-macOS-Archiv liefert derzeit ARM-Binaries. Auf Mareks ARM-Mac wurden Intel-Rojo und ARM-Luau tatsächlich ausgeführt. **Ein Intel-Mac und ein zweiter Rechner sind noch nicht nachgewiesen**; bei nicht ausführbarem Binary stoppt das Setup mit konkretem Fehler. Windows/Linux sind hier noch kein verifizierter Setupweg.
 
-Codex nennt den konkreten fehlgeschlagenen Schritt samt Fehlermeldung und engster Reparatur. Fehlendes Tool installieren oder Version anpassen, Pluginverbindung separat prüfen, bei Lade-/Savefehlern nicht mit Defaultdaten überschreiben. Keine systemweite Löschung oder Credentialweitergabe. Ein bekannt falscher Dokumentenstatus ist kein Grund, erneut eine bereits erteilte Freigabe zu verlangen.
+`plugin-install` verwendet den [offiziellen CLI-Weg](https://rojo.space/docs/v7/getting-started/installation/), erzeugt `~/Documents/Roblox/Plugins/RojoManagedPlugin.rbxm` und prüft den eingebetteten Pluginhash. Dieser unterscheidet sich beobachtet vom separat veröffentlichten `Rojo.rbxm`-Asset; beide sind im Toolpin ausdrücklich getrennt. Ein bereits vorhandenes abweichendes Managed-Plugin wird nicht automatisch überschrieben. Studio nach der Installation neu starten. Die Startseiten-Verwaltung zeigte das lokale Plugin im beobachteten Ablauf nicht an; maßgeblich ist der Plugin-Nachweis im leeren Studio-Dokument, nicht diese Marketplace-Liste.
 
-Der Human muss keine Roboter modellieren, Dateien manuell zusammenschieben oder Programmcode schreiben. Falls persönliche Kontobestätigung, OS-Zugriff oder nicht verfügbare Geräte einen Schritt begrenzen, wird genau dieser Bedarf benannt. „Agent kann UI steuern“ wird erst nach einem tatsächlichen Bediennachweis als Fähigkeit für Studio oder Blender übernommen.
+`doctor` unterscheidet Dateifund, tatsächliche Ausführung und fehlende Anforderungen. Ein gefundener Studio-/Pluginpfad beweist weder Anmeldung noch funktionierende Verbindung. `check` kompiliert alle aktiven Luau-Dateien, prüft reine Regelmodule auf Typfehler und führt die Basistests aus. Für die Standalone-CLI wird ausschließlich die Roblox-`script.Parent.GameConfig`-Importzeile in einer temporären Kopie auf einen Dateipfad adaptiert; die Regellogik bleibt unverändert. Keine Simulation behauptet einen Roblox-Spieltest oder vollständige Roblox-API-Typprüfung.
+
+`build` erzeugt `build/BoltBots.rbxlx` und gibt den SHA256 aus. `build/` ist generiert und ignoriert; `src/` plus `default.project.json` sind die Quelle. Die aktive A2-Basis stammt bewusst aus fünf Dateien des unveränderten v0.2-Imports. Sie ist noch **keine** abgenommene M1-Spiellogik oder Premium-Szene: aktuelle Kaufverträge, Sammlung, Persistenz und Gestaltung folgen in B1–B5. `development-a2` ist ein Entwicklungslabel, keine veröffentlichte Produktversion.
+
+## Danach: Studio starten und lokal verbinden — A3
+
+Codex öffnet den gebauten Place, startet Play und prüft Output sowie sichtbaren Zustand. Für Live-Sync:
+
+```bash
+python3 scripts/dev.py serve
+```
+
+Der Server bindet ausschließlich `127.0.0.1`. Im Rojo-Plugin `localhost`, Port `34872`, dann Connect verwenden. [Offizieller Build-/Live-Sync-Ablauf](https://rojo.space/docs/v7/getting-started/new-game/). Rojo benötigt für diesen lokalen Ablauf kein eigenes Konto. Eine Verbindung gilt erst bei tatsächlicher Studio-Bestätigung als erfolgreich. Server mit Ctrl-C beenden. A2 hat weder eine Verbindung noch Play nachgewiesen.
+
+## Spiel und Speichern — weitere M1-Schritte
+
+Produktion, Cash, Upgrade/Abbruch, Sammlung und Plotisolation werden an der echten Szene geprüft. Speichern nur in einer separat benannten und autorisierten privaten Testexperience mit passend eingerichtetem DataStore-Zugriff. Kein Upload-/API-/Cookie-Setup gehört zum lokalen Rojo-Build. Ohne realen Save/Rejoin ist Persistenz nicht abgenommen. Codex hält Build, Aktionen, Screenshots/Logs, Grenzen und nächste Arbeit fest; Human beurteilt die tatsächliche Qualität.
+
+## Fehler und Wiederholung
+
+Fehlende/abweichende Tools: `setup` erneut ausführen; Downloads werden nur bei passendem Pin wiederverwendet. Keine Hashprüfung abschalten. Abweichendes vorhandenes Plugin: genaue Datei/Version prüfen und gezielt entscheiden, keine pauschale Pluginlöschung. Fehlende persönliche Anmeldung oder Systemfreigabe: nur diesen Schritt an den Human geben. Build kann nach Korrektur neu erzeugt werden. Keine Zugangsdaten weitergeben, keine produktiven Spielstände für Tests verwenden.
+
+Konkrete Versionen, Plugin-/Build-Nachweise und Prüfgrenzen stehen im [A2-Nachweis](reviews/evidence/M1-A2/setup-verification.json); der führende Arbeitsstand steht im [Handover](handover.md). Der vollständige Ablauf auf einem zweiten Rechner bleibt M3-Nachweis.
