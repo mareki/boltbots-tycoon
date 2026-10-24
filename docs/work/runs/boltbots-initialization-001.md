@@ -4,7 +4,7 @@
 > Artifact class: Work contract
 > Revision: 1
 > Semantic owner: /root
-> Work status: active
+> Work status: verification — Human changes_requested, Designqualität offen
 > Decision class: D3
 
 ## Auftrag, Bindung und Grenze
@@ -15,19 +15,19 @@ Die genaue freigegebene Foundation bleibt SHA256 `2cd9c514b3f1aefc1f7955e5389e75
 
 Scope Lock: Das Ergebnis sind die notwendigen Initialisierungsartefakte für genau einen Factory-Kontext und den genehmigten Horizont. Bestehende Quellbedeutung wiederverwenden; höchstens wenige zusammengefasste Eigentümerdokumente und ein kleines gebundenes Design. Ein Fund außerhalb dieses Ergebnisses wird mit Owner/Trigger zurückgestellt. Outcome-, Pfad-, Team-, Budget- oder externe Aktionsausweitung braucht entsprechende vorherige Human-Autorität.
 
-Finite Grenze:120Minuten ab16:38:45UTC am24.10.2026, Ende18:38:45UTC, einschließlich Vorbereitung. Gesamtfortschritt80%; Korrekturzyklus3von3 für F-VIS-01 aktiv, einschließlich seiner fokussierten Closure; danach keine weitere Reserve. Keine Rücksetzung am Phasenwechsel. Phase-A-Zeitrahmen beendet; keine erneute Arbeit an ihrer Fachsemantik.
+Finite Grenze:120Minuten ab16:38:45UTC am24.10.2026, Ende18:38:45UTC, einschließlich Vorbereitung. Gesamtfortschritt90%; Korrekturzyklus3von3 einschließlich fokussierter Closure abgeschlossen,0Reserve. Human Initialization Decision ausstehend. Keine Rücksetzung am Phasenwechsel. Phase-A-Zeitrahmen beendet; keine erneute Arbeit an ihrer Fachsemantik.
 
 ## Führende Arbeitsliste
 
 | Originaler Outcome | Ergebnis/Stand | Nächster Schritt |
 |---|---|---|
 | Quellen/Humaninput/Domainfreigabe | Erfüllt, unverändert referenziert | Bindung beim neuen Run prüfen |
-| Feinkonzept und kompletter Anforderungsüberblick | Kandidat: vision-and-mvp.md,39/39IDs | unabhängig prüfen |
-| Technische Grundlage und Releasepolitik | Kandidaten factory-module.md/technical-foundation.md | unabhängig prüfen; ADR-01 zur Humanentscheidung |
-| Premium-Richtung früh prüfen | Designvertrag vorhanden, frühe Flow-Linse läuft | interaktiver Entwurf/PNGs und tatsächliche Sichtprüfung |
+| Feinkonzept und kompletter Anforderungsüberblick | Kandidat: vision-and-mvp.md,39/39IDs | unabhängig approved; Human Initialization Gate |
+| Technische Grundlage und Releasepolitik | Kandidaten factory-module.md/technical-foundation.md | unabhängig approved; ADR-01 zur Humanentscheidung |
+| Premium-Richtung früh prüfen | Designvertrag vorhanden, frühe Flow-Linse läuft | Designr2/8PNG unabhängig approved; Human Designentscheidung |
 | Geführtes Setup nach Checkout | Setupguide Kandidat vorhanden | später in M1 gegen tatsächlichen Ablauf verifizieren |
-| Meilensteine, M1 gründlich | Plan Kandidat mit M1/WP-01A/B, M2/M3 und6Wochen | unabhängige Review, zweite Humanentscheidung |
-| Zweites Human-Gate | offen | Exakte unabhängige Review und verständlicher Entscheidungsbrief; Umsetzung bleibt vorgeschlagen |
+| Meilensteine, M1 gründlich | Plan Kandidat mit M1/WP-01A/B, M2/M3 und6Wochen | unabhängig approved; zweite Humanentscheidung |
+| Zweites Human-Gate | Review-Pack r2 unabhängigapproved, Humanpending | Paketvorlegen; keineUmsetzungvorEntscheidung |
 
 ## Design-Vorbereitung und Capability
 
@@ -38,7 +38,7 @@ Die vorhandene Visual Reference Board HTML ist eine statische Bildgalerie, kein 
 {
   "schema_version": "1",
   "revision": 1,
-  "status": "active",
+  "status": "verification",
   "harness_version": "1.5.3",
   "run_kind": "bootstrap_initialization",
   "decision_class": "D3",
@@ -133,7 +133,7 @@ Die vorhandene Visual Reference Board HTML ist eine statische Bildgalerie, kein 
 ```json
 {
   "checked_revision": 1,
-  "progress": 80,
+  "progress": 90,
   "updates": [
     {
       "percent": 10,
@@ -166,6 +166,10 @@ Die vorhandene Visual Reference Board HTML ist eine statische Bildgalerie, kein 
     {
       "percent": 80,
       "evidence": "Unabhängiger init_review hat alle11Bilder tatsächlich gesehen, exakteHashes/Commit3aef09d und39/39PRD-IDs bestätigt. Ein konsolidierterBlocker: informativeUI-Labels unterschreiten den eigenen14px-Mindestmaßstab. Kein weiterer materiellerDomain/M1/Architektur/Autoritätsbefund. Letzter verbleibender gemeinsamerKorrekturzyklus wird nur für Schriftgrößen/erneute betroffeneBildclosure genutzt."
+    },
+    {
+      "percent": 90,
+      "evidence": "GesamtesInitialisierungspaket unabhängigapproved nachfokussierterClosure F-VIS-01:Commit89a83ae, Kandidatenmanifestr2, Designr2,8neuePNG tatsächlichvonRoot/Reviewer angesehen. KeineoffenenmateriellenFindings;39/39PRD-Anforderungen,Humanänderungen undM1 abgedeckt.3von3Korrekturzyklen verbraucht. ExaktesReview-Pack bereit; HumanInitializationDecisionpending, keineUmsetzung. NächsterSchritt zweitevereinbarteHumanentscheidung."
     }
   ],
   "drift_checks": [
@@ -213,7 +217,7 @@ Die vorhandene Visual Reference Board HTML ist eine statische Bildgalerie, kein 
     },
     "agent_start_review": {
       "state": "satisfied",
-      "evidence": "init_spawn pass für root assignment_preparation und root run_activation nach geroutetem Design§13/Evidenzpfad; pass für init_review assignment_preparation zur konkreten Vertragsprüfung. init_review operative approved für vorliegenden Entwurf und externe echte Humanfreigabe; späterer Inhaltsreviewauftrag wird erst bei konkretem Kandidaten gebunden."
+      "evidence": "BestehendeRoot-/Operativpässe; init_spawn pass für konkreteFrühflow- und finaleInhalts-/Bildreview. init_review finaleapproved mitfokussierterClosure auf89a83ae undManifest r2. UnveränderteProduktreview und Baselines wiederverwendet; keinezusätzlicheRunde."
     },
     "human_gates": {
       "state": "satisfied",
@@ -229,7 +233,7 @@ Die vorhandene Visual Reference Board HTML ist eine statische Bildgalerie, kein 
     },
     "budget_stop": {
       "state": "satisfied",
-      "evidence": "Phase B inklusive Vorbereitung 2026-10-24T16:38:45Z bis18:38:45Z,120Minuten; vorherige Phase-A-Kontrollen/Fortschritt unverändert. Genau3Identitäten;2von3Korrekturen verbraucht,1übrig. Frühe Flowprüfung als Linse derselben Review, dann eine konsolidierte Endreview/gegebenenfalls eine fokussierte Closure."
+      "evidence": "PhaseB16:38:45–18:38:45UTC einschließlichVorbereitung. BeimAbschluss17:34UTC rund55von120Minutenverbraucht. Genau3Astra/xhigh-Identitäten,3von3Korrekturzyklen einschließlichletzterClosure verbraucht. KeineweiterenProduktänderungen; sichereGateübergabe. Human-Gatepending."
     },
     "routed_requirements": {
       "state": "satisfied",
@@ -290,3 +294,11 @@ Studio: Dateiprüfung fand /Applications/RobloxStudio.app, bewies aber keinen er
 ## Gemeinsamer Korrekturzyklus3von3
 
 F-VIS-01 aus unabhängiger Gesamtprüfung: informativeUI-Schriftgröße kleinerals14px. Genau diese Texte werden auf≥14px angepasst; illustrative Weltzeichnung bleibt separat. Kein Produkt-/Flow-/Architekturwechsel. Betroffene Designrevision2, Rendererrevision2 und8PNG werden neu gebunden; Source-/Bounds-/Transition-/Kontrastregression und echte Bildsicht in demselben letzten Zyklus. Danach fokussierte unabhängigeClosure, unveränderte fachlicheReview wiederverwenden. Keine neue Runde/Reserve.
+
+## Abschlussstand vor zweitem Human-Gate
+
+UnabhängigeClosure17:32:22UTC approved; F-VIS-01 geschlossen. Exaktes Review: docs/reviews/20261024-1.5.3-boltbots-initialization-review.md r2. GeprüfterProdukt-/Designkandidat89a83ae, Manifest r2 SHA2566162e7c48e564c695503be71e42851bbf88519bec794d8a1630ba2144ea68f2b. SämtlichegeplantenInitialisierungsausgabenliegenvor; Humanentscheidungausstehend. KeineStudio-/Browser-/Blender-/Spielausführungbehauptet, keineAgentinstallation/Veröffentlichung/Push. FinalerdirekterCheckwirdmitdem bekanntenStatusguard erneutoffengelegt; keinPASS.100%-Abschluss erst nachgenauerHumanentscheidungundderenErfassung.
+
+## Human-Ablehnung nach der 90%-Meldung
+
+Der Human lehnt Designrevision2 ausdrücklich als minderwertig/nicht spielanregend ab. Damit ist die frühere Aussage zur Freigabereife überholt; keine100%-Meldung oder Produktumsetzung. F-VIS-02 im vorhandenen Review ist offen. Verbindliche neue Klarstellung für jede Gestaltung/Review: Premium-Qualität und menschlicher Spielanreiz sind harte Abnahmebedingungen; bei negativer Bewertung keinapproved. Die Regel ist auf ausdrücklichen Humanauftrag unter docs/agent-extensions.md erfasst und über README/Routing/Handover verpflichtend geroutet. Das ist eine direkte neue Human-Anforderung an die Projektführung, keine nachträgliche technischeAbnahme oder weitereUI-Korrekturschleife. HistorischeBudgets bleiben erhalten. Quellen und bisherigeReview werden als Fehlernachweis bewahrt, nicht als akzeptierteDesignreferenz weiterverwendet.

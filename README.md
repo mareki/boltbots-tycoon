@@ -13,6 +13,8 @@ This repository uses a versioned Agentic Harness to plan, design, implement, ver
 
 Every Agent reads `AGENTS.md`, this README, `docs/handover.md`, `.agentic-harness/manifest.md`, and the task route before reading code or broader documentation.
 
+Für jede Gestaltung und Spiel-/Designreview gilt zusätzlich die verbindliche [Premium-Qualitätsregel aus Spielersicht](docs/agent-extensions.md). Ein technisch korrekter, aber für Menschen unattraktiver Entwurf wird nicht abgenommen.
+
 For Harness `1.3.0+`, an ordinary Run starts from one compact Run Contract. `--check-run` reads only
 that Contract and its exact named sources; it creates no report, event, activation file or document
 hash. D1-D3 Spawn-review clearance is recorded in the same Contract. Full repository validation is

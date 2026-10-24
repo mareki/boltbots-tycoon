@@ -5,6 +5,8 @@
 
 ## Startup
 
+Für jede Gestaltung und Spiel-/Designreview verpflichtend: [Produktregel Premium-Qualität und menschlicher Spielanreiz](../agent-extensions.md). Der Human hat Design r2 abgelehnt; ein früheres Agent-`approved` ist keine Umsetzungsfreigabe.
+
 Before task routing, read root `README.md`, `docs/handover.md`, `.agentic-harness/manifest.md`, and
 the effective Domain Foundation and active Product Vision Brief when they exist. Only
 `domain_foundation` may start from exact Human/Bootstrap/input authority; after its Human Gate,
