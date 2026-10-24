@@ -1,0 +1,16 @@
+Window: "About Roblox Studio", App: Roblox Studio.
+1 dialog About Roblox Studio, Secondary Actions: Raise
+	2 image
+	3 text Roblox Studio Version 0.744.0.7441077 Channel: production Latest version available 0.744.0.7441077 ©2026 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries. Contact Us Privacy Policy
+	4 text entry area Third Party Notices Uses 'FMOD Studio' from 'Firelight Technologies'
+	5 button OK, Secondary Actions: Raise
+	6 close button
+	7 zoom button (disabled)
+	8 text About Roblox Studio
+9 menu bar
+	10 Roblox Studio
+	11 File
+	12 Plugins
+	13 Help
+
+The focused UI element is 5 button OK, Secondary Actions: Raise

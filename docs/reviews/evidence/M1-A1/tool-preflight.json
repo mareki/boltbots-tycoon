@@ -1,0 +1,246 @@
+{
+  "os": {
+    "command": [
+      "/usr/bin/sw_vers"
+    ],
+    "exit_code": 0,
+    "output": "ProductName:\t\tmacOS\nProductVersion:\t\t26.5.2\nBuildVersion:\t\t25F84"
+  },
+  "tools": [
+    {
+      "name": "git",
+      "path": "/usr/local/bin/git",
+      "additional_known_paths": [],
+      "version_probe": {
+        "command": [
+          "/usr/local/bin/git",
+          "--version"
+        ],
+        "exit_code": 0,
+        "output": "git version 2.52.0"
+      }
+    },
+    {
+      "name": "rojo",
+      "path": null,
+      "additional_known_paths": []
+    },
+    {
+      "name": "rokit",
+      "path": null,
+      "additional_known_paths": []
+    },
+    {
+      "name": "aftman",
+      "path": null,
+      "additional_known_paths": []
+    },
+    {
+      "name": "foreman",
+      "path": null,
+      "additional_known_paths": []
+    },
+    {
+      "name": "lune",
+      "path": null,
+      "additional_known_paths": []
+    },
+    {
+      "name": "luau",
+      "path": null,
+      "additional_known_paths": []
+    },
+    {
+      "name": "luau-analyze",
+      "path": null,
+      "additional_known_paths": []
+    },
+    {
+      "name": "stylua",
+      "path": null,
+      "additional_known_paths": []
+    },
+    {
+      "name": "selene",
+      "path": null,
+      "additional_known_paths": []
+    },
+    {
+      "name": "blender",
+      "path": null,
+      "additional_known_paths": []
+    },
+    {
+      "name": "brew",
+      "path": "/usr/local/bin/brew",
+      "additional_known_paths": [],
+      "version_probe": {
+        "command": [
+          "/usr/local/bin/brew",
+          "--version"
+        ],
+        "exit_code": 0,
+        "output": "Homebrew 5.1.15"
+      }
+    },
+    {
+      "name": "python3",
+      "path": "/usr/local/bin/python3",
+      "additional_known_paths": [],
+      "version_probe": {
+        "command": [
+          "/usr/local/bin/python3",
+          "--version"
+        ],
+        "exit_code": 0,
+        "output": "Python 3.14.3"
+      }
+    },
+    {
+      "name": "node",
+      "path": "/usr/local/bin/node",
+      "additional_known_paths": [],
+      "version_probe": {
+        "command": [
+          "/usr/local/bin/node",
+          "--version"
+        ],
+        "exit_code": 0,
+        "output": "v25.2.1"
+      }
+    }
+  ],
+  "apps": [
+    {
+      "path": "/Applications/RobloxStudio.app",
+      "bundle_id": "com.Roblox.RobloxStudio",
+      "name": "Roblox Studio",
+      "version": "0.744.0.7441077",
+      "build": "7441077",
+      "executable": "RobloxStudio",
+      "bundle_executable_present": true
+    },
+    {
+      "path": "/Applications/Roblox.app",
+      "bundle_id": "com.roblox.RobloxPlayer",
+      "name": "Roblox",
+      "version": "0.741.0.7411056",
+      "build": "7411056",
+      "executable": "RobloxPlayer",
+      "bundle_executable_present": true
+    }
+  ],
+  "disk": {
+    "command": [
+      "/bin/df",
+      "-h",
+      "."
+    ],
+    "exit_code": 0,
+    "output": "Filesystem      Size    Used   Avail Capacity iused ifree %iused  Mounted on\n/dev/disk3s5   926Gi   581Gi   315Gi    65%    4.5M  3.3G    0%   /System/Volumes/Data"
+  },
+  "inventory_python_process_architecture": "x86_64",
+  "host_uname_architecture": "arm64",
+  "architecture_evidence": {
+    "command": "uname -m; file -L /usr/local/bin/git /usr/local/bin/python3 /usr/local/bin/node /Applications/RobloxStudio.app/Contents/MacOS/RobloxStudio",
+    "uname": "arm64",
+    "examined_binary_architecture": "x86_64",
+    "conclusion": "OS reports arm64; existing Git/Python/Node/Studio binaries are Intel and executed successfully. Do not infer host architecture from Python platform.machine alone.",
+    "additional_probe_limit": "sysctl hardware/proc-translated queries denied by sandbox; no hardware identity or serial collected."
+  },
+  "scope": "A1 read-only Capability Preflight within approved M1/WP-01A; not A2 or game execution",
+  "observed_utc": "2026-10-24T19:09:07Z",
+  "search_scope": {
+    "path_lookup": true,
+    "additional_directories": [
+      "/opt/homebrew/bin",
+      "/usr/local/bin",
+      "~/.rokit/bin",
+      "~/.aftman/bin",
+      "~/.foreman/bin",
+      "~/.local/bin"
+    ],
+    "apps_directories": [
+      "/Applications",
+      "~/Applications"
+    ],
+    "limitations": "Not a recursive scan of the whole Mac. No credential/config/keychain reads."
+  },
+  "studio_ui": {
+    "app": "/Applications/RobloxStudio.app",
+    "tool": "mcp__cua_repl, native App API",
+    "visible_start": "Home/welcome screen visible with signed-in account; account identifier not retained in repo",
+    "logged_in_observed": true,
+    "running_version": "0.744.0.7441077",
+    "actions_verified": [
+      "Selected/launched Studio via cua.getApp using exact application path",
+      "Opened Roblox Studio menu, clicked About Roblox Studio, observed matching running version",
+      "Clicked OK and returned to main window",
+      "Opened Plugins > Manage Plugins; UI states no plugins installed",
+      "Closed plugin manager and returned to Studio home"
+    ],
+    "plugins_ui_message": "You haven’t installed any plugins yet.",
+    "capability_proved": "Native menu clicks, dialog observation and close/return work.",
+    "capability_not_proved": [
+      "Project/Place editing",
+      "Rojo connection",
+      "Play or multi-client controls",
+      "Agent gameplay",
+      "DataStore or publishing access"
+    ],
+    "privacy": "Only About and empty Plugin Management screenshots saved; home screenshot/account name not saved."
+  },
+  "next_step_disposition": [
+    {
+      "item": "Git",
+      "disposition": "usable",
+      "reason": "Version command exits0; existing commit/push history established."
+    },
+    {
+      "item": "Roblox Studio",
+      "disposition": "usable_for_start_and_basic_UI",
+      "reason": "Launch and signed-in home observed; running version and native UI interaction verified."
+    },
+    {
+      "item": "Rojo CLI and Studio plugin",
+      "disposition": "required_for_A2_setup",
+      "reason": "CLI absent from scoped paths; Studio plugin management reports no installed plugins."
+    },
+    {
+      "item": "Standalone Luau test/static tooling",
+      "disposition": "A2_tool_choice_pending",
+      "reason": "lune/luau/luau-analyze/selene/stylua absent in scoped search; choose smallest required testing setup, not automatic installation of every listed tool."
+    },
+    {
+      "item": "Rokit/Aftman/Foreman",
+      "disposition": "optional_tool_management",
+      "reason": "Not found; no requirement to install all or any particular manager."
+    },
+    {
+      "item": "Blender",
+      "disposition": "not_required_for_A1_or_first_parts_robot",
+      "reason": "No CLI/app found in scoped paths; only consider after later approved model step and proven agent path."
+    }
+  ],
+  "non_actions": [
+    "No tool/plugin installation",
+    "No project/place opened or created",
+    "No imported project script executed",
+    "No Play/Save/Upload/Publish",
+    "No account login performed or credentials read"
+  ],
+  "evidence_files": [
+    {
+      "path": "docs/reviews/evidence/M1-A1/studio-about.png",
+      "sha256": "0b5e26c52055183b19990ea42256348b1c7e29a14fcb8e1bd38b565fb277d117"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-A1/studio-about-ax.txt",
+      "sha256": "8a7bf876e685a46cc0bb4f19b1ba5747a38a58fe4310b0bfb40b4f1985cb2f47"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-A1/studio-plugins.png",
+      "sha256": "6f4f7068c1b3cafe322430cdb8ddad1c63cc627ea4f6b9321dc95296bbe68378"
+    }
+  ]
+}
