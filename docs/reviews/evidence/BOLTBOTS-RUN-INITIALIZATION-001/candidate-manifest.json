@@ -1,0 +1,56 @@
+{
+  "candidate": "BOLTBOTS-INITIALIZATION-CANDIDATE-001",
+  "revision": 1,
+  "artifacts": [
+    {
+      "path": "docs/product/vision-and-mvp.md",
+      "sha256": "5a811f3220919a95b5a555ebdb89a39b686e8b76be9170bcc64662a6caab73f5"
+    },
+    {
+      "path": "docs/specs/factory-module.md",
+      "sha256": "f73825cfdf8acc323a96e462d8d5923ea6664bdde9203986b2c055d5833177e7"
+    },
+    {
+      "path": "docs/specs/technical-foundation.md",
+      "sha256": "f77fca5383200621b077f46485e49818b805ddb1559b9ab92fc209057251441d"
+    },
+    {
+      "path": "docs/design/design-reference.md",
+      "sha256": "b0371b16bfe830d8d1ca82fcb189b2813d9522c9555b47831a460299c204c9f7"
+    },
+    {
+      "path": "docs/planning/milestones.md",
+      "sha256": "b1fc6f101443fa794890c160a63aff0d7135a1575272058daa1fb96d13263254"
+    },
+    {
+      "path": "docs/setup.md",
+      "sha256": "47f4542ae90ea6323097526a39d7febc498dd4e4e8ac97922ca7171f422c57d8"
+    },
+    {
+      "path": "docs/design/reference/index.html",
+      "sha256": "72762ac5070d55944fe2dd10c299cc8fe0244142a72cc7188a2dabb15471eeca"
+    },
+    {
+      "path": "docs/design/reference/design.js",
+      "sha256": "26ba5d9fead58239ead87e7bc0648a0dbd384bf61e418d94ad331291668203c8"
+    },
+    {
+      "path": "docs/design/reference/render.cjs",
+      "sha256": "c7a96394d9f698b7db144c3d642bb84c52ed4dd8d5dd8600903ae924613b6a7c"
+    },
+    {
+      "path": "docs/reviews/evidence/BOLTBOTS-RUN-INITIALIZATION-001/render-manifest.json",
+      "sha256": "6e1ede65c8ab903143b055632f6fb4720ece609850631b0a16ad5f53d885928f"
+    },
+    {
+      "path": "docs/reviews/evidence/BOLTBOTS-RUN-INITIALIZATION-001/focused-checks.json",
+      "sha256": "7f4db7d1238e415701c64fd45c3a9e27126cc6da46290f7b3a41352ae4a660bd"
+    }
+  ],
+  "foundation": {
+    "path": "docs/domains/domain-foundation.md",
+    "revision": 1,
+    "sha256": "2cd9c514b3f1aefc1f7955e5389e75f9912a6f1edd5af1ca84ddbe70359b540f"
+  },
+  "human_domain_review": "docs/reviews/20261024-1.5.3-boltbots-domain-foundation-review.md"
+}

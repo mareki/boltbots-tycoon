@@ -4,7 +4,7 @@
 > Artifact class: Work contract  
 > Revision status: `active`  
 > Work status: `active`  
-> Bootstrap lifecycle state: `domain_foundation_effective`  
+> Bootstrap lifecycle state: `initializing`
 > Semantic owner / revision: Harness Bootstrap / `1`  
 > Governing specifications: `AH-SPEC-DISTRIBUTION-001`, `AH-SPEC-INITIALIZATION-001`  
 > Decision Authority / reviewers: Human Product Authority  
@@ -18,7 +18,7 @@
 - Installation actor/time/tool: marek.i@gmx.net / 2026-10-24T09:36:36Z / install_or_upgrade.py
 - Last verification evidence: docs/reviews/evidence/harness-validation-bootstrap-boltbots-tycoon-1-5-3-f44da9602c2b.json
 - Product Technical Delta/profile selection: `not_available` — initialization has not run.
-- Domain Foundation/Human Domain Decision: exakte Foundation Revision1 fachlich vom Human approved; wirksame Entscheidung in BOLTBOTS-DOMAIN-REVIEW-001. Kandidatenbytes bleiben unverändert; technische Folge-Run-Admission wegen F-02 noch blockiert.
+- Domain Foundation/Human Domain Decision: exakte Foundation Revision1 fachlich vom Human approved; wirksame Entscheidung in BOLTBOTS-DOMAIN-REVIEW-001. Kandidatenbytes bleiben unverändert; Fortsetzung unter ausdrücklich erteilter enger Human-Ausnahme für den bekannten Statusfeldfehler; keine erneute Domainfreigabe nötig.
 
 ## Current Transition
 
@@ -30,6 +30,8 @@
 | `modeling_domain` | `awaiting_human_domain_gate` | /root / 2026-10-24T15:20:16Z | BOLTBOTS-RUN-DOMAIN-001 r2; BOLTBOTS-DOMAIN-REVIEW-001 | Unabhängige Review approved für Foundation r1 SHA2562cd9c514b3f1aefc1f7955e5389e75f9912a6f1edd5af1ca84ddbe70359b540f; Human pending. F-02 Validatorzustandsgrenze offen, kein finaler PASS. |
 | `awaiting_human_domain_gate` | `domain_foundation_effective` | Marek / protokolliert 2026-10-24T16:20:04Z | BOLTBOTS-DOMAIN-REVIEW-001; Foundation r1 SHA256 2cd9c514b3f1aefc1f7955e5389e75f9912a6f1edd5af1ca84ddbe70359b540f | Explizites Ja zur vorliegenden Grundlage einschließlich drei Empfehlungen; keine Overrides. F-02 weiterhin offen, kein Folge-Run gestartet. |
 
+| `domain_foundation_effective` | `initializing` | /root / 2026-10-24T16:58:22Z | BOLTBOTS-RUN-INITIALIZATION-001 r1 | Operative und Startfreigaben vorhanden; direkter Check zeigt nur den bekannten formalen Statusfehler, durch ausdrückliche Human-Ausnahme nicht blockierend. Kein PASS behauptet. |
+
 ## Initialization Context
 
 - Human initialization instruction: Humanauftrag im aktuellen Chat am 2026-10-24: Initialisierung und besprochenen Plan nach Harness ausführen; genau drei Astra-Agenten mit xhigh; Fortschritt in 10%-Schritten und obligatorische Drift-/Verkomplizierungschecks. Auftrag und Grenzen: docs/work/runs/boltbots-domain-foundation-001.md, Abschnitt Human Authority.
@@ -39,8 +41,8 @@
 
 ## Next Allowed Transition
 
-- Guard: integrity verified; named original PRD and repository-safe input classified; Independent operational authorization and start clearances recorded; Domain recommendation und Humanentscheidung approved; Run verification wegen offener technischer Admission-Grenze. Last pre-gate structure check PASS; final direct admission check has known F-02 lifecycle conflict, see Run/Review.
-- Exact next safe action: resolve the affected Harness admission limitation before authorizing a separate Bootstrap Initialization Run. Human Domain Decision is already approved and must not be requested again for these unchanged bytes.
-- Stop: Human Domain Decision, then Human Initialization Gate, before delivery-intended implementation.
+- Guard: integrity verified; named original PRD and repository-safe input classified; Independent operational authorization and start clearances recorded; Domain recommendation und Humanentscheidung approved; Initialisierung aktiv unter dokumentierter enger Human-Ausnahme für die beiden bekannten Statusprüferabweichungen. Kein finaler Validator-PASS behauptet.
+- Exact next safe action: Feinkonzept, Technik, Designreferenz und Meilensteine gemäß aktivem BOLTBOTS-RUN-INITIALIZATION-001 erstellen. Domainfreigabe bereits erteilt; nächstes Human-Gate ist die genaue Gesamtinitialisierung vor Umsetzung.
+- Stop: Human Initialization Gate before delivery-intended implementation; Domain Gate already satisfied.
 
 The installer resolves every generated installation field before the repository may pass install verification. Handover only links this state.

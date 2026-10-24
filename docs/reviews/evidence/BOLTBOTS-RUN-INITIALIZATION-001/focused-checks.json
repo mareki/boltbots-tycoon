@@ -1,0 +1,32 @@
+{
+  "kind": "focused design-source checks",
+  "claims": "No browser or Studio execution",
+  "checks": [
+    "All fixtures: action bounds, >=44px targets and valid destinations",
+    "Save retry preserves confirmed upgraded fixture; paused navigation disabled; initial collection cannot select locked Orbit; post-upgrade navigation preserves level",
+    "Inline JavaScript parses; HTML contains no network calls or remote assets",
+    "Five primary text/background pairs >=4.5:1"
+  ],
+  "contrast": [
+    {
+      "pair": "main/panel",
+      "ratio": 13.24
+    },
+    {
+      "pair": "muted/panel",
+      "ratio": 8.29
+    },
+    {
+      "pair": "ink/cyan",
+      "ratio": 10.08
+    },
+    {
+      "pair": "ink/amber",
+      "ratio": 11.55
+    },
+    {
+      "pair": "danger/error",
+      "ratio": 4.7
+    }
+  ]
+}

@@ -36,3 +36,13 @@ Initialization replaces this initial map with narrow routes to actual global spe
 - Alle importierten Playbooks, Roadmaps, Architektur- und Codevorlagen sind nicht normative Eingaben. Es gilt der installierte Core mit dem aktuellen Humanauftrag.
 - Fachliche Grundlage (Humanfreigabe im verlinkten Review erteilt; Kandidatenbytes unverändert): [Domain Foundation, Kontext CTX-FACTORY und gebundene Diagramme](../domains/domain-foundation.md).
 - Human-Domain-Entscheidung und unabhängige Review: [Review-Paket](../reviews/20261024-1.5.3-boltbots-domain-foundation-review.md). Der Run hält den offenen Validatorbefund F-02 und den sicheren Wiederaufnahmestand.
+
+## BoltBots Initialisierungsphase
+
+- Aktueller führender [Initialisierungs-Run](../work/runs/boltbots-initialization-001.md); Domain-Run ist historischer Vorgänger.
+- Pflichtkontext nach Foundation: [Vision/MVP r1](../product/vision-and-mvp.md), derzeit Kandidat.
+- CTX-FACTORY Module Entry Map, öffentliche Target-Verträge, Userflows/Trace: [Factory r1](factory-module.md).
+- Globale Technik, ADR-01 Roblox-Lieferweg, Releasepolitik: [Technik r1](technical-foundation.md).
+- Visuelle Quellen/Design System/Mockupvertrag: [Design r1](../design/design-reference.md).
+- Meilensteine, Walking Skeleton, WP/Run-Vorschläge: [Plan r1](../planning/milestones.md).
+- Lokale Einrichtung und nachgewiesene Grenzen: [Setup r1](../setup.md).

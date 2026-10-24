@@ -1,4 +1,8 @@
-# Product Repository
+# BoltBots Tycoon
+
+Ein zugängliches Roblox-Fabrikspiel: Roboter sichtbar produzieren, Maschinen verbessern, fünf Designs sammeln und die eigene Fabrik gestalten. Ziel und geplanter Umfang stehen in [Vision/MVP](docs/product/vision-and-mvp.md). Der aktuelle Arbeitsstand steht ausschließlich im [Handover](docs/handover.md).
+
+**Entwicklung auf einem neuen Rechner:** [Codex-geführter Setup-Guide](docs/setup.md). Die Initialisierung ist noch nicht insgesamt freigegeben; Root-Build-/Spielbefehle entstehen erst in M1. Der unveränderte Ausgangsprototyp unter `docs/product/reference/boltbots-v0.2/` ist Referenzmaterial und kein bereits abgenommenes Spiel.
 
 > Artifact class: Navigation
 > Linked owners: root `AGENTS.md`, `AH-SPEC-DISTRIBUTION-001`, and product artifacts named below
@@ -45,7 +49,7 @@ rolling plan, and Human Initialization Review Pack. Both gates stop before funct
 
 ## Product Orientation
 
-Initialization replaces this generic section with the product name, why it exists, target user/outcome, exact Product Vision link, local start/test commands, deployed environment route, Module Entry Maps, and operator/recovery route. It MUST keep the protected startup links above and MUST NOT duplicate canonical product rules.
+Product routes: [Foundation und Humanentscheidung](docs/reviews/20261024-1.5.3-boltbots-domain-foundation-review.md), [Factory Module Entry Map](docs/specs/factory-module.md), [Meilensteine/M1](docs/planning/milestones.md), [Designreferenz](docs/design/design-reference.md), [Technik, Release und Recovery](docs/specs/technical-foundation.md). Es gibt noch keine bereitgestellte Spielumgebung. Keine Initialisierungsdatei beweist einen erfolgreichen Studio-Spieltest.
 
 Current product status and the next safe action live only in `docs/handover.md`.
 
