@@ -5,7 +5,7 @@
 
 ## Stand und Entscheidung
 
-- **70% der gesamten Initialisierung.** Die fachliche Grundlage ist vom Human freigegeben; die Gesamtinitialisierung ist noch nicht abgeschlossen.
+- **80% der gesamten Initialisierung.** Die fachliche Grundlage ist vom Human freigegeben; die Gesamtinitialisierung ist noch nicht abgeschlossen.
 - Kanonischer Zustand: [Bootstrap](harness-state/bootstrap-and-installation.md), `initializing`.
 - Führende Arbeitsliste, Fortschrittsbelege, Driftchecks und Wiederaufnahme: [Initialisierungs-Run Revision 1](work/runs/boltbots-initialization-001.md), Status `active`; ursprüngliche 10–40%-Belege bleiben im referenzierten Domain-Run erhalten.
 - [Foundation Revision 1](domains/domain-foundation.md): unabhängig empfohlen und am 24. Oktober 2026 vom Human ausdrücklich freigegeben; Kandidatenbytes unverändert. [Kurzes Entscheidungs-/Review-Paket](reviews/20261024-1.5.3-boltbots-domain-foundation-review.md): Review `approved`, Human `approved`.
@@ -27,4 +27,4 @@ Human hat die verlinkte genaue Foundation samt drei Empfehlungen freigegeben: au
 
 ## Aktuelle Kandidaten
 
-[Vision/MVP](product/vision-and-mvp.md), [Factory-Verträge/Flows](specs/factory-module.md), [Technik/Releasepolitik](specs/technical-foundation.md), [Designvertrag](design/design-reference.md), [Meilensteine/M1](planning/milestones.md), [Setupguide](setup.md). Noch nicht Human-approved und keine Umsetzung. Frühe Flow-Linse bestanden; interaktive Referenz und8echtePNG-Render erstellt, Root-Sichtprüfung durchgeführt. Nächster Schritt: unabhängige Gesamt-/Bildprüfung samt80%-Drift.
+[Vision/MVP](product/vision-and-mvp.md), [Factory-Verträge/Flows](specs/factory-module.md), [Technik/Releasepolitik](specs/technical-foundation.md), [Designvertrag](design/design-reference.md), [Meilensteine/M1](planning/milestones.md), [Setupguide](setup.md). Noch nicht Human-approved und keine Umsetzung. Frühe Flow-Linse bestanden; interaktive Referenz und8echtePNG-Render erstellt, Root-Sichtprüfung durchgeführt. Unabhängige Gesamt-/Bildprüfung samt80%-Drift durchgeführt; eine gezielte UI-Schriftgrößenkorrektur vor Abschluss offen.

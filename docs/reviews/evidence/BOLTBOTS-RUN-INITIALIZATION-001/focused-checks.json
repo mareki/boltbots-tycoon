@@ -1,11 +1,12 @@
 {
   "kind": "focused design-source checks",
+  "revision": 2,
   "claims": "No browser or Studio execution",
   "checks": [
-    "All fixtures: action bounds, >=44px targets and valid destinations",
-    "Save retry preserves confirmed upgraded fixture; paused navigation disabled; initial collection cannot select locked Orbit; post-upgrade navigation preserves level",
-    "Inline JavaScript parses; HTML contains no network calls or remote assets",
-    "Five primary text/background pairs >=4.5:1"
+    "All seven fixtures at both viewports: informative UI text >=14px; scene illustration excluded; actions in bounds and >=44px",
+    "Confirmed-state retry, locked Orbit and navigation regressions pass",
+    "Inline JS syntax and no-network source check pass",
+    "Five previous >=4.5:1 color-pair results reused: color definitions unchanged by typography correction"
   ],
   "contrast": [
     {
@@ -28,5 +29,6 @@
       "pair": "danger/error",
       "ratio": 4.7
     }
-  ]
+  ],
+  "source_sha256": "e2732153a900b0a0ba4330d98950647ce9203b1d71054ea74f67bf1799cb2fa7"
 }

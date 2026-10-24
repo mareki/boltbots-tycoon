@@ -43,6 +43,6 @@ Initialization replaces this initial map with narrow routes to actual global spe
 - Pflichtkontext nach Foundation: [Vision/MVP r1](../product/vision-and-mvp.md), derzeit Kandidat.
 - CTX-FACTORY Module Entry Map, öffentliche Target-Verträge, Userflows/Trace: [Factory r1](factory-module.md).
 - Globale Technik, ADR-01 Roblox-Lieferweg, Releasepolitik: [Technik r1](technical-foundation.md).
-- Visuelle Quellen/Design System/Mockupvertrag: [Design r1](../design/design-reference.md).
+- Visuelle Quellen/Design System/Mockupvertrag: [Design r2](../design/design-reference.md).
 - Meilensteine, Walking Skeleton, WP/Run-Vorschläge: [Plan r1](../planning/milestones.md).
 - Lokale Einrichtung und nachgewiesene Grenzen: [Setup r1](../setup.md).

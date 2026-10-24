@@ -1,6 +1,6 @@
 {
   "kind": "design_reference_only",
-  "revision": 1,
+  "revision": 2,
   "renderer": {
     "node": "v24.19.0",
     "sharp": "0.35.5"
@@ -12,11 +12,11 @@
     },
     {
       "path": "docs/design/reference/design.js",
-      "sha256": "26ba5d9fead58239ead87e7bc0648a0dbd384bf61e418d94ad331291668203c8"
+      "sha256": "e2732153a900b0a0ba4330d98950647ce9203b1d71054ea74f67bf1799cb2fa7"
     },
     {
       "path": "docs/design/reference/render.cjs",
-      "sha256": "c7a96394d9f698b7db144c3d642bb84c52ed4dd8d5dd8600903ae924613b6a7c"
+      "sha256": "9f8705f3ab9c8137e9746227734840a7a7834c32115f233f291e732f4dcaa228"
     }
   ],
   "images": [
@@ -25,80 +25,80 @@
       "surface": "S-WORLD",
       "state": "world",
       "viewport": "1280x800",
-      "fixture": "fixed-r1",
+      "fixture": "fixed-r2",
       "path": "docs/reviews/evidence/BOLTBOTS-RUN-INITIALIZATION-001/world-1280x800.png",
-      "sha256": "0e5ba0cd3393912f3c55b125638a77c70bf8eb0a952219a0f896d9181e3ae97a",
-      "svg_sha256": "4275d5c9da26f5cf07aec67bdfc13564bdcb8b1e3858063f4cbac77d9372e997"
+      "sha256": "d77b26b7a1481bede336c7a5fc19dfe2fb3629c7d60aa6de6a8742c646265b91",
+      "svg_sha256": "41afd8ccfa9dfac6f485f86f60f1b3ad112689c3bfaa392d76392f53f28d762b"
     },
     {
       "id": "upgrade-1280",
       "surface": "S-UPGRADE",
       "state": "upgrade",
       "viewport": "1280x800",
-      "fixture": "fixed-r1",
+      "fixture": "fixed-r2",
       "path": "docs/reviews/evidence/BOLTBOTS-RUN-INITIALIZATION-001/upgrade-1280x800.png",
-      "sha256": "eda625a91b6fa9e159cfd8994f95c651f687b50eb6b490e0da34e40cd2c930d7",
-      "svg_sha256": "f63c7f0b0f84b5c582078f27321e4146b14b67d52fa407b5a2b73ec1e67165d3"
+      "sha256": "343907557dc10aab18e354be568be616b14bd19e050cd4cc84f80647a38abeb6",
+      "svg_sha256": "25509bc41bdccf35e5a80c7e8a10efde2d0defee1790b61b7b890dd0eeb6134f"
     },
     {
       "id": "upgraded-1280",
       "surface": "S-RESULT",
       "state": "upgraded",
       "viewport": "1280x800",
-      "fixture": "fixed-r1",
+      "fixture": "fixed-r2",
       "path": "docs/reviews/evidence/BOLTBOTS-RUN-INITIALIZATION-001/upgraded-1280x800.png",
-      "sha256": "d467d32ab571696f5dc32b4d1985d49cdc99d6cfe0282cde7e197c230f09ada6",
-      "svg_sha256": "c6a31bb4ad259860f177dac39f9dd611b80263e6eaf59c467c69f668074c6ae7"
+      "sha256": "0e993a43e4e8c25dacdbb72889518247bb343778bf14f0fc35431f8c96360ad5",
+      "svg_sha256": "36f44daf07ac491fb1bc073a7e76cdf3752569caa50fe67555024276ddb94ee7"
     },
     {
       "id": "collection-1280",
       "surface": "S-COLLECTION",
       "state": "collection",
       "viewport": "1280x800",
-      "fixture": "fixed-r1",
+      "fixture": "fixed-r2",
       "path": "docs/reviews/evidence/BOLTBOTS-RUN-INITIALIZATION-001/collection-1280x800.png",
-      "sha256": "a71467342c4bae68128460e020e1567b4e7812d5ae3e5dd8d0739468924f6fcb",
-      "svg_sha256": "6b58f5c88f650ea93cb0bf830b586fb7f5b22410526bf2d07240419fa3f6dfae"
+      "sha256": "d8b058940007985afe497b2163bb3c0871138cf83d425cab82514b469b78da77",
+      "svg_sha256": "205835d25d094c822211c4f6f456a73ceb3f5fada871b62fb605d1c59d2568d8"
     },
     {
       "id": "save_error-1280",
       "surface": "S-ERROR",
       "state": "save_error",
       "viewport": "1280x800",
-      "fixture": "fixed-r1",
+      "fixture": "fixed-r2",
       "path": "docs/reviews/evidence/BOLTBOTS-RUN-INITIALIZATION-001/save_error-1280x800.png",
-      "sha256": "e6601916279827e3cd769323bf987eaeabf286e02b63f853c20a4111b50a6ed9",
-      "svg_sha256": "bf6cf7f6d06bd3575ba5df45d2826f3e75aa84cf85c941d8ecfc17eb36c490c2"
+      "sha256": "9a996a49ff0e31c5d2e43054e8aafce7808ac2deca33e9acb51ce10c25db4730",
+      "svg_sha256": "8c5d10159101b0dfdc6ca4efb5c962883a62b57f9bf30c1e1d3e65693554eceb"
     },
     {
       "id": "upgrade-390",
       "surface": "S-UPGRADE",
       "state": "upgrade",
       "viewport": "390x844",
-      "fixture": "fixed-r1",
+      "fixture": "fixed-r2",
       "path": "docs/reviews/evidence/BOLTBOTS-RUN-INITIALIZATION-001/upgrade-390x844.png",
-      "sha256": "834fb87f11b479e21d8416e26b45f12621d8d33ca2c4f82982804f72ec364282",
-      "svg_sha256": "30eddd0fd202ce97af1c46df5eaacb5e169e4a5b2df8a028bf37645154eb319a"
+      "sha256": "8ea28a8c32699ae1076c5e2147cf810ed29c0a749008ca77bdd4ee5b06ebbbcf",
+      "svg_sha256": "a1978ba75976d6f61b4846b9bb3ae85d7be016054aff8439be171aa618709fab"
     },
     {
       "id": "collection-390",
       "surface": "S-COLLECTION",
       "state": "collection",
       "viewport": "390x844",
-      "fixture": "fixed-r1",
+      "fixture": "fixed-r2",
       "path": "docs/reviews/evidence/BOLTBOTS-RUN-INITIALIZATION-001/collection-390x844.png",
-      "sha256": "68c6084104cc881cfd318be0ba3dc517d101a50f929a4146b0f968571db1f903",
-      "svg_sha256": "9eb00cf4846c4101716c43453bc26a479e7d0dc1d9e5750c21fb875100ed1a2c"
+      "sha256": "36e2e2003d7b284d2be21178b0f49df922736a3686ac6c1b26ba107f062ba1b8",
+      "svg_sha256": "dba59a989c3b85b8a0ab19a82b59e013e8bb01b4a8dbc4d4e513a96b34b6d895"
     },
     {
       "id": "save_error-390",
       "surface": "S-ERROR",
       "state": "save_error",
       "viewport": "390x844",
-      "fixture": "fixed-r1",
+      "fixture": "fixed-r2",
       "path": "docs/reviews/evidence/BOLTBOTS-RUN-INITIALIZATION-001/save_error-390x844.png",
-      "sha256": "38e3481f602d7a142e9144acdb6c14b3587f4e74509f44f27aac74d1cecf9182",
-      "svg_sha256": "c76180e6b143cd14533826a13d12470ec32a88abe61dbbf60b068b9650e84f73"
+      "sha256": "7d56968b2c7122c61d8b52d34402c9d0a9e988ead1b121755666acfc61cbbd21",
+      "svg_sha256": "cf0fe6ee8156fd587a675c18728253a2e85e979362083bf8fdb4d9a058bc80f1"
     }
   ],
   "baselines": [

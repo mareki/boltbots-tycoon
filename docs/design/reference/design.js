@@ -23,9 +23,9 @@
       return rect(x,y,w,h,disabled?'#38516A':fill,12)+text(x+w/2,y+h/2+6,label,16,disabled?C.muted:(fill===C.panel?C.text:C.ink),700,'text-anchor="middle"');
     }
     function nav(y){const gap=8,margin=mobile?16:32,bw=mobile?(width-48)/3:150;return ['Fabrik','Ausbauen','Sammlung'].map((label,i)=>button('nav'+i,margin+i*(bw+gap),y,bw,48,label,[success?'upgraded':'world',success?'upgraded':'upgrade',success?'collection':'collection_initial'][i],((collection&&i===2)||(!collection&&state==='upgrade'&&i===1)||state==='world'&&i===0)?C.cyan:C.panel,error)).join('');}
-    function status(){return text(mobile?24:width-210,mobile?105:46,error?'! Speichern unbestätigt':'● Beispiel: gespeichert',mobile?13:14,error?C.danger:C.ok,600);}
+    function status(){return text(mobile?24:width-210,mobile?105:46,error?'! Speichern unbestätigt':'● Beispiel: gespeichert',14,error?C.danger:C.ok,600);}
     function machineCard(x,y,w){
-      let b=rect(x,y,w,error?220:286,C.panel,20)+text(x+20,y+32,'STARTER-ASSEMBLER',12,C.muted,700)+text(x+20,y+64,`Level ${level}`,28,C.text,750);
+      let b=rect(x,y,w,error?220:286,C.panel,20)+text(x+20,y+32,'STARTER-ASSEMBLER',14,C.muted,700)+text(x+20,y+64,`Level ${level}`,28,C.text,750);
       if(error){return b+text(x+20,y+99,'Fortschritt pausiert',20,C.danger,700)+text(x+20,y+127,'Dein letzter bestätigter Stand bleibt.',14,C.muted)+text(x+20,y+150,'Produktion und Käufe warten.',14,C.muted)+button('retry',x+20,y+170,w-40,44,'Erneut versuchen','upgraded',C.amber);}
       if(success){return b+text(x+20,y+100,'✓ Ausbau geschafft',20,C.ok,700)+text(x+20,y+132,'Orbit ist jetzt freigeschaltet.',15,C.text)+text(x+20,y+157,'Wähle dein nächstes Design.',15,C.muted)+button('go-collection',x+20,y+185,w-40,48,'Sammlung öffnen','collection',C.amber);}
       b+=text(x+20,y+97,'Schneller produzieren',20,C.text,700)+text(x+20,y+128,'Level 1 → Level 2',16,C.muted)+text(x+20,y+153,'Danach: Orbit freigeschaltet',14,C.cyan);
@@ -38,14 +38,14 @@
       const cw=mobile?(w-12)/2:(w-48)/5,ch=mobile?181:280,gap=12;
       return names.map((name,i)=>{
         const cx=x+(i%(mobile?2:5))*(cw+gap),cy=y+Math.floor(i/(mobile?2:5))*(ch+gap),free=i<(success?2:1);
-        let card=rect(cx,cy,cw,ch,C.panel,16)+robot(cx+cw/2,cy+(mobile?52:99),mobile?.5:.95,cols[i],[0,2,1,3,4][i])+text(cx+14,cy+(mobile?105:183),name,mobile?18:22,C.text,700)+text(cx+14,cy+(mobile?126:208),free?'Freigeschaltet':'Noch gesperrt',mobile?12:14,free?C.ok:C.muted);
+        let card=rect(cx,cy,cw,ch,C.panel,16)+robot(cx+cw/2,cy+(mobile?52:99),mobile?.5:.95,cols[i],[0,2,1,3,4][i])+text(cx+14,cy+(mobile?105:183),name,mobile?18:22,C.text,700)+text(cx+14,cy+(mobile?126:208),free?'Freigeschaltet':'Noch gesperrt',14,free?C.ok:C.muted);
         if(free)card+=button('select-'+i,cx+8,cy+ch-50,cw-16,44,name==='Orbit'?'Orbit wählen':'Scout wählen',name==='Orbit'?'orbit_selected':success?'upgraded':'world',C.cyan);
         return card;
       }).join('');
     }
     body+=rect(0,0,width,height,C.ink,0);
     body+=rect(mobile?16:32,20,32,32,C.cyan,9)+text(mobile?32:48,44,'B',23,C.ink,800,'text-anchor="middle"')+text(mobile?58:78,44,'BOLTBOTS',mobile?21:24,C.text,800);
-    if(!mobile) body+=text(248,44,'DEINE KLEINE ROBOTERFABRIK',12,C.muted,600);
+    if(!mobile) body+=text(248,44,'DEINE KLEINE ROBOTERFABRIK',14,C.muted,600);
     const cx=mobile?width-123:width-425;body+=rect(cx,17,mobile?107:190,42,C.panel,14)+text(cx+15,44,`${cash} Cash`,mobile?18:22,C.amber,750);body+=status();
     if(mobile){
       body+=text(20,83,rate,14,C.muted,500);
@@ -53,19 +53,19 @@
         body+=text(20,143,'Deine Roboter',28,C.text,750)+text(20,170,state==='orbit_selected'?'Orbit startet im nächsten Durchlauf.':`${success?2:1} von 5 Designs freigeschaltet`,14,C.muted)+collectionCards(16,190,width-32);
         body+=nav(height-64);
       } else {
-        body+=rect(16,122,width-32,66,error?'#3E2B40':C.panel,16)+text(30,146,error?'SPEICHERPROBLEM':success?'NEUES DESIGN':'DEIN NÄCHSTES ZIEL',11,error?C.danger:C.cyan,700)+text(30,174,error?'Dein Fortschritt wartet sicher.':success?'Entdecke Orbit in der Sammlung.':'Verbessere deinen Assembler.',17,C.text,650);
+        body+=rect(16,122,width-32,66,error?'#3E2B40':C.panel,16)+text(30,146,error?'SPEICHERPROBLEM':success?'NEUES DESIGN':'DEIN NÄCHSTES ZIEL',14,error?C.danger:C.cyan,700)+text(30,174,error?'Dein Fortschritt wartet sicher.':success?'Entdecke Orbit in der Sammlung.':'Verbessere deinen Assembler.',17,C.text,650);
         body+=scene(0,202,width,239)+machineCard(16,449,width-32)+nav(height-64);
-        body+=text(20,755,error?'Keine neuen Änderungen, bis Speichern bestätigt ist.':success?'✓ Orbit freigeschaltet':'Scout entsteht automatisch. Cash kommt von selbst.',12,error?C.muted:C.cyan);
+        body+=text(20,755,error?'Keine neuen Änderungen, bis Speichern bestätigt ist.':success?'✓ Orbit freigeschaltet':'Scout entsteht automatisch. Cash kommt von selbst.',14,error?C.muted:C.cyan);
       }
     } else {
       body+=text(35,100,collection?'Deine Robotersammlung':'Ein kleiner Scout. Dein großer Anfang.',30,C.text,750)+text(35,129,collection?(state==='orbit_selected'?'Orbit produziert ab dem nächsten Durchlauf.':'Fünf Designs. Jedes mit einem eigenen Charakter.'):'Produzieren, verbessern und deine Lieblingsroboter sammeln.',16,C.muted);
-      if(collection){body+=collectionCards(32,180,width-64)+rect(32,483,width-64,100,C.panel,20)+text(56,521,'DEIN NÄCHSTES ZIEL',12,C.cyan,700)+text(56,553,'Baue deine Fabrik weiter aus und entdecke neue Designs.',22,C.text,650);}
+      if(collection){body+=collectionCards(32,180,width-64)+rect(32,483,width-64,100,C.panel,20)+text(56,521,'DEIN NÄCHSTES ZIEL',14,C.cyan,700)+text(56,553,'Baue deine Fabrik weiter aus und entdecke neue Designs.',22,C.text,650);}
       else {
-        body+=rect(32,160,830,502,'#BDEAFF',24)+scene(37,177,820,470)+rect(52,179,329,73,C.ink,16)+text(70,204,error?'FORTSCHRITT PAUSIERT':success?'ORBIT FREIGESCHALTET':'DEIN NÄCHSTES ZIEL',12,error?C.danger:C.cyan,700)+text(70,233,error?'Speichern erneut versuchen':success?'Öffne deine Sammlung':'Starter-Assembler auf Level 2',18,C.text,650);
-        body+=machineCard(886,160,362)+rect(886,454,362,115,C.panel,20)+text(906,488,'PRODUKTION',12,C.muted,700)+text(906,522,rate,25,C.cyan,700)+text(906,548,error?'Pausiert, bis Speichern bestätigt ist.':'Cash wird automatisch gutgeschrieben.',14,C.muted);
+        body+=rect(32,160,830,502,'#BDEAFF',24)+scene(37,177,820,470)+rect(52,179,329,73,C.ink,16)+text(70,204,error?'FORTSCHRITT PAUSIERT':success?'ORBIT FREIGESCHALTET':'DEIN NÄCHSTES ZIEL',14,error?C.danger:C.cyan,700)+text(70,233,error?'Speichern erneut versuchen':success?'Öffne deine Sammlung':'Starter-Assembler auf Level 2',18,C.text,650);
+        body+=machineCard(886,160,362)+rect(886,454,362,115,C.panel,20)+text(906,488,'PRODUKTION',14,C.muted,700)+text(906,522,rate,25,C.cyan,700)+text(906,548,error?'Pausiert, bis Speichern bestätigt ist.':'Cash wird automatisch gutgeschrieben.',14,C.muted);
         body+=rect(886,591,362,71,error?'#3E2B40':C.panel,18)+text(906,620,error?'! Speichern nicht bestätigt':'✓ Deine Fabrik, dein Fortschritt',16,error?C.danger:C.ok,650)+text(906,645,error?'Bestätigter Stand bleibt erhalten.':'Hier kann nur dein Konto ausbauen.',14,C.muted);
       }
-      body+=nav(height-80)+text(width-320,height-50,'FREIE PROGRESSION · OHNE ROBUX',12,C.muted,600);
+      body+=nav(height-80)+text(width-320,height-50,'FREIE PROGRESSION · OHNE ROBUX',14,C.muted,600);
     }
     const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-label="BoltBots Designreferenz ${esc(state)}"><g font-family="Arial, Helvetica, sans-serif">${body}</g></svg>`;
     return {svg,actions:a,summary:`Designfixture ${state}. ${cash} Cash. Assembler Level ${level}. ${error?'Speichern nicht bestätigt; Fortschritt pausiert.':''}`,state,width,height};

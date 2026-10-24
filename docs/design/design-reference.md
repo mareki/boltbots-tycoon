@@ -1,6 +1,6 @@
 # Visuelle Richtung und begrenzter Designvertrag
 
-> Artifact ID: `BOLTBOTS-DESIGN-001` · Revision: 1 · Status: candidate
+> Artifact ID: `BOLTBOTS-DESIGN-001` · Revision: 2 · Status: candidate
 > Creator: /root · independent Product/UX/Engineering reviewer: /root/init_review
 > Design subwork: D2 significant_ui innerhalb des D3-Initialisierungs-Runs
 > `design_reference_only` · `non_promotable` · kein implementiertes Spiel
@@ -63,3 +63,5 @@ Frühe Flow-Linse: /root/init_review `pass`, begrenzte `owner_approved_standalon
 ### Ausführbare Referenz und Renderbefehl
 
 [HTML öffnen](reference/index.html). Quellrenderer: [design.js](reference/design.js); Reproduktion: [render.cjs](reference/render.cjs). In einer Umgebung mit Node und lokal verfügbarem `sharp`: `node docs/design/reference/render.cjs`. Hier wurde das bereits gebündelte sharp0.35.5 mit Node24.19.0 verwendet, ohne Installation. Genau acht Kandidaten-PNGs plus drei unveränderte Baselinebilder stehen im [Rendermanifest](../reviews/evidence/BOLTBOTS-RUN-INITIALIZATION-001/render-manifest.json). Zusätzlich besitzt die Sammlung eine feste Vor-Upgrade-Variante, damit Navigation keine Freischaltung erfindet.
+
+Revision2 — F-VIS-01: sämtliche informativen Spieler-UI-Labels mindestens14logischePixel; illustrative Beschriftungen innerhalb der skalierten Fabrikzeichnung bleiben Teil der Illustration. Keine Absenkung der Mindestgröße, keine geänderte Domain-/Kauf-/Speicherbedeutung. Neue Render/Quellhashes gebunden; fokussierte unabhängige Closure folgt.

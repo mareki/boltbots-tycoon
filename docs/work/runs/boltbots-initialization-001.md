@@ -15,7 +15,7 @@ Die genaue freigegebene Foundation bleibt SHA256 `2cd9c514b3f1aefc1f7955e5389e75
 
 Scope Lock: Das Ergebnis sind die notwendigen Initialisierungsartefakte für genau einen Factory-Kontext und den genehmigten Horizont. Bestehende Quellbedeutung wiederverwenden; höchstens wenige zusammengefasste Eigentümerdokumente und ein kleines gebundenes Design. Ein Fund außerhalb dieses Ergebnisses wird mit Owner/Trigger zurückgestellt. Outcome-, Pfad-, Team-, Budget- oder externe Aktionsausweitung braucht entsprechende vorherige Human-Autorität.
 
-Finite Grenze:120Minuten ab16:38:45UTC am24.10.2026, Ende18:38:45UTC, einschließlich Vorbereitung. Gesamtfortschritt40%;2von3Korrekturzyklen verbraucht,1 verbleibt. Keine Rücksetzung am Phasenwechsel. Phase-A-Zeitrahmen beendet; keine erneute Arbeit an ihrer Fachsemantik.
+Finite Grenze:120Minuten ab16:38:45UTC am24.10.2026, Ende18:38:45UTC, einschließlich Vorbereitung. Gesamtfortschritt80%; Korrekturzyklus3von3 für F-VIS-01 aktiv, einschließlich seiner fokussierten Closure; danach keine weitere Reserve. Keine Rücksetzung am Phasenwechsel. Phase-A-Zeitrahmen beendet; keine erneute Arbeit an ihrer Fachsemantik.
 
 ## Führende Arbeitsliste
 
@@ -133,7 +133,7 @@ Die vorhandene Visual Reference Board HTML ist eine statische Bildgalerie, kein 
 ```json
 {
   "checked_revision": 1,
-  "progress": 70,
+  "progress": 80,
   "updates": [
     {
       "percent": 10,
@@ -162,6 +162,10 @@ Die vorhandene Visual Reference Board HTML ist eine statische Bildgalerie, kein 
     {
       "percent": 70,
       "evidence": "Synthetischer interaktiver HTML/SVG-Entwurf mit drei Ansichten und Varianten,8PNG-Kandidaten +3unveränderte Baselinebilder erstellt. Root hat alle8Kandidaten und3Quellen tatsächlich angesehen. Focusedchecks:44px-Ziele/Bounds, festeTransitions inklusive Save-Retry, Syntax/keineNetzwerkaufrufe und5Kontrastpaare bestanden. Keine Browser-/Studioausführung behauptet. Nächster Schritt konsolidierte unabhängige Gesamt-/Bildprüfung samt80%-Drift."
+    },
+    {
+      "percent": 80,
+      "evidence": "Unabhängiger init_review hat alle11Bilder tatsächlich gesehen, exakteHashes/Commit3aef09d und39/39PRD-IDs bestätigt. Ein konsolidierterBlocker: informativeUI-Labels unterschreiten den eigenen14px-Mindestmaßstab. Kein weiterer materiellerDomain/M1/Architektur/Autoritätsbefund. Letzter verbleibender gemeinsamerKorrekturzyklus wird nur für Schriftgrößen/erneute betroffeneBildclosure genutzt."
     }
   ],
   "drift_checks": [
@@ -190,6 +194,12 @@ Die vorhandene Visual Reference Board HTML ist eine statische Bildgalerie, kein 
       "reviewer": "/root",
       "decision": "continue",
       "evidence": "Originalziel bleibt Initialisierung mit M1-Setup/realem Spiel/Design/Agenttest, nicht bloß Prozess. Alle39Anforderungen disponiert; keine neue Domain, kein eigener Backenddienst, Blender optional. Sechs zusammengefasste Docs statt separatem Artefakt pro Pflicht. Größtes Risiko reale Studio-/Save-/Gerätefähigkeit in M1 ausdrücklich offen. Geplantes Rendering nutzt vorhandenes sharp, keine Installation/Cloud. Rund34von120Minuten PhaseB verbraucht, Rest bis18:38:45UTC;2von3Korrekturen verwendet,1verbleibt. UI begrenzt auf3Ansichten/Varianten, gleicheReviewrunde. Weiter zum visuellen Nachweis nach früher Flow-Linse."
+    },
+    {
+      "percent": 80,
+      "reviewer": "/root/init_review",
+      "decision": "continue",
+      "evidence": "UnabhängigeOriginalauftrag-/Quellen-/Bildprüfung: Konzept/M1/Architektur und39Anforderungen konsistent; alle8Kandidaten und3Baselines tatsächlich angesehen. Weiter nur zur eng begrenzten Schriftgrößenkorrektur, keine Ausweitung oder Absenkung des Qualitätsmaßstabs. Eine verbleibendeKorrektur plusbetroffeneClosure; PhaseB-Ende18:38:45UTC. Endreviewbefunde im bestehendenInitializationReviewPack. Human- und realeSpielnachweise bleiben offen."
     }
   ],
   "obligations": {
@@ -276,3 +286,7 @@ Studio: Dateiprüfung fand /Applications/RobloxStudio.app, bewies aber keinen er
 }
 ```
 <!-- visual-assurance:end -->
+
+## Gemeinsamer Korrekturzyklus3von3
+
+F-VIS-01 aus unabhängiger Gesamtprüfung: informativeUI-Schriftgröße kleinerals14px. Genau diese Texte werden auf≥14px angepasst; illustrative Weltzeichnung bleibt separat. Kein Produkt-/Flow-/Architekturwechsel. Betroffene Designrevision2, Rendererrevision2 und8PNG werden neu gebunden; Source-/Bounds-/Transition-/Kontrastregression und echte Bildsicht in demselben letzten Zyklus. Danach fokussierte unabhängigeClosure, unveränderte fachlicheReview wiederverwenden. Keine neue Runde/Reserve.

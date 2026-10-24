@@ -1,6 +1,6 @@
 {
   "candidate": "BOLTBOTS-INITIALIZATION-CANDIDATE-001",
-  "revision": 1,
+  "revision": 2,
   "artifacts": [
     {
       "path": "docs/product/vision-and-mvp.md",
@@ -16,7 +16,7 @@
     },
     {
       "path": "docs/design/design-reference.md",
-      "sha256": "b0371b16bfe830d8d1ca82fcb189b2813d9522c9555b47831a460299c204c9f7"
+      "sha256": "e55ec002fe19f813fdc5dc20acc565d1bfc94b5a9fa7e11d3a2a1fc333814ef0"
     },
     {
       "path": "docs/planning/milestones.md",
@@ -32,19 +32,19 @@
     },
     {
       "path": "docs/design/reference/design.js",
-      "sha256": "26ba5d9fead58239ead87e7bc0648a0dbd384bf61e418d94ad331291668203c8"
+      "sha256": "e2732153a900b0a0ba4330d98950647ce9203b1d71054ea74f67bf1799cb2fa7"
     },
     {
       "path": "docs/design/reference/render.cjs",
-      "sha256": "c7a96394d9f698b7db144c3d642bb84c52ed4dd8d5dd8600903ae924613b6a7c"
+      "sha256": "9f8705f3ab9c8137e9746227734840a7a7834c32115f233f291e732f4dcaa228"
     },
     {
       "path": "docs/reviews/evidence/BOLTBOTS-RUN-INITIALIZATION-001/render-manifest.json",
-      "sha256": "6e1ede65c8ab903143b055632f6fb4720ece609850631b0a16ad5f53d885928f"
+      "sha256": "24a2c119fb964777b36b859f35eb311b4947c10d50598bacaed4c4ad58d62e7b"
     },
     {
       "path": "docs/reviews/evidence/BOLTBOTS-RUN-INITIALIZATION-001/focused-checks.json",
-      "sha256": "7f4db7d1238e415701c64fd45c3a9e27126cc6da46290f7b3a41352ae4a660bd"
+      "sha256": "5ad526259d37412323b8900ed59b9836647fb919978a78ac16b867783e53d991"
     }
   ],
   "foundation": {
