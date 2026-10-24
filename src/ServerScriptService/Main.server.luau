@@ -1,11 +1,14 @@
 --!strict
--- A2 diagnostic baseline adopted from the v0.2 reference; not an accepted M1 implementation.
--- Factory contracts, premium scene and persistence are implemented/verified in later M1 steps.
+-- B1 local session adapter. Persistence and purchase commands arrive in B2/B3.
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local Config = require(ReplicatedStorage:WaitForChild("Shared"):WaitForChild("GameConfig"))
-local Rules = require(ReplicatedStorage:WaitForChild("Shared"):WaitForChild("EconomyRules"))
+local Workspace = game:GetService("Workspace")
+local Shared = ReplicatedStorage:WaitForChild("Shared")
+local Config = require(Shared:WaitForChild("GameConfig"))
+local Rules = require(Shared:WaitForChild("EconomyRules"))
 local WorldBuilder = require(script.Parent:WaitForChild("Services"):WaitForChild("WorldBuilder"))
+local plots = WorldBuilder.Build()
+local sessions: {[Player]: any} = {}
 
 local remotes = Instance.new("Folder")
 remotes.Name = "BoltBotsRemotes"
@@ -13,180 +16,108 @@ remotes.Parent = ReplicatedStorage
 local stateChanged = Instance.new("RemoteEvent")
 stateChanged.Name = "StateChanged"
 stateChanged.Parent = remotes
-local requestUpgrade = Instance.new("RemoteEvent")
-requestUpgrade.Name = "RequestUpgrade"
-requestUpgrade.Parent = remotes
 local getSnapshot = Instance.new("RemoteFunction")
 getSnapshot.Name = "GetSnapshot"
 getSnapshot.Parent = remotes
 
-local plots = WorldBuilder.Build()
-local profiles = {} :: {[Player]: any}
-local assignedPlots = {} :: {[Player]: any}
-local lastUpgradeRequest = {} :: {[Player]: number}
-
-local function snapshot(player: Player, notice: string?): {[string]: any}
-    local profile = profiles[player]
-    if not profile then
-        return { ready = false, notice = notice or "Waiting for a factory" }
-    end
-    local price = Rules.upgradePrice(profile.upgradeLevel)
+local function snapshot(player: Player, notice: string?)
+    local session = sessions[player]
+    if not session then return { ready = false, notice = "Deine Werkstatt wird vorbereitet …" } end
+    local profile = session.profile
+    local cycle = profile.cycle
     return {
-        ready = true,
-        cash = profile.cash,
-        robots = profile.robots,
-        upgradeLevel = profile.upgradeLevel,
-        upgradePrice = price,
-        productionSeconds = Rules.cycleSeconds(profile.upgradeLevel),
-        cashPerRobot = Config.creditsPerRobot,
-        secondsUntilNextRobot = math.max(0, profile.nextProductionAt - os.clock()),
-        plotIndex = assignedPlots[player].Index,
-        notice = notice,
-        version = Config.versionLabel,
+        ready = true, cash = profile.cash, completed = profile.completed,
+        unlockedScout = profile.unlockedScout, stateVersion = profile.stateVersion,
+        plotIndex = session.plot.Index, cycleStart = if cycle then cycle.startedAt else 0,
+        cycleId = if cycle then cycle.id else profile.lastCycleId,
+        cycleSeconds = Config.baseCycleSeconds, cashPerRobot = Config.creditsPerRobot,
+        productionActive = cycle ~= nil, notice = notice,
+        saveStatus = "local_session_only", version = Config.versionLabel,
     }
 end
-
 local function publish(player: Player, notice: string?)
-    if player.Parent == Players then
-        stateChanged:FireClient(player, snapshot(player, notice))
-    end
+    if player.Parent == Players then stateChanged:FireClient(player, snapshot(player, notice)) end
 end
-
-local function relocate(player: Player, plot)
-    local function move(character: Model)
-        local root = character:WaitForChild("HumanoidRootPart", 10)
-        if root and player.Parent == Players then
-            character:PivotTo(plot.SpawnCFrame)
-        end
-    end
-    player.CharacterAdded:Connect(move)
-    if player.Character then
-        task.spawn(move, player.Character)
-    end
-end
-
-local function handleUpgrade(player: Player, source: string)
-    local profile = profiles[player]
-    local plot = assignedPlots[player]
-    if not profile or not plot then
-        return
-    end
-    local now = os.clock()
-    if now - (lastUpgradeRequest[player] or -100) < 0.35 then
-        return
-    end
-    lastUpgradeRequest[player] = now
-    if source == "console" then
-        local character = player.Character
-        local root = character and character:FindFirstChild("HumanoidRootPart")
-        if not root or (root.Position - plot.UpgradeConsole.Position).Magnitude > 14 then
-            publish(player, "Too far from the upgrade console")
-            return
-        end
-    end
-    local success, code = Rules.tryUpgrade(profile)
-    if success then
-        WorldBuilder.SetLevel(plot, profile.upgradeLevel)
-        profile.nextProductionAt = math.min(profile.nextProductionAt, now + Rules.cycleSeconds(profile.upgradeLevel))
-        publish(player, "Assembler upgraded")
-        print("BOLTBOTS_MACHINE_PURCHASE", player.UserId, profile.upgradeLevel)
-    elseif code == "MAX_LEVEL" then
-        publish(player, "Maximum upgrade level reached")
+local function startCycle(session)
+    local ok, reason = Rules.beginCycle(session.profile, Workspace:GetServerTimeNow())
+    local cycle = session.profile.cycle
+    if ok and cycle then
+        session.plot.Model:SetAttribute("CycleStart", cycle.startedAt)
+        session.plot.Model:SetAttribute("CycleSeconds", Config.baseCycleSeconds)
+        session.plot.Model:SetAttribute("CycleId", cycle.id)
+        session.plot.Model:SetAttribute("Active", true)
     else
-        publish(player, "Not enough Factory Cash")
+        session.plot.Model:SetAttribute("Active", false)
+        warn("BOLTBOTS_PRODUCTION_PAUSED", reason)
     end
 end
-
-for _, plot in ipairs(plots) do
-    plot.UpgradePrompt.Triggered:Connect(function(who: Player)
-        if assignedPlots[who] == plot then
-            handleUpgrade(who, "console")
-        end
-    end)
-end
-
-requestUpgrade.OnServerEvent:Connect(function(player: Player, ...)
-    -- Strict no-argument protocol: no forged price, amount or target plot accepted.
-    if select("#", ...) ~= 0 then
-        return
-    end
-    handleUpgrade(player, "hud")
-end)
 
 getSnapshot.OnServerInvoke = function(player: Player, ...)
-    if select("#", ...) ~= 0 then
-        return { ready = false, notice = "Bad request" }
-    end
+    if select("#", ...) ~= 0 then return { ready = false, notice = "Ungültige Anfrage." } end
+    -- Query only. There is deliberately no client production-completion remote.
     return snapshot(player)
 end
 
 local function assignPlayer(player: Player)
-    local occupied = {}
-    for _, plot in pairs(assignedPlots) do
-        occupied[plot.Index] = true
-    end
+    if sessions[player] then return end
     local plot = nil
     for _, candidate in ipairs(plots) do
-        if not occupied[candidate.Index] then
-            plot = candidate
-            break
-        end
+        if not candidate.Occupied then plot = candidate; break end
     end
-    if not plot then
-        player:Kick("All factory plots are occupied. Rejoin another server.")
-        return
+    if not plot then player:Kick("Alle Werkstätten sind belegt. Bitte einem anderen Server beitreten."); return end
+    plot.Occupied = true
+    player.RespawnLocation = plot.Spawn
+    local session = { profile = Rules.newProfile(), plot = plot }
+    sessions[player] = session
+    WorldBuilder.SetOccupied(plot, true)
+    local function relocate(character: Model)
+        local root = character:WaitForChild("HumanoidRootPart", 10)
+        if root and sessions[player] == session then character:PivotTo(plot.SpawnCFrame) end
     end
-    assignedPlots[player] = plot
-    local profile = Rules.newProfile()
-    profile.nextProductionAt = os.clock() + Rules.cycleSeconds(profile.upgradeLevel)
-    profiles[player] = profile
-    WorldBuilder.SetOwner(plot, player.DisplayName)
-    WorldBuilder.SetLevel(plot, profile.upgradeLevel)
-    relocate(player, plot)
-    print("BOLTBOTS_SESSION_START", player.UserId, plot.Index)
-    publish(player, "Your first Scout robot is on its way")
+    session.characterConnection = player.CharacterAdded:Connect(relocate)
+    if player.Character then task.spawn(relocate, player.Character) end
+    startCycle(session)
+    publish(player)
+    print("BOLTBOTS_SESSION_START", "slot=" .. plot.Index, Config.versionLabel, "local_session_only")
 end
-
 local function removePlayer(player: Player)
-    local plot = assignedPlots[player]
-    if plot then
-        WorldBuilder.SetOwner(plot, nil)
-        WorldBuilder.SetLevel(plot, Config.startingUpgradeLevel)
-    end
-    profiles[player] = nil
-    assignedPlots[player] = nil
-    lastUpgradeRequest[player] = nil
-    -- This temporary A2 baseline has no persistence. M1 still requires real Save/Rejoin.
+    local session = sessions[player]
+    if not session then return end
+    Rules.stop(session.profile)
+    session.characterConnection:Disconnect()
+    WorldBuilder.SetOccupied(session.plot, false)
+    session.plot.Occupied = false
+    sessions[player] = nil
+    print("BOLTBOTS_SESSION_END", "slot=" .. session.plot.Index, "not_persisted")
 end
-
 Players.PlayerAdded:Connect(assignPlayer)
 Players.PlayerRemoving:Connect(removePlayer)
-for _, player in ipairs(Players:GetPlayers()) do
-    task.spawn(assignPlayer, player)
-end
+for _, player in ipairs(Players:GetPlayers()) do assignPlayer(player) end
 
 task.spawn(function()
     while true do
-        local now = os.clock()
-        for player, profile in pairs(profiles) do
-            if profile.nextProductionAt <= now then
-                -- Bound catch-up; prototype has no offline rewards or externally set clocks.
-                Rules.awardRobot(profile)
-                local plot = assignedPlots[player]
-                if plot then
-                    WorldBuilder.PlayProductionVisual(plot)
-                end
-                profile.nextProductionAt = now + Rules.cycleSeconds(profile.upgradeLevel)
-                if profile.robots == 1 then
-                    print("BOLTBOTS_FIRST_ROBOT", player.UserId)
-                    publish(player, "Scout robot complete! Collect cash for an upgrade")
+        local now = Workspace:GetServerTimeNow()
+        for player, session in pairs(sessions) do
+            local cycle = session.profile.cycle
+            if cycle and now >= cycle.completesAt then
+                local ok, reason = Rules.completeCycle(session.profile, cycle.id, now)
+                if ok then
+                    local profile = session.profile
+                    if profile.completed <= 3 or profile.completed % 10 == 0 then
+                        print("BOLTBOTS_COMPLETE", "cycle=" .. cycle.id, "cash=" .. profile.cash,
+                            "completed=" .. profile.completed, "scout=" .. tostring(profile.unlockedScout))
+                    end
+                    if profile.completed == 1 then print("BOLTBOTS_ROBOT_UNLOCKED", "scout") end
+                    startCycle(session)
+                    publish(player, if profile.completed == 1 then "Scout entdeckt! +25 Factory Cash" else nil)
                 else
-                    publish(player)
+                    Rules.stop(session.profile)
+                    session.plot.Model:SetAttribute("Active", false)
+                    publish(player, "Produktion pausiert: " .. reason)
                 end
             end
         end
-        task.wait(0.25)
+        task.wait(0.1)
     end
 end)
-
 print("BOLTBOTS_SERVER_BOOT", Config.project, Config.versionLabel)

@@ -1,0 +1,3 @@
+B1 rules: due completion, cash + Scout atomic, duplicate/old/unknown/early denial, stop, finite values and exact/overflow limits OK
+Syntax OK: 6 runtime files
+Rule tests/type checks OK. Roblox API typing, Play and multiplayer are not covered.

@@ -1,0 +1,32 @@
+{
+  "candidate": "B1-C1",
+  "baseline_commit": "aca61e8ea9c66d80edaa97e9472f4ab455d61b61",
+  "build_sha256": "bc1656b51f3af3367a5b1e7b52d36f74fec14f33082605dc2b96765b69794f22",
+  "created_utc": "2026-10-24T22:05:41.281328+00:00",
+  "runtime_and_tests": {
+    "src/ReplicatedStorage/Shared/EconomyRules.luau": "63f44f423d490381b99a92e08bc304e3c4ddb6db5e2826e15d7edea5a1e223ce",
+    "src/ReplicatedStorage/Shared/GameConfig.luau": "217255311c4f43923eb906ea90127e93e053889b735d242de133551846163d62",
+    "src/ReplicatedStorage/Shared/ScoutModel.luau": "7466cae0c79ca21126e8a5d2e9cafb3e1915edd5796255112a0c38a60ba59ed2",
+    "src/ServerScriptService/Main.server.luau": "4c469ed4cbf2cc0131176f52cc446e36ee9e67c535a5547c92d089f349195a70",
+    "src/ServerScriptService/Services/WorldBuilder.luau": "628f57d638353b62db4735965355e0e6f08825e2f2d749882930e739398c3c1e",
+    "src/StarterPlayer/StarterPlayerScripts/Client.client.luau": "c2519387be4fffc3d4a8e7d988b658adbf864bfa884eeabd6543aa1fdc6a8f0c",
+    "tests/economy-rules.luau": "de10044bcd4043f2b62f5d9d13635f5f2efd11d8cef9e611d2b8957ee7734d76",
+    "default.project.json": "f6a3816f633f9fe1e6c345658da05c2a73e12079cd8cca738fb2fe29d1192bce"
+  },
+  "evidence": {
+    "00-human-packaging-defect.png": "64559cd3f3ef91f845713bec8d05cca6c8ae1385e20c1c57c8d7c070de50fdd1",
+    "01-workshop-high.png": "ed0b18a02c1c014de85c755d6cf8da01e1e70a5bb57ed18dff28fa67ab28c5f7",
+    "02-scout-detail.png": "c15ac939e1c5527b54fa4f0a239deaa2dda2ac01a9719e4f926a92c1178ff8c5",
+    "03-portal-entry.png": "3e9a20863396558d9a8112157f5a63d214fb883194cef3c340da358a41c17ba5",
+    "04-carton-forming-diagnostic.png": "890c5d9b5504c9cd259d8101db861c0bda47932a900571db6a95452e401bcc79",
+    "05-sealed-outfeed.png": "7c19cb49deb32d7de32d96be9c0c6af12a0c266a4f9fee583c2dfbc2fac58ef2",
+    "06-landscape-low.png": "a26856156d83731be5cf8e00d54349661bb00c0993fa88f046eec14edf331823",
+    "07-landscape-scout-low.png": "5aa435659041d8707a52f06390c17c75d839a9a021c027dbf2a8d530f05e3a89",
+    "08-portrait-low.png": "50be05c5e5e8e9283ae8c4ba2e02c6ec6577585188c218483851369908e297a1",
+    "09-portrait-scout-low.png": "9884538e1d450b943989f06b52c107357a0014465002d3fd1b8a702944decab4",
+    "README.md": "b6240f0f20a3003e6d8678b6abca8b7170c79f28d9907a5bc8e0f44da5034257",
+    "checks.txt": "add5c0a877e0a1f4499a017e8de0252782b33d21289ff1fb7d1c81beb10b0c40",
+    "studio-observations.log": "b23a532a9ab0467f943eaea744b2ee797dbcc8e4d94542eaa9f1399035ce283b"
+  },
+  "scope": "B1 only; final independent review pending; packaging correction counts as cumulative M1 cycle2 of3"
+}

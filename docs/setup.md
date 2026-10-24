@@ -1,7 +1,7 @@
 # Lokales Setup — geführt durch Codex
 
 > Artifact ID: `BOLTBOTS-SETUP-001`
-> Revision: 3 · Status: A2 und A3 lokal nachgewiesen
+> Revision: 4 · Status: A2/A3 und B1 lokal geprüft; B1-Ergebnisreview siehe Run
 
 Nach einem Checkout übernimmt Codex Werkzeugprüfung, Installation, Build und die verfügbare Studio-Bedienung. Der Human liefert Ideen, prüft Qualität und erledigt bei Bedarf persönliche Anmeldung oder Systembestätigung. Passwörter, Roblox-Cookies und API-Schlüssel gehören nicht in Chat oder Repository.
 
@@ -27,7 +27,7 @@ Die Rojo-Auswahl richtet sich nach der ausführenden Python-Architektur. Ein unt
 
 `doctor` unterscheidet Dateifund, tatsächliche Ausführung und fehlende Anforderungen. Ein gefundener Studio-/Pluginpfad beweist weder Anmeldung noch funktionierende Verbindung. `check` kompiliert alle aktiven Luau-Dateien, prüft reine Regelmodule auf Typfehler und führt die Basistests aus. Für die Standalone-CLI wird ausschließlich die Roblox-`script.Parent.GameConfig`-Importzeile in einer temporären Kopie auf einen Dateipfad adaptiert; die Regellogik bleibt unverändert. Keine Simulation behauptet einen Roblox-Spieltest oder vollständige Roblox-API-Typprüfung.
 
-`build` erzeugt `build/BoltBots.rbxlx` und gibt den SHA256 aus. `build/` ist generiert und ignoriert; `src/` plus `default.project.json` sind die Quelle. Die aktive A2-Basis stammt bewusst aus fünf Dateien des unveränderten v0.2-Imports. Sie ist noch **keine** abgenommene M1-Spiellogik oder Premium-Szene: aktuelle Kaufverträge, Sammlung, Persistenz und Gestaltung folgen in B1–B5. `development-a2` ist ein Entwicklungslabel, keine veröffentlichte Produktversion.
+`build` erzeugt `build/BoltBots.rbxlx` und gibt den SHA256 aus. `build/` ist generiert und ignoriert; `src/` plus `default.project.json` sind die Quelle. Die aktive B1-Quelle umfasst sechs Runtime-Dateien: Regeln/Konfiguration, Serveradapter, Werkstatt, Scout-Bauer und Clientansicht. Sie ersetzt die frühere A2-Diagnosebasis. `development-b1` ist ein lokales Entwicklungslabel. Upgrade/Orbit, Persistenz, integrierte Mehrspielerprüfung und vollständige M1-Spielabnahme bleiben B2–B5.
 
 ## Studio starten und lokal verbinden — A3, tatsächlich geprüft
 
@@ -44,6 +44,14 @@ python3 scripts/dev.py serve
 Der Server bindet ausschließlich `127.0.0.1`. Im Rojo-Plugin `localhost`, Port `34872`, dann Connect verwenden. [Offizieller Build-/Live-Sync-Ablauf](https://rojo.space/docs/v7/getting-started/new-game/). Rojo benötigt für diesen lokalen Ablauf kein eigenes Konto. Studio zeigte tatsächlich „Connected to session BoltBotsTycoon at localhost:34872“ und Disconnect. Eine ausschließlich im Dateisystem ergänzte Kommentar-Markierung in GameConfig kam im echten Studio-Quelltext an; nach Entfernen der Markierung bestätigte Studio auch die Wiederherstellung. Source und Buildhash blieben anschließend gleich. Für künftiges Aufräumen empfiehlt sich: zuerst Disconnect im Plugin, danach Ctrl-C; andernfalls kann das Plugin den beendeten Server als WebSocketfehler anzeigen. Beobachtet wurde hier der Serverstopp zuerst. Server mit Ctrl-C beenden; der beobachtete Python-Wrapper endete dabei mit normalem Interrupt/Exit130. Ein bloß gestarteter Server reicht weiterhin nicht als Verbindungsbeleg.
 
 A3-Nachweis: [Screens/Logs und Hashbindung](reviews/evidence/M1-A3/studio-verification.json). CreatorOutput meldete Serverboot, Clientboot und ersten Roboter. Keine passenden Produktskriptfehler im untersuchten Zeitfenster; Avatar-Asset-403 und Plattform-Telemetrie-Timeouts wurden separat beobachtet. Keine pauschale Fehlerfreiheit behauptet. Die native Bedienung und visuelle Prüfung gelten für diesen beobachteten Studio-Stand. Bei offenem Menü und fehlendem Screenshot half dessen exponierte Cancel-Aktion, ohne neue Automatisierung.
+
+## Aktueller B1-Start und Bedienung
+
+Nach Build und File → Open startet Play die kleine Werkstatt serverseitig; die leere Editansicht ist erwartet. Scout wird montiert, fährt durch das offene Verpackungsportal und verlässt es als geschlossener Karton. Erst der serverseitige 9-Sekunden-Abschluss schreibt 25 Cash und beim ersten Mal das Scout-Designrecht gut. Die Sammlung ist kein Einzelroboterlager. Die sichtbare Kennzeichnung „Lokale Vorschau · ohne Speichern“ gilt für die gesamte Sitzung.
+
+„Sammlung“ öffnet das echte 3D-Scout-Porträt. × oder M schließen; Escape öffnet Roblox' reserviertes Menü und schließt dabei die Sammlung. „Erkunden“ gibt normale Kamera und Spielersteuerung frei; „Werkstatt“ stellt die eigene feste Ansicht wieder her. „Bewegung: ruhig“ unterdrückt dekoratives Winken/Neigen, der Produktionsweg bleibt sichtbar. In der festen Ansicht werden Nachbarslots lokal ausgeblendet und Touch-Steuerkreise verborgen; Erkunden stellt sie wieder her.
+
+B1 wurde in Studio tatsächlich mit Desktop 1511×758 sowie iPhone-XR-Emulation 413×814/801×413 geprüft; dies ist kein physischer Telefontest. Test → Device Simulator ist vor Play zu aktivieren; während Play lässt sich die Ausrichtung drehen. Für reproduzierbare Grafikchecks wurde über die Studio-Commandbar ausschließlich die Testeinstellung `settings().Rendering.QualityLevel` auf Level01/Level21 gesetzt und auf Automatic zurückgestellt. Diagnosebefehle sind separat von normalen Spieleraktionen dokumentiert. Keine Grafik-/Kontoeinstellung ist Produktlogik. [B1-Run](work/runs/boltbots-m1-b1-001.md) und [konkrete Belege](reviews/evidence/M1-B1/README.md) halten Grenzen, Quellbindung und unabhängige Entscheidung fest.
 
 ## Spiel und Speichern — weitere M1-Schritte
 
