@@ -16,11 +16,30 @@ Wirksame Entscheidung und exakter Umfang: [Initialisierungsreview r3](reviews/20
 - [Premium-Regel](agent-extensions.md) gilt für jede Gestaltung und Review, bereits für den ersten Bauteil-Roboter und die echte M1-Szene. Frühere Ablehnung r2 bleibt als Historie erhalten.
 - Führende abgeschlossene Arbeitsliste, Freigaben und100%-Drift: [Initialisierungs-Run r3](work/runs/boltbots-initialization-001.md).100%beziehtsichaufInitialisierung,nichtaufSpielentwicklung.
 
-## Nächster Ausführungsschritt
+## M1 — Arbeitsschritte und laufender Status
 
-Nach der jetzt verlangten Übersicht/Sicherung: genehmigten M1-Plan in konkreten Auftrag übernehmen, Capability/Tools tatsächlich prüfen, lokale Umgebung reproduzierbar einrichten, erste echte Fabrikszene und Produktion→Cash→Upgrade aufbauen. Dünne Persistenz/Save-Rejoin, Mehrspieler-Isolation, tatsächliche Agent-Spieltests und Qualitätsreview gehören in M1. Kein weiteres Feinkonzept nötig. Die konkrete private Testexperience und ihr Zugriff bleiben vor betroffenen externen Aktionen zu benennen/autorisiert zu prüfen.
+**Aktuell: M1 genehmigt, Umsetzung noch nicht begonnen. Nächster Schritt: A1.** Abgeschlossen sind die vorgelagerte Initialisierung, fachliche/visuelle/Gesamtfreigabe und Git-Sicherung bis Commit `c60de92`. Das sind Voraussetzungen für M1, keine bereits gebaute Spielversion.
 
-Noch keine Agent-Installation, kein ausgeführter importierter Produktcode und keine neue lauffähigeSpielversion. Human meldete Studio-Update und angekündigtesLogin; erfolgreicherStudio-Start/Rojo/Save-/Mehrspieler-/Blender-/Gerätetest nichtbelegt. Die Bilder sind Konzeptbilder, keine spielbare3D-Welt. Persönliche Anmeldung bleibt beimHuman; Erstellung/Bedienung/Test übernimmtCodex.
+Diese Übersicht fasst den [genehmigten M1-Plan](planning/milestones.md#m1-im-detail) zusammen. Es bleiben **zwei Arbeitspakete in einem gemeinsamen Inkrement SL-01**: WP-01A Umgebung/Build und WP-01B spielbarer Kern mit Persistenz und Qualitätsreferenz. A1–B5 sind lesbare Teilschritte, keine zusätzlichen Arbeitspakete oder Freigabetore. Umfang und Abnahme des genehmigten Plans bleiben unverändert.
+
+| Schritt | Arbeitspaket / Arbeit | Fertig, wenn tatsächlich nachgewiesen | Status / Ergebnisbeleg |
+|---|---|---|---|
+| **A1** | **WP-01A:** Tools und Agent-Bedienweg prüfen | Gefundene, ausführbare und fehlende Tools getrennt erfasst; Studio-/Accountzugriff und tatsächlich möglicher Agent-Bedienweg geklärt. Persönlicher Login bleibt beim Human. | **Offen — als Nächstes.** Human meldete Studio-Update; kein Agent-Start-/Loginbeleg. |
+| **A2** | **WP-01A:** Projekt und reproduzierbaren Build einrichten | Benötigte Werkzeuge eingerichtet/versioniert, Runtime bewusst aus Referenz übernommen; Doctor-/Build-/Checkbefehle vorhanden, sauberer Checkout erzeugt eine `.rbxlx`-Datei. | **Offen.** Nach A1; noch keine Runtime-/Buildeinrichtung. |
+| **A3** | **WP-01A:** Erste Version wirklich in Studio starten | Place geladen, Play tatsächlich gestartet, Logs und sichtbarer Zustand erfasst; Rojo-Verbindung nur bei bestätigter Verbindung als erfolgreich gewertet. Setup-Guide entspricht dem beobachteten Ablauf. | **Offen.** Nach A2; noch kein Studio-Spieltest. |
+| **B1** | **WP-01B:** Kleine attraktive Fabrikszene und sichtbare Produktion | Fabrikplatz, Bauteil-Scout, Maschine, Förderband/Verpackung und HUD wirken zusammen; echter serverseitiger Abschluss schreibt Cash genau einmal gut und schaltet Scout frei. Gestaltung wird von Anfang an mit der Produktion entwickelt. | **Offen.** Nach A3; Konzeptbilder vorhanden, echte Szene fehlt. |
+| **B2** | **WP-01B:** Ausbau und Orbit-Ziel | L2-Kauf zeigt Preis/Wirkung, Abbruch/Ablehnung bewahren den Stand; Upgrade wirkt sichtbar, Orbit wird regelgerecht frei und lässt sich auswählen. | **Offen.** Baut auf B1 auf; bisher nur Designfixtures. |
+| **B3** | **WP-01B:** Fortschritt sicher wiederaufnehmen | Dünner realer Profiladapter mit Versionsfeld/exklusiver Sitzung, Migrationsfixture, Save/Rejoin und sicherer Fehlerreaktion nachgewiesen; Ladefehler erzeugt kein Ersatzprofil. | **Offen.** Profilregeln bereits genehmigt; reale private Testexperience vor externem Schreibtest genau benennen und Berechtigung prüfen. |
+| **B4** | **WP-01B:** Technische und integrierte Prüfungen | Käufe/Geldgrenzen/Duplikate/Manipulationen geprüft; zwei Clients können fremde Fabriken nicht ändern; Fehlerpfade und begrenzte Ressourcen bei 2–4 Clients beobachtet. | **Offen.** Tests entstehen mit B1–B3; hier wird der integrierte Nachweis zusammengeführt. |
+| **B5** | **WP-01B:** Agent-Spieltest, Qualitätsreview und Übergabe | Agent spielt den vollständigen Kernpfad mit normaler Spielerberechtigung; Build/Umgebung/Aktionen/Bilder/Bugs dokumentiert. Unabhängige Review bewertet Technik, Premium-Gestaltung und Spielanreiz getrennt; Setup-/Startanleitung stimmt. | **Offen.** Benötigt B1–B4; anschließend bestehende Human-Qualitätsentscheidung an der echten M1-Spielversion. |
+
+**Abhängigkeiten:** A1 → A2 → A3 → B1; darauf Ausbau und Persistenz (B2/B3), anschließend integrierte Prüfung und Spielreview (B4/B5). Die technische Vorbereitung von Persistenz sowie passende Tests gehören bereits zu den jeweiligen Implementierungsschritten; die Tabelle ist keine Anweisung, Risiken oder Gestaltung bis zum Schluss aufzuschieben.
+
+**Fortschreibung:** Nach jedem Teilschritt Status, beobachteten Nachweis und nächsten Schritt aktualisieren. Zustände: `offen`, `in Arbeit`, `in Prüfung`, `erledigt`; ein Hindernis wird mit konkreter Ursache und betroffener Abhängigkeit benannt. `Erledigt` verlangt das genannte tatsächliche Ergebnis und die jeweils nötige Prüfung; geschriebener Code oder ein schönes Konzeptbild allein genügt nicht. Der nächste konkrete Ausführungs-Run übernimmt diese Arbeitsliste; dann verweist die Übergabe auf dessen führenden Fortschrittsabschnitt, statt einen zweiten manuellen Tracker zu führen.
+
+**M1-Abschluss:** gemeinsamer spielbarer und geprüfter Stand, echter Save/Rejoin, Agent-Spielnachweis und Humanbewertung der tatsächlichen Szene. Keine neue Konzept-/Bild-/Initialisierungsfreigabe für unveränderte Inhalte. Danach folgt M2 mit vollständiger Sammlung/Gestaltung, anschließend M3 mit belastbarer privater Beta; beide bleiben gemäß Plan später zu konkretisieren.
+
+Noch keine Agent-Installation, kein ausgeführter importierter Produktcode und keine neue lauffähige Spielversion. Die Bilder sind Konzeptbilder, keine spielbare 3D-Welt. Persönliche Anmeldung bleibt beim Human; Erstellung, Bedienung und Tests übernimmt Codex.
 
 ## Sicherung und Grenzen
 
