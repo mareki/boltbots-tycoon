@@ -4,7 +4,7 @@
 > Artifact class: Work contract
 > Revision: 2
 > Semantic owner: /root
-> Work status: active — Human-beauftragte Designneuherstellung, Amendment r2
+> Work status: verification — r3 unabhängig approved und Bilder vom Human angenommen; übriges zweites Gate offen
 > Decision class: D3
 
 ## Auftrag, Bindung und Grenze
@@ -15,7 +15,7 @@ Die genaue freigegebene Foundation bleibt SHA256 `2cd9c514b3f1aefc1f7955e5389e75
 
 Scope Lock: Das Ergebnis sind die notwendigen Initialisierungsartefakte für genau einen Factory-Kontext und den genehmigten Horizont. Bestehende Quellbedeutung wiederverwenden; höchstens wenige zusammengefasste Eigentümerdokumente und ein kleines gebundenes Design. Ein Fund außerhalb dieses Ergebnisses wird mit Owner/Trigger zurückgestellt. Outcome-, Pfad-, Team-, Budget- oder externe Aktionsausweitung braucht entsprechende vorherige Human-Autorität.
 
-Aktuelle Grenze gemäß ausdrücklichem Human-Neuherstellungsauftrag/Amendmentr2:17:41:54–19:41:54UTC am24.10.2026 einschließlichVorbereitung. Kumulativmax6Korrekturzyklen,3historischverbraucht. Gesamtstandauf60%korrigiert; fehlgeschlagene70–90%-Bewertungbleibt untenalsHistorie. KeineerneuteArbeitanderDomainsemantik.
+Aktuelle Grenze gemäß ausdrücklichem Human-Neuherstellungsauftrag/Amendmentr2:17:41:54–19:41:54UTC am24.10.2026 einschließlichVorbereitung. Kumulativmax6Korrekturzyklen,4verbraucht (davon3historisch). AktuellerGesamtstand90%; früherefehlgeschlagene70–90%-Bewertungbleibt untenalsHistorie. KeineerneuteArbeitanderDomainsemantik.
 
 ## Führende Arbeitsliste
 
@@ -24,10 +24,10 @@ Aktuelle Grenze gemäß ausdrücklichem Human-Neuherstellungsauftrag/Amendmentr2
 | Quellen/Humaninput/Domainfreigabe | Erfüllt, unverändert referenziert | Bindung beim neuen Run prüfen |
 | Feinkonzept und kompletter Anforderungsüberblick | Kandidat: vision-and-mvp.md,39/39IDs | unabhängig approved; Human Initialization Gate |
 | Technische Grundlage und Releasepolitik | Kandidaten factory-module.md/technical-foundation.md | unabhängig approved; ADR-01 zur Humanentscheidung |
-| Premium-Richtung früh prüfen | Design r3 neu hergestellt und durch Creator gesehen, F-VIS-02 bis unabhängiger Prüfung offen | Exakte Premium-/Spielreizreview und 80%-Drift |
+| Premium-Richtung früh prüfen | Design r3 Human-Bilderfreigabe plus unabhängige qualitative Review approved, F-VIS-02 geschlossen | Keine erneute Bildfreigabe; Transfer nach M1 |
 | Geführtes Setup nach Checkout | Setupguide Kandidat vorhanden | später in M1 gegen tatsächlichen Ablauf verifizieren |
 | Meilensteine, M1 gründlich | Plan Kandidat mit M1/WP-01A/B, M2/M3 und6Wochen | unabhängig approved; zweite Humanentscheidung |
-| Zweites Human-Gate | Human changes_requested, Designmangel offen | Erst tragfähigen neuen Kandidaten herstellen/reviewen, dann Gatevorlage |
+| Zweites Human-Gate | Neuer Kandidat unabhängig approved, Bildgestaltung vom Human angenommen | Übrige Gesamtfreigabe für Konzept/Technik/Plan und M1-Start bündeln |
 
 ## Design-Vorbereitung und Capability
 
@@ -38,7 +38,7 @@ Die vorhandene Visual Reference Board HTML ist eine statische Bildgalerie, kein 
 {
   "schema_version": "1",
   "revision": 2,
-  "status": "active",
+  "status": "verification",
   "harness_version": "1.5.3",
   "run_kind": "bootstrap_initialization",
   "decision_class": "D3",
@@ -127,7 +127,10 @@ Die vorhandene Visual Reference Board HTML ist eine statische Bildgalerie, kein 
     "applicability": "required",
     "spawn_reviewer": "/root/init_spawn",
     "clearance": "pass",
-    "cleared_agents": ["/root", "/root/init_review"]
+    "cleared_agents": [
+      "/root",
+      "/root/init_review"
+    ]
   }
 }
 ```
@@ -137,7 +140,7 @@ Die vorhandene Visual Reference Board HTML ist eine statische Bildgalerie, kein 
 ```json
 {
   "checked_revision": 2,
-  "progress": 70,
+  "progress": 90,
   "updates": [
     {
       "percent": 10,
@@ -166,6 +169,14 @@ Die vorhandene Visual Reference Board HTML ist eine statische Bildgalerie, kein 
     {
       "percent": 70,
       "evidence": "Design r3 neu hergestellt: ausgearbeitete Fabrikszene und fünf Charaktere, neue interaktive HUD-/Upgrade-/Sammlungs-/Fehlerquelle. Acht PNGs tatsächlich angesehen; 13 gezielte Checks auf 14 Fixture/Viewport-Kombinationen und85Aktionsgrenzen bestanden, informativeSchrift>=14,Kontrastminimum5.4:1. Visionr2/Planr2/Premium-M1-Abnahme angepasst, Factory/Technik/Setup unverändert. KeineBrowser-/Studioausführung. NächsterSchritt exakte unabhängige Qualitätsreview inklusive80%-Drift; F-VIS-02offen."
+    },
+    {
+      "percent": 80,
+      "evidence": "init_review hat exakten Kandidat2b343b7 mit15Artefakten,8PNGs,4Baselines undfinalemRoboterset unabhängig geprüft. TatsächlicheBildsicht; separatepositiveUrteilezuQualität/Spielanreiz/Bedienbarkeit, keine materiellenFindings; F-VIS-02geschlossen. Eigene8/8SVGHashreproduktion und14FixtureViewports/85Actions. 80%-Drift continue zur Gatevorlage; Human-Bildfreigabe bleibt anerkannt."
+    },
+    {
+      "percent": 90,
+      "evidence": "Vollständiges revidiertes Initialisierungspaket bereit: Visionr2/Designr3/Planr2, unveränderteFactory/Technik/Setup,39/39Anforderungsdisposition, unabhängigeReviewapproved undHuman-Bildfreigabe gespeichert. KeineweiterenDesignkorrekturen. Kandidat2b343b7/Manifestr3e520abddf9328ac87d1d915b1bb5aac300ec15564a212513af904e02206b34f9. Handover/Run/Bootstrapzur verbleibenden zweitenGesamtfreigabe aktualisiert; M1noch nichtbegonnen. Kein100%-AbschlussvorübrigerHumanentscheidung."
     }
   ],
   "drift_checks": [
@@ -194,12 +205,18 @@ Die vorhandene Visual Reference Board HTML ist eine statische Bildgalerie, kein 
       "reviewer": "/root",
       "decision": "continue",
       "evidence": "Originalziel bleibt Initialisierung mit M1-Setup/realem Spiel/Design/Agenttest, nicht bloß Prozess. Alle39Anforderungen disponiert; keine neue Domain, kein eigener Backenddienst, Blender optional. Sechs zusammengefasste Docs statt separatem Artefakt pro Pflicht. Größtes Risiko reale Studio-/Save-/Gerätefähigkeit in M1 ausdrücklich offen. Geplantes Rendering nutzt vorhandenes sharp, keine Installation/Cloud. Rund34von120Minuten PhaseB verbraucht, Rest bis18:38:45UTC;2von3Korrekturen verwendet,1verbleibt. UI begrenzt auf3Ansichten/Varianten, gleicheReviewrunde. Weiter zum visuellen Nachweis nach früher Flow-Linse."
+    },
+    {
+      "percent": 80,
+      "reviewer": "/root/init_review",
+      "decision": "continue",
+      "evidence": "Exakte r3-Review im bestehenden Reviewpack. Originalauftrag undPremium-Vorgabeerfüllt; nurzweiAssettypen/einvorhandenerRenderer, keine neueScope/Agenten/Infrastruktur. UnveränderteDomain/Anforderungen/Technikreusbar. 18:25UTC etwa43/120Minuten,77bis19:41:54;4/6Korrekturzyklen und4/4Bildaufrufe verbraucht. KeineweitereGestaltung nötig; weiterzur bestehenden gebündelten übrigenHumanentscheidung,keineerneuteBildfreigabe."
     }
   ],
   "obligations": {
     "entry_integrity": {
       "state": "satisfied",
-      "evidence": "Entry und unveränderten Core erneut gelesen/geprüft;0Integritätsfehler, genau bekannter alter F-02 im vollständigen Check. Vor neuen Quellen/Mutationen erneut passende Kontrollen."
+      "evidence": "Manifestvertrauenshash undalle95inventarisiertenCoredateien erneut bestätigt; genehmigteFoundationbytegleich. KeinCore-/Domainchange. Nur bekannter einzelner Statusguard im direktenRuncheck."
     },
     "scope_authority": {
       "state": "satisfied",
@@ -207,11 +224,11 @@ Die vorhandene Visual Reference Board HTML ist eine statische Bildgalerie, kein 
     },
     "agent_start_review": {
       "state": "satisfied",
-      "evidence": "init_spawn pass root assignment_preparation und exaktesrun_activation r2 sowieinit_review operative/Art-Flow-Prüfung. init_review approvedAmendmentr2 undowner_approved_standalone; frühereFlowsemantikreusbar. KeinePremiumabnahmevorgezogen."
+      "evidence": "Exakte Startpässe undoperativeAmendmentfreigabe vorhanden; finalerinit_review-Startpass aufCommit2b343b7/Manifestr3 durchinit_spawn. UnabhängigeSchlussreviewapproved und80%-Driftcontinue imReviewpack."
     },
     "human_gates": {
       "state": "satisfied",
-      "evidence": "Domain r1 unverändert Human approved. Erstes Gate erledigt. Dieses Ergebnis wird am Human Initialization Gate vor Produktumsetzung vorgelegt; keine erneute Fachfreigabe derselben Domain."
+      "evidence": "Domainr1Humanapproved undneueBildgestaltungr3explizitHumanabgenommen, nichtwiederfragen. ÜbrigeGesamtinitialisierung amvereinbarten zweitenGateoffen; keine Produktumsetzungvor dieserEntscheidung."
     },
     "capability": {
       "state": "satisfied",
@@ -353,3 +370,13 @@ Visionr2 und Planr2 übernehmen die harte Premium-/Spielreizabnahme einschließl
 ## Neue Humanfreigabe während r3-Fertigstellung
 
 Human: „Ich habe die Bilder gesehen, sieht super aus, nehme ich die ab. Fahre fort.“ Die neue Bildgestaltung ist damit angenommen, F-VIS-02 hinsichtlich visueller Richtung durch den Human aufgelöst. Genaue Bild-/Rendermanifestbindung im bestehenden Reviewr3. Nicht erneut dieselben Bilder freigeben lassen. Fortsetzung: unabhängige integrierte Review/80%-Drift und Abschluss des bestehenden Initialisierungspakets; keine behauptete pauschale Studio-/Spiel-/Externaabnahme.
+
+## Exakte Schlussreview r3 gestartet
+
+init_spawn pass für /root/init_review auf Commit2b343b78d4003397807b6651235f465ae16d4960, Kandidatenmanifest r3 SHA256e520abddf9328ac87d1d915b1bb5aac300ec15564a212513af904e02206b34f9. Auftrag: tatsächliche acht PNGs/finales Roboterset und Quellen prüfen, qualitative Urteile getrennt, geänderte Vision/Plan/Design, unveränderte valide Belege wiederverwenden, unabhängiger80%-Drift. Reviewer schreibt ausschließlich bestehenden r3-Reviewabschnitt, keine Produktquelle. Bildfreigabe des Human bleibt wirksam. Aktuelle unabhängige Prüfung läuft; keine Vorwegnahme.
+
+## Aktueller Abschlusscheckpoint r3
+
+Kandidat2b343b78d4003397807b6651235f465ae16d4960/Manifestr3e520abddf9328ac87d1d915b1bb5aac300ec15564a212513af904e02206b34f9 unverändert unabhängigapproved. F-VIS-02geschlossen; tatsächliche Human-Bildfreigabe erfasst. Gesamtstand90%, gleiche Aufgabe, keine100%- oderSpielabschlussbehauptung. KeineweitereDesignkorrektur,4/6Zyklenverbrauchbleibt. Runinverification undBootstrapawaiting_human_initialization_gate; verbleibendegebündelteGesamtfreigabe imReviewpackvorlegen, ohneerneuteDomain-/Bildfreigabe. M1enthält echtenStudio-/Spiel-/Save-/Qualitätsnachweis und wurde nichtbegonnen. KeinPushoderInstallation.
+
+Finaler direkter Runcheck am24.10.2026 18:29UTC: ausschließlich bekannter AHV-RUN-CHECK-001-Statusguard, kein neuer Fehler und kein PASS behauptet. Unter bestehendem ausdrücklichem Human-Override nicht blockierend.
