@@ -2,9 +2,9 @@
 
 > Artifact ID: `BOLTBOTS-RUN-INITIALIZATION-001`
 > Artifact class: Work contract
-> Revision: 2
+> Revision: 3
 > Semantic owner: /root
-> Work status: verification — r3 unabhängig approved und Bilder vom Human angenommen; übriges zweites Gate offen
+> Work status: completed — Human-Gesamtfreigabe erfasst; M1 noch nicht umgesetzt
 > Decision class: D3
 
 ## Auftrag, Bindung und Grenze
@@ -15,19 +15,19 @@ Die genaue freigegebene Foundation bleibt SHA256 `2cd9c514b3f1aefc1f7955e5389e75
 
 Scope Lock: Das Ergebnis sind die notwendigen Initialisierungsartefakte für genau einen Factory-Kontext und den genehmigten Horizont. Bestehende Quellbedeutung wiederverwenden; höchstens wenige zusammengefasste Eigentümerdokumente und ein kleines gebundenes Design. Ein Fund außerhalb dieses Ergebnisses wird mit Owner/Trigger zurückgestellt. Outcome-, Pfad-, Team-, Budget- oder externe Aktionsausweitung braucht entsprechende vorherige Human-Autorität.
 
-Aktuelle Grenze gemäß ausdrücklichem Human-Neuherstellungsauftrag/Amendmentr2:17:41:54–19:41:54UTC am24.10.2026 einschließlichVorbereitung. Kumulativmax6Korrekturzyklen,4verbraucht (davon3historisch). AktuellerGesamtstand90%; früherefehlgeschlagene70–90%-Bewertungbleibt untenalsHistorie. KeineerneuteArbeitanderDomainsemantik.
+Aktuelle Grenze gemäß ausdrücklichem Human-Neuherstellungsauftrag/Amendmentr2:17:41:54–19:41:54UTC am24.10.2026 einschließlichVorbereitung. Kumulativmax6Korrekturzyklen,4verbraucht (davon3historisch). AktuellerGesamtstand100% der Initialisierung; früherefehlgeschlagene70–90%-Bewertungbleibt untenalsHistorie. KeineerneuteArbeitanderDomainsemantik.
 
 ## Führende Arbeitsliste
 
 | Originaler Outcome | Ergebnis/Stand | Nächster Schritt |
 |---|---|---|
 | Quellen/Humaninput/Domainfreigabe | Erfüllt, unverändert referenziert | Bindung beim neuen Run prüfen |
-| Feinkonzept und kompletter Anforderungsüberblick | Kandidat: vision-and-mvp.md,39/39IDs | unabhängig approved; Human Initialization Gate |
-| Technische Grundlage und Releasepolitik | Kandidaten factory-module.md/technical-foundation.md | unabhängig approved; ADR-01 zur Humanentscheidung |
+| Feinkonzept und kompletter Anforderungsüberblick | vision-and-mvp.md,39/39IDs; unabhängig und Human approved | In M1 als genehmigte Grundlage verwenden |
+| Technische Grundlage und Releasepolitik | Factory-/Technikziele samt ADR-01 und Releasepolitik Human approved | Umsetzung/Nachweis erst in M1 |
 | Premium-Richtung früh prüfen | Design r3 Human-Bilderfreigabe plus unabhängige qualitative Review approved, F-VIS-02 geschlossen | Keine erneute Bildfreigabe; Transfer nach M1 |
 | Geführtes Setup nach Checkout | Setupguide Kandidat vorhanden | später in M1 gegen tatsächlichen Ablauf verifizieren |
-| Meilensteine, M1 gründlich | Plan Kandidat mit M1/WP-01A/B, M2/M3 und6Wochen | unabhängig approved; zweite Humanentscheidung |
-| Zweites Human-Gate | Neuer Kandidat unabhängig approved, Bildgestaltung vom Human angenommen | Übrige Gesamtfreigabe für Konzept/Technik/Plan und M1-Start bündeln |
+| Meilensteine, M1 gründlich | Planr2 mit M1/WP-01A/B, M2/M3 und6Wochen Human approved | M1 nach aktueller Übersicht/Sicherung konkretisieren |
+| Zweites Human-Gate | Explizite Gesamtfreigabe für M1 erteilt und erfasst | Erfüllt; nicht erneut erfragen |
 
 ## Design-Vorbereitung und Capability
 
@@ -37,8 +37,8 @@ Die vorhandene Visual Reference Board HTML ist eine statische Bildgalerie, kein 
 ```json
 {
   "schema_version": "1",
-  "revision": 2,
-  "status": "verification",
+  "revision": 3,
+  "status": "completed",
   "harness_version": "1.5.3",
   "run_kind": "bootstrap_initialization",
   "decision_class": "D3",
@@ -86,12 +86,12 @@ Die vorhandene Visual Reference Board HTML ist eine statische Bildgalerie, kein 
     "Foundationsemantik oder bereits genehmigte Kandidatenbytes verändern",
     "Harness-Reparatur, Coremutation oder Upgrade",
     "Produktcode übernehmen/ausführen/implementieren, Studio- oder Blender-Bedienung als Spieltest",
-    "Toolinstallation,andereNetzwerk-Uploads,Git-Push,Veröffentlichung,KaufoderKontoaktion",
+    "Toolinstallation,andereNetzwerk-Uploads,Veröffentlichung,KaufoderKontoaktion; ausgenommen ausdrücklich autorisierte Git-Sicherung auf bestehendem Branch",
     "Human Initialization Gate vorwegnehmen; Architektur für P1/P2 vorbauen"
   ],
   "decision": {
     "authority": "Human Product Authority; /root/init_review autorisiert operative Ableitung aus ursprünglichem Initialisierungsauftrag und bestehender Domainfreigabe",
-    "approval_ref": "Aktueller ausdrücklicher Humanauftrag nach F-VIS-02: interaktive Designreferenz neu machen und alle betroffenen Unterlagen anpassen, jetzt umsetzen. Amendment r2 bewahrt3verbrauchteZyklen und erhöht kumulativeGrenze auf6; operative Prüfung durch /root/init_review approved; Root-Aktivierungsstartpass durch /root/init_spawn pass.",
+    "approval_ref": "Human-Gesamtfreigabe im aktuellen Chat: Ja, ich gebe das Gesamtpaket für M1 frei. Zusätzlich ausdrücklich Commit+Push vor Umsetzung und Überblick verlangt. Exakte Entscheidung im Initialisierungsreview r3. init_spawn pass für Root-Abschluss/Git-Sicherung; keine erneute Inhaltsreview bei unveränderten genehmigten Bytes.",
     "lead": "/root",
     "reasoning": "xhigh",
     "agents": [
@@ -107,11 +107,12 @@ Die vorhandene Visual Reference Board HTML ist eine statische Bildgalerie, kein 
   },
   "external_actions": {
     "allowed": [
-      "Eingebautes image_gen: höchstens4Generierungen/Edits von2ConceptAsset-Typen (Fabrikszene,Roboterset) mit repository-safe Originalkonzepten/erzeugtenEntwürfen alsReferenz; keineSecrets/Accounts/Publikation. Ergebnisse ausCodexHome insRepo kopieren."
+      "Eingebautes image_gen: höchstens4Generierungen/Edits von2ConceptAsset-Typen (Fabrikszene,Roboterset) mit repository-safe Originalkonzepten/erzeugtenEntwürfen alsReferenz; keineSecrets/Accounts/Publikation. Ergebnisse ausCodexHome insRepo kopieren.",
+      "Human 2026-10-24: normaler Git-Push von codex/initialize-boltbots nach origin https://github.com/mareki/boltbots-tycoon.git; keinForce,keinMerge,keineTags/Veröffentlichung. Vorab verifizierter Remote, Inhalt bestehendes Projekt plus Freigabemetadaten."
     ],
     "prohibited": [
       "Installation oder Systemänderung",
-      "Andere RemoteUploads,Git-Push,Veröffentlichung",
+      "Andere RemoteUploads, andere Git-Ziele/Force-Push,Veröffentlichung",
       "Account/Payment/Production",
       "Produktskripte oder echte Spielausführung"
     ]
@@ -129,7 +130,8 @@ Die vorhandene Visual Reference Board HTML ist eine statische Bildgalerie, kein 
     "clearance": "pass",
     "cleared_agents": [
       "/root",
-      "/root/init_review"
+      "/root/init_review",
+      "/root/init_spawn"
     ]
   }
 }
@@ -139,8 +141,8 @@ Die vorhandene Visual Reference Board HTML ist eine statische Bildgalerie, kein 
 <!-- task-controls:start -->
 ```json
 {
-  "checked_revision": 2,
-  "progress": 90,
+  "checked_revision": 3,
+  "progress": 100,
   "updates": [
     {
       "percent": 10,
@@ -177,6 +179,10 @@ Die vorhandene Visual Reference Board HTML ist eine statische Bildgalerie, kein 
     {
       "percent": 90,
       "evidence": "Vollständiges revidiertes Initialisierungspaket bereit: Visionr2/Designr3/Planr2, unveränderteFactory/Technik/Setup,39/39Anforderungsdisposition, unabhängigeReviewapproved undHuman-Bildfreigabe gespeichert. KeineweiterenDesignkorrekturen. Kandidat2b343b7/Manifestr3e520abddf9328ac87d1d915b1bb5aac300ec15564a212513af904e02206b34f9. Handover/Run/Bootstrapzur verbleibenden zweitenGesamtfreigabe aktualisiert; M1noch nichtbegonnen. Kein100%-AbschlussvorübrigerHumanentscheidung."
+    },
+    {
+      "percent": 100,
+      "evidence": "Human hat exaktes unabhängigapproved Gesamtpaket fürM1 genehmigt. WirksameEntscheidung externimReview; alle15genehmigtenArtefakte/Domainbytegleich. Initialisierungabgeschlossen, Bootstrapinitialized. M1freigegeben aberaufaktuellenHumanwunsch nochkeineUmsetzung; erstÜberblickundausdrücklichverlangteGit-Sicherung. KeineSpiel-/Laufzeitabnahmebehauptet."
     }
   ],
   "drift_checks": [
@@ -211,6 +217,12 @@ Die vorhandene Visual Reference Board HTML ist eine statische Bildgalerie, kein 
       "reviewer": "/root/init_review",
       "decision": "continue",
       "evidence": "Exakte r3-Review im bestehenden Reviewpack. Originalauftrag undPremium-Vorgabeerfüllt; nurzweiAssettypen/einvorhandenerRenderer, keine neueScope/Agenten/Infrastruktur. UnveränderteDomain/Anforderungen/Technikreusbar. 18:25UTC etwa43/120Minuten,77bis19:41:54;4/6Korrekturzyklen und4/4Bildaufrufe verbraucht. KeineweitereGestaltung nötig; weiterzur bestehenden gebündelten übrigenHumanentscheidung,keineerneuteBildfreigabe."
+    },
+    {
+      "percent": 100,
+      "reviewer": "/root",
+      "decision": "continue",
+      "evidence": "OriginalauftragInitialisierung mit39Quellen/39Anforderungen,wirksamerDomain,Vision/Verträgen/Technik,Premium-Referenz,SetupguideundgründlichemM1vollständig. Alle Humanänderungen undbeideGateserfüllt; unabhängige80%-Reviewapproved wirdunverändertwiederverwendet. Abschlussschrittändertnur externeFreigabe/Navigation/Checkpoint, keineProduktquellenoderneueMechanismen. Gleiche3Astra/xhigh,4/6Zyklenund4/4Bildaufrufe,Ende19:41:54UTC; keineweitereKorrekturrunde. Continueausschließlich zurbeauftragtenGit-Sicherung/Übersicht, anschließendInitialisierungbeendet; M1separaterAusführungsauftrag."
     }
   ],
   "obligations": {
@@ -220,15 +232,15 @@ Die vorhandene Visual Reference Board HTML ist eine statische Bildgalerie, kein 
     },
     "scope_authority": {
       "state": "satisfied",
-      "evidence": "Human fordert ausdrücklich Neuherstellung der abgelehnten Referenz und nötige Begleitänderungen. KonkretesAmendmentr2 imselbenRun, keineDomainänderung."
+      "evidence": "NeuerHumanauftrag genehmigtGesamtpaketfürM1 undfordertCommit+PushvorUmsetzung. Runr3dokumentiertengenPushoverride; Kandidateninhalt/Team/Budgetunverändert,keinM1-Start."
     },
     "agent_start_review": {
       "state": "satisfied",
-      "evidence": "Exakte Startpässe undoperativeAmendmentfreigabe vorhanden; finalerinit_review-Startpass aufCommit2b343b7/Manifestr3 durchinit_spawn. UnabhängigeSchlussreviewapproved und80%-Driftcontinue imReviewpack."
+      "evidence": "BisherigeStart-/Operativ-/Inhaltsfreigabenbestehen. init_spawn passaufRoot-Abschluss/Entscheidung/Gitpush. init_spawnselbstdirekteBootstrap-AdmissionausverifiziertergeschützterSpawn-RollegemäßCollaboration§1.1undseparatemPrüfauftrag;keinrekursiver/selbsterteilterPass,keineSachabnahme."
     },
     "human_gates": {
       "state": "satisfied",
-      "evidence": "Domainr1Humanapproved undneueBildgestaltungr3explizitHumanabgenommen, nichtwiederfragen. ÜbrigeGesamtinitialisierung amvereinbarten zweitenGateoffen; keine Produktumsetzungvor dieserEntscheidung."
+      "evidence": "Domain-, Bild- undnunGesamtinitialisierungs-/M1-Freigabe explizitHumanapproved. AktuellerWunsch: vorM1Übersicht/Commit/Push. KeineerneuteGenehmigungunveränderterInhalte."
     },
     "capability": {
       "state": "satisfied",
@@ -380,3 +392,7 @@ init_spawn pass für /root/init_review auf Commit2b343b78d4003397807b6651235f465
 Kandidat2b343b78d4003397807b6651235f465ae16d4960/Manifestr3e520abddf9328ac87d1d915b1bb5aac300ec15564a212513af904e02206b34f9 unverändert unabhängigapproved. F-VIS-02geschlossen; tatsächliche Human-Bildfreigabe erfasst. Gesamtstand90%, gleiche Aufgabe, keine100%- oderSpielabschlussbehauptung. KeineweitereDesignkorrektur,4/6Zyklenverbrauchbleibt. Runinverification undBootstrapawaiting_human_initialization_gate; verbleibendegebündelteGesamtfreigabe imReviewpackvorlegen, ohneerneuteDomain-/Bildfreigabe. M1enthält echtenStudio-/Spiel-/Save-/Qualitätsnachweis und wurde nichtbegonnen. KeinPushoderInstallation.
 
 Finaler direkter Runcheck am24.10.2026 18:29UTC: ausschließlich bekannter AHV-RUN-CHECK-001-Statusguard, kein neuer Fehler und kein PASS behauptet. Unter bestehendem ausdrücklichem Human-Override nicht blockierend.
+
+## Abschlussrevision r3 und Git-Auftrag
+
+Human erteilt ausdrücklich Gesamtfreigabe für M1; verlangt zuvor Überblick sowie Commit/Push. Root-Abschlussstartpass durch init_spawn vorhanden. Genau dieser Push auf bestehendemBranch/Remote ersetzt bisherigenPushausschluss, keinForce/Merge/Publizieren. Reviewerurteil undKandidatenbytes unverändert; keine zusätzlicheSachreview/Korrektur. Init_spawn selbst nach geschützterSpawnrolle/Collaboration§1.1 direktbootstrapped, keineSelbstfreigabe. Runabschluss bezeichnet nur Initialisierung; M1nichtgestartet. Git-Transferresultat wird anhand tatsächlichemPush undRemoteRef geprüft, nicht ausdiesemCheckpoint vorwegbehauptet.

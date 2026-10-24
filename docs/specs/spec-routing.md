@@ -5,7 +5,7 @@
 
 ## Startup
 
-Für jede Gestaltung und Spiel-/Designreview verpflichtend: [Produktregel Premium-Qualität und menschlicher Spielanreiz](../agent-extensions.md). Der Human hat Design r2 abgelehnt; ein früheres Agent-`approved` ist keine Umsetzungsfreigabe.
+Für jede Gestaltung und Spiel-/Designreview verpflichtend: [Produktregel Premium-Qualität und menschlicher Spielanreiz](../agent-extensions.md). Design r2 wurde abgelehnt; die neue Gestaltung r3 und anschließend das Gesamtpaket für M1 sind jetzt vom Human genehmigt. Wirksame externe Entscheidung: [Initialisierungsreview r3](../reviews/20261024-1.5.3-boltbots-initialization-review.md).
 
 Before task routing, read root `README.md`, `docs/handover.md`, `.agentic-harness/manifest.md`, and
 the effective Domain Foundation and active Product Vision Brief when they exist. Only
@@ -39,12 +39,14 @@ Initialization replaces this initial map with narrow routes to actual global spe
 - Fachliche Grundlage (Humanfreigabe im verlinkten Review erteilt; Kandidatenbytes unverändert): [Domain Foundation, Kontext CTX-FACTORY und gebundene Diagramme](../domains/domain-foundation.md).
 - Human-Domain-Entscheidung und unabhängige Review: [Review-Paket](../reviews/20261024-1.5.3-boltbots-domain-foundation-review.md). Der Run hält den offenen Validatorbefund F-02 und den sicheren Wiederaufnahmestand.
 
-## BoltBots Initialisierungsphase
+## Freigegebene Produktgrundlage und nächster M1-Schritt
 
-- Aktueller führender [Initialisierungs-Run](../work/runs/boltbots-initialization-001.md); Domain-Run ist historischer Vorgänger.
-- Pflichtkontext nach Foundation: [Vision/MVP r2](../product/vision-and-mvp.md), derzeit Kandidat.
+- Abgeschlossener führender [Initialisierungs-Run](../work/runs/boltbots-initialization-001.md); Domain-Run ist historischer Vorgänger.
+- Pflichtkontext nach Foundation: [Vision/MVP r2](../product/vision-and-mvp.md), wirksam durch die externe Human-Gesamtfreigabe. Die eingefrorenen Kandidatenheader sind historische Metadaten; genehmigte Inhalte bleiben bytegleich.
 - CTX-FACTORY Module Entry Map, öffentliche Target-Verträge, Userflows/Trace: [Factory r1](factory-module.md).
 - Globale Technik, ADR-01 Roblox-Lieferweg, Releasepolitik: [Technik r1](technical-foundation.md).
 - Visuelle Quellen/Design System/Mockupvertrag: [Design r3](../design/design-reference.md).
 - Meilensteine, Walking Skeleton, WP/Run-Vorschläge: [Plan r2](../planning/milestones.md).
 - Lokale Einrichtung und nachgewiesene Grenzen: [Setup r1](../setup.md).
+
+M1 ist vom Human genehmigt, aber noch nicht umgesetzt. Nächster Ausführungsschritt: bestehenden Plan in den konkreten M1-Auftrag übernehmen, tatsächliche Fähigkeiten/Tools prüfen und anschließend lokale Umgebung sowie erste echte Spielversion aufbauen. Keine erneute Fach-/Bild-/Initialisierungsfreigabe für unveränderte Inhalte.

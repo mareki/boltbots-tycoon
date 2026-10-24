@@ -2,7 +2,7 @@
 
 Ein zugängliches Roblox-Fabrikspiel: Roboter sichtbar produzieren, Maschinen verbessern, fünf Designs sammeln und die eigene Fabrik gestalten. Ziel und geplanter Umfang stehen in [Vision/MVP](docs/product/vision-and-mvp.md). Der aktuelle Arbeitsstand steht ausschließlich im [Handover](docs/handover.md).
 
-**Entwicklung auf einem neuen Rechner:** [Codex-geführter Setup-Guide](docs/setup.md). Die Initialisierung ist noch nicht insgesamt freigegeben; Root-Build-/Spielbefehle entstehen erst in M1. Der unveränderte Ausgangsprototyp unter `docs/product/reference/boltbots-v0.2/` ist Referenzmaterial und kein bereits abgenommenes Spiel.
+**Entwicklung auf einem neuen Rechner:** [Codex-geführter Setup-Guide](docs/setup.md). Die Initialisierung und M1 sind [vom Human freigegeben](docs/reviews/20261024-1.5.3-boltbots-initialization-review.md); Root-Build-/Spielbefehle entstehen erst in M1. Der unveränderte Ausgangsprototyp unter `docs/product/reference/boltbots-v0.2/` ist Referenzmaterial und kein bereits abgenommenes Spiel.
 
 > Artifact class: Navigation
 > Linked owners: root `AGENTS.md`, `AH-SPEC-DISTRIBUTION-001`, and product artifacts named below

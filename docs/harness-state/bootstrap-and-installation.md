@@ -4,7 +4,7 @@
 > Artifact class: Work contract  
 > Revision status: `active`  
 > Work status: `active`  
-> Bootstrap lifecycle state: `awaiting_human_initialization_gate`
+> Bootstrap lifecycle state: `initialized`
 > Semantic owner / revision: Harness Bootstrap / `1`  
 > Governing specifications: `AH-SPEC-DISTRIBUTION-001`, `AH-SPEC-INITIALIZATION-001`  
 > Decision Authority / reviewers: Human Product Authority  
@@ -17,7 +17,7 @@
 - Actual manifest/protected-payload tree SHA-256: manifest `e424f12705d41a7df56b8a8563077ce0ad1a5d17570bcfdf4e7a3f93a33a8702` / protected tree `a9a1e42c5aa369d9d7f866544c62a9c0a1623ad7a8291b3daf8152a847443be8`
 - Installation actor/time/tool: marek.i@gmx.net / 2026-10-24T09:36:36Z / install_or_upgrade.py
 - Last verification evidence: docs/reviews/evidence/harness-validation-bootstrap-boltbots-tycoon-1-5-3-f44da9602c2b.json
-- Product Technical Delta/profile selection: Kandidat BOLTBOTS-TECH-001 r1; Roblox/Rojo, kein AWS-Profil ausgewählt; ADR-01 und Releasepolitik am Human Initialization Gate pending.
+- Product Technical Delta/profile selection: Kandidat BOLTBOTS-TECH-001 r1; Roblox/Rojo, kein AWS-Profil ausgewählt; ADR-01 und Releasepolitik durch Human-Gesamtfreigabe im Initialisierungsreview genehmigt; keine behauptete Runtime-Abnahme.
 - Domain Foundation/Human Domain Decision: exakte Foundation Revision1 fachlich vom Human approved; wirksame Entscheidung in BOLTBOTS-DOMAIN-REVIEW-001. Kandidatenbytes bleiben unverändert; Fortsetzung unter ausdrücklich erteilter enger Human-Ausnahme für den bekannten Statusfeldfehler; keine erneute Domainfreigabe nötig.
 
 ## Current Transition
@@ -38,14 +38,14 @@
 
 - Human initialization instruction: Humanauftrag im aktuellen Chat am 2026-10-24: Initialisierung und besprochenen Plan nach Harness ausführen; genau drei Astra-Agenten mit xhigh; Fortschritt in 10%-Schritten und obligatorische Drift-/Verkomplizierungschecks. Auftrag und Grenzen: docs/work/runs/boltbots-domain-foundation-001.md, Abschnitt Human Authority.
 - PRD/input snapshot digests: benannte Original-PRD SHA-256 `97d742c2dace4cb5a8e198c199a2ec35d904fa26e9324b8a5a12377dac8e6e02`; sortiertes Verzeichnisinventar SHA-256 `e8910300b05414574a29d53ff8c3d36b766e5c028993ab1160a97653d4ad9235`. Original: `/Users/marek/Downloads/BoltBots_Tycoon_Codex_v0.2`; 39 sichere Nutzdateien, 896174 Bytes. Nach Run-Aktivierung wurden 39 Nutzdateien unverändert übernommen; SHA256/Größen vollständig gegen Original geprüft. Index: docs/product/input-snapshot-manifest.json.
-- Candidate/active Product Vision: BOLTBOTS-VISION-001 r2, docs/product/vision-and-mvp.md; Premium-Anforderung ergänzt, unabhängig approved; Bildgestaltung bereits Humanapproved, übriges Human Initialization Gate offen.
+- Candidate/active Product Vision: BOLTBOTS-VISION-001 r2, docs/product/vision-and-mvp.md; wirksam durch externe Human-Gesamtfreigabe im Initialisierungsreview r3, exakte Kandidatenbytes unverändert.
 - Candidate/effective Domain Foundation: `BOLTBOTS-DOMAIN-FOUNDATION-001` Revision1, `docs/domains/domain-foundation.md`; exakter Kandidat über Human-Entscheidung im Review fachlich freigegeben. Eingefrorene interne Kandidatenmetadaten sind keine Behauptung eines gestarteten Folge-Runs.
 
 ## Next Allowed Transition
 
 - Guard: integrity verified; named original PRD and repository-safe input classified; Independent operational authorization and start clearances recorded; Domain recommendation und Humanentscheidung approved; Initialisierung aktiv unter dokumentierter enger Human-Ausnahme für die beiden bekannten Statusprüferabweichungen. Kein finaler Validator-PASS behauptet.
-- Exact next safe action: Human hat Design r2 abgelehnt (changes_requested, F-VIS-02). Neue Gestaltungsreferenz r3 ist unabhängig approved, Human hat die Bilder ausdrücklich abgenommen. Verbleibende Gesamtfreigabe für Konzept/Technik/Plan und M1-Start gemeinsam vorlegen; keine erneute Domain-/Bildfreigabe, keine Produktumsetzung vor dieser Entscheidung. Domainfreigabe bleibt gültig.
-- Stop: Human Initialization Gate before delivery-intended implementation; Domain Gate already satisfied.
+- Exact next safe action: Human-Gesamtfreigabe für M1 ist erteilt. Jetzt nur Überblick und ausdrücklich beauftragte Git-Sicherung; anschließend konkreter M1-Run/Capability Preflight gemäß genehmigtem Plan. Keine erneute Initialisierungs-, Domain- oder Bildfreigabe.
+- Boundary: beide Initialisierungsgates erfüllt. M1 noch nicht operativ gestartet; vor Umsetzung aktuellen Humanwunsch nach Überblick/Sicherung sowie konkrete Capability-/Aktionsgrenzen erfüllen.
 
 The installer resolves every generated installation field before the repository may pass install verification. Handover only links this state.
 
@@ -54,3 +54,7 @@ The installer resolves every generated installation field before the repository 
 24.10.2026: Human changes_requested für Design r2 wegen fehlender Premium-Qualität und menschlichen Spielanreizes. Initialisierung zur Überarbeitung zurückgegeben; keine Human Initialization Approval. Historische Agent-Review bleibt erhalten, ist für die Designabnahme nicht ausreichend. Quelle: Initialisierungsreview, Abschnitt Humanentscheidung; verbindliche Ergänzung docs/agent-extensions.md.
 
 Aktueller Übergang nach Neuherstellung: initializing → awaiting_human_initialization_gate, Kandidat2b343b7/Reviewr3. UnabhängigeReviewapproved, F-VIS-02geschlossen, Human-Bildfreigabeerfasst; übrigeGesamtfreigabeoffen. Historische Ablehnungbeziehtsichauf r2.
+
+## Wirksamer Abschluss
+
+2026-10-24T18:33:33Z erfasst: Marek genehmigt ausdrücklich das Gesamtpaket für M1. `awaiting_human_initialization_gate` → `initialized`; exakter Kandidat2b343b7/Manifestr3e520abddf9328ac87d1d915b1bb5aac300ec15564a212513af904e02206b34f9. Quelle: aktueller oberster Entscheidungsabschnitt im Initialisierungsreview. Frühere Pending-/Ablehnungsabschnitte sind Historie. KeineSpielumsetzungoderRuntime-Abnahme durchdiesenÜbergang.
