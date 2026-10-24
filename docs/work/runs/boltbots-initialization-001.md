@@ -2,9 +2,9 @@
 
 > Artifact ID: `BOLTBOTS-RUN-INITIALIZATION-001`
 > Artifact class: Work contract
-> Revision: 1
+> Revision: 2
 > Semantic owner: /root
-> Work status: verification — Human changes_requested, Designqualität offen
+> Work status: active — Human-beauftragte Designneuherstellung, Amendment r2
 > Decision class: D3
 
 ## Auftrag, Bindung und Grenze
@@ -15,7 +15,7 @@ Die genaue freigegebene Foundation bleibt SHA256 `2cd9c514b3f1aefc1f7955e5389e75
 
 Scope Lock: Das Ergebnis sind die notwendigen Initialisierungsartefakte für genau einen Factory-Kontext und den genehmigten Horizont. Bestehende Quellbedeutung wiederverwenden; höchstens wenige zusammengefasste Eigentümerdokumente und ein kleines gebundenes Design. Ein Fund außerhalb dieses Ergebnisses wird mit Owner/Trigger zurückgestellt. Outcome-, Pfad-, Team-, Budget- oder externe Aktionsausweitung braucht entsprechende vorherige Human-Autorität.
 
-Finite Grenze:120Minuten ab16:38:45UTC am24.10.2026, Ende18:38:45UTC, einschließlich Vorbereitung. Gesamtfortschritt90%; Korrekturzyklus3von3 einschließlich fokussierter Closure abgeschlossen,0Reserve. Human Initialization Decision ausstehend. Keine Rücksetzung am Phasenwechsel. Phase-A-Zeitrahmen beendet; keine erneute Arbeit an ihrer Fachsemantik.
+Aktuelle Grenze gemäß ausdrücklichem Human-Neuherstellungsauftrag/Amendmentr2:17:41:54–19:41:54UTC am24.10.2026 einschließlichVorbereitung. Kumulativmax6Korrekturzyklen,3historischverbraucht. Gesamtstandauf60%korrigiert; fehlgeschlagene70–90%-Bewertungbleibt untenalsHistorie. KeineerneuteArbeitanderDomainsemantik.
 
 ## Führende Arbeitsliste
 
@@ -24,10 +24,10 @@ Finite Grenze:120Minuten ab16:38:45UTC am24.10.2026, Ende18:38:45UTC, einschlie�
 | Quellen/Humaninput/Domainfreigabe | Erfüllt, unverändert referenziert | Bindung beim neuen Run prüfen |
 | Feinkonzept und kompletter Anforderungsüberblick | Kandidat: vision-and-mvp.md,39/39IDs | unabhängig approved; Human Initialization Gate |
 | Technische Grundlage und Releasepolitik | Kandidaten factory-module.md/technical-foundation.md | unabhängig approved; ADR-01 zur Humanentscheidung |
-| Premium-Richtung früh prüfen | Designvertrag vorhanden, frühe Flow-Linse läuft | Designr2/8PNG unabhängig approved; Human Designentscheidung |
+| Premium-Richtung früh prüfen | Design r3 neu hergestellt und durch Creator gesehen, F-VIS-02 bis unabhängiger Prüfung offen | Exakte Premium-/Spielreizreview und 80%-Drift |
 | Geführtes Setup nach Checkout | Setupguide Kandidat vorhanden | später in M1 gegen tatsächlichen Ablauf verifizieren |
 | Meilensteine, M1 gründlich | Plan Kandidat mit M1/WP-01A/B, M2/M3 und6Wochen | unabhängig approved; zweite Humanentscheidung |
-| Zweites Human-Gate | Review-Pack r2 unabhängigapproved, Humanpending | Paketvorlegen; keineUmsetzungvorEntscheidung |
+| Zweites Human-Gate | Human changes_requested, Designmangel offen | Erst tragfähigen neuen Kandidaten herstellen/reviewen, dann Gatevorlage |
 
 ## Design-Vorbereitung und Capability
 
@@ -37,8 +37,8 @@ Die vorhandene Visual Reference Board HTML ist eine statische Bildgalerie, kein 
 ```json
 {
   "schema_version": "1",
-  "revision": 1,
-  "status": "verification",
+  "revision": 2,
+  "status": "active",
   "harness_version": "1.5.3",
   "run_kind": "bootstrap_initialization",
   "decision_class": "D3",
@@ -58,6 +58,10 @@ Die vorhandene Visual Reference Board HTML ist eine statische Bildgalerie, kein 
     {
       "id": "BOLTBOTS-RUN-DOMAIN-001",
       "path": "docs/work/runs/boltbots-domain-foundation-001.md"
+    },
+    {
+      "id": "BOLTBOTS-VISION-001",
+      "path": "docs/product/vision-and-mvp.md"
     }
   ],
   "outcome": "Prüfbare vollständige Initialisierungsgrundlage mit Feinkonzept/MVP, Anforderungen, technischen Verträgen, Designreferenz, Meilensteinen und gründlichem M1 sowie Human Initialization Review Pack; Halt vor funktionaler Umsetzung.",
@@ -75,18 +79,19 @@ Die vorhandene Visual Reference Board HTML ist eine statische Bildgalerie, kein 
     "docs/handover.md",
     "docs/specs/spec-routing.md",
     "README.md",
-    "docs/reviews/evidence/BOLTBOTS-RUN-INITIALIZATION-001/**"
+    "docs/reviews/evidence/BOLTBOTS-RUN-INITIALIZATION-001/**",
+    "docs/agent-extensions.md"
   ],
   "non_goals": [
     "Foundationsemantik oder bereits genehmigte Kandidatenbytes verändern",
     "Harness-Reparatur, Coremutation oder Upgrade",
     "Produktcode übernehmen/ausführen/implementieren, Studio- oder Blender-Bedienung als Spieltest",
-    "Toolinstallation, Netzwerk-Upload, Git-Push, Veröffentlichung, Kauf oder Kontoaktion",
+    "Toolinstallation,andereNetzwerk-Uploads,Git-Push,Veröffentlichung,KaufoderKontoaktion",
     "Human Initialization Gate vorwegnehmen; Architektur für P1/P2 vorbauen"
   ],
   "decision": {
     "authority": "Human Product Authority; /root/init_review autorisiert operative Ableitung aus ursprünglichem Initialisierungsauftrag und bestehender Domainfreigabe",
-    "approval_ref": "Ursprünglicher Initialisierungsauftrag, Human approved Domain-Review, aktueller expliziter Statusprüfer-Override; operative Ableitung /root/init_review approved am2026-10-24 nach exakter Authority-/Hashprüfung.",
+    "approval_ref": "Aktueller ausdrücklicher Humanauftrag nach F-VIS-02: interaktive Designreferenz neu machen und alle betroffenen Unterlagen anpassen, jetzt umsetzen. Amendment r2 bewahrt3verbrauchteZyklen und erhöht kumulativeGrenze auf6; operative Prüfung durch /root/init_review approved; Root-Aktivierungsstartpass durch /root/init_spawn pass.",
     "lead": "/root",
     "reasoning": "xhigh",
     "agents": [
@@ -97,14 +102,16 @@ Die vorhandene Visual Reference Board HTML ist eine statische Bildgalerie, kein 
     "reviewers": [
       "/root/init_review"
     ],
-    "max_corrections": 3,
-    "effort_override": "none"
+    "max_corrections": 6,
+    "effort_override": "human-approved:20261024-design-remake"
   },
   "external_actions": {
-    "allowed": [],
+    "allowed": [
+      "Eingebautes image_gen: höchstens4Generierungen/Edits von2ConceptAsset-Typen (Fabrikszene,Roboterset) mit repository-safe Originalkonzepten/erzeugtenEntwürfen alsReferenz; keineSecrets/Accounts/Publikation. Ergebnisse ausCodexHome insRepo kopieren."
+    ],
     "prohibited": [
       "Installation oder Systemänderung",
-      "Remote Upload/Push/Publish",
+      "Andere RemoteUploads,Git-Push,Veröffentlichung",
       "Account/Payment/Production",
       "Produktskripte oder echte Spielausführung"
     ]
@@ -120,10 +127,7 @@ Die vorhandene Visual Reference Board HTML ist eine statische Bildgalerie, kein 
     "applicability": "required",
     "spawn_reviewer": "/root/init_spawn",
     "clearance": "pass",
-    "cleared_agents": [
-      "/root",
-      "/root/init_review"
-    ]
+    "cleared_agents": ["/root", "/root/init_review"]
   }
 }
 ```
@@ -132,8 +136,8 @@ Die vorhandene Visual Reference Board HTML ist eine statische Bildgalerie, kein 
 <!-- task-controls:start -->
 ```json
 {
-  "checked_revision": 1,
-  "progress": 90,
+  "checked_revision": 2,
+  "progress": 70,
   "updates": [
     {
       "percent": 10,
@@ -161,15 +165,7 @@ Die vorhandene Visual Reference Board HTML ist eine statische Bildgalerie, kein 
     },
     {
       "percent": 70,
-      "evidence": "Synthetischer interaktiver HTML/SVG-Entwurf mit drei Ansichten und Varianten,8PNG-Kandidaten +3unveränderte Baselinebilder erstellt. Root hat alle8Kandidaten und3Quellen tatsächlich angesehen. Focusedchecks:44px-Ziele/Bounds, festeTransitions inklusive Save-Retry, Syntax/keineNetzwerkaufrufe und5Kontrastpaare bestanden. Keine Browser-/Studioausführung behauptet. Nächster Schritt konsolidierte unabhängige Gesamt-/Bildprüfung samt80%-Drift."
-    },
-    {
-      "percent": 80,
-      "evidence": "Unabhängiger init_review hat alle11Bilder tatsächlich gesehen, exakteHashes/Commit3aef09d und39/39PRD-IDs bestätigt. Ein konsolidierterBlocker: informativeUI-Labels unterschreiten den eigenen14px-Mindestmaßstab. Kein weiterer materiellerDomain/M1/Architektur/Autoritätsbefund. Letzter verbleibender gemeinsamerKorrekturzyklus wird nur für Schriftgrößen/erneute betroffeneBildclosure genutzt."
-    },
-    {
-      "percent": 90,
-      "evidence": "GesamtesInitialisierungspaket unabhängigapproved nachfokussierterClosure F-VIS-01:Commit89a83ae, Kandidatenmanifestr2, Designr2,8neuePNG tatsächlichvonRoot/Reviewer angesehen. KeineoffenenmateriellenFindings;39/39PRD-Anforderungen,Humanänderungen undM1 abgedeckt.3von3Korrekturzyklen verbraucht. ExaktesReview-Pack bereit; HumanInitializationDecisionpending, keineUmsetzung. NächsterSchritt zweitevereinbarteHumanentscheidung."
+      "evidence": "Design r3 neu hergestellt: ausgearbeitete Fabrikszene und fünf Charaktere, neue interaktive HUD-/Upgrade-/Sammlungs-/Fehlerquelle. Acht PNGs tatsächlich angesehen; 13 gezielte Checks auf 14 Fixture/Viewport-Kombinationen und85Aktionsgrenzen bestanden, informativeSchrift>=14,Kontrastminimum5.4:1. Visionr2/Planr2/Premium-M1-Abnahme angepasst, Factory/Technik/Setup unverändert. KeineBrowser-/Studioausführung. NächsterSchritt exakte unabhängige Qualitätsreview inklusive80%-Drift; F-VIS-02offen."
     }
   ],
   "drift_checks": [
@@ -198,12 +194,6 @@ Die vorhandene Visual Reference Board HTML ist eine statische Bildgalerie, kein 
       "reviewer": "/root",
       "decision": "continue",
       "evidence": "Originalziel bleibt Initialisierung mit M1-Setup/realem Spiel/Design/Agenttest, nicht bloß Prozess. Alle39Anforderungen disponiert; keine neue Domain, kein eigener Backenddienst, Blender optional. Sechs zusammengefasste Docs statt separatem Artefakt pro Pflicht. Größtes Risiko reale Studio-/Save-/Gerätefähigkeit in M1 ausdrücklich offen. Geplantes Rendering nutzt vorhandenes sharp, keine Installation/Cloud. Rund34von120Minuten PhaseB verbraucht, Rest bis18:38:45UTC;2von3Korrekturen verwendet,1verbleibt. UI begrenzt auf3Ansichten/Varianten, gleicheReviewrunde. Weiter zum visuellen Nachweis nach früher Flow-Linse."
-    },
-    {
-      "percent": 80,
-      "reviewer": "/root/init_review",
-      "decision": "continue",
-      "evidence": "UnabhängigeOriginalauftrag-/Quellen-/Bildprüfung: Konzept/M1/Architektur und39Anforderungen konsistent; alle8Kandidaten und3Baselines tatsächlich angesehen. Weiter nur zur eng begrenzten Schriftgrößenkorrektur, keine Ausweitung oder Absenkung des Qualitätsmaßstabs. Eine verbleibendeKorrektur plusbetroffeneClosure; PhaseB-Ende18:38:45UTC. Endreviewbefunde im bestehendenInitializationReviewPack. Human- und realeSpielnachweise bleiben offen."
     }
   ],
   "obligations": {
@@ -213,11 +203,11 @@ Die vorhandene Visual Reference Board HTML ist eine statische Bildgalerie, kein 
     },
     "scope_authority": {
       "state": "satisfied",
-      "evidence": "Ursprünglicher ausdrücklicher Initialisierungsauftrag umfasst Phase B nach jetzt erteilter exakter Human-Domain-Freigabe. Enger F-02-Override hebt nur den formalen alten Run-Stop auf. Kein neuer Produktumfang."
+      "evidence": "Human fordert ausdrücklich Neuherstellung der abgelehnten Referenz und nötige Begleitänderungen. KonkretesAmendmentr2 imselbenRun, keineDomainänderung."
     },
     "agent_start_review": {
       "state": "satisfied",
-      "evidence": "BestehendeRoot-/Operativpässe; init_spawn pass für konkreteFrühflow- und finaleInhalts-/Bildreview. init_review finaleapproved mitfokussierterClosure auf89a83ae undManifest r2. UnveränderteProduktreview und Baselines wiederverwendet; keinezusätzlicheRunde."
+      "evidence": "init_spawn pass root assignment_preparation und exaktesrun_activation r2 sowieinit_review operative/Art-Flow-Prüfung. init_review approvedAmendmentr2 undowner_approved_standalone; frühereFlowsemantikreusbar. KeinePremiumabnahmevorgezogen."
     },
     "human_gates": {
       "state": "satisfied",
@@ -225,7 +215,7 @@ Die vorhandene Visual Reference Board HTML ist eine statische Bildgalerie, kein 
     },
     "capability": {
       "state": "satisfied",
-      "evidence": "Python/Git/Node und gebündeltes sharp vorhanden; SVG→PNG nach /tmp erfolgreich, ohne Browser, Netzwerk oder Installation. Noch keine Produkt-/Designbehauptung. Studio-App vorhanden, keine Funktionsprüfung. Reviewer Astra/xhigh aus bestehendem Team."
+      "evidence": "Eingebautesimage_gen verfügbar undSkillgelesen; Node24.19/sharp0.35 bereitsfunktionsgeprüft. KeineInstallation/Accountkostenautorität. ConceptAssetsprojektlokalsichern, SVG/HTML-UIundPNGnativprüfen; keineBrowser-/Studiofähigkeitbehaupten."
     },
     "mutation_boundary": {
       "state": "satisfied",
@@ -233,7 +223,7 @@ Die vorhandene Visual Reference Board HTML ist eine statische Bildgalerie, kein 
     },
     "budget_stop": {
       "state": "satisfied",
-      "evidence": "PhaseB16:38:45–18:38:45UTC einschließlichVorbereitung. BeimAbschluss17:34UTC rund55von120Minutenverbraucht. Genau3Astra/xhigh-Identitäten,3von3Korrekturzyklen einschließlichletzterClosure verbraucht. KeineweiterenProduktänderungen; sichereGateübergabe. Human-Gatepending."
+      "evidence": "Amendmentr2 endet19:41:54UTC. Kumulativ4von6Korrekturzyklen einschließlich aktuellerNeuherstellung,2verbleiben; zugehörigeReview/Closure gehörtzuZyklus4. Alle4Bildaufrufe verbraucht,2Assettypen. KeineweiterenBildaufrufe oderneuenAgenten."
     },
     "routed_requirements": {
       "state": "satisfied",
@@ -286,7 +276,7 @@ Studio: Dateiprüfung fand /Applications/RobloxStudio.app, bewies aber keinen er
     "S-COLLECTION/collection/390x844",
     "S-ERROR/save_error/390x844"
   ],
-  "representative_coverage": "Drei Kernansichten mit Erfolg-/Speicherfehlervarianten; klassische und schmale Darstellung. Quelle BOLTBOTS-DESIGN-001 r1; Originale und echte Kandidaten-PNGs im bestehenden Run-Evidenzverzeichnis. Standalonecreation operativ genehmigt, Humanfinaldecision pending."
+  "representative_coverage": "Drei Kernansichten mit Erfolg-/Speicherfehlervarianten; klassische und schmale Darstellung. Quelle BOLTBOTS-DESIGN-001 r3; Originale und echte Kandidaten-PNGs im bestehenden Run-Evidenzverzeichnis. Standalonecreation operativ genehmigt, Humanfinaldecision pending."
 }
 ```
 <!-- visual-assurance:end -->
@@ -302,3 +292,64 @@ UnabhängigeClosure17:32:22UTC approved; F-VIS-01 geschlossen. Exaktes Review: d
 ## Human-Ablehnung nach der 90%-Meldung
 
 Der Human lehnt Designrevision2 ausdrücklich als minderwertig/nicht spielanregend ab. Damit ist die frühere Aussage zur Freigabereife überholt; keine100%-Meldung oder Produktumsetzung. F-VIS-02 im vorhandenen Review ist offen. Verbindliche neue Klarstellung für jede Gestaltung/Review: Premium-Qualität und menschlicher Spielanreiz sind harte Abnahmebedingungen; bei negativer Bewertung keinapproved. Die Regel ist auf ausdrücklichen Humanauftrag unter docs/agent-extensions.md erfasst und über README/Routing/Handover verpflichtend geroutet. Das ist eine direkte neue Human-Anforderung an die Projektführung, keine nachträgliche technischeAbnahme oder weitereUI-Korrekturschleife. HistorischeBudgets bleiben erhalten. Quellen und bisherigeReview werden als Fehlernachweis bewahrt, nicht als akzeptierteDesignreferenz weiterverwendet.
+
+## Amendment r2 — ausdrücklicher Auftrag zur Neuherstellung
+
+Human: „die interaktive Design-Referenz musst du neu machen und was auch immer dazugehört, muss dann angepasst werden. Mach das jetzt.“ Dies autorisiert die konkrete Neuherstellung zur Behebung F-VIS-02 und die nötigen Änderungen an Designvertrag, Referenzquelle/Assets, betroffenen Plan-/Qualitätsaussagen, Review/Manifest und Navigation. Fachsemantik und genehmigte Domain bleiben unverändert.
+
+Neues endliches Arbeitsfenster einschließlich Vorbereitung:24.10.2026 17:41:54–19:41:54UTC. Historische3Korrekturzyklen bleiben verbraucht; kumulativeObergrenze6, davon3neue aufgrund dieses ausdrücklichen Humanauftrags. Keine neueRun-ID und keine zusätzliche Agentenrolle. Gleiche3Astra/xhigh-Identitäten. Eine konsolidierte Qualitäts-/Funktionsreview mit früher Art-/Flow-Linse und gegebenenfalls fokussierterClosure innerhalbderReserve.
+
+**Konkrete Änderung:** Die abgelehnte flache SVG-Welt wird vollständig ersetzt. Eingebautes image_gen erzeugt eine ausgearbeitete räumliche Fabrikszene und ein zusammenhängendes Roboterset, die in der lokalen interaktiven Referenz mit einer bewusst gestalteten HUD-/Dialog-/Sammlungsschicht zusammenkommen. Höchstens4Bildgenerierungen/Edits für diese2Assettypen. Keinefinalen3D-Assets oder Studio-Spielqualität behaupten. Bestehende Quellenbilder sind ausschließlich Stil-/Qualitätsreferenzen, unverändert und repository-safe. Imagegen-Skill ist gelesen; keineCLI/API-Schlüssel/Installation. GenerierteAssets werden versioniert in docs/design/reference/assets/ übernommen, Herkunft/Prompt dokumentiert.
+
+Kernsemantik unverändert: Welt→Upgrade/Abbrechen→Erfolg→Sammlung/Auswahl, Speicherpause/Wiederholung ohneReset; Cash150→100, L1→L2, Orbitrecht; feste Entwurfsfixtures. Layout darf aufgabengerecht neu gestaltet werden. Desktop1280×800 und Mobile390×844; vorhandene8repräsentativeZustände bleiben, echteInteraktions-/Browserbelege nurwenn tatsächlich verfügbar. Native Renderquelle ermöglicht genaue PNG-Prüfung ohne Browserumgehung. Keine neueRendererplattform.
+
+**Reviewmaßstab:** Ist das Ergebnis für Menschen attraktiv und macht es Lust zu spielen? Separate begründete Bewertung der visuell-räumlichen Qualität, Robotercharaktere, Kohärenz und Spielerwirkung anhandderOriginale undderwirklichenneuenBilder. NegativeAntwortoderunbegründetesJa heißt keineAbnahme. TechnischeChecklisten ersetzen dieseEntscheidungnicht. AktuelleHuman-Qualitätsregelistbindend, frühereapproved-EmpfehlungistfürdenDesignteilverworfen.
+
+**Ereignisbezogener Drift nach Human-Ablehnung:** UrsprünglicherOutcomebleibt, tatsächlicheGestaltung hatQualitätszielverfehlt. UnveränderteDomain-/39Anforderungen-/Technik-/Planbefunde wiederverwenden. NurbetroffeneDesign-/Qualitätsbestandteile ändern. Frühere90%-Freigabereife ist ausdrücklichwiderrufen; keinzweiterGesamtzählerundkeinefalsche100%-Meldung. DieFolgebewertungmuss wiedereröffneteArbeit imselbenGesamtverlauf ehrlicheinordnen.
+
+### Korrigierte Fortschrittsaussage — gleiche Gesamtaufgabe
+
+Die70/80/90%-Aussagen setzten ein akzeptables Design voraus und sind nach expliziter Human-Ablehnung als aktuelle Leistungsaussage ungültig. Aktueller ehrlicher Gesamtstand60%: Domain, Anforderungen, Technik und Plan bleiben belegt; visueller Ergebnis-/Abnahmeteil wird neu erstellt. Das ist eine offengelegte Korrektur der vorherigen Überbewertung, kein neuer0%-Zähler und keine Budgetrücksetzung. HistorischeAussagen unddieerste80%-Review bleiben hier vollständig nachvollziehbar:
+
+```json
+{
+  "updates": [
+    {
+      "percent": 70,
+      "evidence": "Synthetischer interaktiver HTML/SVG-Entwurf mit drei Ansichten und Varianten,8PNG-Kandidaten +3unveränderte Baselinebilder erstellt. Root hat alle8Kandidaten und3Quellen tatsächlich angesehen. Focusedchecks:44px-Ziele/Bounds, festeTransitions inklusive Save-Retry, Syntax/keineNetzwerkaufrufe und5Kontrastpaare bestanden. Keine Browser-/Studioausführung behauptet. Nächster Schritt konsolidierte unabhängige Gesamt-/Bildprüfung samt80%-Drift."
+    },
+    {
+      "percent": 80,
+      "evidence": "Unabhängiger init_review hat alle11Bilder tatsächlich gesehen, exakteHashes/Commit3aef09d und39/39PRD-IDs bestätigt. Ein konsolidierterBlocker: informativeUI-Labels unterschreiten den eigenen14px-Mindestmaßstab. Kein weiterer materiellerDomain/M1/Architektur/Autoritätsbefund. Letzter verbleibender gemeinsamerKorrekturzyklus wird nur für Schriftgrößen/erneute betroffeneBildclosure genutzt."
+    },
+    {
+      "percent": 90,
+      "evidence": "GesamtesInitialisierungspaket unabhängigapproved nachfokussierterClosure F-VIS-01:Commit89a83ae, Kandidatenmanifestr2, Designr2,8neuePNG tatsächlichvonRoot/Reviewer angesehen. KeineoffenenmateriellenFindings;39/39PRD-Anforderungen,Humanänderungen undM1 abgedeckt.3von3Korrekturzyklen verbraucht. ExaktesReview-Pack bereit; HumanInitializationDecisionpending, keineUmsetzung. NächsterSchritt zweitevereinbarteHumanentscheidung."
+    }
+  ],
+  "drift_checks": [
+    {
+      "percent": 80,
+      "reviewer": "/root/init_review",
+      "decision": "continue",
+      "evidence": "UnabhängigeOriginalauftrag-/Quellen-/Bildprüfung: Konzept/M1/Architektur und39Anforderungen konsistent; alle8Kandidaten und3Baselines tatsächlich angesehen. Weiter nur zur eng begrenzten Schriftgrößenkorrektur, keine Ausweitung oder Absenkung des Qualitätsmaßstabs. Eine verbleibendeKorrektur plusbetroffeneClosure; PhaseB-Ende18:38:45UTC. Endreviewbefunde im bestehendenInitializationReviewPack. Human- und realeSpielnachweise bleiben offen."
+    }
+  ]
+}
+```
+
+Human-Amendment-Referenz `human-approved:20261024-design-remake`: der wörtlich oben erfasste aktuelle Neuherstellungsauftrag nach Human-Qualitätsablehnung. Die neue endliche Arbeits-/Korrekturgrenze ist dessen konkrete operative Ableitung; kumulativerVerbrauch bleibt3. Keine allgemeine Reservefreigabe oder Änderung des Reasoning-Levels.
+
+## Aktivierung Amendmentr2
+
+Root-Aktivierungsstartpass init_spawn pass; operativeAmendmentprüfungundfrüheArt-/Flow-Linse init_review approved/pass. Begrenzteowner_approved_standalone-Neuherstellungfreigegeben, keinPremium-approved. Zyklus4startetmitAsset-/UI-Erstellung. AlteDomain-/Flow-/Planbelegereusbar; F-VIS-02bleibt offen. DirekterRuncheckvorSacharbeit; bekannteStatusguardausnahmewird weitertransparentgeführt.
+
+## Kandidat r3 — Neuherstellung und zugehörige Unterlagen
+
+Zyklus4: vier Bildaufrufe erzeugten zwei verwendete Assettypen; zwei Zwischenstände wegen Kantenqualität verworfen, nicht eingebunden. Aktuelle Fabrikszene plus sauber gerahmte Charakterporträts in gemeinsamem HTML/SVG-Renderer. Schriftüberlauf, Portrait-Ausschnitt und widersprüchlicher Fehlerhinweis während Erstellung korrigiert. Creator hat alle acht Ansichten tatsächlich gesehen; unveränderte Ansichten aus derselben Erstellungsprüfung wiederverwendet. 13 gezielte Checks bestanden, 14 Fixture/Viewport-Kombinationen,85Aktionsgrenzen, neun Kontrastpaare. Kein Browser-/Studio-/Spielnachweis.
+
+Visionr2 und Planr2 übernehmen die harte Premium-/Spielreizabnahme einschließlich StufeA in M1. Designvertrag r3 beschreibt neue Assets, Richtung, Ablauf und Nachweisgrenze. Factory/Technik/Setup benötigen keine sachliche Änderung; keine zusätzliche Runtime-Abhängigkeit. Review/Handover/Routing/Bootstrap auf Kandidatenstand gebracht. Bindungen im bestehenden Evidenzunterordner r3, frühere Fehlfassung unverändert erhalten. Nächster Schritt konkrete unabhängige Review; keine falsche Abnahme vorweggenommen.
+
+## Neue Humanfreigabe während r3-Fertigstellung
+
+Human: „Ich habe die Bilder gesehen, sieht super aus, nehme ich die ab. Fahre fort.“ Die neue Bildgestaltung ist damit angenommen, F-VIS-02 hinsichtlich visueller Richtung durch den Human aufgelöst. Genaue Bild-/Rendermanifestbindung im bestehenden Reviewr3. Nicht erneut dieselben Bilder freigeben lassen. Fortsetzung: unabhängige integrierte Review/80%-Drift und Abschluss des bestehenden Initialisierungspakets; keine behauptete pauschale Studio-/Spiel-/Externaabnahme.

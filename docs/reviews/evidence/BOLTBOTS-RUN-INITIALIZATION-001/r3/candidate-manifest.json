@@ -1,0 +1,73 @@
+{
+  "candidate": "BOLTBOTS-INITIALIZATION-CANDIDATE-001",
+  "revision": 3,
+  "artifacts": [
+    {
+      "path": "docs/product/vision-and-mvp.md",
+      "sha256": "c7d8a2e21dcd2c77957cd59024c781789d98e254a5791cced8a20b2b28783d9c"
+    },
+    {
+      "path": "docs/specs/factory-module.md",
+      "sha256": "f73825cfdf8acc323a96e462d8d5923ea6664bdde9203986b2c055d5833177e7"
+    },
+    {
+      "path": "docs/specs/technical-foundation.md",
+      "sha256": "f77fca5383200621b077f46485e49818b805ddb1559b9ab92fc209057251441d"
+    },
+    {
+      "path": "docs/design/design-reference.md",
+      "sha256": "78a93635f37a97471a86c897c3fceef51120be063158e8724c52570d40b492f3"
+    },
+    {
+      "path": "docs/planning/milestones.md",
+      "sha256": "a89805c9dfaa6cf0ca04246aecb1bd3263e04c1d6477f193ae41fad8a4e9bd28"
+    },
+    {
+      "path": "docs/setup.md",
+      "sha256": "47f4542ae90ea6323097526a39d7febc498dd4e4e8ac97922ca7171f422c57d8"
+    },
+    {
+      "path": "docs/agent-extensions.md",
+      "sha256": "c49646be94b430ec8057b96be2418505be3f74b1e69876464f10d5441aafcc94"
+    },
+    {
+      "path": "docs/design/reference/index.html",
+      "sha256": "e04c71e11f3bf9446e4102a0ea9cb3d74c0a49edc907b4193cc0bf2c970a0731"
+    },
+    {
+      "path": "docs/design/reference/design.js",
+      "sha256": "a9273ccc965e2c476cd4acff3233ef78ef4e38da6229f12b0f350b995845f643"
+    },
+    {
+      "path": "docs/design/reference/render.cjs",
+      "sha256": "5d05d82375e4bc392e8c1ee6add7ef85b88bc04341aefe05323cc1fb207a00cd"
+    },
+    {
+      "path": "docs/design/reference/assets/factory-r3.png",
+      "sha256": "799001a873387ca4c63a528457a80440fbc68efa571470b1da73873649a0955b"
+    },
+    {
+      "path": "docs/design/reference/assets/robots-r3.png",
+      "sha256": "06a335f763fd7027e5ee7808a8c5cac4f5d5ada458f938b685c9008ae216a29e"
+    },
+    {
+      "path": "docs/design/reference/assets/generation-r3.json",
+      "sha256": "30ce69c7cb301d044b9d865e6f0b999862865da0aafef4ba1b800b3668f25dac"
+    },
+    {
+      "path": "docs/reviews/evidence/BOLTBOTS-RUN-INITIALIZATION-001/r3/render-manifest.json",
+      "sha256": "b1100f9df5aa9b134d6b1eb8a2ca78496ff2b987962bbfcd6e20d7ee8d153d22"
+    },
+    {
+      "path": "docs/reviews/evidence/BOLTBOTS-RUN-INITIALIZATION-001/r3/focused-checks.json",
+      "sha256": "523731fc3b86b14b019d8d9ff9e48cff9ca345f750722f152ad9f7dd6998602b"
+    }
+  ],
+  "foundation": {
+    "path": "docs/domains/domain-foundation.md",
+    "revision": 1,
+    "sha256": "2cd9c514b3f1aefc1f7955e5389e75f9912a6f1edd5af1ca84ddbe70359b540f"
+  },
+  "human_domain_review": "docs/reviews/20261024-1.5.3-boltbots-domain-foundation-review.md",
+  "human_design_decision": "Explicit image acceptance in current chat; recorded externally in initialization review r3. No runtime proof."
+}

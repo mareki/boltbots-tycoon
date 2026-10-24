@@ -1,0 +1,154 @@
+{
+  "kind": "design_reference_only",
+  "revision": 3,
+  "renderer": {
+    "node": "v24.19.0",
+    "sharp": "0.35.5"
+  },
+  "source": [
+    {
+      "path": "docs/design/reference/index.html",
+      "sha256": "e04c71e11f3bf9446e4102a0ea9cb3d74c0a49edc907b4193cc0bf2c970a0731"
+    },
+    {
+      "path": "docs/design/reference/design.js",
+      "sha256": "a9273ccc965e2c476cd4acff3233ef78ef4e38da6229f12b0f350b995845f643"
+    },
+    {
+      "path": "docs/design/reference/render.cjs",
+      "sha256": "5d05d82375e4bc392e8c1ee6add7ef85b88bc04341aefe05323cc1fb207a00cd"
+    },
+    {
+      "path": "docs/design/reference/assets/factory-r3.png",
+      "sha256": "799001a873387ca4c63a528457a80440fbc68efa571470b1da73873649a0955b"
+    },
+    {
+      "path": "docs/design/reference/assets/robots-r3.png",
+      "sha256": "06a335f763fd7027e5ee7808a8c5cac4f5d5ada458f938b685c9008ae216a29e"
+    },
+    {
+      "path": "docs/design/reference/assets/generation-r3.json",
+      "sha256": "30ce69c7cb301d044b9d865e6f0b999862865da0aafef4ba1b800b3668f25dac"
+    }
+  ],
+  "images": [
+    {
+      "id": "r3-world-1280",
+      "surface": "S-WORLD",
+      "state": "world",
+      "viewport": "1280x800",
+      "fixture": "fixed-r3",
+      "path": "docs/reviews/evidence/BOLTBOTS-RUN-INITIALIZATION-001/r3/world-1280x800.png",
+      "sha256": "a8c781db1b72f91dcf26bb3e06ef2c3a9c0691896d5d201cdf782b36fe4146bb",
+      "svg_sha256": "df00230369e8f45d54d966b3013a725aebb5be4ece2f665054d5ec88a984e0ad"
+    },
+    {
+      "id": "r3-upgrade-1280",
+      "surface": "S-UPGRADE",
+      "state": "upgrade",
+      "viewport": "1280x800",
+      "fixture": "fixed-r3",
+      "path": "docs/reviews/evidence/BOLTBOTS-RUN-INITIALIZATION-001/r3/upgrade-1280x800.png",
+      "sha256": "8112cd8390908239116a4ec52049ba198b2e10a9ef4028a08b7be0c4d1257e43",
+      "svg_sha256": "6c71363726c582be0ca93eead4e9780cb2d3adb695ba67349020dde532575965"
+    },
+    {
+      "id": "r3-upgraded-1280",
+      "surface": "S-RESULT",
+      "state": "upgraded",
+      "viewport": "1280x800",
+      "fixture": "fixed-r3",
+      "path": "docs/reviews/evidence/BOLTBOTS-RUN-INITIALIZATION-001/r3/upgraded-1280x800.png",
+      "sha256": "17909a8ac31468a1b06d96f704a73458e0e2aea85456f3bf67ba5e5e64e4005c",
+      "svg_sha256": "ea4a1beecacb1d49e0ea7824adc89db2f4d8d8ef370f5556d5410132d13cb802"
+    },
+    {
+      "id": "r3-collection-1280",
+      "surface": "S-COLLECTION",
+      "state": "collection",
+      "viewport": "1280x800",
+      "fixture": "fixed-r3",
+      "path": "docs/reviews/evidence/BOLTBOTS-RUN-INITIALIZATION-001/r3/collection-1280x800.png",
+      "sha256": "120f45073a4104be0ae1a869153d280aa879f5616abc041915b64e95fbd40a32",
+      "svg_sha256": "49a4c232a0d7e9db738b8a6c7267d3d9cf9daf6b507d7e4a6175a09a5d753a9a"
+    },
+    {
+      "id": "r3-save_error-1280",
+      "surface": "S-ERROR",
+      "state": "save_error",
+      "viewport": "1280x800",
+      "fixture": "fixed-r3",
+      "path": "docs/reviews/evidence/BOLTBOTS-RUN-INITIALIZATION-001/r3/save_error-1280x800.png",
+      "sha256": "c3e56ee8b763a174b912c1a67453dc0b7265bae2a4ee1ef1ab09b10832ed058b",
+      "svg_sha256": "b3a6a878a30314b4c01f55a315490e7b933d008edf3f36865cee926b151683e3"
+    },
+    {
+      "id": "r3-upgrade-390",
+      "surface": "S-UPGRADE",
+      "state": "upgrade",
+      "viewport": "390x844",
+      "fixture": "fixed-r3",
+      "path": "docs/reviews/evidence/BOLTBOTS-RUN-INITIALIZATION-001/r3/upgrade-390x844.png",
+      "sha256": "73a1be439f78d6f95ae579793a59b910414dec4a12efb449f2baa070754b29f1",
+      "svg_sha256": "08575045a031e959ffca7dc57ceb9994665f770c863fb8ee8d81848db80dc49a"
+    },
+    {
+      "id": "r3-collection-390",
+      "surface": "S-COLLECTION",
+      "state": "collection",
+      "viewport": "390x844",
+      "fixture": "fixed-r3",
+      "path": "docs/reviews/evidence/BOLTBOTS-RUN-INITIALIZATION-001/r3/collection-390x844.png",
+      "sha256": "4e3636c849d569ce93d51e835c9a71275f259e10ac72178095d905e0dabcf2d8",
+      "svg_sha256": "a306e3bcfa3230086be9d73f5ecde84c392c729f13563d1ac44169c580793d00"
+    },
+    {
+      "id": "r3-save_error-390",
+      "surface": "S-ERROR",
+      "state": "save_error",
+      "viewport": "390x844",
+      "fixture": "fixed-r3",
+      "path": "docs/reviews/evidence/BOLTBOTS-RUN-INITIALIZATION-001/r3/save_error-390x844.png",
+      "sha256": "8ac6b400b36541bdf78dc8080fc5259547af83eae42022db50fe1302b3f16e40",
+      "svg_sha256": "a2ab780498a25661f461db704ddb4cde8e6d465cb7568d5867adecd7ddb16d72"
+    }
+  ],
+  "baselines": [
+    {
+      "id": "baseline-01_factory_world_concept.png",
+      "surface": "world",
+      "state": "source-concept",
+      "viewport": "original native size",
+      "path": "docs/reviews/evidence/BOLTBOTS-RUN-INITIALIZATION-001/r3/baseline-01_factory_world_concept.png",
+      "source": "docs/product/reference/boltbots-v0.2/assets/mockups/01_factory_world_concept.png",
+      "sha256": "63cf8665984b7c7903b7450b7f7da709ab29422dba9fb52cb748acc34e2be2f9"
+    },
+    {
+      "id": "baseline-02_hud_concept.png",
+      "surface": "HUD",
+      "state": "source-concept",
+      "viewport": "original native size",
+      "path": "docs/reviews/evidence/BOLTBOTS-RUN-INITIALIZATION-001/r3/baseline-02_hud_concept.png",
+      "source": "docs/product/reference/boltbots-v0.2/assets/mockups/02_hud_concept.png",
+      "sha256": "ec821ec67922a81b8fcc5070af512251c0864235e862bfe726c8021414bea84f"
+    },
+    {
+      "id": "baseline-03_robot_shop_concept.png",
+      "surface": "robots",
+      "state": "source-concept",
+      "viewport": "original native size",
+      "path": "docs/reviews/evidence/BOLTBOTS-RUN-INITIALIZATION-001/r3/baseline-03_robot_shop_concept.png",
+      "source": "docs/product/reference/boltbots-v0.2/assets/mockups/03_robot_shop_concept.png",
+      "sha256": "83f4f508d59aa35b1e43c0dc78696ab92ea6f8f8a548a16034c2a26a1ac57592"
+    },
+    {
+      "id": "rejected-r2-world",
+      "surface": "S-WORLD",
+      "state": "Human-rejected design r2",
+      "viewport": "1280x800",
+      "path": "docs/reviews/evidence/BOLTBOTS-RUN-INITIALIZATION-001/r3/rejected-r2-world.png",
+      "sha256": "d77b26b7a1481bede336c7a5fc19dfe2fb3629c7d60aa6de6a8742c646265b91"
+    }
+  ],
+  "claims": "Native SVG PNG rendering, source checks and actual image inspection; not browser or Studio execution. HTML uses same asset bytes via relative image URLs; native renderer embeds those bytes."
+}

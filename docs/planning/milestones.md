@@ -1,7 +1,7 @@
 # Meilensteine und erste Umsetzung — BoltBots
 
-> Artifact ID: `BOLTBOTS-PLAN-001` · Revision: 1 · Status: candidate
-> Owner: /root · Vision: BOLTBOTS-VISION-001 r1 · alle Runs weiterhin proposed
+> Artifact ID: `BOLTBOTS-PLAN-001` · Revision: 2 · Status: candidate
+> Owner: /root · Vision: BOLTBOTS-VISION-001 r2 · alle Runs weiterhin proposed
 
 ## Reihenfolge und Kapazität
 
@@ -38,11 +38,11 @@ Owner CTX-FACTORY, Feature F-CORE, Slice SL-01. Quellen: Factory-Verträge/Flows
 1. Eine eigene Fabrik im echten Client: Teile → Assembler → Verpackung; serverseitiger Abschluss erhöht Cash genau einmal, schaltet Scout frei und aktualisiert das nächste Ziel.
 2. Gültiges L2-Upgrade zeigt Preis und Wirkung, besitzt Abbruch/Ablehnung und bewirkt sichtbaren Tempounterschied. Orbit-Meilenstein gemäß freigegebener Semantik. Startwerte aus GameConfig sind reversible Testwerte; keine behauptete fertige Balance.
 3. Dünner realer Profiladapter mit Versionsfeld, exklusiver Sitzung, Save/Rejoin und definierter Ausfallreaktion. Ein Migrationsfixture. Keine vollständige Persistenzplattform. Lokale Adaptertests und echte private Testumgebung ergänzen einander.
-4. Ein Fabrikplatz, eine ausgearbeitete Maschine, ein Scout aus Bauteilen, Förderband/Verpackung, wichtigste Oberfläche. Tageslicht, Materialien, Größen, Kamera und einfache Animationen zusammen prüfen. Ein lokales HTML-Referenzbild ist kein Beleg dieser Studio-Szene.
-5. Stufe A: stimmiger Bauteil-Roboter mit erkennbarem Gesicht/Silhouette. Human beurteilt Richtung an echter Szene. Stufe B: anschließend individuelles Modell, frühestens wenn Richtung und Agent-Werkzeugweg nachgewiesen sind. Das kann als M2-Ausarbeitung erfolgen; kein Blender-Zwang und kein Vorgriff auf Modellqualität.
+4. Ein Fabrikplatz, eine ausgearbeitete Maschine, ein Scout aus Bauteilen, Förderband/Verpackung, wichtigste Oberfläche. Tageslicht, Materialien, Größen, Kamera und einfache Animationen zusammen prüfen. Die [Designreferenz r3](../design/design-reference.md) liefert den Maßstab für Form, Material, Licht, Charakterwirkung und sichtbare Produktion. Ihre große Kulisse ist kein Auftrag, M1 um weitere Maschinen zu erweitern. Ein lokales HTML-Referenzbild ist kein Beleg dieser Studio-Szene.
+5. Stufe A: attraktiver Bauteil-Roboter mit eigenständigem Gesicht, prägnanter Silhouette und stimmigen Proportionen. Die [Premium-Regel](../agent-extensions.md) gilt bereits hier; Bauteilbau ist keine Ausnahme für geringe visuelle Qualität. Human beurteilt Richtung an echter Szene. Stufe B: anschließend individuelles Modell, frühestens wenn Richtung und Agent-Werkzeugweg nachgewiesen sind. Das kann als M2-Ausarbeitung erfolgen; kein Blender-Zwang und kein Vorgriff auf Modellqualität.
 6. Agent spielt mit normaler Spielerberechtigung: Einstieg, Produktion beobachten, Upgrade kaufen/abbrechen, Sammlung öffnen, Save/Rejoin, fremden Plot untersuchen. Erfolg hängt von beobachtetem Ergebnis ab; UI-Tool vorhanden bedeutet noch keinen getesteten Bedienweg.
 
-**Agent-Spielbericht:** konkrete Buildrevision, Umgebung, Bildschirm/Viewport, ausgeführte Aktionen, tatsächliches Ergebnis, Screenshot/kurzer Clip und Bugs. Getrennte Bewertung von Orientierung, Feedback, Tempo, Roboterwirkung und Lesbarkeit, jeweils mit beobachteter Szene. Keine erfundenen Spielhandlungen oder subjektiven Nutzerzahlen. Human beurteilt am Ende selbst die Qualitätsrichtung.
+**Agent-Spielbericht:** konkrete Buildrevision, Umgebung, Bildschirm/Viewport, ausgeführte Aktionen, tatsächliches Ergebnis, Screenshot/kurzer Clip und Bugs. Getrennte Bewertung von Orientierung, Feedback, Tempo, Roboterwirkung und Lesbarkeit, jeweils mit beobachteter Szene. Visuelle Qualität und menschlichen Spielanreiz ausdrücklich getrennt von technischen Testergebnissen beurteilen; Schwächen führen zu Korrektur, nicht zu einer pauschalen Premium-Behauptung. Keine erfundenen Spielhandlungen oder subjektiven Nutzerzahlen. Human beurteilt am Ende selbst die Qualitätsrichtung.
 
 ### Konkrete M1-Abnahme
 
@@ -52,7 +52,7 @@ Owner CTX-FACTORY, Feature F-CORE, Slice SL-01. Quellen: Factory-Verträge/Flows
 | Geld und Eigentum | Null/Grenzpreis/Überlauf/ungültige Daten/Doppelauftrag/Parallelität; zwei Clients können fremde Plots nicht ändern |
 | dauerhaft fortsetzen | realer Save/Rejoin in separater autorisierter Testexperience; Ladefehler erzeugt kein neues Defaultprofil |
 | Fehler verständlich | Save unbestätigt → Produktion/Käufe pausieren, sichtbare Rückmeldung; sichere Wiederaufnahme demonstriert |
-| Szene stimmig | Desktop und schmale Ansicht aus echter Spielkamera, lesbarer HUD, klare Silhouette/Produktionsrichtung, keine verdeckte Hauptaktion |
+| Premium-Szene und Spielanreiz | Desktop und schmale Ansicht aus echter Spielkamera; attraktive Figuren, überzeugende Form/Material/Licht, klare Produktionsrichtung und gut lesbarer HUD. Creator und unabhängiger Reviewer beantworten getrennt und begründet: ansprechend für Menschen? Lust zu spielen? Bei Nein keine Abnahme; Human beurteilt die tatsächliche Szene. |
 | Interaktion zugänglich | Touchziele ≥44px in UI-Referenz, ausreichender Kontrast, Text zusätzlich zu Farbe, sichtbarer Fokus; tatsächliche Roblox-Bedienung separat prüfen |
 | Laufzeit begrenzt | bei 2–4 Clients keine unbeschränkt wachsende Outputzahl/Verbindungsliste; Profiling, nicht nur Augenschein |
 | Agent kann arbeiten/spielen | tatsächlich ausgeführter Bedienweg inklusive Nachweis; bei Grenze konkrete alternative Automatisierung prüfen, keine stille Verlagerung an den Human |

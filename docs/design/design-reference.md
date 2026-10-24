@@ -1,67 +1,70 @@
 # Visuelle Richtung und begrenzter Designvertrag
 
-> Artifact ID: `BOLTBOTS-DESIGN-001` · Revision: 2 · Status: candidate
+> Artifact ID: `BOLTBOTS-DESIGN-001` · Revision: 3 · Status: candidate, Humanentscheidung offen
 > Creator: /root · independent Product/UX/Engineering reviewer: /root/init_review
-> Design subwork: D2 significant_ui innerhalb des D3-Initialisierungs-Runs
+> D2 significant_ui innerhalb des D3-Initialisierungs-Runs
 > `design_reference_only` · `non_promotable` · kein implementiertes Spiel
 
-## Bedeutung vor Darstellung
+## Qualitätsziel und Bedeutung
 
-Quelle für Ziele/Guards/Fehler ist [Factory r1, Kernreise](../specs/factory-module.md), gebunden an die Human-approved Foundation r1. Der Entwurf zeigt einen Besitzer, der seine Produktion versteht, den Starter-Assembler gezielt verbessert und seinen Sammlungsfortschritt erkennt. Ein Roboter auf dem Band ist Output; eine Sammlungskarte ist ein Designrecht. Keine zusätzliche Währung, Inventarinstanz, globale Fabrikstufe oder Kaufrolle.
+**Eine einladende Roboterwerkstatt mit Figuren, die man kennenlernen und sammeln möchte.** Räumliche Tiefe, warme Beleuchtung, überzeugende Materialien und eigenständige Charaktere gehören bereits zur Designreferenz. Die [verbindliche Premium-Regel](../agent-extensions.md) verlangt zwei ausdrückliche Urteile: Ist die Gestaltung für Menschen ansprechend? Macht sie Lust, dieses Spiel zu spielen? Ein Nein verhindert die Abnahme; technische Korrektheit gleicht das nicht aus.
 
-Frühe unabhängige Flowprüfung erfolgt vor UI-Erstellung gegen diese vorhandenen Quellen; Resultat im führenden [Run](../work/runs/boltbots-initialization-001.md). Es ist eine Linse der gleichen budgetierten Review, kein zusätzlicher Human-Gate.
+Revision 2 wurde vom Human abgelehnt. Revision 3 ersetzt deren flache Weltillustration vollständig durch eine ausgearbeitete räumliche Konzeptszene und neue Charakterporträts mit neu komponiertem HUD. Die abgelehnte Fassung bleibt als historische Evidenz erhalten. Ein Agentenurteil ist keine Messung menschlicher Präferenzen und überstimmt keine Human-Ablehnung.
 
-## Eingabe und erlaubte Übernahme
+Ziele, Guards und Fehler stammen unverändert aus [Factory r1, Kernreise](../specs/factory-module.md) und der Human-approved Foundation r1. Besitzer verstehen ihre Produktion, verbessern gezielt den Starter-Assembler und wählen freigeschaltete Designs. Roboter auf dem Band sind Output; Sammlungskarten sind Designrechte. Keine zusätzliche Währung, Inventarinstanz, globale Fabrikstufe oder Shoprolle. Die frühe unabhängige Flow-/Art-Linse im [Run](../work/runs/boltbots-initialization-001.md) bestätigt die unveränderte Bedeutung vor Erstellung; sie ist keine finale Qualitätsabnahme.
 
-Unveränderte Originale und genaue SHA256 stehen im [Inputmanifest](../product/input-snapshot-manifest.json). Betroffen: `assets/mockups/01_factory_world_concept.png`, `02_hud_concept.png`, `03_robot_shop_concept.png`, `docs/VISUAL_DESIGN_BIBLE.md`, `assets/design-tokens.json` unter der importierten v0.2-Referenz. Die Bible §§Einleitung/3/5 bezeichnet die Bilder ausdrücklich als Konzept-/Moodmaterial, nicht pixelgenaue Spieloberfläche. Sie bleiben sichtbar vergleichbare Eingabe, keine final freigegebenen Spielassets; Produktionsrechte noch nicht allein durch Import geklärt.
+## Quellen und bewusste Gestaltung
 
-**Beibehalten:** freundliche Spielzeugformen, große Augen, warme Tageslichtfabrik, cyanfarbene Produktion, amberfarbene Cash-/Fortschrittsakzente, dunkle abgerundete HUD-Flächen und ein klares nächstes Ziel. **Konkrete Anpassungen:** erfundene Diamanten/XP/Shopangebote aus den Bildern entfallen gemäß freigegebener Domain/MVP; keine Bargeld-Abholung wegen automatischer Gutschrift. Typografie/Buttons werden lesbar und responsive aus den Textregeln abgeleitet. Keine Umdeutung von Bilddetails zu neuen Spielregeln. Sammlung übernimmt Familienidentität, keine Shop-/Seltenheits-/Kaufbehauptung.
+Unveränderte Eingaben: [Inputmanifest](../product/input-snapshot-manifest.json), darin die drei Bilder `01_factory_world_concept.png`, `02_hud_concept.png`, `03_robot_shop_concept.png`, `VISUAL_DESIGN_BIBLE.md` und `design-tokens.json`. Die Bible nennt die Bilder Konzept-/Moodmaterial, keine pixelgenaue Oberfläche. Sie bleiben vergleichbare Referenzen; Import allein klärt keine Produktionsrechte.
 
-Originalbilder werden für die Review unverändert ins Run-Evidenzverzeichnis kopiert und per Hash verglichen. Eigene SVG-Illustrationen sind neu erstellte Entwurfsgeometrie, keine endgültigen 3D-Assets oder Konkurrenzkopien.
+Beibehalten werden freundliche Spielzeugformen, große Augen, helle Fabrik, Cyan für Produktion, Amber für Cash/Fortschritt und dunkle abgerundete Bedienflächen. Diamanten, XP, Shop-/Seltenheitsangebote und manuelles Cash-Abholen entfallen gemäß genehmigter Domain. Bilddetails erzeugen keine neuen Spielregeln.
+
+Neue Bildbasis, erzeugt mit dem eingebauten **image_gen**, ohne Installation/API-Schlüssel:
+
+- [Fabrikszene](reference/assets/factory-r3.png): Tageslicht, räumlich gestaffelte Werkstatt, Scout im Vordergrund, sichtbarer Assembler und Förderband. Bühne und Produktionsweg bleiben gegenüber der Oberfläche dominant.
+- [Roboterset](reference/assets/robots-r3.png): Scout neugierig/ivory-cyan, Orbit mit Ring/violett, Bolt energisch/amber, Luma mit blattartigen Formen/coral, Atlas breit/mint. Unterschiedliche Körper, Gesichter und Posen; nicht bloß fünf Umfärbungen.
+- [Vollständige Prompts und Herkunft](reference/assets/generation-r3.json): vier Bildaufrufe, zwei Assettypen. Die beiden transparenten Zwischenstände wurden wegen unsauberer Kanten verworfen und sind nicht eingebunden. Der finale Satz besitzt einen bewusst dunklen Studiohintergrund; der SVG-Renderer zeigt Ausschnitte des unveränderten Originals.
+
+Die Szene ist eine **Art-Vision**, kein Screenshot eines existierenden Levels. Hintergrundmaschinen sind keine Aussage über bereits gekaufte Starterausstattung. M1 übersetzt Formensprache, Licht, Material, Figurenwirkung und Produktionslesbarkeit in einen kleinen echten Fabrikplatz; nicht die ganze Kulisse oder deren Detailmenge. Diese Konzeptbilder sind keine fertigen 3D-Modelle und keine neue Runtime-Abhängigkeit.
 
 ## Design System v0
 
-Tokens aus der Bible: `ink.deep #101B35`, `ink.panel #172B4D`, `brand.cyan #48D8F4`, `brand.amber #FFCE53`, `brand.coral #FF956B`, `brand.violet #A784F7`, `positive #5AD9A6`, `danger #F4747B`, `text.main #F4F8FF`, `text.muted #B9C8DB`, `surface.light #E7F3FF`.
+Tokens: `ink.deep #101B35`, `ink.panel #172B4D`, `cyan #48D8F4`, `amber #FFCE53`, `coral #FF956B`, `violet #A784F7`, `positive #5AD9A6`, `danger #F4747B`, `text.main #F4F8FF`, `text.muted #B9C8DB`. Dunkle Schrift auf farbigen Aktionen; helle Schrift auf dunklen Panels. Nahezu deckende Flächen schützen Text vor dem detailreichen Hintergrund. Kontrastprüfung bezieht sich auf die tatsächlich verwendeten Rollen, zusätzlich echte Bildsicht.
 
-Rollen: dunkle Schrift auf hellen/amber/cyan Buttons; helle Haupt-/Sekundärschrift auf dunklen Panels. Textkontrast für diese Paare berechnen und die wirklichen PNGs ansehen; Palette allein genügt nicht. Typografie lokale System-Sans, später passende Roblox-Sans ohne Fontdownload; Titel 28–36, Cardtitel 20–24, Körper 16, ergänzende Labels mindestens14 logische Pixel. Abstandsskala 4/8/12/16/24/32, Radius16 für Panels/12 für Buttons. Fokusring2px plus Abstand, Touchziele mindestens44px. Keine dekorative Daueranimation; reduzierte Bewegung ohne Informationsverlust.
+Lokale System-Sans, keine Fontdownloads. Titel 28–36, Cardtitel 20–26, Körper 16, informative Labels mindestens 14 logische Pixel. Abstände 4/8/12/16/24/32, Panels Radius 16–24, Buttons Radius 14. Ziele mindestens 44×44; native beschriftete Buttons, sichtbarer Fokus, Text zusätzlich zur Farbe, Statusansage und reduzierte Bewegung. Kein dekorativer Animationszwang. Interaktion und Fokus sind im Quelltext angelegt; tatsächliche Browser-/Roblox-/Screenreader-Bedienung ist damit noch nicht nachgewiesen.
 
-Komponenten ausschließlich aus Kernflows: Statusleiste (Cash/Rate/Save), Zielkarte, beschriftete Hauptaktion, Produktionsszene, Maschinenkarte mit Kauf/Abbruch, Designkarte frei/gesperrt, eine textliche Erfolgs-/Fehlermeldung, untere Navigation. Kein generischer Dashboardbaukasten.
+**Desktop 1280×800:** Welt dominant, Cash/Rate kompakt oben, nächstes Ziel links, Kontextaktion rechts, Navigation unten. Hero-Scout und Assembler bleiben sichtbar. Sammlung mit fünf großen Charakterkarten und klar getrennten Zuständen.
 
-Desktop 1280×800: Weltfläche dominant, Ziel links oben, Maschine/Upgrade rechts, Navigation unten. Schmale Ansicht 390×844: oberer Cash-/Zielbereich, verkleinerte eigene Szene und vertikale Aktionskarte, kein winzig skaliertes Desktoplayout. Mobile Priorität bleibt Ziel → Welt → Handlung. Sichere Ränder; Runtime berücksichtigt Roblox-Core-GUI/Notch separat. Text und Aktionen dürfen nicht abgeschnitten sein.
+**Mobil 390×844:** eigener Szenenausschnitt und vertikale Aktionskarte. Die Sammlung zeigt einen großen Charakter, fünf Detailwahlen und eine eindeutige Produktionsaktion. Detail ansehen ist nicht Produktion wählen. Kleinere Bildschirme, Zoom/Reflow, Roblox-Core-GUI und Notch müssen in der Runtime gesondert geprüft werden; die beiden Referenzgrößen sind keine universelle Geräteabnahme.
 
-## Kleinster kohärenter Entwurf
+## Kohärenter Ablauf und feste Fixtures
 
-| Zustand | Sichtbares Ergebnis / erlaubte Interaktion | Flowbindung |
+| Zustand / Screen | Sichtbares Ergebnis und erlaubte Aktion | Sourcebindung |
 |---|---|---|
-| world | eigene Fabrik, Scout, Ziel Starter-L2, Cash/Rate; „Ausbauen“ öffnet Detail | F-FIRST/F-UPGRADE, Q-FACTORY |
-| upgrade | Starter-Level, Preis/Wirkung, explizites Kaufen und Abbrechen | C-UPGRADE, Guard aktuelle Serverdaten im späteren Spiel |
-| upgraded | Beispielantwort: L2, weniger Cash, neue Rate, Orbit freigeschaltet; Sammlung öffnen | F-UPGRADE/F-COLLECT |
-| collection | fünf Familien, Scout/Orbit frei im Beispiel, andere mit „Noch gesperrt“; genaue noch offene Voraussetzung nur als Reviewannotation außerhalb der Spieleroberfläche; freie Auswahl simulieren | C-SELECT, E-UNLOCK |
-| save_error | Fehlertext, pausierte Fortschrittsaktionen, Wiederholung als separater synthetischer Zustand | F-RECOVER |
-| loading / funds / stale / denied | genaue Texte und Guards aus Factory; annotierte nicht gerenderte ergänzende Zustände | keine neue Semantik |
+| world / S-WORLD | eigene Produktion, Cash/Rate, nächstes Ziel; Ausbau oder Sammlung öffnen | F-FIRST/F-UPGRADE, Q-FACTORY |
+| upgrade / S-UPGRADE | Level, Preis 50 Cash und Wirkung sichtbar; ausdrücklich kaufen oder abbrechen | C-UPGRADE |
+| upgraded / S-RESULT | Beispielantwort L2, 100 Cash, neue Rate; Orbit als neue Figur entdecken | F-UPGRADE/F-COLLECT, E-UNLOCK |
+| collection / S-COLLECTION | fünf Designrechte, Scout/Orbit frei im Nachher-Beispiel; freie Produktion wählen; gesperrte Designs nur ansehen | C-SELECT, E-UNLOCK |
+| collection_initial | vor Upgrade nur Scout frei; Öffnen/Schließen gewährt nichts | F-COLLECT, INV-DESIGN |
+| orbit_selected | gewähltes Orbit bleibt bei Navigation erhalten, gilt ab nächstem Durchlauf | C-SELECT |
+| save_error / S-ERROR | unbestätigtes Speichern, Produktion/Käufe pausiert, Navigation gesperrt; Retry bewahrt Profil und Auswahl | F-RECOVER, INV-RECOVERY |
 
-Die Beispielwerte 150Cash, Upgradepreis50, L1→L2 und Raten sind deterministische Designfixtures, keine freigegebene Balance. Ein Klick schaltet zwischen festen Ansichten; keine echte Produktion, Speicherung, Cloud, Account-/Analytics-/Zahlungsaufrufe. Spätere Runtime übernimmt beobachtbare Bedeutung und Stil, nicht diese Simulationslogik.
+150→100 Cash, L1→L2 und 25/7s→30/6s sind deterministische Beispielwerte, keine freigegebene Balance. Ein Kauf wirkt im Entwurf einmal, kein Kauf außerhalb des Kaufdialogs. Normaler Ansichtswechsel erhält Profil/Auswahl; nur die außerhalb der Spieleroberfläche liegende Beispielauswahl setzt bewusst ein anderes Fixture. Retry zeigt synthetische Wiederaufnahme, keinen tatsächlichen Speicherversuch. Keine Produktion, Accounts, APIs, Analytics, Zahlungen oder dauerhafte Speicherung.
 
-Abdeckung: Desktop Welt/Upgrade/Erfolg/Sammlung/Fehler, Mobile Upgrade/Sammlung/Fehler. Drei Ansichten mit Varianten genügen; kein Login-/Shop-/Adminscreen. Stil-/Platzierungsdialoge sind präzise im Factory-Flow annotiert und vor M2-Umsetzung weiter auszuarbeiten. Keine Screenshotquote für irrelevante Seiten.
+Loading/funds/stale/denied folgen den bereits beschriebenen Factory-Texten/Guards und sind ergänzend annotiert, nicht zusätzlich gerendert. Die genauen Freischaltbedingungen späterer Familien werden vor M2 konkretisiert; die Referenz erfindet dafür keine Werte. Gestaltungs-/Platzierungsdialoge sind dort ebenfalls annotiert und werden vor M2 ausgearbeitet. Kein Login-/Shop-/Adminscreen.
 
-## Quelle, Reproduktion und Review
+## Maintained Source, Nachweis und Review
 
-Maintained source unter `docs/design/reference/`: lokales `index.html`, ein gemeinsamer SVG-/Fixture-Renderer und ein kleines Render-Skript. HTML nutzt genau denselben Renderer wie die PNG-Erzeugung; native Buttons/Keyboardbedienung mit sichtbarem Fokus, textlich beschriftete Zustände. Lokal ohne Backend/Netzwerk zu öffnen. Die PNG-Prüfung beweist Bildinhalt, keine browserseitige Interaktionsabnahme oder Studiofunktion.
+[Interaktive HTML-Referenz](reference/index.html), gemeinsamer [SVG-/Zustandsrenderer](reference/design.js), [Render-Skript](reference/render.cjs). HTML und PNGs benutzen dieselbe Layoutquelle und identische Bildbytes. HTML ist lokal ohne Backend oder Build zu öffnen. Bei vorhandenem Node und `sharp`: `node docs/design/reference/render.cjs`. Hier verwendet: bereits gebündeltes Node24.19.0 und sharp0.35.5; nichts installiert. Native Bildverarbeitung ist keine Browseremulation. Ein gesperrter Browserzugriff wird nicht umgangen und kein erfolgreicher Klicktest behauptet.
 
-Rendern mit Node und `sharp`; die aktuelle Arbeitsumgebung enthält beides bereits, kein Download. Auf anderem Rechner nur bei bewusst eingerichteter Render-Abhängigkeit erforderlich; interaktive HTML-Datei braucht keinen Build. Ergebnisse/Hashmanifest unter `docs/reviews/evidence/BOLTBOTS-RUN-INITIALIZATION-001/`. Quelle/Fixture/Viewport/Zustand und konkrete Bilder werden in der finalen Review gebunden.
+Acht repräsentative PNGs: Desktop Welt/Upgrade/Erfolg/Sammlung/Fehler, Mobile Upgrade/Sammlung/Fehler. [Rendermanifest r3](../reviews/evidence/BOLTBOTS-RUN-INITIALIZATION-001/r3/render-manifest.json) bindet Quelle, Assets, Fixture, Viewport und Bilder; drei unveränderte Quellenbilder und abgelehnte r2-Welt liegen zum direkten Vergleich daneben. [Gezielte Prüfungen](../reviews/evidence/BOLTBOTS-RUN-INITIALIZATION-001/r3/focused-checks.json) prüfen Übergänge, Auswahl-/Retry-Erhalt, Schrift-/Aktionsgrenzen, Syntax und Kontrast. Sie ersetzen keine qualitative Abnahme.
 
-Vor UI-Erstellung: predeclared operative Authority /root/init_review entscheidet über begrenzte Standalone-Erstellung aus den illustrativen Quellen; endgültige Designentscheidung bleibt beim Human Initialization Gate. Keine bereits aktive Referenz wird ersetzt. Root erstellt, Reviewer liest Quellen und sieht tatsächlich jedes erforderliche Bild mit image_tool an. Prüfung: Bedeutung, Hierarchie, Proportionen, Komposition, Dichte, Leerraum, Clipping, Konsistenz und Nutzbarkeit; Abweichungen zur Eingabe mit obiger Begründung dokumentieren.
+Creator und unabhängiger Reviewer sehen die tatsächlichen PNGs und vergleichen Komposition, Charakterwirkung, räumliche Tiefe, Materialien/Licht, Familienkohärenz, Lesbarkeit und Bedienweg mit den Quellen. **Eigenes begründetes Urteil zu visueller Qualität und menschlichem Spielanreiz**, getrennt von Technik. Das exakte [Review-Paket](../reviews/20261024-1.5.3-boltbots-initialization-review.md) bindet die Fassung und Humanentscheidung. Bild-/Quelländerungen erfordern betroffene neue Sichtprüfung. F-VIS-02 ist erst mit tragfähigem Ergebnis und unabhängiger Bewertung agentenseitig schließbar; die Humanfreigabe bleibt eigenständig.
 
-Budget: Teil des unveränderten Phase-B-Fensters bis18:38:45UTC und bestehender drei Identitäten; maximal diese Ansichten/Varianten, eine gemeinsame Schlussreview und gegebenenfalls verbleibende eine fokussierte Korrektur. Kein eigenes Renderingframework oder zusätzlicher Agent. Stop bei tatsächlicher Bedeutungsabweichung oder außerhalb der Autorität liegender Veränderung, nicht bei fehlender pixelgenauer Eingabe.
+Arbeits-/Korrekturgrenze im selben Run r2: 17:41:54–19:41:54 UTC, kumulativ sechs Zyklen einschließlich drei historischer; Neuherstellung Zyklus vier. Vier von vier Bildaufrufen verwendet. Drei bestehende Astra/xhigh-Identitäten, keine neue Rendererplattform oder Teamrolle.
 
-## Späterer Qualitätsnachweis in Studio
+## Verbindlicher Transfer nach Studio
 
-M1 baut den wirklichen Fabrikplatz, Bauteil-Scout, eine Maschine und HUD zusammen. Prüfen: charakteristische Silhouette, klarer Produktionsfluss, Kamera/Avatarmaßstab, Text-/Touchlesbarkeit, Materialien/Licht auch niedriger Grafikstufe, verständliche Animation/Rückmeldung, gemessene Leistung. Der Human beurteilt diese Szene, danach Stufe B des Roboters. Blender bleibt Option mit zuvor demonstrierter Agent-Bedienbarkeit; Werkzeugwahl allein garantiert keine Qualität.
+M1 baut Fabrikplatz, Bauteil-Scout, eine ausgearbeitete Maschine, Förderband/Verpackung und HUD als echte Szene. **Auch Stufe A muss Menschen ansprechen und Lust aufs Spielen machen.** „Bauteile“ entschuldigen keine unattraktiven Figuren. Prüfen: prägnante Silhouette/Gesicht, Proportionen, Material-/Lichtwirkung, Produktionsrichtung, Kamera-/Avatarmaßstab, Feedback/Animation und gemessene Leistung, auch bei niedriger Grafikstufe.
 
-Frühe Flow-Linse: /root/init_review `pass`, begrenzte `owner_approved_standalone`-Erstellung genehmigt. Fehler-/Retryfixture bewahrt den bestätigten Stand; Designauswahl gilt ab nächstem Produktionszyklus. M2-/Implementierungsfragen bleiben Reviewannotationen außerhalb der Spielansicht.
-
-### Ausführbare Referenz und Renderbefehl
-
-[HTML öffnen](reference/index.html). Quellrenderer: [design.js](reference/design.js); Reproduktion: [render.cjs](reference/render.cjs). In einer Umgebung mit Node und lokal verfügbarem `sharp`: `node docs/design/reference/render.cjs`. Hier wurde das bereits gebündelte sharp0.35.5 mit Node24.19.0 verwendet, ohne Installation. Genau acht Kandidaten-PNGs plus drei unveränderte Baselinebilder stehen im [Rendermanifest](../reviews/evidence/BOLTBOTS-RUN-INITIALIZATION-001/render-manifest.json). Zusätzlich besitzt die Sammlung eine feste Vor-Upgrade-Variante, damit Navigation keine Freischaltung erfindet.
-
-Revision2 — F-VIS-01: sämtliche informativen Spieler-UI-Labels mindestens14logischePixel; illustrative Beschriftungen innerhalb der skalierten Fabrikzeichnung bleiben Teil der Illustration. Keine Absenkung der Mindestgröße, keine geänderte Domain-/Kauf-/Speicherbedeutung. Neue Render/Quellhashes gebunden; fokussierte unabhängige Closure folgt.
+Der Agent baut und spielt die Szene; der Human beurteilt die Richtung. Anschließend Stufe B des individuell verfeinerten Roboters, gegebenenfalls in M2. Blender bleibt optional und benötigt zuvor nachgewiesene Agent-Bedienbarkeit. Kein schönes Konzeptbild ersetzt eine überzeugende tatsächliche Spielszene oder die Bewertung echter Spieler.

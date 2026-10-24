@@ -1,0 +1,131 @@
+{
+  "revision": 3,
+  "kind": "design_reference_only",
+  "checks": [
+    {
+      "name": "No free unlock through navigation",
+      "result": "pass"
+    },
+    {
+      "name": "Cancel preserves balance and selection",
+      "result": "pass"
+    },
+    {
+      "name": "Explicit purchase changes once; duplicate has no effect",
+      "result": "pass"
+    },
+    {
+      "name": "Buy outside upgrade has no effect",
+      "result": "pass"
+    },
+    {
+      "name": "Selected Orbit survives navigation and retry",
+      "result": "pass"
+    },
+    {
+      "name": "Retry before upgrade preserves confirmed starter",
+      "result": "pass"
+    },
+    {
+      "name": "Previewing a locked family never selects it",
+      "result": "pass"
+    },
+    {
+      "name": "Seven fixtures by two viewports: action bounds, 44px targets, >=14px UI text",
+      "result": "pass"
+    },
+    {
+      "name": "Error exposes only retry, navigation visibly disabled",
+      "result": "pass"
+    },
+    {
+      "name": "HTML and renderer JavaScript syntax",
+      "result": "pass"
+    },
+    {
+      "name": "No product/network/storage calls and local script only",
+      "result": "pass"
+    },
+    {
+      "name": "Accessible source hooks present (browser behavior unverified)",
+      "result": "pass"
+    },
+    {
+      "name": "Nine declared UI text color pairs >=4.5:1",
+      "result": "pass"
+    }
+  ],
+  "viewCount": 14,
+  "actionCount": 85,
+  "minInformativeFontPx": 14,
+  "contrast": [
+    {
+      "name": "main/panel",
+      "fg": "#F4F8FF",
+      "bg": "#172B4D",
+      "ratio": 13.24
+    },
+    {
+      "name": "muted/panel",
+      "fg": "#B9C8DB",
+      "bg": "#172B4D",
+      "ratio": 8.29
+    },
+    {
+      "name": "cyan/ink",
+      "fg": "#48D8F4",
+      "bg": "#101B35",
+      "ratio": 10.08
+    },
+    {
+      "name": "amber/ink",
+      "fg": "#FFCE53",
+      "bg": "#101B35",
+      "ratio": 11.55
+    },
+    {
+      "name": "violet/ink",
+      "fg": "#A784F7",
+      "bg": "#101B35",
+      "ratio": 5.92
+    },
+    {
+      "name": "coral/ink",
+      "fg": "#FF956B",
+      "bg": "#101B35",
+      "ratio": 7.94
+    },
+    {
+      "name": "green/ink",
+      "fg": "#5AD9A6",
+      "bg": "#101B35",
+      "ratio": 9.68
+    },
+    {
+      "name": "danger/error",
+      "fg": "#F4747B",
+      "bg": "#18283F",
+      "ratio": 5.4
+    },
+    {
+      "name": "disabled",
+      "fg": "#B9C8DB",
+      "bg": "#31455F",
+      "ratio": 5.75
+    }
+  ],
+  "sources": [
+    {
+      "path": "docs/design/reference/design.js",
+      "sha256": "a9273ccc965e2c476cd4acff3233ef78ef4e38da6229f12b0f350b995845f643"
+    },
+    {
+      "path": "docs/design/reference/index.html",
+      "sha256": "e04c71e11f3bf9446e4102a0ea9cb3d74c0a49edc907b4193cc0bf2c970a0731"
+    }
+  ],
+  "limitations": [
+    "Native source/state checks only; no browser clicks, real keyboard focus, Studio game, persistence or user playtesting proved.",
+    "Actual PNG visual inspection and premium/play-desire assessment recorded separately in the exact review."
+  ]
+}

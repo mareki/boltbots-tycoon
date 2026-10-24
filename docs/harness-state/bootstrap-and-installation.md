@@ -38,13 +38,13 @@
 
 - Human initialization instruction: Humanauftrag im aktuellen Chat am 2026-10-24: Initialisierung und besprochenen Plan nach Harness ausführen; genau drei Astra-Agenten mit xhigh; Fortschritt in 10%-Schritten und obligatorische Drift-/Verkomplizierungschecks. Auftrag und Grenzen: docs/work/runs/boltbots-domain-foundation-001.md, Abschnitt Human Authority.
 - PRD/input snapshot digests: benannte Original-PRD SHA-256 `97d742c2dace4cb5a8e198c199a2ec35d904fa26e9324b8a5a12377dac8e6e02`; sortiertes Verzeichnisinventar SHA-256 `e8910300b05414574a29d53ff8c3d36b766e5c028993ab1160a97653d4ad9235`. Original: `/Users/marek/Downloads/BoltBots_Tycoon_Codex_v0.2`; 39 sichere Nutzdateien, 896174 Bytes. Nach Run-Aktivierung wurden 39 Nutzdateien unverändert übernommen; SHA256/Größen vollständig gegen Original geprüft. Index: docs/product/input-snapshot-manifest.json.
-- Candidate/active Product Vision: BOLTBOTS-VISION-001 r1, docs/product/vision-and-mvp.md; unabhängig geprüft, Human Initialization Gate pending.
+- Candidate/active Product Vision: BOLTBOTS-VISION-001 r2, docs/product/vision-and-mvp.md; Premium-Anforderung ergänzt, neue unabhängige Review und Human Initialization Gate offen.
 - Candidate/effective Domain Foundation: `BOLTBOTS-DOMAIN-FOUNDATION-001` Revision1, `docs/domains/domain-foundation.md`; exakter Kandidat über Human-Entscheidung im Review fachlich freigegeben. Eingefrorene interne Kandidatenmetadaten sind keine Behauptung eines gestarteten Folge-Runs.
 
 ## Next Allowed Transition
 
 - Guard: integrity verified; named original PRD and repository-safe input classified; Independent operational authorization and start clearances recorded; Domain recommendation und Humanentscheidung approved; Initialisierung aktiv unter dokumentierter enger Human-Ausnahme für die beiden bekannten Statusprüferabweichungen. Kein finaler Validator-PASS behauptet.
-- Exact next safe action: Human hat Design r2 abgelehnt (changes_requested, F-VIS-02). Neue Gestaltungsreferenz muss die verbindliche Produktregel docs/agent-extensions.md erfüllen. Vorher keine Gesamtfreigabe erfragen und keine Produktumsetzung beginnen. Domainfreigabe bleibt gültig.
+- Exact next safe action: Human hat Design r2 abgelehnt (changes_requested, F-VIS-02). Neue Gestaltungsreferenz r3 liegt zur unabhängigen Qualitätsreview vor und muss die verbindliche Produktregel docs/agent-extensions.md erfüllen. Vor positiver Review keine Gesamtfreigabe erfragen und keine Produktumsetzung beginnen. Domainfreigabe bleibt gültig.
 - Stop: Human Initialization Gate before delivery-intended implementation; Domain Gate already satisfied.
 
 The installer resolves every generated installation field before the repository may pass install verification. Handover only links this state.

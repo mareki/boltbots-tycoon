@@ -5,27 +5,19 @@
 
 ## Aktueller Stand
 
-**Designreferenz vom Human abgelehnt; Initialisierung nicht freigabereif.** Der zuletzt gemeldete Stand von90% ist durch den wesentlichen Qualitätsbefund überholt. Die frühere Agent-Empfehlung darf nicht als Gestaltungs- oder Umsetzungsfreigabe verwendet werden.
+**70% der Initialisierung: neue Designreferenz r3 zur unabhängigen Prüfung bereit.** Der Human hat nach Neuherstellung die neue Bildgestaltung ausdrücklich abgenommen und Fortsetzung verlangt. Diese Bildfreigabe nicht erneut erfragen; die unabhängige integrierte Prüfung folgt. Noch keine Human-Initialisierungsfreigabe und keine Spielumsetzung.
 
-- Verbindliche [Produktregel: Premium-Qualität und menschlicher Spielanreiz](agent-extensions.md). Für jede Gestaltung und Review anwenden. Ein unattraktives Ergebnis wird nicht abgenommen, auch wenn es technisch korrekt und lesbar ist.
-- [Humanentscheidung im Review-Paket](reviews/20261024-1.5.3-boltbots-initialization-review.md): `changes_requested`, F-VIS-02 offen. Die interaktive Referenz r2 wird als historische Evidenz bewahrt, nicht als akzeptierter Qualitätsmaßstab.
-- Führende Arbeitsliste und tatsächliche Fortschritts-/Drift-/Budgethistorie: [Initialisierungs-Run](work/runs/boltbots-initialization-001.md). Nächster inhaltlicher Schritt ist eine qualitativ tragfähige neue Gestaltungsreferenz und ihre ausdrückliche Bewertung aus Spielersicht; keine bloße weitere Politur des abgelehnten SVG-Stands.
-- [Domainfreigabe](reviews/20261024-1.5.3-boltbots-domain-foundation-review.md) bleibt gültig. Keine erneute Fachfreigabe derselben Grundlage erfragen.
+- [Neue Referenz](design/reference/index.html) mit räumlicher Fabrikszene, fünf ausgearbeiteten Charakteren und neu komponierten Desktop-/Mobilansichten; acht native PNGs im [Rendermanifest](reviews/evidence/BOLTBOTS-RUN-INITIALIZATION-001/r3/render-manifest.json). Quelle/Zustände geprüft, kein Browser-Klicktest behauptet.
+- [Premium-Regel aus Spielersicht](agent-extensions.md) verbindlich. [Vision r2](product/vision-and-mvp.md), [Design r3](design/design-reference.md) und [Plan/M1 r2](planning/milestones.md) enthalten ausdrücklich Attraktivität und Spielanreiz als Abnahmebedingung, auch für den ersten Bauteil-Roboter.
+- Exaktes Kandidaten-/Reviewpaket: [Initialisierungsreview r3](reviews/20261024-1.5.3-boltbots-initialization-review.md). Nächster Schritt unabhängige Gesamt-/Bildprüfung und80%-Drift, danach erst bestehendes zweites Human-Gate.
+- Führende Arbeitsliste, Freigaben, Grenzen und historische Korrekturen: [Initialisierungs-Run r2](work/runs/boltbots-initialization-001.md). Die früheren70–90%-Behauptungen zur abgelehnten Fassung sind ausdrücklich überholt, nicht gelöscht.
 
-## Erhaltene Arbeit
+## Erhaltene Arbeit und Nachweisgrenzen
 
-39 Quellen unverändert importiert. [Vision/MVP](product/vision-and-mvp.md) mit39/39PRD-Anforderungen, [Factory-Verträge](specs/factory-module.md), [Technik/Release](specs/technical-foundation.md), [Meilensteine/M1](planning/milestones.md) und [Setupguide](setup.md) liegen als geprüfte Kandidaten vor. Sie sind keine implementierte Spielversion und noch keine insgesamt vom Human genehmigte Initialisierung.
+39 Quellen unverändert importiert, [Domain r1 wirksam freigegeben](reviews/20261024-1.5.3-boltbots-domain-foundation-review.md),39/39PRD-Anforderungen disponiert. Keine erneute Fachfreigabe erfragen. Factory-/Technik-/Setup-Kandidaten unverändert. Die bekannten zwei Statusfehler des Pythonprüfers sind durch ausdrückliche Humananweisung nicht blockierend; keine Core-Reparatur oder erfundener PASS.
 
-Die erste visuelle Review mit Typografiekorrektur und den gesehenen Bildern bleibt im Review-Paket erhalten. Sie hat den Premium-Anspruch nicht wirksam durchgesetzt. Ein neuer Kandidat muss Menschen ansprechen und zum Spielen einladen; die technische Prüfung allein genügt nicht.
+Keine Agent-Installation oder Ausführung importierter Produktskripte. Human meldet eigenes Studio-Update und angekündigtes Login. Tatsächlicher Studio-Start, Rojo, Spiel-/Save-/Mehrspieler-/Blender-/Gerätetests bleiben offen für M1/M3. Die generierten Bilder sind Konzeptbilder, keine spielbare3D-Welt. Persönliche Anmeldung bleibt beim Human.
 
-## Werkzeuge und tatsächliche Nachweise
+## Sicherung und Arbeitsgrenze
 
-Keine Tools durch den Agenten installiert und keine importierten Produktskripte ausgeführt. Human meldet eigenes Studio-Update und angekündigtes Login. Erfolgreicher Studio-Start, Rojo-Verbindung, Spiel-/Save-/Mehrspieler-/Blender-/Gerätetests sind noch nicht nachgewiesen. Persönliche Anmeldung bleibt beim Human.
-
-Die bekannten zwei Statusfehler des Pythonprüfers sind aufgrund ausdrücklicher Humananweisung nicht blockierend; echter Freigabebeleg vorhanden, kein Validator-PASS behauptet, Core unverändert. Dieser Dokumentenfehler ist vom jetzt echten Qualitätsmangel zu unterscheiden.
-
-## Sicherung und Arbeitsgrenzen
-
-Branch `codex/initialize-boltbots`; lokale Kandidatencommits3aef09d und89a83ae plus nachfolgende Entscheidungs-/Qualitätsmetadaten. Kein Push, remote bislang Installationsbaseline8d8d1cf. Produktcode oder externe Veröffentlichungen wurden nicht erstellt.
-
-Der bisherige Phase-B-Rahmen umfasst16:38:45–18:38:45UTC am24.10.2026;3/3 technische Korrekturzyklen einschließlich fokussierter Closure verbraucht. Die neue Human-Ablehnung und Qualitätsregel sind jetzt ausdrücklich erfasst; keine stille Rücksetzung der historischen Zähler. Noch kein neuer Gestaltungs- oder Umsetzungsauftrag aktiviert.
+Branch `codex/initialize-boltbots`; r3-Kandidat wird lokal gesichert, kein Push. Remote nur Installationsbaseline8d8d1cf. Gleiche drei Astra/xhigh-Rollen. Amendmentr2:17:41:54–19:41:54UTC am24.10.2026, kumulativ4/6Zyklen einschließlich aktuellerNeuherstellung,2verbleiben. Alle4/4Bildaufrufe verbraucht. Kein aktuell behaupteter Wachhalteprozess.

@@ -1,6 +1,6 @@
 # BoltBots Tycoon — Vision und MVP
 
-> Artifact ID: `BOLTBOTS-VISION-001` · Revision: 1 · Status: candidate, Human Initialization Gate pending
+> Artifact ID: `BOLTBOTS-VISION-001` · Revision: 2 · Status: candidate, Human Initialization Gate pending
 > Owner: /root · Foundation: BOLTBOTS-DOMAIN-FOUNDATION-001 r1, Human approved
 
 ## Das Spielerlebnis
@@ -19,7 +19,7 @@ Das erste Inkrement ist kleiner: Setup plus tatsächlich spielbarer Scout-/Upgra
 
 Nicht enthalten: Offline-Ertrag, dediziertes Freunde-Besuchssystem, Handel/PvP, Helfer-KI, zusätzliche Welten, bezahlte Angebote, Lootboxen oder ein externes Backend. Shopbilder begründen keine Monetarisierung. Diese Funktionen werden erst bei entsprechenden Nutzerbefunden und eigener Freigabe wieder betrachtet; keine vorbereitenden Services dafür.
 
-**Qualität:** zusammenhängende Formen/Farben/Licht/Animation, klare Lesbarkeit aus der tatsächlichen Spielkamera, keine Farbzustände ohne Text, nachvollziehbare Käufe, verständliche Fehler, gemessene Leistung. „Premium“ ist eine wiederholt geprüfte Spielszene mit konsistentem Verhalten, kein Versprechen durch ein Mockup.
+**Qualität:** Die [verbindliche Premium-Regel aus Spielersicht](../agent-extensions.md) gilt für jede Gestaltung und Review, einschließlich Designreferenz und Bauteil-Roboter in M1. Creator und Reviewer müssen begründen, ob Menschen das Ergebnis ansprechend finden und Lust aufs Spielen bekommen; bei Nein keine Abnahme. Eigenständige attraktive Figuren, überzeugende Formen/Materialien/Licht/Animation, klare Spielkamera, verständliche Bedienung und gemessene Leistung gehören zusammen. Technische Korrektheit allein reicht nicht. Die neue [Designreferenz r3](../design/design-reference.md) konkretisiert die Richtung; tatsächlicher Spielspaß und Qualität der 3D-Szene bleiben in Studio und mit echten Spielern zu prüfen.
 
 **Erfolgsmessung:** Zeit vom spielbereiten Einstieg bis zum ersten sichtbaren Roboter, mit separatem Produktions-/Freischaltereignis; Zielmedian ≤60s in einem echten unerfahrenen Testkollektiv. Technische Agenten-Smokes beweisen keinen Novizenmedian. Tutorialabschluss >75% ist eine Quellhypothese; Stichprobe und tatsächliche Ergebnisse berichten. D1/D7-Retention erst bei realen Kohorten. Keine erfundenen Umsatz-/Retentiongrenzen. Private Beta: keine offenen P0-Defekte, belegter Wiedereinstieg und Zwei-Spieler-Isolation, Rechte-/Performancebefunde geklärt.
 

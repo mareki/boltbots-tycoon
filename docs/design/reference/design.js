@@ -1,76 +1,78 @@
-/* design_reference_only · non_promotable · deterministic fixtures, no game/backend calls. */
-(function (root) {
-  'use strict';
-  const C = {ink:'#101B35',panel:'#172B4D',cyan:'#48D8F4',amber:'#FFCE53',coral:'#FF956B',violet:'#A784F7',ok:'#5AD9A6',danger:'#F4747B',text:'#F4F8FF',muted:'#B9C8DB',light:'#E7F3FF'};
-  const states = ['world','upgrade','upgraded','collection','save_error','orbit_selected','collection_initial'];
-  const esc = s => String(s).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[c]));
-  function rect(x,y,w,h,fill,r=16,extra=''){return `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${r}" fill="${fill}" ${extra}/>`;}
-  function text(x,y,t,size=16,fill=C.text,weight=400,extra=''){return `<text x="${x}" y="${y}" font-size="${size}" fill="${fill}" font-weight="${weight}" ${extra}>${esc(t)}</text>`;}
-  function line(x1,y1,x2,y2,col,width=2){return `<path d="M${x1} ${y1}L${x2} ${y2}" stroke="${col}" stroke-width="${width}" fill="none"/>`;}
-  function robot(x,y,s,col=C.cyan,family=0){
-    return `<g transform="translate(${x} ${y}) scale(${s})">${rect(-29,49,22,19,'#233C59',7)}${rect(8,49,22,19,'#233C59',7)}${rect(-30,10,60,47,col,16)}${rect(-43,16,15,32,col,7)}${rect(28,16,15,32,col,7)}${rect(-34,-42,68,60,col,19)}${rect(-27,-32,54,36,C.ink,12)}<ellipse cx="-12" cy="-15" rx="5" ry="8" fill="${C.light}"/><ellipse cx="12" cy="-15" rx="5" ry="8" fill="${C.light}"/>${rect(-11,24,22,13,'#F4F8FF',5)}${line(0,-42,0,-53,'#35546B',5)}<circle cx="0" cy="-57" r="7" fill="${family===2?C.violet:C.amber}"/>${family===2?'<ellipse cx="0" cy="-14" rx="47" ry="15" stroke="#A784F7" stroke-width="5" fill="none" transform="rotate(-20)"/>':''}${family===1?'<path d="M-12 -45 L1 -67 L16 -45" fill="#FFCE53"/>':''}${family===3?'<path d="M-35 -29 L-48 -13 L-35 3 M35 -29 L48 -13 L35 3" fill="#FF956B"/>':''}${family===4?rect(-42,9,84,14,C.amber,5):''}${line(-18,-36,15,-36,'#FFFFFF',3)}</g>`;
+/* BoltBots design r3 — design_reference_only / non_promotable. Synthetic UI states, no game/backend. */
+(function(root){
+'use strict';
+const C={ink:'#101B35',panel:'#172B4D',cyan:'#48D8F4',amber:'#FFCE53',coral:'#FF956B',violet:'#A784F7',ok:'#5AD9A6',danger:'#F4747B',text:'#F4F8FF',muted:'#B9C8DB'};
+const names=['Scout','Orbit','Bolt','Luma','Atlas'],colors=[C.cyan,C.violet,C.amber,C.coral,C.ok];
+const portraits=[[0,380],[380,354],[734,380],[1114,348],[1462,521]];
+const presets={world:{page:'factory',profile:'before',selected:0,focus:0},upgrade:{page:'upgrade',profile:'before',selected:0,focus:0},upgraded:{page:'celebrate',profile:'after',selected:0,focus:1},collection:{page:'collection',profile:'after',selected:0,focus:1},save_error:{page:'error',profile:'after',selected:0,focus:0},orbit_selected:{page:'collection',profile:'after',selected:1,focus:1},collection_initial:{page:'collection',profile:'before',selected:0,focus:0}};
+const fixture=name=>{if(!presets[name])throw Error('Unknown fixture');return {...presets[name]};};
+function step(current,id){const s={...current};if(s.page==='error'){if(id==='retry')s.page='factory';return s;}if(id==='factory'||id==='cancel')s.page='factory';else if(id==='upgrade')s.page='upgrade';else if(id==='collection'){s.page='collection';s.focus=s.profile==='after'?1:0;}else if(id==='buy'&&s.page==='upgrade'&&s.profile==='before'){s.profile='after';s.page='celebrate';s.focus=1;}else if(id.startsWith('detail-')){s.focus=Number(id.slice(7));}else if(id.startsWith('select-')){const n=Number(id.slice(7));if(n===0||(n===1&&s.profile==='after')){s.selected=n;s.focus=n;s.page='collection';}}return s;}
+const esc=t=>String(t).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[c]));
+const rect=(x,y,w,h,fill,r=16,extra='')=>`<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${r}" fill="${fill}" ${extra}/>`;
+const text=(x,y,t,size=16,fill=C.text,weight=500,extra='')=>`<text x="${x}" y="${y}" font-size="${size}" fill="${fill}" font-weight="${weight}" ${extra}>${esc(t)}</text>`;
+const line=(x1,y1,x2,y2,color,opacity=1)=>`<path d="M${x1} ${y1}L${x2} ${y2}" stroke="${color}" stroke-opacity="${opacity}"/>`;
+function render(input='world',width=1280,height=800,assets={world:'assets/factory-r3.png',robots:'assets/robots-r3.png'}){
+ const s=typeof input==='string'?fixture(input):{...input},mobile=width<650,after=s.profile==='after',error=s.page==='error',collection=s.page==='collection',cash=after?100:150,level=after?2:1;
+ const actions=[];let out='',uid=0;
+ const label=(x,y,t,color=C.muted)=>text(x,y,t,14,color,650);
+ const panel=(x,y,w,h,fill='url(#glass)',r=22)=>rect(x,y,w,h,fill,r,`stroke="#B9D9F5" stroke-opacity=".2" filter="url(#shadow)"`);
+ function button(id,x,y,w,h,caption,fill=C.amber,disabled=false,small=false){actions.push({id,x,y,w,h,label:caption,disabled});return rect(x,y+3,w,h,disabled?'#243650':'#050C19',14)+rect(x,y,w,h,disabled?'#31455F':fill,14,`stroke="#FFFFFF" stroke-opacity="${disabled?.06:.22}"`)+text(x+w/2,y+h/2+6,caption,small?14:16,disabled?C.muted:fill===C.panel?C.text:C.ink,750,'text-anchor="middle"');}
+ function robot(i,x,y,w,h){const [sx,sw]=portraits[i];const id='portrait'+(++uid);return rect(x,y,w,h,'#101E36',14)+`<svg x="${x}" y="${y}" width="${w}" height="${h}" viewBox="0 0 ${sw} 793" preserveAspectRatio="xMidYMid meet"><defs><clipPath id="${id}"><rect width="${sw}" height="793"/></clipPath><linearGradient id="${id}-fade"><stop stop-color="black"/><stop offset=".025" stop-color="white"/><stop offset=".975" stop-color="white"/><stop offset="1" stop-color="black"/></linearGradient><mask id="${id}-mask"><rect width="${sw}" height="793" fill="url(#${id}-fade)"/></mask></defs><g clip-path="url(#${id})" mask="url(#${id}-mask)"><image href="${assets.robots}" x="${-sx}" width="1983" height="793"/></g></svg>`;}
+ function nav(){const y=height-(mobile?72:84),w=mobile?width-32:456,x=(width-w)/2,bw=(w-16)/3;let b=panel(x,y,w,60,'#0B172BEF',20);for(let i=0;i<3;i++){const id=['factory','upgrade','collection'][i],active=(i===0&&s.page==='factory')||(i===1&&s.page==='upgrade')||(i===2&&collection);b+=button(id,x+8+i*bw,y+7,bw-4,44,['Fabrik','Ausbauen','Sammlung'][i],active?C.cyan:C.panel,error,mobile);}return b;}
+ const defs=`<defs><linearGradient id="glass" x2="0" y2="1"><stop stop-color="#172B4D" stop-opacity=".98"/><stop offset="1" stop-color="#0B172D" stop-opacity=".98"/></linearGradient><linearGradient id="topShade" x2="0" y2="1"><stop stop-color="#071427" stop-opacity=".92"/><stop offset="1" stop-color="#071427" stop-opacity="0"/></linearGradient><linearGradient id="bottomShade" x2="0" y2="1"><stop stop-color="#071427" stop-opacity="0"/><stop offset="1" stop-color="#071427" stop-opacity=".94"/></linearGradient><linearGradient id="gold" x2="0" y2="1"><stop stop-color="#FFE697"/><stop offset="1" stop-color="#FFBD35"/></linearGradient><filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#020918" flood-opacity=".35"/></filter></defs>`;
+ out+=rect(0,0,width,height,C.ink,0);
+ if(!collection){
+  if(mobile)out+=`<image href="${assets.world}" x="-130" y="137" width="942" height="530" preserveAspectRatio="xMidYMid slice"/>`;
+  else out+=`<image href="${assets.world}" width="${width}" height="${height}" preserveAspectRatio="xMidYMid slice"/>`;
+  out+=rect(0,0,width,mobile?205:225,'url(#topShade)',0)+rect(0,mobile?480:height-275,width,mobile?364:275,'url(#bottomShade)',0);
+ }else{
+  out+=`<image href="${assets.world}" width="${width}" height="${height}" preserveAspectRatio="xMidYMid slice" opacity=".13"/>`+rect(0,0,width,height,'#101B35',0,'opacity=".85"');
+ }
+ // Compact game HUD; the workshop remains the main visual surface.
+ out+=panel(mobile?14:28,18,mobile?176:219,52,'#0B172BF2',17)+rect(mobile?26:42,30,29,29,C.cyan,8)+text(mobile?40.5:56.5,51,'B',22,C.ink,850,'text-anchor="middle"')+text(mobile?64:84,51,'BOLTBOTS',mobile?19:22,C.text,800);
+ const moneyX=mobile?width-184:width-237;
+ out+=panel(moneyX,18,mobile?170:209,52,'#0B172BF2',17)+`<circle cx="${moneyX+26}" cy="44" r="13" fill="url(#gold)" stroke="#FFE49A"/>`+text(moneyX+26,49,'C',14,'#946319',800,'text-anchor="middle"')+text(moneyX+49,51,`${cash} Cash`,mobile?20:24,C.amber,750);
+ if(!mobile)out+=panel(width-438,18,183,52,'#0B172BF2',17)+text(width-418,51,error?'Produktion pausiert':after?'30 Cash / 6 s':'25 Cash / 7 s',16,error?C.danger:C.text,600);
+ if(mobile&&!collection)out+=text(18,94,error?'! Speichern nicht bestätigt':after?'30 Cash / 6 s · Assembler Level 2':'25 Cash / 7 s · Assembler Level 1',14,error?C.danger:C.muted,600);
+ function mission(){const x=mobile?14:28,y=mobile?110:94,w=mobile?width-28:337;return panel(x,y,w,mobile?83:100,'#0B172BED',19)+label(x+18,y+26,error?'FORTSCHRITT PAUSIERT':after?'DEIN NÄCHSTES DESIGN':'DEIN NÄCHSTER SCHRITT',error?C.danger:C.cyan)+text(x+18,y+54,error?'Dein Stand bleibt erhalten.':after?'Orbit wartet auf dich.':'Assembler auf Level 2',mobile?19:22,C.text,750)+(mobile?'':text(x+18,y+80,error?'Versuche das Speichern erneut.':after?'Öffne deine Sammlung.':'Schalte den kleinen Orbit frei.',16,C.muted));}
+ if(!collection)out+=mission();
+ if(s.page==='factory'){
+  const x=mobile?14:width-357,y=mobile?582:height-297,w=mobile?width-28:329,h=mobile?165:181;
+  out+=panel(x,y,w,h)+label(x+20,y+28,after?'DEINE PRODUKTION':'STARTER-ASSEMBLER')+text(x+20,y+61,after?`${names[s.selected]} ist bereit`:'Mehr Tempo. Mehr Freunde.',20,C.text,750)+text(x+20,y+88,after?'Auswahl gilt ab nächstem Durchlauf.':'Verbessere deinen Assembler.',14,C.muted);
+  out+=button(after?'collection':'upgrade',x+20,y+106,w-40,48,after?'Roboter auswählen':'Ausbau ansehen');
+  if(!mobile)out+=panel(28,height-163,294,58,'#0B172BEF',18)+text(46,height-129,after?'✓ Level 2 · Fortschritt bestätigt':'✓ Scout produziert automatisch',16,C.text,600);
+ }else if(s.page==='upgrade'){
+  const x=mobile?14:width-408,y=mobile?437:247,w=mobile?width-28:380,h=mobile?310:394;
+  out+=panel(x,y,w,h)+label(x+22,y+31,'STARTER-ASSEMBLER',C.cyan)+text(x+22,y+66,after?'Dein Assembler ist Level 2':'Mach Platz für neue Ideen.',mobile?22:25,C.text,750);
+  if(!after){
+   out+=rect(x+22,y+86,w-44,66,'#233B58',14)+text(x+40,y+113,'LEVEL 1',14,C.muted,650)+text(x+40,y+139,'25 Cash / 7 s',16,C.text,650)+text(x+w/2,y+126,'→',23,C.cyan,750,'text-anchor="middle"')+text(x+w-40,y+113,'LEVEL 2',14,C.amber,650,'text-anchor="end"')+text(x+w-40,y+139,'30 Cash / 6 s',16,C.text,650,'text-anchor="end"');
+   out+=text(x+22,y+179,'Außerdem freigeschaltet: Orbit',16,C.text,650);
+   if(!mobile)out+=text(x+22,y+207,'Klein, neugierig und voller Möglichkeiten.',14,C.muted)+text(x+22,y+236,'Nach dem Kauf bleiben dir 100 Cash.',14,C.muted);
+   const by=mobile?y+202:y+265;out+=button('buy',x+22,by,w-44,48,'Für 50 Cash verbessern')+button('cancel',x+22,by+57,w-44,44,'Abbrechen',C.panel);
+  }else out+=text(x+22,y+106,'Orbit gehört jetzt zu deiner Sammlung.',16,C.muted)+button('collection',x+22,y+150,w-44,48,'Zur Sammlung')+button('cancel',x+22,y+209,w-44,44,'Zur Fabrik',C.panel);
+ }else if(s.page==='celebrate'){
+  const x=mobile?28:width-394,y=mobile?218:181,w=mobile?width-56:356;
+  out+=panel(x,y,w,mobile?528:480)+label(x+w/2,y+30,'NEUES DESIGN',C.amber).replace('<text ','<text text-anchor="middle" ')+text(x+w/2,y+68,'Hallo, Orbit!',32,C.text,800,'text-anchor="middle"')+robot(1,x+50,y+84,w-100,mobile?280:252)+text(x+w/2,y+(mobile?386:365),'Dein nächster kleiner Fortschritt.',14,C.muted,500,'text-anchor="middle"')+button('collection',x+22,y+(mobile?415:393),w-44,48,'Orbit in der Sammlung ansehen');
+ }else if(error){
+  const x=mobile?14:width-425,y=mobile?454:281,w=mobile?width-28:397;
+  out+=panel(x,y,w,mobile?289:300,'#18283FF7')+rect(x+22,y+20,37,37,'#582C40',12)+text(x+40.5,y+47,'!',24,C.danger,800,'text-anchor="middle"')+text(x+22,y+88,'Wir halten deinen Platz.',mobile?23:26,C.text,750)+text(x+22,y+121,'Speichern wurde nicht bestätigt.',16,C.danger,650)+text(x+22,y+153,'Produktion und Käufe pausieren.',16,C.muted)+text(x+22,y+178,'Dein bestätigter Stand bleibt erhalten.',14,C.muted)+button('retry',x+22,y+214,w-44,48,'Speichern erneut versuchen');
+ }else if(collection){
+  if(mobile){
+   out+=text(19,115,'Deine Sammlung',28,C.text,800)+text(20,143,`${after?2:1} von 5 Designs freigeschaltet`,14,C.muted);
+   const i=s.focus,free=i===0||(i===1&&after),chosen=s.selected===i;
+   out+=panel(14,163,width-28,425,'#101B35',24)+robot(i,55,173,width-110,304)+text(width/2,508,names[i],31,C.text,800,'text-anchor="middle"')+text(width/2,538,free?(chosen?'Für den nächsten Durchlauf gewählt':'Bereit für deine Fabrik'):'Dieses Design ist noch gesperrt.',14,free?C.cyan:C.muted,600,'text-anchor="middle"');
+   for(let j=0;j<5;j++){const x=14+j*73;out+=rect(x,602,69,78,j===i?'#27435E':'#14243E',12,`stroke="${j===i?colors[j]:'#30445B'}"`)+robot(j,x+8,606,53,48)+text(x+34.5,674,names[j],14,j===i?C.text:C.muted,650,'text-anchor="middle"');actions.push({id:'detail-'+j,x,y:602,w:69,h:78,label:names[j]+' ansehen',disabled:false});}
+   out+=button('select-'+i,14,703,width-28,48,free?(chosen?'Für Produktion ausgewählt':`${names[i]} produzieren`):'Noch gesperrt',free?colors[i]:C.panel,!free||chosen);
+  }else{
+   out+=text(32,130,'Kleine Roboter. Große Persönlichkeiten.',36,C.text,800)+text(34,165,`${after?2:1} von 5 Designs freigeschaltet · Wähle, wer als Nächstes vom Band rollt.`,18,C.muted);
+   const gap=14,cw=(width-64-4*gap)/5;
+   for(let i=0;i<5;i++){const x=32+i*(cw+gap),free=i===0||(i===1&&after),chosen=s.selected===i;out+=panel(x,207,cw,438,'#101B35',20)+rect(x+16,220,cw-32,3,colors[i],1)+robot(i,x+8,235,cw-16,260)+text(x+18,529,names[i],25,C.text,750)+text(x+18,556,free?(chosen?'Produktion ausgewählt':'Freigeschaltet'):'Noch gesperrt',14,free?C.ok:C.muted,600)+button('select-'+i,x+14,580,cw-28,46,free?(chosen?'Ausgewählt':'Produzieren'):'Gesperrt',colors[i],!free||chosen);}
+   out+=text(35,684,'Jedes Design bleibt in deiner Sammlung. Die Auswahl gilt ab dem nächsten Durchlauf.',16,C.muted);
   }
-  function scene(x,y,w,h){
-    return `<svg x="${x}" y="${y}" width="${w}" height="${h}" viewBox="0 0 820 470" preserveAspectRatio="xMidYMid meet"><defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#BDEAFF"/><stop offset="1" stop-color="#EAF7FF"/></linearGradient><linearGradient id="floor" x2="0" y2="1"><stop stop-color="#E9F4FA"/><stop offset="1" stop-color="#BCD3E1"/></linearGradient></defs>${rect(0,0,820,470,'url(#sky)',0)}<circle cx="705" cy="55" r="85" fill="#FFF8D9"/><g opacity=".5">${rect(20,45,90,170,'#A6CDD9',8)}${rect(129,85,80,128,'#B5D7E3',8)}${rect(622,80,60,130,'#C0DDE5',8)}${rect(713,110,75,120,'#A9D0DF',8)}</g><path d="M0 185L820 130V470H0Z" fill="url(#floor)"/>${[0,1,2,3,4,5,6].map(i=>line(i*160-250,470,i*160+55,165,'#A6C4D3',1)).join('')}${[225,300,395].map(t=>line(0,t,820,t-45,'#C3D9E4',1)).join('')}<path d="M50 350L646 289L792 354L195 431Z" fill="#8AAFC1" opacity=".28"/><path d="M49 304L629 241L773 308L194 374Z" fill="#365976"/><path d="M194 374L773 308V337L194 402Z" fill="#233E5C"/><path d="M49 304L194 374V402L49 332Z" fill="#466B86"/><path d="M71 303L628 256L746 307L194 357Z" fill="#78CEE5"/>${Array.from({length:16},(_,i)=>line(91+i*35,305-i*3,200+i*35,351-i*3,'#315B75',5)).join('')}${line(194,367,764,313,C.cyan,5)}<path d="M90 247L191 237L245 262L144 277Z" fill="#FFDA77"/><path d="M90 247L144 277V322L90 293Z" fill="#D69934"/><path d="M144 277L245 262V306L144 322Z" fill="#F4BB4D"/>${robot(205,277,.43,C.cyan)}<path d="M304 148L424 135L493 168L373 182Z" fill="#FFFFFF"/><path d="M304 148L373 182V306L304 273Z" fill="#8BAABD"/><path d="M373 182L493 168V293L373 306Z" fill="#E7F3FF"/>${rect(389,193,82,57,C.ink,9)}${text(404,217,'ASSEMBLER',9,C.muted,700)}${rect(404,228,52,7,C.cyan,3)}<path d="M354 157L367 85L411 68L461 96" stroke="#9A7B3C" stroke-width="24" fill="none" stroke-linejoin="round"/><path d="M354 151L367 80L411 65L461 92" stroke="#FFCE53" stroke-width="18" fill="none" stroke-linejoin="round"/><circle cx="367" cy="80" r="14" fill="#FFF0A6"/><circle cx="411" cy="65" r="12" fill="#F8B63E"/>${line(461,92,466,124,'#31536F',9)}${line(458,124,449,144,'#31536F',5)}${line(474,123,483,140,'#31536F',5)}${robot(511,256,.52,C.cyan)}<path d="M584 209L672 200L718 222L631 234Z" fill="#FFDA82"/><path d="M584 209L631 234V283L584 258Z" fill="#CC9240"/><path d="M631 234L718 222V271L631 283Z" fill="#EFB85C"/>${line(628,214,671,207,'#A97838',4)}${robot(675,312,.57,C.ok)}<ellipse cx="660" cy="410" rx="64" ry="18" fill="#7BA3B7" opacity=".35"/><ellipse cx="660" cy="396" rx="61" ry="18" fill="#456D89"/><path d="M599 385V396C599 420 721 420 721 396V385Z" fill="#B2D5E4"/><ellipse cx="660" cy="385" rx="61" ry="18" fill="#F4FBFF"/>${robot(660,343,.64,C.cyan)}${text(22,441,'TEILE',12,'#31536F',700)}${text(326,431,'ASSEMBLER',12,'#31536F',700)}${text(563,451,'VERPACKUNG → CASH',12,'#31536F',700)}<g opacity=".8">${rect(24,182,70,12,'#88B8C7',6)}${rect(39,160,40,27,'#70A883',10)}</g></svg>`;
-  }
-  function render(state='world', width=1280, height=800){
-    if(!states.includes(state)) throw new Error('Unknown fixture');
-    const mobile=width<650, success=['upgraded','collection','save_error','orbit_selected'].includes(state), collection=['collection','orbit_selected','collection_initial'].includes(state), error=state==='save_error';
-    const cash=success?100:150, level=success?2:1, rate=success?'30 Cash / 6 s':'25 Cash / 7 s';
-    const a=[];let body='';
-    function button(id,x,y,w,h,label,next,fill=C.cyan,disabled=false){
-      a.push({id,x,y,w,h,label,next,disabled});
-      return rect(x,y,w,h,disabled?'#38516A':fill,12)+text(x+w/2,y+h/2+6,label,16,disabled?C.muted:(fill===C.panel?C.text:C.ink),700,'text-anchor="middle"');
-    }
-    function nav(y){const gap=8,margin=mobile?16:32,bw=mobile?(width-48)/3:150;return ['Fabrik','Ausbauen','Sammlung'].map((label,i)=>button('nav'+i,margin+i*(bw+gap),y,bw,48,label,[success?'upgraded':'world',success?'upgraded':'upgrade',success?'collection':'collection_initial'][i],((collection&&i===2)||(!collection&&state==='upgrade'&&i===1)||state==='world'&&i===0)?C.cyan:C.panel,error)).join('');}
-    function status(){return text(mobile?24:width-210,mobile?105:46,error?'! Speichern unbestätigt':'● Beispiel: gespeichert',14,error?C.danger:C.ok,600);}
-    function machineCard(x,y,w){
-      let b=rect(x,y,w,error?220:286,C.panel,20)+text(x+20,y+32,'STARTER-ASSEMBLER',14,C.muted,700)+text(x+20,y+64,`Level ${level}`,28,C.text,750);
-      if(error){return b+text(x+20,y+99,'Fortschritt pausiert',20,C.danger,700)+text(x+20,y+127,'Dein letzter bestätigter Stand bleibt.',14,C.muted)+text(x+20,y+150,'Produktion und Käufe warten.',14,C.muted)+button('retry',x+20,y+170,w-40,44,'Erneut versuchen','upgraded',C.amber);}
-      if(success){return b+text(x+20,y+100,'✓ Ausbau geschafft',20,C.ok,700)+text(x+20,y+132,'Orbit ist jetzt freigeschaltet.',15,C.text)+text(x+20,y+157,'Wähle dein nächstes Design.',15,C.muted)+button('go-collection',x+20,y+185,w-40,48,'Sammlung öffnen','collection',C.amber);}
-      b+=text(x+20,y+97,'Schneller produzieren',20,C.text,700)+text(x+20,y+128,'Level 1 → Level 2',16,C.muted)+text(x+20,y+153,'Danach: Orbit freigeschaltet',14,C.cyan);
-      if(state==='upgrade')b+=button('buy',x+20,y+174,w-40,46,'Für 50 Cash verbessern','upgraded',C.amber)+button('cancel',x+20,y+226,w-40,44,'Abbrechen','world',C.panel);
-      else b+=button('open',x+20,y+185,w-40,48,'Ausbau ansehen','upgrade',C.amber);
-      return b;
-    }
-    function collectionCards(x,y,w){
-      const names=['Scout','Orbit','Bolt','Luma','Atlas'],cols=[C.cyan,C.violet,C.amber,C.coral,C.ok];
-      const cw=mobile?(w-12)/2:(w-48)/5,ch=mobile?181:280,gap=12;
-      return names.map((name,i)=>{
-        const cx=x+(i%(mobile?2:5))*(cw+gap),cy=y+Math.floor(i/(mobile?2:5))*(ch+gap),free=i<(success?2:1);
-        let card=rect(cx,cy,cw,ch,C.panel,16)+robot(cx+cw/2,cy+(mobile?52:99),mobile?.5:.95,cols[i],[0,2,1,3,4][i])+text(cx+14,cy+(mobile?105:183),name,mobile?18:22,C.text,700)+text(cx+14,cy+(mobile?126:208),free?'Freigeschaltet':'Noch gesperrt',14,free?C.ok:C.muted);
-        if(free)card+=button('select-'+i,cx+8,cy+ch-50,cw-16,44,name==='Orbit'?'Orbit wählen':'Scout wählen',name==='Orbit'?'orbit_selected':success?'upgraded':'world',C.cyan);
-        return card;
-      }).join('');
-    }
-    body+=rect(0,0,width,height,C.ink,0);
-    body+=rect(mobile?16:32,20,32,32,C.cyan,9)+text(mobile?32:48,44,'B',23,C.ink,800,'text-anchor="middle"')+text(mobile?58:78,44,'BOLTBOTS',mobile?21:24,C.text,800);
-    if(!mobile) body+=text(248,44,'DEINE KLEINE ROBOTERFABRIK',14,C.muted,600);
-    const cx=mobile?width-123:width-425;body+=rect(cx,17,mobile?107:190,42,C.panel,14)+text(cx+15,44,`${cash} Cash`,mobile?18:22,C.amber,750);body+=status();
-    if(mobile){
-      body+=text(20,83,rate,14,C.muted,500);
-      if(collection){
-        body+=text(20,143,'Deine Roboter',28,C.text,750)+text(20,170,state==='orbit_selected'?'Orbit startet im nächsten Durchlauf.':`${success?2:1} von 5 Designs freigeschaltet`,14,C.muted)+collectionCards(16,190,width-32);
-        body+=nav(height-64);
-      } else {
-        body+=rect(16,122,width-32,66,error?'#3E2B40':C.panel,16)+text(30,146,error?'SPEICHERPROBLEM':success?'NEUES DESIGN':'DEIN NÄCHSTES ZIEL',14,error?C.danger:C.cyan,700)+text(30,174,error?'Dein Fortschritt wartet sicher.':success?'Entdecke Orbit in der Sammlung.':'Verbessere deinen Assembler.',17,C.text,650);
-        body+=scene(0,202,width,239)+machineCard(16,449,width-32)+nav(height-64);
-        body+=text(20,755,error?'Keine neuen Änderungen, bis Speichern bestätigt ist.':success?'✓ Orbit freigeschaltet':'Scout entsteht automatisch. Cash kommt von selbst.',14,error?C.muted:C.cyan);
-      }
-    } else {
-      body+=text(35,100,collection?'Deine Robotersammlung':'Ein kleiner Scout. Dein großer Anfang.',30,C.text,750)+text(35,129,collection?(state==='orbit_selected'?'Orbit produziert ab dem nächsten Durchlauf.':'Fünf Designs. Jedes mit einem eigenen Charakter.'):'Produzieren, verbessern und deine Lieblingsroboter sammeln.',16,C.muted);
-      if(collection){body+=collectionCards(32,180,width-64)+rect(32,483,width-64,100,C.panel,20)+text(56,521,'DEIN NÄCHSTES ZIEL',14,C.cyan,700)+text(56,553,'Baue deine Fabrik weiter aus und entdecke neue Designs.',22,C.text,650);}
-      else {
-        body+=rect(32,160,830,502,'#BDEAFF',24)+scene(37,177,820,470)+rect(52,179,329,73,C.ink,16)+text(70,204,error?'FORTSCHRITT PAUSIERT':success?'ORBIT FREIGESCHALTET':'DEIN NÄCHSTES ZIEL',14,error?C.danger:C.cyan,700)+text(70,233,error?'Speichern erneut versuchen':success?'Öffne deine Sammlung':'Starter-Assembler auf Level 2',18,C.text,650);
-        body+=machineCard(886,160,362)+rect(886,454,362,115,C.panel,20)+text(906,488,'PRODUKTION',14,C.muted,700)+text(906,522,rate,25,C.cyan,700)+text(906,548,error?'Pausiert, bis Speichern bestätigt ist.':'Cash wird automatisch gutgeschrieben.',14,C.muted);
-        body+=rect(886,591,362,71,error?'#3E2B40':C.panel,18)+text(906,620,error?'! Speichern nicht bestätigt':'✓ Deine Fabrik, dein Fortschritt',16,error?C.danger:C.ok,650)+text(906,645,error?'Bestätigter Stand bleibt erhalten.':'Hier kann nur dein Konto ausbauen.',14,C.muted);
-      }
-      body+=nav(height-80)+text(width-320,height-50,'FREIE PROGRESSION · OHNE ROBUX',14,C.muted,600);
-    }
-    const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-label="BoltBots Designreferenz ${esc(state)}"><g font-family="Arial, Helvetica, sans-serif">${body}</g></svg>`;
-    return {svg,actions:a,summary:`Designfixture ${state}. ${cash} Cash. Assembler Level ${level}. ${error?'Speichern nicht bestätigt; Fortschritt pausiert.':''}`,state,width,height};
-  }
-  const api={render,states,colors:C};
-  if(typeof module!=='undefined'&&module.exports)module.exports=api;
-  else root.BoltBotsDesign=api;
+ }
+ out+=nav();
+ const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-label="BoltBots Designreferenz"><style>text{font-family:'Avenir Next',Arial,Helvetica,sans-serif}</style>${defs}${out}</svg>`;
+ return {svg,actions,state:s,width,height,summary:`Designbeispiel: ${cash} Cash, Assembler Level ${level}, ${names[s.selected]} ausgewählt. ${error?'Speichern unbestätigt; Fortschritt pausiert.':''}`};
+}
+const api={render,step,fixture,states:Object.keys(presets),colors:C,names};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.BoltBotsDesign=api;
 })(typeof globalThis!=='undefined'?globalThis:this);
