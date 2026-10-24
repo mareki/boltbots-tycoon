@@ -128,13 +128,13 @@
 
 ## Fortschritt und Kontrollen
 
-Führende vollständige Arbeitsliste: [M1 A1–B5](../../handover.md#m1--arbeitsschritte-und-laufender-status). A1–A3 unabhängig abgeschlossen, M1 30%; B1-C1 nach tatsächlicher Studio-Prüfung in unabhängiger Review, B2–B5 offen. Nächste Schritte: unabhängige Technik/Premium/40%-Driftreview → betroffene Closure falls erforderlich → dokumentierte Git-Sicherung. Keine eigene B1-Prozentleiter.
+Führende vollständige Arbeitsliste: [M1 A1–B5](../../handover.md#m1--arbeitsschritte-und-laufender-status). A1–A3 und B1 unabhängig abgeschlossen, M1 40%; B1-C2 approved einschließlich HUD-Closure, Premium- und unabhängiger40%-Driftentscheidung. B2–B5 bleiben offen. Abschluss umfasst normale Git-Sicherung; kein Start von B2 in diesem Run. Keine eigene B1-Prozentleiter.
 
 <!-- task-controls:start -->
 ```json
 {
   "checked_revision": 1,
-  "progress": 30,
+  "progress": 40,
   "updates": [
     {
       "percent": 10,
@@ -147,6 +147,10 @@ Führende vollständige Arbeitsliste: [M1 A1–B5](../../handover.md#m1--arbeits
     {
       "percent": 30,
       "evidence": "A3 technisch nachgewiesen: tatsächliches StudioPlay mit Bootlogs undCash425→500/Roboter17→20, Rojoverbunden undDateimarker imStudio.Source gesehen, Rücknahmebestätigt, Source/Buildunverändert. Ergebnisreview folgt; keine fachlicheErweiterung."
+    },
+    {
+      "percent": 40,
+      "evidence": "B1-C2 unabhängig approved durch /root/b1_review um22:46UTC: tatsächliche kleine Werkstatt/Scout/Produktionskette, serverfälliger einmaliger Cash-/Scoutabschluss; Human-Verpackungsbefund und beide HUD-Findings geschlossen. Manifest9770d0d3…03128, Build677027e5…1a3b7. Separate positive B1-Premiumurteile und unabhängiger40%-Drift liegen vor. Nächster Schritt nur Git-Sicherung; B2–B5 offen."
     }
   ],
   "drift_checks": [
@@ -159,6 +163,12 @@ Führende vollständige Arbeitsliste: [M1 A1–B5](../../handover.md#m1--arbeits
         "id": "BOLTBOTS-RUN-M1-A2-001",
         "revision": 1
       }
+    },
+    {
+      "percent": 40,
+      "reviewer": "/root/b1_review",
+      "decision": "continue",
+      "evidence": "Originales B1-Ziel erreicht, B2–B5 nicht vorgezogen. Sechs Runtime-Dateien, gemeinsamer Scoutbauer und bestehende Studio-/Rojo-Kette angemessen; letzte Korrektur nur Clientlayout/Eingabe, keine neue Plattform/Agenten/Assets. Continue ausschließlich zur dokumentierten B1-Fertigstellung und normalem Commit/Push; keine weitere Produktmutation/Gesamtprüfung. Um22:46UTC ca96/120Minuten genutzt, Ende23:09:52 bleibt; kumulativ3/3Korrekturen genutzt,0übrig. Physische Mobil-/Gamepad- und integrierte Mehrspieler-/Persistenz-/Langzeitqualitätsnachweise bleiben offen."
     }
   ],
   "obligations": {
@@ -188,7 +198,7 @@ Führende vollständige Arbeitsliste: [M1 A1–B5](../../handover.md#m1--arbeits
     },
     "budget_stop": {
       "state": "satisfied",
-      "evidence": "Neue ausdrücklich beauftragte B1-Einheit21:09:52–23:09:52UTC einschließlich Vorbereitung. Startreserve M1:3gesamt,1inA2verbraucht. Aktuell nach Human-Verpackungsbefund2/3genutzt,1verbleibt. Drei operative Astra/xhigh-Identitäten; Root nur Relay. Kein Reset/Extension."
+      "evidence": "Neue ausdrücklich beauftragte B1-Einheit21:09:52–23:09:52UTC einschließlich Vorbereitung. Startreserve M1:3gesamt,1inA2verbraucht. Aktuell nach Human-Verpackungs- und konsolidierter HUD-Korrektur3/3genutzt,0verbleiben. Drei operative Astra/xhigh-Identitäten; Root nur Relay. Kein Reset/Extension."
     },
     "routed_requirements": {
       "state": "satisfied",
@@ -200,7 +210,7 @@ Führende vollständige Arbeitsliste: [M1 A1–B5](../../handover.md#m1--arbeits
 <!-- task-controls:end -->
 
 - Bounded B1-Einheit: 24.10.2026,21:09:52–23:09:52UTC einschließlich Vorbereitung. Vorangegangene M1-Einheit endete21:00:10UTC. Keine automatische Verlängerung.
-- Historische Startreserve beim B1-Einstieg: M1 3 gesamt, 1 in A2 verbraucht, damals 2 verbleibend. Aktuell nach Human-Verpackungskorrektur: 2/3 verbraucht, 1 verbleibt. Initiale Implementierung und ihre fokussierten Red/Green-Prüfungen sind noch keine Korrektur eines als reviewbar vorgestellten Kandidaten.
+- Historische Startreserve beim B1-Einstieg: M1 3 gesamt, 1 in A2 verbraucht, damals 2 verbleibend. Nach Human-Verpackungskorrektur waren2/3 verbraucht; aktuell einschließlich konsolidierter HUD-Korrektur3/3 genutzt,0 verbleiben. Initiale Implementierung und ihre fokussierten Red/Green-Prüfungen sind noch keine Korrektur eines als reviewbar vorgestellten Kandidaten.
 - Team: drei ausdrücklich verlangte GPT-6 Astra/xhigh-Identitäten. Root leitet nur Nachrichten/Status weiter; kein vierter operativer Autor/Reviewer. Spawn stimmt über kein Produkt ab.
 - Basis: sauberer Commit aca61e8ea9c66d80edaa97e9472f4ab455d61b61, Branch codex/initialize-boltbots. Buildwerkzeuge Rojo7.7.1, Luau0.744, Studio0.744.0.7441077. Source/Build/Beobachtungen werden für den konkreten Kandidaten gebunden.
 - Bekannter Human-disponierter Prüferbefund AHV-RUN-CHECK-001 wegen eingefrorenem CTX-FACTORY-Status bleibt ausgenommen; kein falsches PASS, keine Core-/Foundationreparatur.
@@ -234,7 +244,7 @@ Konservative Budgetzuordnung: Dieser bereits vom Human gesehene laufende Stand l
 
 Zwischenbefund: 70 natürliche Laufzeit-Abfragen im Abstand ca. 0,2s gegen die tatsächlichen Portalbauteile meldeten 0 Überschneidungen sichtbarer Produktionsbauteile. Natürliche Screenshots zeigen Montage, vollständigen Scout unter dem Portal und geschlossenen Karton auf dem Auslauf. Diese Belege ersetzen die alten Verpackungsbilder. Ein zusätzlich ausdrücklich diagnostisch festgehaltenes natürliches Zwischenbild ist kein normaler Spielerzustand und kein Cashnachweis; Werte werden dafür nicht vorgegeben.
 
-## Final gebundener Kandidat C1
+## Historischer Reviewkandidat C1
 
 [Prüfprotokoll und getrenntes Creatorurteil](../../reviews/evidence/M1-B1/README.md), [Manifest](../../reviews/evidence/M1-B1/manifest.json), SHA256`39b24e2c362b60fa46825747ea2f0f1d330c5c375038fd749409f592377ab39b`. Unveränderte Runtime seit21:53:50UTC; Build`bc1656b51f3af3367a5b1e7b52d36f74fec14f33082605dc2b96765b69794f22`. Normale und ausdrücklich diagnostische Aufnahmen unterschieden. Aktuelle normale Sitzung beendete sich mit300Cash/12Abschlüssen/Scoutrecht; beide Grafikqualitäten zurückAutomatic, Playgestoppt. Finale genaue Spawn-/Reviewerentscheidung folgt; kein vorgezogenes40% oder PASS.
 
@@ -244,8 +254,58 @@ Direkter `/root/b1_spawn`-Pass für `/root/b1_review` (GPT-6 Astra/xhigh), Run r
 
 Direkte Check-Run-Prüfung nach Clearance-Eintrag: ausschließlich `AHV-RUN-CHECK-001` zum bekannten, vom Human disponierten eingefrorenen CTX-FACTORY-Foundationstatus; Exit 1. Kein neuer Befund, kein Validator-PASS behauptet.
 
-## Unterbrochene Schlussreview — gesicherter Zwischenstand
+## Historische Unterbrechung — gesicherter Zwischenstand
 
 Stand 2026-10-24T22:14:30+00:00: Der Creator-Agent endete mit der tatsächlichen Laufzeitmeldung `Your workspace is out of credits. Add credits to continue.` Die aktuelle Agentenliste enthält nur Root; kein Unteragent läuft weiter. Die unabhängige finale Ergebnis-/Premium-/40%-Driftreview ist nicht abgeschlossen. Letzte Reviewer-Mitteilung: Quell-/Build-/Evidenzbindung bestätigt, reine Tests unabhängig grün, Verpackungsphasen erscheinen korrigiert; zwei HUD-/Fokusfragen sollten noch eigenständig in Studio geprüft werden. Diese Fragen sind ohne abschließenden Befund weder geschlossen noch als bestätigte Fehler ausgegeben.
 
 Root sichert ausschließlich administrativ den unveränderten lokalen Kandidaten und diesen Unterbrechungsbefund; keine Produktänderung oder Selbstabnahme. B1 bleibt nicht abgenommen, M1 bleibt30%, 40%-Driftcheck bleibt offen, Reserve bleibt2/3verbraucht. Commit/Push dieses Zwischenstands ist keine Abnahme. Wiederaufnahme: Astra/xhigh-Verfügbarkeit prüfen, bestehende Budget-/Zeitgrenze beachten, den gebundenen C1 und offene Reviewerfragen fortsetzen; keine erneute Konzeptfreigabe und kein stiller Budgetreset.
+
+## Wiederaufnahme derselben Schlussreview
+
+2026-10-24, 22:15 UTC: Human beauftragte die Fortsetzung und Finalisierung von B1 samt anschließendem normalem Commit/Push. Root hatte den unveränderten C1 mit Unterbrechungsmetadaten als `869208e89385ff17fcb1421ec43d0666cc19fbf3` gesichert und gepusht; Arbeitsbaum bei Wiederaufnahme sauber. Dieselben drei Astra/xhigh-Identitäten sind wieder ausführbar. Spawn bestätigte die unverändert gültigen Run-/Reviewer-Freigaben, exakte C1-Bindung und unveränderte Pflichtquellen/Core; direkte Run-Prüfung enthält weiterhin nur die Human-disponierte Foundationabweichung. Originales Ende23:09:52UTC, aktuelle Reserve2/3genutzt,1verbleibt. Kein neues Fenster, keine Wiederholung unveränderter Erstellung.
+
+Der unabhängige Reviewer erhält exklusiv Studio für die noch offenen HUD-/Fokusfragen; Creator hält C1 unverändert und führt parallel keine UI-Aktionen aus. Die Verpackungsabfrage wurde aus dem originalen Studio-Log präzisiert: Jeder sichtbare Produktions-BasePart war die Form von `workspace:GetPartsInPart(p, params)`; der Include-Filter enthielt die realen `Packager`-BaseParts. Damit war es keine Abfrage nach den mit `CanQuery=false` dargestellten Robotern/Kartons als Trefferobjekten. 70/0 bleibt der bereits gebundene Laufzeitbefund, kein neuer Testlauf.
+
+## Konsolidierte unabhängige C1-Review und letzte HUD-Korrektur
+
+`/root/b1_review`: **changes_requested** mit genau zwei blockierenden Befunden. F-B1-UI-01 (minor): informative Labels lagen teilweise bei10–13 statt der genehmigten mindestens14 logischen Pixel. F-B1-UI-02 (major): Hintergrund-Kameraaktion reagierte trotz offener Sammlung; nach ×-Schließen im Erkunden blieb GUI-Auswahl hängen und normales W bewegte nicht. Eigenständige Studio-Reproduktion, keine Reviewer-Sourceänderung; UI anschließend an Creator zurückgegeben.
+
+Unveränderte Regeln, C1-Bindung und eigener Checklauf sind positiv. Human-Verpackungsbefund durch tatsächliche Phasen, Geometrie und korrekt gerichtete räumliche Prüfung geschlossen. Unabhängiges Premiumurteil jeweils **ja für den kleinen B1-Umfang**: ansprechender freundlicher gegliederter Scout und zusammenhängende Werkstatt; Entstehung, Verpackung, Cash und Sammlung geben kurzen Spielanreiz. Kein Langzeit-/B2–B5-Abschluss. Gesamtfreigabe bleibt bis HUD-Closure offen.
+
+Unabhängiger Drift-/Verkomplizierungsentscheid: **continue ausschließlich für eine kohärente HUD-Korrektur und betroffene Closure**. Originales B1-Ziel bleibt gewahrt; sechs Runtime-Dateien, gemeinsamer Scoutbauer und vorhandener Studio-/Rojo-Weg genügen. Keine neue Plattform, Agenten, Assets oder Funktion. Wirtschafts-/Geometriebelege weiterverwenden, nur Eingabe/Layout und neue Quellen-/Buildbindung prüfen. Fortschritt bleibt bis Closure30%.
+
+Creator nimmt diese beiden Befunde gemeinsam in die dritte und letzte kumulative Korrektur auf: **3/3 genutzt, 0 verbleiben**, ursprüngliches Ende23:09:52UTC unverändert. HUD-Informationen werden auf mindestens14px angehoben; passende Querformatfläche erweitert. Modal blockiert Hintergrundinteraktion/-selektion; Schließen gibt Maus-/Tastatursteuerung wieder frei, Controller-Auswahl kehrt zum Auslöser zurück. M wird auch bei GUI-Auswahl als Modal-Rückweg behandelt. Keine Änderung an Wirtschaft, Scout oder Verpackung. Erste betroffene Syntax-/Regelprüfung Exit0; neuer Build `677027e5d10d25bc7ea1ee1912f79166ae731fd4a63bde864f33ec9d7a61a3b7`. Tatsächliche UI-Closure und finale unabhängige Entscheidung folgen.
+
+## C2 — exakte betroffene Closure
+
+Aktueller [C2-Nachweis](../../reviews/evidence/M1-B1/c2/README.md), [Manifest](../../reviews/evidence/M1-B1/c2/manifest.json) SHA256 `9770d0d3f629f22c79b502f36b29865a5b37bb59d28471f6c45a75a1b1003128`. Acht aktuelle Quell-/Test-/Konfigdateien, neun Evidenzdateien, Build `677027e5d10d25bc7ea1ee1912f79166ae731fd4a63bde864f33ec9d7a61a3b7`; C1 bleibt unverändert erhalten. Tatsächliche Source22298Bytes. Desktop-Modal blockierte Kamera/W; × gab W zurück. M- und Escape/Menu-Rückwege gaben auf freier Fläche nachweislich normale Bewegung zurück. Desktop, Quer-/Hochformat ohne TextSize<14 oder TextFits-Abschneidung; vier aktuelle schmale Bilder mit bestätigter Level01. Beide Grafikwerte wiederAutomatic und Play gestoppt. Details, ursprüngliche nicht aussagekräftige Versuche und Grenzen stehen im gebundenen Protokoll.
+
+Spawn bestätigte ausdrücklich: Bestehender Reviewer-Startpass gilt für dieselbe in-scope C2-Korrektur und Closure F-B1-UI-01/02 weiter. Keine neue Rolle, kein neuer Gesamtcheck oder Startartefakt erforderlich. 3/3genutzt verbietet eine weitere erforderliche Produktkorrektur, nicht Tests/Closure dieser letzten Runde. C2 exakt an Reviewer übergeben; bei Bedarf exklusiver Studiozugriff, keine parallele UI durch Creator. Noch keine Ergebnisfreigabe oder40%-Abschluss behauptet.
+
+Zwischenzeitliche UI-Grenze: Automatisches Approval-Review lehnte das Verwerfen eines alten ungespeicherten Studiozustands ab. Creator brach den Schließvorgang ab und aktualisierte ausschließlich über den bereits genehmigten lokalen Rojo-Abgleich; nichts verworfen, kein Umgehungsweg. Build und Repo blieben vollständig erhalten.
+
+
+## Finale unabhängige Ergebnisreview — B1-C2 approved
+
+`/root/b1_review`, GPT-6 Astra/xhigh, 24.10.2026 um22:46UTC: **approved für exakt B1-C2**, Manifest `9770d0d3f629f22c79b502f36b29865a5b37bb59d28471f6c45a75a1b1003128`, Build `677027e5d10d25bc7ea1ee1912f79166ae731fd4a63bde864f33ec9d7a61a3b7`. Alle17 gebundenen Dateien und Build unabhängig hashgeprüft; nur Client gegenüber C1 verändert. **Keine offenen B1-Findings.**
+
+- **F-B1-UI-01 geschlossen:** betroffene informative Schrift≥14px; alle sechs aktuellen echten C2-Bilder selbst betrachtet, davon vier mit bestätigterLevel01. Keine abgeschnittene/überlagerte Information; Laufzeitabfrage ohne low/clip und eigene Desktopprobe14/14.
+- **F-B1-UI-02 geschlossen:** ModalActive, deaktivierte Navigation und Handlerguards passend. Eigenes normales Play blockierte Hintergrundkamera und0,7s W bei offener Sammlung; anschließend ×→0,7s W bewegte sofort bei Auswahlnil. Zusätzlich freie M-/Escape-/Resume-Rückwege im gebundenen Creatorlog geprüft. Kein Positions-/Sourceeingriff zur Erzeugung des Erfolgs. Reales Gamepad/physisches Telefon nicht behauptet.
+- **Unveränderte unabhängige C1-Befunde weiter gültig:** eigene Regel-/Syntaxprüfung grün; tatsächlicher serverfälliger Abschluss mit atomarem Cash+Scout-Recht und Duplikatabwehr, kein Clientabschluss. Human-Verpackungsfehler geschlossen durch passende Geometrie, natürliche Phasen und70 korrekt gerichtete Produktionspart→Portal-Abfragen mit0Treffern. Diagnostisches Zwischenbild bleibt klar diagnostisch; kein fingiertes durchgehendes Video.
+
+Originale zusätzliche Reviewer-Laufzeitbelege, separat vom eingefrorenen C2-Payload aus dem lokalen Studio-Log übernommen:
+
+```text
+2026-10-24T22:44:44.312Z BOLTBOTS_REVIEW_C2_MODAL Enum.CameraType.Custom true Close 0,4.977497577667236,12 22298 14 14
+2026-10-24T22:45:10.660Z BOLTBOTS_REVIEW_C2_AFTER_CLOSE_W Enum.CameraType.Custom false nil -6.435792922973633,6.567497730255127,2.5217549800872803
+```
+
+**Unabhängiges Premiumurteil, separat vom Creator: ansprechend für Menschen — ja für den kleinen B1-Umfang.** Gerundeter elfenbein/cyan Scout mit Gesicht, Antenne, Händen/Füßen und gegliedertem Körper wirkt eigenständig und sympathisch. Werkstatt, Maschinen/Band und Material-/Farbführung passen zusammen, auch schmal/Level01. **Lust auf den B1-Einstieg — ja.** Sichtbare Entstehung, Winken, nachvollziehbare Verpackung, Cashsignal und Sammlungsbild schaffen einen verständlichen ersten Belohnungsmoment. Kein Urteil über langfristige Bindung oder volle M1-Endqualität.
+
+**Unabhängiger40%-Drift-/Simplicityentscheid: continue zur dokumentierten B1-Fertigstellung und Git-Sicherung.** Originalziel erreicht, B2–B5 nicht vorgezogen. Sechs Runtime-Dateien, wiederverwendeter Scout und bestehende Werkzeuge bleiben angemessen; keine neue Plattform, Agenten oder Backend. Keine weitere Produktmutation oder wiederholte Gesamtprüfung. M1 wird nach dieser Abnahme auf **40%** fortgeschrieben. Um22:46UTC ca96/120Minuten genutzt; Ende23:09:52UTC unverändert. **3/3 Korrekturen genutzt,0 verbleiben.**
+
+Grenzen: B2 Ausbau/Orbit, B3 reales Speichern, B4 integrierter Mehrspieler, B5 vollständiger Spielpfad und Human-Endqualität offen. Performance bleibt kurze lokale Stichprobe, kein60FPS-/Mobilhardwareversprechen. Bekannte Human-disponierte Foundationabweichung bleibt sichtbar; kein Validator-PASS und keine Coremutation.
+
+Abschlusszustand: Play durch Reviewer gestoppt, Device Simulator ausgeschaltet. Creator bestätigte anschließend Editmodus, Rojo-Panel „Disconnected from session“ und „Connect“; lokaler Server per Ctrl-C beendet. RenderQuality und EditQuality wiederAutomatic. Vorhandener Studio-Place bleibt offen; kein Verwerfen ungespeicherten Zustands, kein Upload/Publish.
+
+Schlussprüfung: C2-Manifest, alle17 gebundenen Dateien, Build und unveränderter C1-Manifesthash erneut passend; `git diff --check` ohne Befund. Kein Listener mehr auf34872. Direkter Run-Check nach40%-Eintrag meldete zusätzlich eine unzulässige Selbstreferenz im optionalen `origin_run`; dieses reine Kontrollmetadatum entfernt. Erneuter Check enthält ausschließlich die bekannte Human-disponierte CTX-FACTORY-Foundationabweichung, Exit1. Kein Validator-PASS behauptet, keine Produkt-/Corekorrektur. Normale Git-Sicherung auf bestehendem Branch; tatsächliche lokale/Remote-Commit-ID wird im Abschlussbericht und Git-Tracking nachgewiesen.

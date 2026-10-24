@@ -43,10 +43,10 @@ local brand=text(gui,"Brand","BOLT  BOTS",UDim2.fromOffset(230,32),UDim2.fromOff
 brand.Font=Enum.Font.GothamBlack
 local preview=text(gui,"SessionNotice","Lokale Vorschau · ohne Speichern",UDim2.fromOffset(290,23),UDim2.fromOffset(22,45),14,C.muted)
 local cashPanel=frame(gui,"CashPanel",UDim2.fromOffset(210,72),UDim2.new(1,-232,0,12))
-local cashCaption=text(cashPanel,"CashCaption","FACTORY CASH",UDim2.new(1,-28,0,20),UDim2.fromOffset(14,8),12,C.muted)
+local cashCaption=text(cashPanel,"CashCaption","FACTORY CASH",UDim2.new(1,-28,0,20),UDim2.fromOffset(14,8),14,C.muted)
 local cash=text(cashPanel,"Cash","0",UDim2.new(1,-28,0,36),UDim2.fromOffset(14,27),29,C.amber);cash.Font=Enum.Font.GothamBold
 local goal=frame(gui,"Goal",UDim2.fromOffset(310,88),UDim2.fromOffset(22,86))
-local eyebrow=text(goal,"Eyebrow","DEIN ERSTER ROBOTER",UDim2.new(1,-28,0,20),UDim2.fromOffset(14,10),12,C.cyan)
+local eyebrow=text(goal,"Eyebrow","DEIN ERSTER ROBOTER",UDim2.new(1,-28,0,20),UDim2.fromOffset(14,10),14,C.cyan)
 local objective=text(goal,"Objective","Sieh deinem ersten Scout zu.",UDim2.new(1,-28,0,42),UDim2.fromOffset(14,31),17)
 local production=frame(gui,"Production",UDim2.fromOffset(310,65),UDim2.new(0.5,-155,1,-142))
 local phase=text(production,"Phase","Werkstatt wird vorbereitet …",UDim2.new(1,-28,0,27),UDim2.fromOffset(14,7),15)
@@ -61,7 +61,7 @@ local rewardText=text(reward,"RewardText","Scout entdeckt!  +25 Cash",UDim2.new(
 rewardText.TextXAlignment=Enum.TextXAlignment.Center;rewardText.Font=Enum.Font.GothamBold
 
 local shade=frame(gui,"CollectionOverlay",UDim2.fromScale(1,1),UDim2.fromScale(0,0),C.navy)
-shade.BackgroundTransparency=0.2;shade.Visible=false;shade.ZIndex=10
+shade.BackgroundTransparency=0.2;shade.Visible=false;shade.ZIndex=10;shade.Active=true
 local card=frame(shade,"ScoutCard",UDim2.fromOffset(520,620),UDim2.new(0.5,-260,0.5,-310),C.panel);card.ZIndex=11
 local close=button(card,"Close","×",UDim2.fromOffset(46,46),UDim2.new(1,-58,0,12));close.ZIndex=13;close.TextSize=28
 local collectionTitle=text(card,"CollectionTitle","DEINE SAMMLUNG",UDim2.new(1,-90,0,30),UDim2.fromOffset(24,19),16,C.cyan);collectionTitle.ZIndex=12
@@ -97,7 +97,7 @@ local function layout()
     brand.Position=UDim2.fromOffset(28,22)
     cashPanel.Size=UDim2.fromOffset(if narrow then 136 else 210,if narrow then 56 else 72)
     cashPanel.Position=UDim2.new(1,if narrow then -152 else -232,0,10)
-    cashCaption.TextSize=10;cashCaption.Position=UDim2.fromOffset(12,5)
+    cashCaption.TextSize=14;cashCaption.Position=UDim2.fromOffset(12,5)
     cash.Position=UDim2.fromOffset(12,22);cash.Size=UDim2.new(1,-24,0,30);cash.TextSize=if narrow then 24 else 29
     -- On narrow screens the persistence notice is below the whole header, never under cash.
     preview.Position=UDim2.fromOffset(28,if narrow then 72 else 60)
@@ -109,7 +109,7 @@ local function layout()
     local navWidth=math.min(430,width-24);nav.Size=UDim2.fromOffset(navWidth,54);nav.Position=UDim2.new(0.5,-navWidth/2,1,-bottom)
     local third=(navWidth-20)/3
     for i,b in ipairs({collectionButton,cameraButton,motionButton}) do
-        b.Size=UDim2.fromOffset(third,44);b.Position=UDim2.fromOffset(5+(i-1)*(third+5),5);b.TextSize=if narrow then 13 else 15
+        b.Size=UDim2.fromOffset(third,44);b.Position=UDim2.fromOffset(5+(i-1)*(third+5),5);b.TextSize=if narrow then 14 else 15
     end
     production.Position=UDim2.new(0.5,-155,1,-bottom-74)
     local cw=math.min(if short then 720 else 520,width-24);local ch=math.min(620,height-24)
@@ -125,15 +125,15 @@ local function layout()
         for _,label in ipairs({scoutTitle,scoutStatus,scoutDescription}) do label.Size=UDim2.fromOffset(cw-tx-24,if label==scoutDescription then 90 elseif label==scoutTitle then 40 else 28) end
     end
     reward.Size=UDim2.fromOffset(math.min(360,width-32),62);reward.Position=UDim2.new(0.5,-math.min(360,width-32)/2,0,if narrow then 180 else 92)
-    preview.TextSize=14;eyebrow.TextSize=12;eyebrow.Position=UDim2.fromOffset(14,10);rewardText.TextSize=19
+    preview.TextSize=14;eyebrow.TextSize=14;eyebrow.Position=UDim2.fromOffset(14,10);rewardText.TextSize=19
     if short then
         header.Size=UDim2.fromOffset(260,58)
         brand.TextSize=18;brand.Position=UDim2.fromOffset(28,12)
-        preview.TextSize=11;preview.Position=UDim2.fromOffset(28,41);preview.Size=UDim2.fromOffset(240,18)
+        preview.TextSize=14;preview.Position=UDim2.fromOffset(28,41);preview.Size=UDim2.fromOffset(240,18)
         cashPanel.Size=UDim2.fromOffset(136,56);cashPanel.Position=UDim2.new(1,-152,0,10);cash.TextSize=24
-        goal.Size=UDim2.fromOffset(230,50);goal.Position=UDim2.fromOffset(16,76)
-        eyebrow.TextSize=10;eyebrow.Position=UDim2.fromOffset(12,2)
-        objective.TextSize=13;objective.Position=UDim2.fromOffset(12,20);objective.Size=UDim2.new(1,-24,0,28)
+        goal.Size=UDim2.fromOffset(250,64);goal.Position=UDim2.fromOffset(16,76)
+        eyebrow.TextSize=14;eyebrow.Position=UDim2.fromOffset(12,2)
+        objective.TextSize=14;objective.Position=UDim2.fromOffset(12,24);objective.Size=UDim2.new(1,-24,0,36)
         reward.Size=UDim2.fromOffset(260,46);reward.Position=UDim2.new(1,-276,0,76);rewardText.TextSize=15
     end
 end
@@ -162,27 +162,43 @@ local function setOverview(value)
         if humanoid then camera.CameraSubject=humanoid end
     end
 end
+local function setNavigationEnabled(enabled)
+    for _,action in ipairs({collectionButton,cameraButton,motionButton}) do
+        action.Active=enabled;action.Selectable=enabled
+    end
+end
 local function closeCollection()
-    shade.Visible=false;GuiService.SelectedObject=collectionButton
+    shade.Visible=false;setNavigationEnabled(true)
+    -- Controller navigation returns to its trigger. Pointer/keyboard players resume world input.
+    local gamepad=string.sub(UserInputService:GetLastInputType().Name,1,7)=="Gamepad"
+    GuiService.SelectedObject=if gamepad then collectionButton else nil
     if not overview then controls:Enable() end
 end
 local function openCollection()
-    shade.Visible=true;GuiService.SelectedObject=close
+    shade.Visible=true;setNavigationEnabled(false);GuiService.SelectedObject=close
     controls:Disable()
 end
 close.Activated:Connect(closeCollection)
 -- Escape belongs to Roblox's platform menu; dismiss our modal when that menu opens.
 GuiService.MenuOpened:Connect(function() if shade.Visible then closeCollection() end end)
-collectionButton.Activated:Connect(function() if shade.Visible then closeCollection() else openCollection() end end)
-cameraButton.Activated:Connect(function() setOverview(not overview) end)
-motionButton.Activated:Connect(function() reduced=not reduced;motionButton.Text=if reduced then "Bewegung: ruhig" else "Bewegung: an" end)
+collectionButton.Activated:Connect(function() if not shade.Visible then openCollection() end end)
+cameraButton.Activated:Connect(function() if not shade.Visible then setOverview(not overview) end end)
+motionButton.Activated:Connect(function()
+    if shade.Visible then return end
+    reduced=not reduced;motionButton.Text=if reduced then "Bewegung: ruhig" else "Bewegung: an"
+end)
 ContextActionService:BindActionAtPriority("CloseScoutCollection",function(_,inputState)
     if shade.Visible and inputState==Enum.UserInputState.Begin then closeCollection();return Enum.ContextActionResult.Sink end
     return Enum.ContextActionResult.Pass
 end,false,3000,Enum.KeyCode.ButtonB)
 UserInputService.InputBegan:Connect(function(input,processed)
+    if GuiService.MenuIsOpen or UserInputService:GetFocusedTextBox() then return end
+    -- M remains a modal close shortcut even while GUI selection consumes other keys.
+    if input.KeyCode==Enum.KeyCode.M then
+        if shade.Visible then closeCollection() elseif not processed then openCollection() end
+        return
+    end
     if processed then return end
-    if input.KeyCode==Enum.KeyCode.M then if shade.Visible then closeCollection() else openCollection() end end
     if input.KeyCode==Enum.KeyCode.V and not shade.Visible then setOverview(not overview) end
 end)
 local function show(incoming)

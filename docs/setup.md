@@ -1,7 +1,7 @@
 # Lokales Setup — geführt durch Codex
 
 > Artifact ID: `BOLTBOTS-SETUP-001`
-> Revision: 4 · Status: A2/A3 und B1 lokal geprüft; B1-Ergebnisreview siehe Run
+> Revision: 5 · Status: A2/A3 und B1 lokal geprüft und unabhängig approved; Grenzen siehe Run
 
 Nach einem Checkout übernimmt Codex Werkzeugprüfung, Installation, Build und die verfügbare Studio-Bedienung. Der Human liefert Ideen, prüft Qualität und erledigt bei Bedarf persönliche Anmeldung oder Systembestätigung. Passwörter, Roblox-Cookies und API-Schlüssel gehören nicht in Chat oder Repository.
 
@@ -49,9 +49,9 @@ A3-Nachweis: [Screens/Logs und Hashbindung](reviews/evidence/M1-A3/studio-verifi
 
 Nach Build und File → Open startet Play die kleine Werkstatt serverseitig; die leere Editansicht ist erwartet. Scout wird montiert, fährt durch das offene Verpackungsportal und verlässt es als geschlossener Karton. Erst der serverseitige 9-Sekunden-Abschluss schreibt 25 Cash und beim ersten Mal das Scout-Designrecht gut. Die Sammlung ist kein Einzelroboterlager. Die sichtbare Kennzeichnung „Lokale Vorschau · ohne Speichern“ gilt für die gesamte Sitzung.
 
-„Sammlung“ öffnet das echte 3D-Scout-Porträt. × oder M schließen; Escape öffnet Roblox' reserviertes Menü und schließt dabei die Sammlung. „Erkunden“ gibt normale Kamera und Spielersteuerung frei; „Werkstatt“ stellt die eigene feste Ansicht wieder her. „Bewegung: ruhig“ unterdrückt dekoratives Winken/Neigen, der Produktionsweg bleibt sichtbar. In der festen Ansicht werden Nachbarslots lokal ausgeblendet und Touch-Steuerkreise verborgen; Erkunden stellt sie wieder her.
+„Sammlung“ öffnet das echte 3D-Scout-Porträt und sperrt darunterliegende Aktionen. × oder M schließen; Escape öffnet Roblox' reserviertes Menü und schließt dabei die Sammlung. Im Erkunden wird anschließend normale Maus-/Tastaturbewegung wieder frei. „Erkunden“ gibt normale Kamera und Spielersteuerung frei; „Werkstatt“ stellt die eigene feste Ansicht wieder her. „Bewegung: ruhig“ unterdrückt dekoratives Winken/Neigen, der Produktionsweg bleibt sichtbar. In der festen Ansicht werden Nachbarslots lokal ausgeblendet und Touch-Steuerkreise verborgen; Erkunden stellt sie wieder her.
 
-B1 wurde in Studio tatsächlich mit Desktop 1511×758 sowie iPhone-XR-Emulation 413×814/801×413 geprüft; dies ist kein physischer Telefontest. Test → Device Simulator ist vor Play zu aktivieren; während Play lässt sich die Ausrichtung drehen. Für reproduzierbare Grafikchecks wurde über die Studio-Commandbar ausschließlich die Testeinstellung `settings().Rendering.QualityLevel` auf Level01/Level21 gesetzt und auf Automatic zurückgestellt. Diagnosebefehle sind separat von normalen Spieleraktionen dokumentiert. Keine Grafik-/Kontoeinstellung ist Produktlogik. [B1-Run](work/runs/boltbots-m1-b1-001.md) und [konkrete Belege](reviews/evidence/M1-B1/README.md) halten Grenzen, Quellbindung und unabhängige Entscheidung fest.
+B1 wurde in Studio tatsächlich mit Desktop 1511×758 sowie iPhone-XR-Emulation 413×814/801×413 geprüft; dies ist kein physischer Telefontest. Test → Device Simulator ist vor Play zu aktivieren; während Play lässt sich die Ausrichtung drehen. Für reproduzierbare Grafikchecks wurde im laufenden Client über die Studio-Commandbar ausschließlich die Testeinstellung `settings().Rendering.QualityLevel` auf Level01/Level21 gesetzt und auf Automatic zurückgestellt; eine Einstellung vor Play kann beim Start zurückgesetzt werden. Diagnosebefehle sind separat von normalen Spieleraktionen dokumentiert. Keine Grafik-/Kontoeinstellung ist Produktlogik. [B1-Run](work/runs/boltbots-m1-b1-001.md), [C1-Basisbelege](reviews/evidence/M1-B1/README.md) und [aktuelle C2-HUD-Closure](reviews/evidence/M1-B1/c2/README.md) halten Grenzen, Quellbindung und unabhängige Entscheidung fest.
 
 ## Spiel und Speichern — weitere M1-Schritte
 

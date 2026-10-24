@@ -1,0 +1,29 @@
+{
+  "candidate": "B1-C2",
+  "run": "BOLTBOTS-RUN-M1-B1-001 r1",
+  "scope": "Closure F-B1-UI-01 and F-B1-UI-02 only; reused independently reviewed C1 rules/geometry/packaging/premium",
+  "c1_commit": "869208e89385ff17fcb1421ec43d0666cc19fbf3",
+  "c1_manifest_sha256": "39b24e2c362b60fa46825747ea2f0f1d330c5c375038fd749409f592377ab39b",
+  "build_sha256": "677027e5d10d25bc7ea1ee1912f79166ae731fd4a63bde864f33ec9d7a61a3b7",
+  "files": {
+    "src/ReplicatedStorage/Shared/EconomyRules.luau": "63f44f423d490381b99a92e08bc304e3c4ddb6db5e2826e15d7edea5a1e223ce",
+    "src/ReplicatedStorage/Shared/GameConfig.luau": "217255311c4f43923eb906ea90127e93e053889b735d242de133551846163d62",
+    "src/ReplicatedStorage/Shared/ScoutModel.luau": "7466cae0c79ca21126e8a5d2e9cafb3e1915edd5796255112a0c38a60ba59ed2",
+    "src/ServerScriptService/Main.server.luau": "4c469ed4cbf2cc0131176f52cc446e36ee9e67c535a5547c92d089f349195a70",
+    "src/ServerScriptService/Services/WorldBuilder.luau": "628f57d638353b62db4735965355e0e6f08825e2f2d749882930e739398c3c1e",
+    "src/StarterPlayer/StarterPlayerScripts/Client.client.luau": "1db8f6ca34a70035d0656cf83c220bdc408d72781f50453d6f45fdec985b2830",
+    "tests/economy-rules.luau": "de10044bcd4043f2b62f5d9d13635f5f2efd11d8cef9e611d2b8957ee7734d76",
+    "default.project.json": "f6a3816f633f9fe1e6c345658da05c2a73e12079cd8cca738fb2fe29d1192bce"
+  },
+  "evidence": {
+    "docs/reviews/evidence/M1-B1/c2/README.md": "ea5f9680d9935dc1b4947bfaaf35a265ae9b382db08a47d4b1cdf6a103f5bb02",
+    "docs/reviews/evidence/M1-B1/c2/checks.txt": "ae8c0881158c48608b4e66c7b2cbe5b59dba945d8dd0c6c5b550d9db574f3b99",
+    "docs/reviews/evidence/M1-B1/c2/desktop.png": "5b7e6340f9f46e8713f4d357cf8c7d9f710abcd44bbad678949b281d9e5954a0",
+    "docs/reviews/evidence/M1-B1/c2/landscape-low.png": "0124834a807dc681c8ce05a3a43a8a1accc7282a1365b0b95e1ec0e0596a52aa",
+    "docs/reviews/evidence/M1-B1/c2/landscape-scout-low.png": "387bc5aad34b5f925bfc0400c44ced53a95b154f1278d0ab25493841c2c553cd",
+    "docs/reviews/evidence/M1-B1/c2/portrait-low.png": "e5dc0f1e574a2ec9f145e83a448df5550f5bcbb2805e274a269c38a7f9241242",
+    "docs/reviews/evidence/M1-B1/c2/portrait-scout-low.png": "bf15ce6de43743f1449f3706cfeda056aca933c053b30b67fe099fad2a110661",
+    "docs/reviews/evidence/M1-B1/c2/scout.png": "3b97bbf44a5c6cf53ea2566643ef427c860d6ca704f13e232f5e9f8c365bc6bf",
+    "docs/reviews/evidence/M1-B1/c2/studio-observations.log": "e7351d596be4179364b633f2f77bb4843055a52cf0df06d302afe20a67935862"
+  }
+}

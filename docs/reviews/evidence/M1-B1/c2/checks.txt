@@ -1,0 +1,8 @@
+Actual post-change execution: bash scripts/check.sh; bash scripts/build.sh
+Both commands exited 0.
+B1 rules: due completion, cash + Scout atomic, duplicate/old/unknown/early denial, stop, finite values and exact/overflow limits OK
+Syntax OK: 6 runtime files
+Rule tests/type checks OK. Roblox API typing, Play and multiplayer are not covered.
+Building project 'BoltBotsTycoon'
+Built project to BoltBots.rbxlx
+Build SHA256: 677027e5d10d25bc7ea1ee1912f79166ae731fd4a63bde864f33ec9d7a61a3b7
