@@ -1,5 +1,5 @@
 {
-  "recorded_at": "2026-10-24T19:38:11.012711+00:00",
+  "recorded_at": "2026-10-24T19:39:54.458471+00:00",
   "run": "BOLTBOTS-RUN-M1-A2-001",
   "tool_pins": "toolchain.json",
   "installed_tools": {
@@ -81,7 +81,33 @@
     }
   ],
   "clean_checkout": {
-    "status": "pending"
+    "status": "passed",
+    "source_commit": "42c4c6daab6b3dc6dff6a3e319c6179f7332b8bb",
+    "method": "git clone --no-hardlinks --no-local from candidate; initially no .tools/build; fresh official downloads; no copied generated files",
+    "doctor_before_setup_exit": 1,
+    "setup_exit": 0,
+    "commands": [
+      {
+        "command": "bash scripts/doctor.sh",
+        "exit_code": 0,
+        "log": "clean-doctor.txt"
+      },
+      {
+        "command": "bash scripts/check.sh",
+        "exit_code": 0,
+        "log": "clean-check.txt"
+      },
+      {
+        "command": "bash scripts/build.sh",
+        "exit_code": 0,
+        "log": "clean-build.txt"
+      }
+    ],
+    "build_sha256": "f7642a8dea683cd8b65b4312a2670c8ee87f82dacc8706fa2c6c8e822a255937",
+    "matches_primary_build": true,
+    "final_tracked_status": "clean",
+    "same_mac": true,
+    "second_machine": false
   },
   "limits": [
     "A3 Studio load/Play/Rojo connection not performed",
@@ -89,5 +115,17 @@
     "No persistence, premium scene or actual agent gameplay",
     "Second machine and Intel Mac not tested"
   ],
-  "initial_review": "pending"
+  "initial_review": "pending",
+  "evidence_hashes": {
+    "build.txt": "71c07c2a28fc0cef7ee2f7cc13465b9b89258f127f0a0848fa28d177eea80b28",
+    "check.txt": "366c4c04aa5ca5b70f164c4ca4756614bee29208ee62e162aa79f453ca8ac636",
+    "clean-build.txt": "71c07c2a28fc0cef7ee2f7cc13465b9b89258f127f0a0848fa28d177eea80b28",
+    "clean-check.txt": "366c4c04aa5ca5b70f164c4ca4756614bee29208ee62e162aa79f453ca8ac636",
+    "clean-doctor-before.txt": "5802782a825a34dd9dc0b9ceeabfdf8c027dc1c854f0c73b7a6bec888991bb1c",
+    "clean-doctor.txt": "20634ae8174e2109d653cf8c1e0177e71c2b4f4f9c54176f148664f2dfa767db",
+    "clean-setup.txt": "2a6d0015d71eeb17c42a7d564215e5cc456da82314f0fecf3250b555e26e2a91",
+    "doctor.txt": "20634ae8174e2109d653cf8c1e0177e71c2b4f4f9c54176f148664f2dfa767db",
+    "studio-rojo-7.7.1.png": "a62cc561834d579a3d30115e3732a59b8ca36b0874ff774df0a82984c30749f4",
+    "studio-rojo-ax.txt": "3eafae9055093642ef0da9c26cd3dd01e317112fb800269740b43715d67a5b28"
+  }
 }

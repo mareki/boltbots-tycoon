@@ -1,0 +1,8 @@
+git version 2.52.0
+OS: macOS-26.5.2-x86_64-i386-64bit-Mach-O | Python process architecture: x86_64
+Python: 3.14.3 /usr/local/opt/python@3.14/bin/python3.14
+Git: /usr/local/bin/git
+Studio app found: /Applications/RobloxStudio.app (launch/login is a separate UI check)
+Tool execution: MISSING/FAILED: Tools missing. Run: python3 scripts/dev.py setup
+Rojo plugin file: <user>/Documents/Roblox/Plugins/RojoManagedPlugin.rbxm (Studio visibility/connection checked separately)
+Missing/failed requirements: project tools

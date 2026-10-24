@@ -1,0 +1,3 @@
+Economy baseline: initial state, reward, insufficient/exact funds, L2 and max-level guards OK
+Syntax OK: 5 runtime files
+Rule tests/type checks OK. Roblox API typing, Play and multiplayer are not covered.
