@@ -2,14 +2,16 @@
 
 > Artifact ID: `BOLTBOTS-RUN-M1-B4-001`
 > Artifact class: Work contract
-> Creator/operative Lead: /root/b1_creator · unabhängiger Reviewer: /root/b1_review · Spawn: /root/b1_spawn · alle Astra/xhigh
+> Creator/operative Lead: /root/b4_creator · unabhängiger Reviewer: /root/b4_review · Spawn: /root/b4_spawn · alle Astra/xhigh
+> **Aktuell: B4 abgeschlossen und unabhängig approved; M1 70%. Privater Save15:00:28UTC bestätigt. Die tatsächliche Git-/Remote-ID wird in der Abschlussnachricht bestätigt.**
+> Historische B4-r1-Rollen: /root/b1_creator, /root/b1_review, /root/b1_spawn; durch explizite Humanfortsetzung ersetzte Kontexte, keine zusätzliche parallele Kapazität.
 
 <!-- run-contract:start -->
 ```json
 {
   "schema_version": "1",
-  "revision": 1,
-  "status": "active",
+  "revision": 2,
+  "status": "completed",
   "harness_version": "1.5.3",
   "run_kind": "product_delivery",
   "decision_class": "D3",
@@ -87,19 +89,19 @@
   ],
   "decision": {
     "authority": "Human Marek",
-    "approval_ref": "human-approved:20261025-B4-End-to-End-Astra-xhigh-im-Chat",
-    "lead": "/root/b1_creator",
+    "approval_ref": "human-approved:20261025-B4-End-to-End-und-fortsetzen-144019UTC",
+    "lead": "/root/b4_creator",
     "reasoning": "xhigh",
     "agents": [
-      "/root/b1_creator",
-      "/root/b1_review",
-      "/root/b1_spawn"
+      "/root/b4_creator",
+      "/root/b4_review",
+      "/root/b4_spawn"
     ],
     "reviewers": [
-      "/root/b1_review"
+      "/root/b4_review"
     ],
     "max_corrections": 6,
-    "effort_override": "human-approved:20261025-B4-120min-110300UTC-bestehende2Reserven"
+    "effort_override": "human-approved:20261025-B4-resume-144019-154019UTC-historische5von6genutzt"
   },
   "external_actions": {
     "allowed": [
@@ -122,9 +124,13 @@
   ],
   "agent_start": {
     "applicability": "required",
-    "spawn_reviewer": "/root/b1_spawn",
+    "spawn_reviewer": "/root/b4_spawn",
     "clearance": "pass",
-    "cleared_agents": ["/root/b1_creator", "/root/b1_review"]
+    "cleared_agents": [
+      "/root/b4_creator",
+      "/root/b4_review",
+      "/root/b4_spawn"
+    ]
   }
 }
 ```
@@ -133,8 +139,8 @@
 <!-- task-controls:start -->
 ```json
 {
-  "checked_revision": 1,
-  "progress": 60,
+  "checked_revision": 2,
+  "progress": 70,
   "updates": [
     {
       "percent": 10,
@@ -159,6 +165,10 @@
     {
       "percent": 60,
       "evidence": "B3-C1 unabhängig approved10:50UTC: realer versionierter Profiladapter, exklusiver Anspruch, Migration, normales Save/Rejoin und sichere Load-/Savefehlerreaktion samt Retry. Manifest7a6715d1…edf29, Build1879055e…93e3b. Zusätzlicher eigener Reviewer-Rejoin exakt2675/109/L2/Orbit; getrennte positive B3-Recovery-UI-/Spielanreizurteile und unabhängiger60%-Drift. Exakter privater B3-Save nach bytegleicher9-Sourceprüfung10:52:01 bestätigt. Abschluss/Git; B4/B5 und Humanversand-/Gesamtqualität offen."
+    },
+    {
+      "percent": 70,
+      "evidence": "B4 unabhängig approved durch /root/b4_review auf Manifest41ff75e3…af7b/30Dateien und Build28c95843…2654. Reale1/2/4Clients, Eigentum/Geld/Manipulation/Parallelität und5.Join/Retry belegt; kleineOwner-/no_plotSichtclosure positiv. AktuellerCleanup bestätigt. NeunStudioquellen direkt gegenapprovedBuild15:00:04 bytegleich; gleicherprivaterSave15:00:28, Transfermechanik unabhängig bestätigt. KeinFlüssigkeits-/Mobil-/Gesamtspielpass. NächsterSchrittGitabschluss; B5/normalerFremdplotpfad/Humanversand-/Endqualität offen."
     }
   ],
   "drift_checks": [
@@ -196,15 +206,15 @@
   "obligations": {
     "entry_integrity": {
       "state": "satisfied",
-      "evidence": "B4-Pflichteinstieg und geroutete wirksame Quellen gelesen; Spawn hat externen Manifestanker und95Coredateien unverändert bestätigt. Baseline8857572c…2ebe sauber."
+      "evidence": "Wiedereinstieg25.10.14:40UTC: Pflichtkette und gerouteterB4Run gelesen. Spawn/Root bestätigen externenManifestanker und95Payloadbytes, HEADee37eaa640fe4be3234c2931a912f8d0a4f1cbf8 sauber, branchcodex/initialize-boltbots; lokalerCheckpoint vorPush."
     },
     "scope_authority": {
       "state": "satisfied",
-      "evidence": "Human hat B4 analog End-to-End freigegeben. Bestehendes WP01B; einziges privates Testziel und eigener/synthetischer Storebereich bleiben unverändert. Keine erneute pauschale Freigabe nötig."
+      "evidence": "Human fortsetzen erneuert begrenzteB4-Fortsetzungsautorität im selbenWorkspace; ursprünglicherEnd-to-End-Auftrag und einzigesprivateZiel gelten. Originalkriterien undB5-Abgrenzung unverändert."
     },
     "agent_start_review": {
       "state": "satisfied",
-      "evidence": "assignment_preparation pass von b1_spawn liegt vor. Exakte run_activation und früher Reviewerstart durch b1_spawn pass; frühe Inhaltsreview vor betroffener Produktmutation fällig."
+      "evidence": "AktuellerCreatorstart aufr2 undb4_review-Teilstart durchb4_spawn pass; finalerSicht-/Cleanupreviewstart aufManifest41ff75…af7b pass. b4_review Ergebnisapproved undseparateTransfermechanik bestätigt; SpawnkeinInhaltsvotum."
     },
     "human_gates": {
       "state": "satisfied",
@@ -212,15 +222,15 @@
     },
     "capability": {
       "state": "satisfied",
-      "evidence": "Studio aktuell Edit/Playstop, richtige private Experience, API an/Fault aus/Rojo getrennt. Native Server-&-Clients-Auswahl vorhanden; zwei Qt-Popupversuche erfolglos, begrenzter Wechsel zum nativen Test-Menü. Echter Mehrclientstart erst nach Aktivierung."
+      "evidence": "BeideTestsregulärgestoppt, Simulatoraus/Automatic,Proben+Attribute+Faultabwesend;RojoPlugin getrennt/Serve91043 beendet/Portfrei auchReviewerbestätigt. Alle9Sources15:00:04direktgegenBuildbytegleich; SaveToRoblox15:00:28erfolgreich."
     },
     "mutation_boundary": {
       "state": "satisfied",
-      "evidence": "Einziger Writer b1_creator; nur benannte B4-Quellen/Tests/Arbeits-/Evidenzpfade. Reviewer beobachtet exklusiv nach Übergabe, editiert nicht."
+      "evidence": "EinzigerWriter b4_creator, b4_review unabhängigread-only, b4_spawnstart-only, RootRelay/Keepawake/mechanischeGitprüfung. KeineParallel-UI; exklusivCreatorbisHandoff."
     },
     "budget_stop": {
       "state": "satisfied",
-      "evidence": "25.10.2026 11:03:00–13:03:00UTC inklusive Vorbereitung; kumulativ5/6Korrekturen genutzt,1verbleibt, keinReset. M1bei60%."
+      "evidence": "Fortsetzung14:40:19–15:40:19UTCinklVorbereitung; fachlicherB4Abschluss/Save15:00:28innerhalbFenster.6/6Korrekturen verbraucht0verbleiben;letzteBelegclosureapproved. M170%,keineautomatischeB5Fortsetzung."
     },
     "routed_requirements": {
       "state": "satisfied",
@@ -246,11 +256,11 @@ Bestehende B1–B3-UI/Art/Store sind die Ausgangsfassung. Kein vorgesehener Work
 3. Vier Clients müssen vier verschiedene Plots mit boundedOutputs benutzen. H-CAP verlangt klare Kapazitätsablehnung: ein zusätzlicher kurzer Beitrittsversuch darf keinen fünften aktiven Plot/Profil erzeugen; dies ist nur die Kapazitätsgrenzprobe, kein fünftes Profilszenario. Aktuelle Quelle liefertno_plot mit generischem Ladefehlertext; falls tatsächlich bestätigt, kleinste gezielte Meldung „Alle Werkstätten belegt …“ innerhalb vorhandener Recoveryfläche. Keine neue Lobby/Queue. Die unabhängige frühe Linse beurteilt diese Bedeutung vor eventueller UIänderung.
 4. B3realeStore-/Fehler-/Retry-/Migrationsbelege und B1/B2Regel-/schmaleLevel01-/Modal-/Verpackungsbelege bleiben gültig. B4prüft neu gemeinsame Sitzung/Leave-Rejoin und fremdeIsolation; erforderliche Fehlerreaktion unter Mehrclientbedingungen begrenzt. Produktfehler innerhalb desselbenScopes zu einer kohärenten Korrektur bündeln, dann nur betroffene Closure.
 
-## Aktivierung und nächste Schritte
+## Historie r1 — Aktivierung und nächste Schritte
 
 assignment_preparation pass von /root/b1_spawn für genau diesen Auftrag liegt vor. Nächster Schritt: exakte Aktivierung und frühe unabhängige Prüfung dieses Deltas; danach native Testsession/gebundene Mess- und Manipulationsbelege. Keine Produktmutation vor Startpass. Der direkte Validator darf den bekannten Human-disponierten CTX-FACTORY-Foundationbefund weiter melden; kein unechterPASS, keine Core-/Foundationänderung.
 
-## Ergebnis und offene Arbeit
+## Historie r1 — geplantes Ergebnis und offene Arbeit
 
 Noch keine B4-Laufzeit-/Mehrclient-/Leistungsbehauptung. Offen sind nativer Start, integrierte Proben/Messung, gebundener Kandidat mit unabhängiger Ergebnisreview, mögliche in-scope Closure, aktuelle Übergabe und normale Git-Sicherung. Nur falls Produktquellen geändert werden folgt nach approval ein bytegebundener Save ins bestehende private Ziel; keine öffentliche Promotion.
 
@@ -288,3 +298,66 @@ Reale1/2/4Nativeclients, richtige privateIDs, getrennteProfile/Plots, echteManip
 Hostlast verhinderte nach den Proben den regulärenEndSession-/Editorzugriff: CUA73/91/81sTimeout. Sandboxpsverweigert; zwei engeautomatischeGenehmigungsprüfungenliefeninTimeout, keineSicherheitsablehnung und keineTerminierungausgeführt. KeinePIDgeraten/Umgehung. **Cleanup nicht bestätigt**: Testchildprozesse, zweiB4TemporaryProbe-Objekte undWorkspaceattribute könnennochaktivsein; RojoServeSession56649 ebenfallsbisbereinigtemAbschluss. Originaleditor/ungespeicherterStandnichtverworfen. VorprivatemB4Save zwingend regulärstoppen,Probeobjekte/Attributeentfernen,alle9Sourcesbytegleichprüfen. **KeinB4Cloudsave**, genehmigteprivateFassungbleibtB3.
 
 Finaler enger Reviewerauftrag: technischeOriginalabdeckung/Belegbindung, echteKapazitäts-/Manipulationsregeln,Leistungsgrenzen, kleinerOwner-/Recoverydelta unddrift/KISS; fehlendeSicht/Cleanupoffenlassen, keinenGesamtpasskonstruieren. ExakterSpawnstartangefordert; M1bleibt60%. Fenster11:03–13:03UTC,5/6Korrekturengenutzt1übrig; keinReset/Verlängerung. BeiFensterende sichererTeilcheckpoint stattfalschemB4-done.
+
+
+## Fortsetzung r2 — 25.10.2026,14:40:19–15:40:19UTC
+
+Human „fortsetzen“ gilt als neue begrenzte Fortsetzungsautorität für den unvollständigenB4-Auftrag, nicht als neuerRun oderBudgetreset. GleichesRepository/Workspace, lokaler saubererCheckpoint`ee37eaa640fe4be3234c2931a912f8d0a4f1cbf8`; NormalerPush undliveRemote-ID`ee37eaa640fe4be3234c2931a912f8d0a4f1cbf8` durchRoot14:46UTC bestätigt. Keine Personen-/Maschinenübergabe: derselbe lokaleHumanauftrag wird mit ausdrücklich ersetzten Agentkontexten fortgesetzt; Originalzustand/Belege bleiben erhalten. Zwei arbeitendeRollen plusStartreviewer, max3operativ; Root ausschließlichRelay/Keepawake/Gitmechanik. HistorischeRollenaktivierungen plus dreiErsatzkontexte transparent, keinvierterarbeitenderReviewer.
+
+Ziel bleibt eine zugängliche attraktiveRoboterfabrik fürRoblox-Fabrik-/Sammelspieler inCTX-FACTORY; M1 ist die kleineQualitätsreferenz. B4 liefert zuverlässigesGeld/Eigentum undgemesseneMehrclientgrenzen. KeineGesamtspiel-Premiumfreigabe; normalerFremdplotpfad undHumanversandbefundbleibenB5/M1.
+
+Aktueller nächsterSchritt: r2direktprüfen/aktivieren; danach bestehendesprivateZielöffnen und aktuelleB4Byteswiederherstellen. Studiozeigt14:44UTC Home, keinoffenesEditdokument, UIantwortetwieder. HistorischeTestsessionnichtalsdurchunsregulärbeendetbehaupten; tatsächlicheneueSession mussProbe-/Attributfreiheitund9Sourcesprüfen. RootbestätigtRojo34872ohneListener. DiefehlendenSichtbelege werden ineinerleichten eingebettetenPlay-Sitzung alsdiagnostischeDarstellung eigener/anderer/freierOwnertexte unddesno_plotRecoveryzustands erstellt, ausdrücklichkeinneuernormalerMehrspielerbeleg. Keineerneuten1/2/4-Messserien. ReviewerprüftparallelgebundenenTechnikteil; spätereSicht-/Cleanupbindung alsengerDelta. Danach nurbeiunabhängigemPass bytegebundenerSaveinsgleicheprivateZiel undGitabschluss.
+
+Ansatzentscheid nach historischenCUA-Timeouts: NeueEvidenzistdererreichbareHomezustandohnealteLast. KleinsterWegbleibt vorhandenesStudio/Rojo, eineeingebetteteSession. NachhöchstenszweierneutengezieltenUIfehlschlägen erneuterStopp/Ansatzentscheid, keineChildroutingexperimenteoderneuePlattform. NochkeineProduktänderung/zusätzlicheKorrektur.
+
+AktuellerStart vor14:47UTC: /root/b4_spawn **PASS run_activation** fürCreatoraufexakterr2/Fortsetzungsroute. Separater**PASS** fürb4_reviewauftechnischenTeilmanifestf1d0cab…e16c/22Dateien, ohneSicht-/Gesamtabnahme.
+
+
+## Abschlusskandidat der Fortsetzung — Sicht und Cleanup
+
+Alle ursprünglichen B4-Technikkriterien sind durch /root/b4_review unabhängig positiv geprüft. Die aktuellen PNGs/Originalzeilen im Belegindex ergänzen eigene normale Beschriftung, diagnostische andere/freie Beschriftung und tatsächliche no_plot-Darstellung auf Desktop/Portrait/Querformat. Portrait413×756, Titel/Text passen, Retry349×48. Tatsächliche GrafikAutomatic; kein erfundenerLevel01-Nachweis. Die ursprünglichen1/2/4-Messungen werden nicht wiederholt. B5-Spiel-/Fremdplotweg und Humanversandbefund bleiben offen.
+
+Aktueller Cleanup bestätigt: beide eingebetteten Tests regulär gestoppt; keine B4Probeobjekte/Attribute oder B3Fault, Simulatoraus, GrafikAutomatic, RojoPlugin getrennt, eigener Serve91043 beendet, Port34872ohneListener. Historischer unbeobachteter Abbruch bleibt als solcher erhalten. Sourcegleichheitaller9Dateien im echtenprivatenPlace14:48:18 nachgewiesen; unmittelbar vor dem autorisiertenSave nochmals fällig. NochkeinB4Cloudsave.
+
+Die unabhängige Technikreview hat zwei minor/evidence_accuracy-Präzisierungen konsolidiert: früheControlMarker sindkeinNachherbeleg, vorhandene spätereCapacityProfiletragenIsolation; 8Modelle sind4Roboter+4Kartonmodelle, keinScout-/Orbitpaar. Belegindex jetzt entsprechendkorrigiert. Kein Runtimebefund, keine neue Messung. Konservativ zählt diese kohärente Dokumentationskorrektur als letzterZyklus: **6/6genutzt,0verbleiben**, Closure diesesZyklus bleibt zulässig. KeinBudgetreset. Neuer finalerSicht-/Cleanupreviewstart wird exaktmanifestgebunden angefordert.
+
+Finaler enger Start: /root/b4_spawn **PASS** für /root/b4_review auf Manifest`41ff75e3d4f3aaa19304653755f6d77e1b629e5fc882b18d152ba2b6c418af7b`,30Dateien und unverändertenBuild. Nachweisbindungen mechanisch bestätigt; keineInhaltsabnahme durchSpawn. Reviewer prüft Sicht/Premiumeng,Diagnostikgrenzen,beideBelegkorrekturen und aktuellenCleanup. CreatorUIbisErgebnispausiert.
+
+
+## Finale unabhängige Ergebnisreview — B4 approved
+
+`/root/b4_review` bestätigt **APPROVED** auf Manifest `41ff75e3d4f3aaa19304653755f6d77e1b629e5fc882b18d152ba2b6c418af7b` mit30Dateien und Build `28c95843a8fb9ecc12d1abf4f9b26e99a819e2a24b771b2d670903b1e5882654`. Alle31Bindungen unabhängig geprüft, siebenPNG tatsächlich angesehen,13Resumezeilen bytegleich mit dem OriginalStudioLog. Die technische Teilreview rekonstruierte79Events aus192Originalzeilen in20Logdateien. Runtime/Tests/Build sind seit dem technischen Teilcheckpoint unverändert; keine zusätzliche breite Testsuite ohne geänderten Input.
+
+Beide minor/evidence_accuracy-Findings geschlossen: spätere echteCapacity-Snapshots tragen die Nachherisolation; achtModelle bedeuten vierRoboter und vierKartonmodelle. Eigene/andere/freie Schilder sowie no_plot auf Desktop/Querformat/Portrait sind vollständig gerendert. Diagnostische Darstellung ist sauber von echter Mehrclientkapazität und normalem Spielen getrennt. Aktueller Cleanup durch Edit-/Connectbild und Originalzeilen bestätigt; Reviewer sah Port34872 ebenfalls ohneListener.
+
+**Unabhängiges visuelles Urteil: ansprechend — ja.** Helles Werkstattschild und ruhige navy/cyan Fehlerkarte passen zur bestehenden Szene und bewahren eine klare Hierarchie. **Unabhängiger Fortsetzungsanreiz: ja, für diesen engen Delta.** Richtige Besitzorientierung und der verständliche freie-Platz-/Retryweg nehmen Unsicherheit und führen zur eigenen Roboterproduktion zurück. Die Creatorurteile im gebundenen Belegindex sind getrennt positiv. Keine Nutzerpräferenzmessung, kein Gesamtspiel-/Versandpass; die Humanablehnung zum Versandabschluss bleibt maßgeblich offen.
+
+### Originalkriterien und tatsächliche Abdeckung
+
+| Quelle / Pflicht | Tatsächlicher Nachweis und Grenze |
+|---|---|
+| M1-Plan Geld/Eigentum; Factory C-UPGRADE/C-SELECT/Q-FACTORY; Foundation SC03/04 | Vier authentifizierte Clients mit eigenen Profilen/Plots,20 ungültige Grenz-/Fremd-/Abschlussfälle ohne Zusatzcash; gleicheRequestIDs und verschiedenealteAbsichten jeweils genau50Cash/einL2+Orbit. Spätere Kontrollstände ergeben Netto0 nach legitimen25erAbschlüssen. |
+| Foundation SC06/H-CAP, C-JOIN/INV-PLOT/RECOVERY | Fünf realeBeitritte, genauvieraktiveSlots; −5no_plotohneProfilersatz; nachLeave eines aktivenOwners echterRetryzuPlot1/Scout. NeueScreens ergänzen ausschließlich die Lesbarkeit. |
+| Technik Leistungsbasis, M1 begrenzteLaufzeit | Reale1/2/4-Szenarien jeweils mindestens60s, Frameverteilungen/Prozessspeicher/ServerHeartbeat; lokaleOutputs begrenzt. Hohe4Clientwerte70–149msMedian/172–470msp95 erlauben keinen Flüssigkeits-,60FPS- oderEndgeräteclaim. |
+| Q-PUBLIC/INV-READ und engePremiumregel | Nur nötigeOwnerreferenz/öffentlicheGeometrie/Zyklus/Level; keinePrivatprofile/Storetoken. TatsächlicheSchilder/Recoverybilder, positivegetrennteCreator-/Reviewerurteile. |
+| B3 und unveränderteB1/B2-Regeln/UI | BytegleicheRegel-/Storetests und approvedSave/Recovery-/Migrations-/Kauf-/Abbruchbelege wiederverwendet. Kein erneuterTest allein wegenResume. |
+| WP01B/M1 normalerAgent-Spielpfad, Humanversandfeedback | BleibtB5/M1offen. MehrclientRemoteproben sind kein normalesFremdplot-Erkunden. KeinScopewegfall und keineGesamtspiel-Premiumabnahme. |
+
+### Ereignisbezogener Abschluss-Drift und KISS
+
+Originalziel ist verlässliches eigenes Geld/Eigentum in der gemeinsamen Roboterfabrik plus ehrliche lokale Leistungsbasis. Tatsächlich geändert wurden vier kleine Runtime-Dateien für die öffentliche Besitzerreferenz, die lokale Beschriftung und den klaren Kapazitätstext; vorhandeneRecoveryfläche und Testwerkzeuge genügen. Temporäre Proben sind entfernt. Keine neue Plattform, Welt, Versandfunktion oder abstrakte Infrastruktur. Unabhängiger Reviewer bestätigt diese Zuordnung und den einfachen Ansatz. Entscheidung: **continue ausschließlich zur autorisierten Sicherung, danach complete fürB4**; B5 wird nicht automatisch begonnen.
+
+CumulativeM1Reserve6/6genutzt,0verbleiben; letztegebündelteBelegkorrektur undClosure abgeschlossen. HistorischesB4Fenster11:03–13:03bleibt erhalten. Die ausdrücklicheHumanfortsetzung14:40:19–15:40:19UTC einschließlichVorbereitung ermöglichte den konkretenRest; Ergebnis/Save nach rund20Minuten. Keine nachträglich erfundeneTimeliness für die frühereUnterbrechung. OriginalEinclientbasis vorreinemBeschriftungsdelta, aktuelleZwei-/Vierclientbasis undaktuellerSichtdelta sindweiter klar getrennt.
+
+### Autorisierter privater Save und aktueller Übergabestand
+
+[Separater Transferbeleg](../../reviews/evidence/M1-B4/approved-private-transfer.log) liegt außerhalb des eingefrorenen Reviewpayloads.15:00:04UTC wurden alle neun tatsächlichen Studio-Sources direkt mit den aus dem gebundenen `.rbxlx` gelesenen Sourcebytes verglichen; alleAssertions bestanden. RichtigeUniverse10772906084/Place112662761038118, Editmodus, keineB4Probeobjekte/Attribute, keinB3Fault, GrafikAutomatic.
+
+NativeAktion **File → Save to Roblox**:15:00:27.954UTC bestätigteStudioSavePlaceToCloud1791ms, anschließendPublishSuccessful und15:00:28.101UTC „Saved new changes“ im gleichen privatenZiel. Der aktuelleFenstertitel schreibt „BoltBots B3-Test 20261025“ mitBindestrich; die IDs sind unverändert, keineRenameaktion. KeinöffentlicherPublish und keinCloud-Kaltabruf behauptet. Reviewer bestätigte alle vier Transferzeilen gegen das OriginalLog sowie unveränderte30Dateien/Build und leerenRojoport.
+
+**B4 abgeschlossen, M1 70%.** Studio verbleibt Edit/Playstop/Simulatoroff/Automatic; Rojo getrennt undServerbeendet. Die normaleGit-Sicherung diesesAbschlusses wird durch die abschließende lokale/Remote-ID belegt. Nächste fachlicheArbeit ist B5 einschließlichnormalemSpiel-/Fremdplotweg und Humanversand-/Gesamtqualität, unter eigener weitererAutorität und ohne verfügbarenKorrekturreset.
+
+
+### Abschlussmetadaten zur Spawn-Startdisposition
+
+Der direkteCompleted-Check verlangte zunächst eineStartdisposition für jede derdrei zuRechtallokiertenIdentitäten. `decision.agents` behält gemäßAdmission§2 alle drei Rollen. `cleared_agents` enthält nun auch `/root/b4_spawn` ausdrücklich aufgrund des tatsächlich erfolgten Bootstrap aus integritätsgeprüfter Rolle und Pflichtkette, der einzigen Rekursionsausnahme aus Collaboration§1.1 / `.agentic-harness/roles/spawn-reviewer.md`. Dies ist **keine Selbstreview, kein eigener Spawn-pass und keine Produkt-/Quorumstimme**. Spawn hat diese genaue Metadatenzuordnung bestätigt. Keine neueAktivierung, fachlicheÄnderung, Korrektur oder Ergebnisreview; der gebundeneInhalts-/Savepass bleibt unverändert. Danach meldet derdirekteCheck nur noch den bekannten ausdrücklichHuman-disponiertenFoundationbefund, keinunechterGesamt-PASS.

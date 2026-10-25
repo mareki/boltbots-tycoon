@@ -1,5 +1,5 @@
 {
-  "candidate": "B4-C1 technical partial; visual closure and cleanup open",
+  "candidate": "B4-C1 completion evidence correction; runtime unchanged; independent final review pending",
   "baseline": "8857572c891fc87970f38199e5a07a7d21702ebe",
   "build": {
     "path": "build/BoltBots.rbxlx",
@@ -12,7 +12,7 @@
     },
     {
       "path": "docs/reviews/evidence/M1-B4/README.md",
-      "sha256": "ffd807b7e1d59ccf10d0dc7952173dd8cafc918053a634508459464bac2575cd"
+      "sha256": "2a03eb40715abe40375d56dc24cad474c602a121b83fa11fb704ee27b0f8b2f8"
     },
     {
       "path": "docs/reviews/evidence/M1-B4/client-probe-one-r2.luau",
@@ -27,6 +27,10 @@
       "sha256": "e68af06543ee285bbf626a389c82ee1a5637145d9f27d7e55c82494f19b3775d"
     },
     {
+      "path": "docs/reviews/evidence/M1-B4/edit-clean-disconnected.png",
+      "sha256": "96dc7c36aff69b251427b630d30858e0074e3438aa435f22c77ece9caef5d73c"
+    },
+    {
       "path": "docs/reviews/evidence/M1-B4/events.json",
       "sha256": "a61e1a67892f18d38be210fcc2740bd0f8048d7813a3d00ec251e187c2e5b82e"
     },
@@ -35,8 +39,36 @@
       "sha256": "3aa5ef0b25bc36932679520115a92e00099d4f81f708f873471063e27ccb2c1f"
     },
     {
+      "path": "docs/reviews/evidence/M1-B4/no-plot-diagnostic-desktop.png",
+      "sha256": "b39fdc381b6f02004adf81c100f7db41b69b457cf53a57104f308ec1a61bc4f2"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B4/no-plot-diagnostic-landscape-automatic.png",
+      "sha256": "340f69436d02adf01845119b4c421c41a2d706872ac7a484ecb104e4135edafc"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B4/no-plot-diagnostic-portrait-automatic.png",
+      "sha256": "44180fcda65b943754123055ab0a60c114bf42d2f06c8f9111753103494649e6"
+    },
+    {
       "path": "docs/reviews/evidence/M1-B4/original-lines.json",
       "sha256": "a9d7e293a860aaa2e2d61831e39ecb77e8e8834999f5ef0ea135b0c7552adb58"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B4/owner-free-diagnostic-desktop.png",
+      "sha256": "887cac49527b33579e579dfecf5907f40af78921c52a35bb6bb5173f72ec13dc"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B4/owner-other-diagnostic-desktop.png",
+      "sha256": "886ebc9639471b38c8ddaf4100113d1b8ed3d0a8d540700f7d6863a436543ed4"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B4/owner-own-desktop.png",
+      "sha256": "7dfd518e27bab36c7d98dfd2b3cb3de73b3a38034a9a1fb682b0b29e4dd187c9"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B4/resume-observations.log",
+      "sha256": "8d5950ff16d0db61c7e1ac6228fb988035a4b974e752c398198db625c5fbc87f"
     },
     {
       "path": "docs/reviews/evidence/M1-B4/server-probe-one.luau",
@@ -94,5 +126,6 @@
       "path": "tests/profile-store.luau",
       "sha256": "cb48500446014d0a3f9a333ce1c1f2346f3c35f531c602f7d8fa425f6c6378de"
     }
-  ]
+  ],
+  "previous_manifest_sha256": "f1d0cab146d65fef05ff76c06dc656385c708c959bf82ac6758858617e58e16c"
 }
