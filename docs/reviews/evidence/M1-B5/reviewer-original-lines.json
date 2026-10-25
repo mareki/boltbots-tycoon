@@ -1,0 +1,142 @@
+[
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 11397,
+    "text": "2026-10-25T17:16:10.835Z,2952.835693,144ea000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_REVIEW_SOURCE_MATCH 9 28b4973ceaa5ccb7ef70fd5c17497f499ca5d4ccf8aeb57e0a3550a2a0aefcae documented_fixture_only fault nil"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 11781,
+    "text": "2026-10-25T17:16:27.381Z,2969.381836,144ea000,6,Info [FLog::CreatorOutput] BOLTBOTS_SERVER_BOOT BoltBotsTycoon development-b5"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 12197,
+    "text": "2026-10-25T17:16:31.253Z,2973.253662,152aa000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_START loaded revision=40 cash=4325 completed=175 level=2 design=orbit"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 12234,
+    "text": "2026-10-25T17:16:32.756Z,2974.756836,14ea4000,6,Info [FLog::CreatorOutput] BOLTBOTS_CLIENT_BOOT development-b5 view=1511, 761"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 12280,
+    "text": "2026-10-25T17:17:02.045Z,3004.045898,14ca1000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=41 cash=4425 completed=179 level=2 design=orbit"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 12281,
+    "text": "2026-10-25T17:17:02.101Z,3004.101318,14ca1000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=5 cash=4450 completed=180 scout=true design=orbit seconds=6"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 12289,
+    "text": "2026-10-25T17:17:32.953Z,3034.953125,142e7000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=42 cash=4550 completed=184 level=2 design=scout"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 12316,
+    "text": "2026-10-25T17:18:03.801Z,3065.801025,150a7000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=43 cash=4675 completed=189 level=2 design=scout"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 12319,
+    "text": "2026-10-25T17:18:04.283Z,3066.283936,14ea4000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=15 cash=4700 completed=190 scout=true design=scout seconds=6"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 12326,
+    "text": "2026-10-25T17:18:34.599Z,3096.599609,14ea4000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=44 cash=4800 completed=194 level=2 design=scout"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 12333,
+    "text": "2026-10-25T17:19:05.581Z,3127.581543,142e7000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=45 cash=4925 completed=199 level=2 design=scout"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 12334,
+    "text": "2026-10-25T17:19:06.382Z,3128.382324,14ca1000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=25 cash=4950 completed=200 scout=true design=scout seconds=6"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 12354,
+    "text": "2026-10-25T17:19:36.547Z,3158.547119,142e7000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=46 cash=5050 completed=204 level=2 design=scout"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 12369,
+    "text": "2026-10-25T17:19:47.358Z,3169.358154,144ea000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_REVIEW_RUNTIME Enum.QualityLevel.Automatic nil"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 12374,
+    "text": "2026-10-25T17:20:07.679Z,3189.679199,14ca1000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=47 cash=5175 completed=209 level=2 design=scout"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 12376,
+    "text": "2026-10-25T17:20:08.952Z,3190.952637,14ca1000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=35 cash=5200 completed=210 scout=true design=scout seconds=6"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 12383,
+    "text": "2026-10-25T17:20:38.394Z,3220.394775,14ca1000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=48 cash=5300 completed=214 level=2 design=scout"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 12390,
+    "text": "2026-10-25T17:21:09.218Z,3251.218018,144ea000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=49 cash=5425 completed=219 level=2 design=scout"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 12391,
+    "text": "2026-10-25T17:21:10.882Z,3252.882812,144ea000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=45 cash=5450 completed=220 scout=true design=scout seconds=6"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 12397,
+    "text": "2026-10-25T17:21:39.946Z,3281.946533,144ea000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=50 cash=5550 completed=224 level=2 design=scout"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 12404,
+    "text": "2026-10-25T17:22:11.149Z,3313.149902,150a7000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=51 cash=5675 completed=229 level=2 design=scout"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 12405,
+    "text": "2026-10-25T17:22:13.091Z,3315.091553,142e7000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=55 cash=5700 completed=230 scout=true design=scout seconds=6"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 12412,
+    "text": "2026-10-25T17:22:41.879Z,3343.879395,14ca1000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=52 cash=5800 completed=234 level=2 design=scout"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 12424,
+    "text": "2026-10-25T17:23:12.714Z,3374.714355,14ea4000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=53 cash=5925 completed=239 level=2 design=scout"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 12425,
+    "text": "2026-10-25T17:23:15.206Z,3377.206055,144ea000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=65 cash=5950 completed=240 scout=true design=scout seconds=6"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 12431,
+    "text": "2026-10-25T17:23:43.486Z,3405.486084,14ca1000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=54 cash=6050 completed=244 level=2 design=scout"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 12665,
+    "text": "2026-10-25T17:24:09.055Z,3431.055420,144ea000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE released revision=55 cash=6150 completed=248 level=2 design=orbit"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 12666,
+    "text": "2026-10-25T17:24:09.056Z,3431.056396,144ea000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_END released"
+  }
+]

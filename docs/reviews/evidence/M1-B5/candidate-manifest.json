@@ -1,0 +1,167 @@
+{
+  "candidate": "B5-C1",
+  "status": "independent review requested; full foreign-plot criterion open",
+  "baseline": "3683527f68150a8905e96530dbf3a482ca697f66",
+  "build": {
+    "path": "build/BoltBots.rbxlx",
+    "sha256": "28b4973ceaa5ccb7ef70fd5c17497f499ca5d4ccf8aeb57e0a3550a2a0aefcae"
+  },
+  "files": [
+    {
+      "path": "docs/reviews/evidence/M1-B5/01-first-scout.png",
+      "sha256": "a4afc6dff87d6f75bcdc458eb0d35b675c2c73f2d86659978b7afb7d175b7a32"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B5/02-upgrade-offer.png",
+      "sha256": "fbab404c1955c3e623edbdb0d81f411259ba2c72e2422219ab30b63db8f75378"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B5/03-orbit-unlocked.png",
+      "sha256": "aab6b381048ba2306d00f63832d138f69d538e15f5c2f3d67235bcb0e45c8ec7"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B5/04-real-save-pause.png",
+      "sha256": "2b47b4a0805e73696519bc36ddc3ae8e3a79816ffe3a75e7c85471b28ffbf398"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B5/05-expired-session.png",
+      "sha256": "1206568ea834561834aceb6533f45d758037d71d58c6f6894a13a900ecdc9285"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B5/06-retry-resumed-exploration.png",
+      "sha256": "685a137f194664016dad016b7e316a0f1b2d3ee11b06bfd31534f2c2de628708"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B5/07-landscape-low.png",
+      "sha256": "45bc4e9dce3751030f0b597f3552d72d7bd497b3a145e81af1afd7365fe7db7a"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B5/08-portrait-low.png",
+      "sha256": "b3a7ad2fbebcad87f43376f7bd20de690d30e7c54b0d5b59f75a19a9b0c75df8"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B5/09-scout-portrait-low.png",
+      "sha256": "e580fe1b8cd5954981375a37c5061f57b2c57a8ebd7b3b6c0a9b4aa32673c3bd"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B5/10-orbit-portrait-low.png",
+      "sha256": "04cfd9dcf61002c028e78b3b774298c0ded41ec4ea4db92530af92248ba70ccb"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B5/11-reduced-motion-portrait.png",
+      "sha256": "d98c8f259386a70ce98a92b67a7f9a62499eb34036d2b6676d811ef15d3c9ba3"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B5/12-desktop-low.png",
+      "sha256": "8e8803c0a10012212088e481a8c82bc7920f21061c2d172319184b5c6e077479"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B5/13-orbit-inlet-08.png",
+      "sha256": "7ca58bc550620364a325ac981a17629b05e102b80265cfa09e96cb3dd9a7b2e9"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B5/13-orbit-inlet-12.png",
+      "sha256": "222edbdb17e7e88d2b112401fd53c245a3fffbc7871cc886c0f96f1c3ace40af"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B5/13-orbit-inlet-14.png",
+      "sha256": "2b2a2f7074814aac5af9e897826292bc54ea417337a8957bd7f149a8c47c9bc3"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B5/13-orbit-inlet-15.png",
+      "sha256": "9bb07b7715c7ccd00a1ac35668dbb310541eae8c0e0b3ff0b55759fa91c2effb"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B5/13-orbit-inlet-16.png",
+      "sha256": "e29d4380fc45e30456bfb436728f955095d39475e90668961cfd13058e5f147c"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B5/13-orbit-inlet-17.png",
+      "sha256": "706c75e03672407c78fc528f05b79709aa375d71030df611f52235b958424d8c"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B5/14-near-camera.png",
+      "sha256": "41de46ee8c8a7d19ff1abb453c3753e2dbaaf3ba3146cee0f527241bcfbc9161"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B5/README.md",
+      "sha256": "37b655a7d07a1008abe278dff60dd1434da62ff8ba8313a5ea12f0b625c0613d"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B5/fixture-key-setup.luau",
+      "sha256": "05e8af29447d869161633f54da76d2cca35d0aa13660e18d01ae3e63f98b2217"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B5/inlet-capture-times.json",
+      "sha256": "9d8994eb3fb3af2864b460141f169b0ca1e741d24dd09bf5951a945eada4f902"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B5/original-lines.json",
+      "sha256": "37b6b12164c6689ce9f7cef3dc4c9b2d5c700abfc36a18d75efb7915b28df0ab"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B5/shipping-observer.luau",
+      "sha256": "957d7a71d12a4f28a0d3512449e3ace7be6de96c4fbf319c3d16b6b70886abdd"
+    },
+    {
+      "path": "scripts/build.sh",
+      "sha256": "99fce60abc4e0d51e701bba02be22839acd31baf17e77e1f365a04645e77e2c2"
+    },
+    {
+      "path": "scripts/check.sh",
+      "sha256": "3c1128c208e80f5356f4f2060547d04b0d3e0cd6330441719d42f2de6ec2d5f4"
+    },
+    {
+      "path": "scripts/dev.py",
+      "sha256": "226e5a28a6b4b815b7007d14e6157770acda6eae97fede26a32e4f15ba02c6cc"
+    },
+    {
+      "path": "scripts/doctor.sh",
+      "sha256": "32b6bcc940c8f5fc8d31e69485aac6d99772a584463d081342f225bdd1bc6b8e"
+    },
+    {
+      "path": "src/ReplicatedStorage/Shared/EconomyRules.luau",
+      "sha256": "fdb88b81613bc9a78dbac6a111e34a5a79928fec5d14fd13b7a85a9a04a74977"
+    },
+    {
+      "path": "src/ReplicatedStorage/Shared/GameConfig.luau",
+      "sha256": "263087e0b0d3810a74cb7ca9a2d2ce818351aa269fffb9ab147bde3caab25b98"
+    },
+    {
+      "path": "src/ReplicatedStorage/Shared/OrbitModel.luau",
+      "sha256": "50193a3f6c28182c52991fb2a97be8531773d8a963eefeed5e7feb6784dc962e"
+    },
+    {
+      "path": "src/ReplicatedStorage/Shared/ProfileSchema.luau",
+      "sha256": "03c0c2ff547f6320272f6fa4dd54e7ff8eb4e46f51c749e2c2edda826a64c67f"
+    },
+    {
+      "path": "src/ReplicatedStorage/Shared/ScoutModel.luau",
+      "sha256": "7466cae0c79ca21126e8a5d2e9cafb3e1915edd5796255112a0c38a60ba59ed2"
+    },
+    {
+      "path": "src/ServerScriptService/Main.server.luau",
+      "sha256": "5b2a67b5333036a817d1eb487b9b1da59d994c5c7893559836c23094e394c5cb"
+    },
+    {
+      "path": "src/ServerScriptService/Services/ProfileStore.luau",
+      "sha256": "f79f2dfa6c0f5d70ba6cc9f5d9ff6e5760b9dc751244adaa6c544a312c7fe395"
+    },
+    {
+      "path": "src/ServerScriptService/Services/WorldBuilder.luau",
+      "sha256": "a5181c2d181a8a5b874b2fd65ae83e0ea9677be33cab615d27c652c9d89b12e4"
+    },
+    {
+      "path": "src/StarterPlayer/StarterPlayerScripts/Client.client.luau",
+      "sha256": "f7ed17c8e7605d604d31fb68f78ee5a6e5ea106ffaa8f6da365a81b160ffa0ed"
+    },
+    {
+      "path": "tests/economy-rules.luau",
+      "sha256": "6d70460164946d1fe482042ec7e6ebdbb0d2fb0c27901b6937f1a3f0155de806"
+    },
+    {
+      "path": "tests/profile-store.luau",
+      "sha256": "cb48500446014d0a3f9a333ce1c1f2346f3c35f531c602f7d8fa425f6c6378de"
+    }
+  ]
+}

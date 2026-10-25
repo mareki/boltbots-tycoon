@@ -1,0 +1,757 @@
+[
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 1591,
+    "text": "2026-10-25T16:35:15.747Z,497.747009,142e7000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_TARGET 10772906084 112662761038118 false development-b4"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 1703,
+    "text": "2026-10-25T16:40:30.389Z,812.389038,144ea000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_SOURCE_MATCH 9 a1ab40a68aac85d3af8aa0165b668b09c3cbd34113400984568abe0321018f0c"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 2160,
+    "text": "2026-10-25T16:41:51.775Z,893.775452,144ea000,6,Info [FLog::CreatorOutput] BOLTBOTS_SERVER_BOOT BoltBotsTycoon development-b5"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 2618,
+    "text": "2026-10-25T16:41:55.830Z,897.830200,154ad000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_START new revision=0 cash=0 completed=0 level=1 design=scout"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 2639,
+    "text": "2026-10-25T16:41:56.561Z,898.561279,14ca1000,6,Info [FLog::CreatorOutput] BOLTBOTS_CLIENT_BOOT development-b5 view=1511, 761"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 2653,
+    "text": "2026-10-25T16:42:04.864Z,906.864380,14ea4000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=1 cash=25 completed=1 scout=true design=scout seconds=9"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 2654,
+    "text": "2026-10-25T16:42:04.864Z,906.864807,14ea4000,6,Info [FLog::CreatorOutput] BOLTBOTS_ROBOT_UNLOCKED scout"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 2655,
+    "text": "2026-10-25T16:42:13.879Z,915.879150,142e7000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=2 cash=50 completed=2 scout=true design=scout seconds=9"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 2656,
+    "text": "2026-10-25T16:42:22.979Z,924.979004,144ea000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=3 cash=75 completed=3 scout=true design=scout seconds=9"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 2659,
+    "text": "2026-10-25T16:42:26.727Z,928.727966,142e7000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=1 cash=75 completed=3 level=1 design=scout"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 2663,
+    "text": "2026-10-25T16:42:37.378Z,939.378540,14ea4000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_BEFORE_CANCEL {\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":1,\"cash\":100,\"plotIndex\":1,\"cycleStart\":1792946551.166132,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":10,\"ready\":true,\"catalogVersion\":1,\"completed\":4,\"canRetry\":true,\"version\":\"development-b5\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":5,\"cashPerRobot\":25}"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 2671,
+    "text": "2026-10-25T16:42:53.807Z,955.807068,150a7000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_AFTER_CANCEL {\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":1,\"cash\":150,\"plotIndex\":1,\"cycleStart\":1792946569.315597,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":13,\"ready\":true,\"catalogVersion\":1,\"completed\":6,\"canRetry\":true,\"version\":\"development-b5\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":7,\"cashPerRobot\":25}"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 2674,
+    "text": "2026-10-25T16:42:57.494Z,959.494751,14ea4000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=2 cash=150 completed=6 level=1 design=scout"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 2677,
+    "text": "2026-10-25T16:43:12.461Z,974.461060,142e7000,6,Info [FLog::CreatorOutput] BOLTBOTS_MACHINE_PURCHASE starter level=2 price=50 cash=150"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 2678,
+    "text": "2026-10-25T16:43:12.461Z,974.461548,142e7000,6,Info [FLog::CreatorOutput] BOLTBOTS_ROBOT_UNLOCKED orbit"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 2683,
+    "text": "2026-10-25T16:43:25.167Z,987.167969,14ca1000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=10 cash=200 completed=10 scout=true design=scout seconds=6"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 2686,
+    "text": "2026-10-25T16:43:28.326Z,990.326477,142e7000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=3 cash=200 completed=10 level=2 design=scout"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 2691,
+    "text": "2026-10-25T16:43:50.409Z,1012.409912,150a7000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_ORBIT_SELECTED {\"saveStatus\":\"saved\",\"currentDesign\":\"orbit\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":300,\"plotIndex\":1,\"cycleStart\":1792946628.346556,\"cycleSeconds\":6,\"nextCycleSeconds\":6,\"stateVersion\":30,\"ready\":true,\"catalogVersion\":1,\"completed\":14,\"canRetry\":true,\"version\":\"development-b5\",\"unlockedOrbit\":true,\"selectedDesign\":\"orbit\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRobot\":25}"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 2692,
+    "text": "2026-10-25T16:43:50.411Z,1012.411255,150a7000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_GRAPHICS Enum.QualityLevel.Automatic 1511, 761"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 2696,
+    "text": "2026-10-25T16:43:59.541Z,1021.541626,14ca1000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=4 cash=325 completed=15 level=2 design=orbit"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 2927,
+    "text": "2026-10-25T16:44:21.374Z,1043.374756,14ca1000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE released revision=5 cash=400 completed=18 level=2 design=orbit"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 2928,
+    "text": "2026-10-25T16:44:21.375Z,1043.375732,14ca1000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_END released"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 3115,
+    "text": "2026-10-25T16:45:20.695Z,1102.695068,142e7000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_SOURCE_MATCH 9 06461afdf37c8dd54a1ebc4da8cac86408f493d2b143ded665112cabbb39e92e"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 3540,
+    "text": "2026-10-25T16:45:37.014Z,1119.014160,150a7000,6,Info [FLog::CreatorOutput] BOLTBOTS_SERVER_BOOT BoltBotsTycoon development-b5"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 3840,
+    "text": "2026-10-25T16:45:38.439Z,1120.439331,150a7000,6,Info [FLog::CreatorOutput] BOLTBOTS_CLIENT_BOOT development-b5 view=1, 1"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 3984,
+    "text": "2026-10-25T16:45:39.376Z,1121.376343,14ea4000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_START loaded revision=5 cash=400 completed=18 level=2 design=orbit"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 4026,
+    "text": "2026-10-25T16:45:51.554Z,1133.554810,14ea4000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=2 cash=450 completed=20 scout=true design=orbit seconds=6"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 4031,
+    "text": "2026-10-25T16:46:02.204Z,1144.204712,142e7000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_LOW_RUNNING Enum.QualityLevel.Level01 1511, 761"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 4032,
+    "text": "2026-10-25T16:46:02.270Z,1144.270264,142e7000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_REJOIN {\"saveStatus\":\"saved\",\"currentDesign\":\"orbit\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":5,\"cash\":475,\"plotIndex\":1,\"cycleStart\":1792946755.825652,\"cycleSeconds\":6,\"nextCycleSeconds\":6,\"stateVersion\":7,\"ready\":true,\"catalogVersion\":1,\"completed\":21,\"canRetry\":true,\"version\":\"development-b5\",\"unlockedOrbit\":true,\"selectedDesign\":\"orbit\",\"upgradePrice\":50,\"cycleId\":4,\"cashPerRobot\":25}"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 4035,
+    "text": "2026-10-25T16:46:10.169Z,1152.169678,14ca1000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=6 cash=500 completed=22 level=2 design=orbit"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 4041,
+    "text": "2026-10-25T16:46:41.068Z,1183.068481,14ca1000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=7 cash=625 completed=27 level=2 design=orbit"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 4045,
+    "text": "2026-10-25T16:46:53.603Z,1195.603638,14ca1000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=12 cash=700 completed=30 scout=true design=orbit seconds=6"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 4050,
+    "text": "2026-10-25T16:47:11.917Z,1213.917236,14ea4000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=8 cash=750 completed=32 level=2 design=orbit"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 4056,
+    "text": "2026-10-25T16:47:42.882Z,1244.882446,144ea000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=9 cash=875 completed=37 level=2 design=orbit"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 4059,
+    "text": "2026-10-25T16:47:55.783Z,1257.783081,144ea000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=22 cash=950 completed=40 scout=true design=orbit seconds=6"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 4069,
+    "text": "2026-10-25T16:48:13.648Z,1275.648071,142e7000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=10 cash=1000 completed=42 level=2 design=orbit"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 4077,
+    "text": "2026-10-25T16:48:44.464Z,1306.464111,144ea000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=11 cash=1125 completed=47 level=2 design=orbit"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 4080,
+    "text": "2026-10-25T16:48:57.730Z,1319.730225,14ca1000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=32 cash=1200 completed=50 scout=true design=orbit seconds=6"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 4083,
+    "text": "2026-10-25T16:49:15.229Z,1337.229004,14ea4000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=12 cash=1250 completed=52 level=2 design=orbit"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 4313,
+    "text": "2026-10-25T16:49:24.545Z,1346.545410,144ea000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE released revision=13 cash=1300 completed=54 level=2 design=orbit"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 4314,
+    "text": "2026-10-25T16:49:24.545Z,1346.545776,144ea000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_END released"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 4528,
+    "text": "2026-10-25T16:52:38.792Z,1540.792236,142e7000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_SOURCE_MATCH 9 6d61f4463880f6af4e64755f84b3dccf1e1072df89dd95cb393a9c62bcd33fff"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 4945,
+    "text": "2026-10-25T16:53:02.080Z,1564.080322,142e7000,6,Info [FLog::CreatorOutput] BOLTBOTS_SERVER_BOOT BoltBotsTycoon development-b5"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 5397,
+    "text": "2026-10-25T16:53:04.984Z,1566.984009,14ca1000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_START loaded revision=13 cash=1300 completed=54 level=2 design=orbit"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 5400,
+    "text": "2026-10-25T16:53:05.047Z,1567.047363,14ca1000,6,Info [FLog::CreatorOutput] BOLTBOTS_CLIENT_BOOT development-b5 view=1511, 761"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 5435,
+    "text": "2026-10-25T16:53:15.304Z,1577.304688,14ca1000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_LOW_RUNNING_CANDIDATE Enum.QualityLevel.Level01 1511, 761"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 5442,
+    "text": "2026-10-25T16:53:35.797Z,1597.797607,14ea4000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=14 cash=1400 completed=58 level=2 design=orbit"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 5443,
+    "text": "2026-10-25T16:53:42.235Z,1604.235596,14ca1000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=6 cash=1450 completed=60 scout=true design=orbit seconds=6"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 5452,
+    "text": "2026-10-25T16:54:06.484Z,1628.484497,14ca1000,6,Warning [FLog::CreatorWarning] Warning: BOLTBOTS_SAVE_FAILED store_error revision=14"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 5484,
+    "text": "2026-10-25T16:54:55.130Z,1677.130127,f43de40,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_SHIPPING orbit entry f=1.000 x=13.00 door=1.77 visible=true"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 5498,
+    "text": "2026-10-25T16:55:10.122Z,1692.122803,f43de40,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_SHIPPING_END 1 0 Enum.QualityLevel.Level01 1511, 761"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 5511,
+    "text": "2026-10-25T16:56:14.963Z,1756.963989,150a7000,6,Warning [FLog::CreatorWarning] Warning: BOLTBOTS_SAVE_FAILED lease_lost revision=14"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 5741,
+    "text": "2026-10-25T16:56:26.196Z,1768.196777,14ca1000,6,Warning [FLog::CreatorWarning] Warning: BOLTBOTS_SAVE_FAILED lease_lost revision=14"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 5742,
+    "text": "2026-10-25T16:56:26.197Z,1768.197144,14ca1000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_END save_failed"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6274,
+    "text": "2026-10-25T16:56:28.997Z,1770.997681,150a7000,6,Info [FLog::CreatorOutput] BOLTBOTS_SERVER_BOOT BoltBotsTycoon development-b5"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6677,
+    "text": "2026-10-25T16:56:31.106Z,1773.106445,14ea4000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_START loaded revision=14 cash=1400 completed=58 level=2 design=orbit"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6728,
+    "text": "2026-10-25T16:56:32.429Z,1774.429077,142e7000,6,Info [FLog::CreatorOutput] BOLTBOTS_CLIENT_BOOT development-b5 view=1511, 761"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6781,
+    "text": "2026-10-25T16:56:42.585Z,1784.585815,144ea000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_LOW_RUNNING_REJOIN Enum.QualityLevel.Level01 1511, 616"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6782,
+    "text": "2026-10-25T16:56:42.597Z,1784.597290,f43de40,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_SHIPPING orbit seal f=0.897 x=13.00 door=2.93 visible=true"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6783,
+    "text": "2026-10-25T16:56:42.736Z,1784.736084,f43de40,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_SHIPPING orbit entry f=0.920 x=13.00 door=0.88 visible=true"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6786,
+    "text": "2026-10-25T16:56:43.245Z,1785.245605,14ea4000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=2 cash=1450 completed=60 scout=true design=orbit seconds=6"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6788,
+    "text": "2026-10-25T16:56:43.266Z,1785.266113,f43de40,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_SHIPPING orbit received f=1.000 x=26.80 door=0.08 visible=true"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6791,
+    "text": "2026-10-25T16:56:44.028Z,1786.028076,f43de40,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_SHIPPING orbit produce f=0.130 x=-5.00 door=8.10 visible=false"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6792,
+    "text": "2026-10-25T16:56:44.028Z,1786.028320,f43de40,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_RECYCLE occluded previousDoor=8.10"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6794,
+    "text": "2026-10-25T16:56:47.566Z,1789.566895,f43de40,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_SHIPPING orbit pack f=0.721 x=12.54 door=8.10 visible=false"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6795,
+    "text": "2026-10-25T16:56:48.413Z,1790.413208,f43de40,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_SHIPPING orbit seal f=0.862 x=13.00 door=6.78 visible=true"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6796,
+    "text": "2026-10-25T16:56:48.781Z,1790.781128,f43de40,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_SHIPPING orbit entry f=0.923 x=13.00 door=0.31 visible=true"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6797,
+    "text": "2026-10-25T16:56:49.196Z,1791.196167,f43de40,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_SHIPPING orbit received f=0.992 x=24.51 door=0.08 visible=true"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6798,
+    "text": "2026-10-25T16:56:50.063Z,1792.063721,f43de40,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_SHIPPING orbit produce f=0.131 x=-5.00 door=8.10 visible=false"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6799,
+    "text": "2026-10-25T16:56:50.064Z,1792.064087,f43de40,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_RECYCLE occluded previousDoor=8.10"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6802,
+    "text": "2026-10-25T16:56:53.611Z,1795.611450,f43de40,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_SHIPPING orbit pack f=0.722 x=12.64 door=8.10 visible=false"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6803,
+    "text": "2026-10-25T16:56:54.444Z,1796.444946,f43de40,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_SHIPPING orbit seal f=0.861 x=13.00 door=6.56 visible=true"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6804,
+    "text": "2026-10-25T16:56:54.828Z,1796.828247,f43de40,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_SHIPPING orbit entry f=0.925 x=13.00 door=0.36 visible=true"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6805,
+    "text": "2026-10-25T16:56:55.214Z,1797.214722,f43de40,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_SHIPPING orbit received f=0.989 x=24.39 door=0.08 visible=true"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6806,
+    "text": "2026-10-25T16:56:56.178Z,1798.178101,f43de40,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_SHIPPING orbit produce f=0.127 x=-5.00 door=8.10 visible=false"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6807,
+    "text": "2026-10-25T16:56:56.178Z,1798.178223,f43de40,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_RECYCLE occluded previousDoor=8.10"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6810,
+    "text": "2026-10-25T16:56:57.597Z,1799.597412,f43de40,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_SHIPPING_END 14 0 3 Enum.QualityLevel.Level01 1511, 761"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6812,
+    "text": "2026-10-25T16:57:01.937Z,1803.937256,14ca1000,6,Warning [FLog::CreatorWarning] Warning: BOLTBOTS_SAVE_FAILED store_error revision=14"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6815,
+    "text": "2026-10-25T16:57:16.229Z,1818.229492,14ca1000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=15 cash=1500 completed=62 level=2 design=orbit"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6823,
+    "text": "2026-10-25T16:57:46.946Z,1848.946777,142e7000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=16 cash=1625 completed=67 level=2 design=orbit"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6850,
+    "text": "2026-10-25T16:57:59.156Z,1861.156128,f43de40,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_SHIPPING orbit seal f=0.916 x=13.00 door=1.44 visible=true"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6851,
+    "text": "2026-10-25T16:57:59.188Z,1861.188232,f43de40,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_SHIPPING orbit entry f=0.921 x=13.00 door=0.43 visible=true"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6855,
+    "text": "2026-10-25T16:57:59.643Z,1861.643066,f43de40,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_SHIPPING orbit received f=0.997 x=25.38 door=0.08 visible=true"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6856,
+    "text": "2026-10-25T16:57:59.735Z,1861.735962,142e7000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=12 cash=1700 completed=70 scout=true design=orbit seconds=6"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6857,
+    "text": "2026-10-25T16:58:00.528Z,1862.528320,f43de40,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_SHIPPING scout produce f=0.132 x=-5.00 door=8.10 visible=false"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6858,
+    "text": "2026-10-25T16:58:00.528Z,1862.528564,f43de40,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_RECYCLE occluded previousDoor=8.10"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6861,
+    "text": "2026-10-25T16:58:04.061Z,1866.061401,f43de40,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_SHIPPING scout pack f=0.721 x=12.61 door=8.10 visible=false"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6862,
+    "text": "2026-10-25T16:58:04.896Z,1866.896729,f43de40,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_SHIPPING scout seal f=0.860 x=13.00 door=6.32 visible=true"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6863,
+    "text": "2026-10-25T16:58:05.261Z,1867.261597,f43de40,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_SHIPPING scout entry f=0.921 x=13.00 door=0.71 visible=true"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6864,
+    "text": "2026-10-25T16:58:05.678Z,1867.678345,f43de40,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_SHIPPING scout received f=0.991 x=24.71 door=0.08 visible=true"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6865,
+    "text": "2026-10-25T16:58:06.560Z,1868.560669,f43de40,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_SHIPPING scout produce f=0.127 x=-5.00 door=8.10 visible=false"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6866,
+    "text": "2026-10-25T16:58:06.560Z,1868.560791,f43de40,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_RECYCLE occluded previousDoor=8.10"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6868,
+    "text": "2026-10-25T16:58:10.130Z,1872.130493,f43de40,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_SHIPPING scout pack f=0.722 x=12.94 door=8.10 visible=false"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6869,
+    "text": "2026-10-25T16:58:10.962Z,1872.962158,f43de40,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_SHIPPING scout seal f=0.860 x=13.00 door=6.32 visible=true"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6870,
+    "text": "2026-10-25T16:58:11.327Z,1873.327393,f43de40,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_SHIPPING scout entry f=0.921 x=13.00 door=0.71 visible=true"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6871,
+    "text": "2026-10-25T16:58:11.743Z,1873.743896,f43de40,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_SHIPPING scout received f=0.991 x=24.74 door=0.08 visible=true"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6872,
+    "text": "2026-10-25T16:58:12.577Z,1874.577148,f43de40,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_SHIPPING scout produce f=0.128 x=-5.00 door=8.10 visible=false"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6873,
+    "text": "2026-10-25T16:58:12.577Z,1874.577271,f43de40,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_RECYCLE occluded previousDoor=8.10"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6874,
+    "text": "2026-10-25T16:58:14.161Z,1876.161621,f43de40,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_SHIPPING_END 14 0 3 Enum.QualityLevel.Level01 1511, 761"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 6875,
+    "text": "2026-10-25T16:58:17.781Z,1879.781738,14ea4000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=17 cash=1750 completed=72 level=2 design=scout"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 7108,
+    "text": "2026-10-25T16:58:40.759Z,1902.759399,144ea000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE released revision=18 cash=1850 completed=76 level=2 design=scout"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 7109,
+    "text": "2026-10-25T16:58:40.760Z,1902.760010,144ea000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_END released"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 7648,
+    "text": "2026-10-25T16:59:22.445Z,1944.445435,14ca1000,6,Info [FLog::CreatorOutput] BOLTBOTS_SERVER_BOOT BoltBotsTycoon development-b5"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 8058,
+    "text": "2026-10-25T16:59:25.201Z,1947.201660,154ad000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_START loaded revision=18 cash=1850 completed=76 level=2 design=scout"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 8113,
+    "text": "2026-10-25T16:59:26.734Z,1948.734375,142e7000,6,Info [FLog::CreatorOutput] BOLTBOTS_CLIENT_BOOT development-b5 view=801, 413"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 8146,
+    "text": "2026-10-25T16:59:34.859Z,1956.859619,150a7000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_PORTRAIT_LOW Enum.QualityLevel.Level01 801, 413 801, 355"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 8151,
+    "text": "2026-10-25T16:59:49.383Z,1971.383423,144ea000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=4 cash=1950 completed=80 scout=true design=scout seconds=6"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 8157,
+    "text": "2026-10-25T16:59:55.990Z,1977.990112,150a7000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=19 cash=1950 completed=80 level=2 design=scout"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 8164,
+    "text": "2026-10-25T17:00:26.864Z,2008.864136,14ca1000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=20 cash=2075 completed=85 level=2 design=scout"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 8396,
+    "text": "2026-10-25T17:00:49.609Z,2031.609619,144ea000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE released revision=21 cash=2175 completed=89 level=2 design=scout"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 8397,
+    "text": "2026-10-25T17:00:49.610Z,2031.610107,144ea000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_END released"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 8555,
+    "text": "2026-10-25T17:00:51.372Z,2033.372681,14ca1000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_SOURCE_MATCH 9 28b4973ceaa5ccb7ef70fd5c17497f499ca5d4ccf8aeb57e0a3550a2a0aefcae"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 8967,
+    "text": "2026-10-25T17:01:14.265Z,2056.265381,142e7000,6,Info [FLog::CreatorOutput] BOLTBOTS_SERVER_BOOT BoltBotsTycoon development-b5"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 9366,
+    "text": "2026-10-25T17:01:18.216Z,2060.216064,14ca1000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_START loaded revision=21 cash=2175 completed=89 level=2 design=scout"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 9434,
+    "text": "2026-10-25T17:01:19.846Z,2061.846191,144ea000,6,Info [FLog::CreatorOutput] BOLTBOTS_CLIENT_BOOT development-b5 view=801, 413"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 9466,
+    "text": "2026-10-25T17:01:24.238Z,2066.238037,142e7000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=1 cash=2200 completed=90 scout=true design=scout seconds=6"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 9485,
+    "text": "2026-10-25T17:01:48.985Z,2090.985840,142e7000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=22 cash=2275 completed=93 level=2 design=scout"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 9497,
+    "text": "2026-10-25T17:01:51.900Z,2093.900146,14ca1000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_NARROW_FIX_LOW Enum.QualityLevel.Level01 801, 413"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 9512,
+    "text": "2026-10-25T17:02:19.768Z,2121.768555,14ca1000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=23 cash=2400 completed=98 level=2 design=scout"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 9535,
+    "text": "2026-10-25T17:02:26.385Z,2128.385498,14ca1000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=11 cash=2450 completed=100 scout=true design=scout seconds=6"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 9542,
+    "text": "2026-10-25T17:02:48.734Z,2150.734131,156b0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_PORTRAIT_FINAL Enum.QualityLevel.Level01 413, 814 413, 756 orbit scout 2"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 9543,
+    "text": "2026-10-25T17:02:48.734Z,2150.734375,156b0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_ACTION Upgrade Assembler L2  ·  6s / Roboter 381, 44"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 9544,
+    "text": "2026-10-25T17:02:48.734Z,2150.734375,156b0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_ACTION Collection Sammlung  2/2 123, 44"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 9545,
+    "text": "2026-10-25T17:02:48.734Z,2150.734619,156b0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_ACTION Camera Erkunden 123, 44"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 9546,
+    "text": "2026-10-25T17:02:48.734Z,2150.734619,156b0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_ACTION Motion Bewegung: ruhig 123, 44"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 9547,
+    "text": "2026-10-25T17:02:48.734Z,2150.734619,156b0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_ACTION Close × 46, 46"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 9548,
+    "text": "2026-10-25T17:02:48.734Z,2150.734619,156b0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_ACTION ScoutChoice Scout 166, 44"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 9549,
+    "text": "2026-10-25T17:02:48.734Z,2150.734619,156b0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_ACTION OrbitChoice Orbit 166, 44"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 9550,
+    "text": "2026-10-25T17:02:48.734Z,2150.734863,156b0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_ACTION Produce ✓  Für nächste Produktion gewählt 341, 44"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 9551,
+    "text": "2026-10-25T17:02:48.734Z,2150.734863,156b0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_ACTION CloseUpgrade × 46, 46"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 9552,
+    "text": "2026-10-25T17:02:48.735Z,2150.735107,156b0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_ACTION Buy Für 50 Cash verbessern 341, 44"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 9553,
+    "text": "2026-10-25T17:02:48.735Z,2150.735107,156b0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_ACTION Cancel Abbrechen 341, 44"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 9554,
+    "text": "2026-10-25T17:02:50.733Z,2152.733887,142e7000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=24 cash=2525 completed=103 level=2 design=orbit"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 9560,
+    "text": "2026-10-25T17:03:21.715Z,2183.715576,14ca1000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=25 cash=2650 completed=108 level=2 design=orbit"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 9565,
+    "text": "2026-10-25T17:03:28.849Z,2190.849365,14ca1000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=21 cash=2700 completed=110 scout=true design=orbit seconds=6"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 9793,
+    "text": "2026-10-25T17:03:34.781Z,2196.781982,142e7000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE released revision=26 cash=2700 completed=110 level=2 design=orbit"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 9794,
+    "text": "2026-10-25T17:03:34.785Z,2196.785645,142e7000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_END released"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 10331,
+    "text": "2026-10-25T17:03:51.557Z,2213.557861,150a7000,6,Info [FLog::CreatorOutput] BOLTBOTS_SERVER_BOOT BoltBotsTycoon development-b5"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 10721,
+    "text": "2026-10-25T17:03:54.875Z,2216.875977,150a7000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_START loaded revision=26 cash=2700 completed=110 level=2 design=orbit"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 10791,
+    "text": "2026-10-25T17:03:56.772Z,2218.772705,142e7000,6,Info [FLog::CreatorOutput] BOLTBOTS_CLIENT_BOOT development-b5 view=1511, 761"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 10825,
+    "text": "2026-10-25T17:04:15.447Z,2237.447754,142e7000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_DESKTOP_FINAL_LOW Enum.QualityLevel.Level01 1511, 761"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 10829,
+    "text": "2026-10-25T17:04:25.713Z,2247.713623,154ad000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=27 cash=2800 completed=114 level=2 design=orbit"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 10835,
+    "text": "2026-10-25T17:04:56.562Z,2278.562744,144ea000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=28 cash=2925 completed=119 level=2 design=orbit"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 10838,
+    "text": "2026-10-25T17:04:56.979Z,2278.979736,144ea000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=10 cash=2950 completed=120 scout=true design=orbit seconds=6"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 10845,
+    "text": "2026-10-25T17:05:27.495Z,2309.495361,142e7000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=29 cash=3050 completed=124 level=2 design=orbit"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 10851,
+    "text": "2026-10-25T17:05:58.331Z,2340.331055,14ca1000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=30 cash=3175 completed=129 level=2 design=orbit"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 10852,
+    "text": "2026-10-25T17:05:59.086Z,2341.086670,144ea000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=20 cash=3200 completed=130 scout=true design=orbit seconds=6"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 10859,
+    "text": "2026-10-25T17:06:29.209Z,2371.209473,142e7000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=31 cash=3300 completed=134 level=2 design=orbit"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 10862,
+    "text": "2026-10-25T17:06:42.602Z,2384.602295,142e7000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_NEAR_CAMERA 1 0.5 Enum.CameraType.Custom"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 10869,
+    "text": "2026-10-25T17:06:59.974Z,2401.974609,14ca1000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=32 cash=3425 completed=139 level=2 design=orbit"
+  },
+  {
+    "source": "0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line": 10870,
+    "text": "2026-10-25T17:07:01.257Z,2403.257812,142e7000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=30 cash=3450 completed=140 scout=true design=orbit seconds=6"
+  }
+]

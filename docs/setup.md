@@ -1,7 +1,7 @@
 # Lokales Setup — geführt durch Codex
 
 > Artifact ID: `BOLTBOTS-SETUP-001`
-> Revision: 7 · Status: A2/A3 und B1–B3 unabhängig approved; Grenzen siehe Run
+> Revision: 8 · Führender Prüfstatus und Grenzen: [Handover](handover.md)
 
 Nach einem Checkout übernimmt Codex Werkzeugprüfung, Installation, Build und die verfügbare Studio-Bedienung. Der Human liefert Ideen, prüft Qualität und erledigt bei Bedarf persönliche Anmeldung oder Systembestätigung. Passwörter, Roblox-Cookies und API-Schlüssel gehören nicht in Chat oder Repository.
 
@@ -27,7 +27,7 @@ Die Rojo-Auswahl richtet sich nach der ausführenden Python-Architektur. Ein unt
 
 `doctor` unterscheidet Dateifund, tatsächliche Ausführung und fehlende Anforderungen. Ein gefundener Studio-/Pluginpfad beweist weder Anmeldung noch funktionierende Verbindung. `check` kompiliert alle aktiven Luau-Dateien, prüft reine Regelmodule auf Typfehler und führt die Basistests aus. Für die Standalone-CLI werden ausschließlich die Roblox-Importzeilen von GameConfig, ProfileSchema und ProfileStore in temporären Kopien auf Dateipfade adaptiert; Regel- und Adapterlogik bleiben unverändert. Keine Simulation behauptet einen Roblox-Spieltest oder vollständige Roblox-API-Typprüfung.
 
-`build` erzeugt `build/BoltBots.rbxlx` und gibt den SHA256 aus. `build/` ist generiert und ignoriert; `src/` plus `default.project.json` sind die Quelle. Die aktive B3-Quelle umfasst neun Runtime-Dateien: Regeln/Konfiguration, Profilformat und Speicheradapter, Serveradapter, Werkstatt, Scout-/Orbit-Bauer und Clientansicht. `development-b3` ist ein Entwicklungslabel. Ein aus dem Checkout gebauter Place bleibt lokale Vorschau ohne Speichern. Nur das unten benannte private Testziel verwendet den echten Store; integrierte Mehrspielerprüfung und vollständige M1-Spielabnahme bleiben B4/B5.
+`build` erzeugt `build/BoltBots.rbxlx` und gibt den SHA256 aus. `build/` ist generiert und ignoriert; `src/` plus `default.project.json` sind die Quelle. Die aktive B5-Quelle umfasst neun Runtime-Dateien: Regeln/Konfiguration, Profilformat und Speicheradapter, Serveradapter, Werkstatt, Scout-/Orbit-Bauer und Clientansicht. `development-b5` ist ein Entwicklungslabel. Ein aus dem Checkout gebauter Place bleibt lokale Vorschau ohne Speichern. Nur das unten benannte private Testziel verwendet den echten Store. B4 hat die technische Mehrclientbasis geprüft; der normale Besuch einer belegten fremden Werkstatt und die vollständige M1-Abnahme bleiben offen, siehe [Handover](handover.md).
 
 ## Studio starten und lokal verbinden — A3, tatsächlich geprüft
 
@@ -53,6 +53,10 @@ Nach Build und File → Open startet Play die kleine Werkstatt serverseitig; die
 
 „Sammlung“ zeigt getrennte Scout-/Orbit-Details und eine ausdrückliche Produktionswahl für den nächsten Zyklus. Orbit bleibt bis L2 gesperrt; Ansehen allein wählt oder gewährt nichts. Der vollständige Orbit läuft durch dieselbe passende Verpackung. Beide Karten sperren darunterliegende Aktionen. × oder M schließen; Escape öffnet Roblox' reserviertes Menü und schließt dabei die Sammlung. Im Erkunden wird anschließend normale Maus-/Tastaturbewegung wieder frei. „Erkunden“ gibt normale Kamera und Spielersteuerung frei; „Werkstatt“ stellt die eigene feste Ansicht wieder her. „Bewegung: ruhig“ unterdrückt dekoratives Winken/Neigen, der Produktionsweg bleibt sichtbar. In der festen Ansicht werden Nachbarslots lokal ausgeblendet und Touch-Steuerkreise verborgen; Erkunden stellt sie wieder her.
 
+Sichtbare Menü- und Recoverytasten bleiben auch bei maximalem Hineinzoomen per Maus erreichbar. Zum Umschauen dient die normale Roblox-Kamerabedienung; ein verborgenes Tastenkürzel ist zum Öffnen der Sammlung nicht erforderlich.
+
+Das rechte Band führt in die beschriftete Versandannahme. Das Rolltor öffnet vor der Ankunft des verschlossenen Kartons und schließt, bevor dieser wiederverwendet wird. Die Annahme gehört zur Darstellung der bestehenden Produktion; sie hat keinen eigenen Kaufpreis oder zusätzlichen Ertrag.
+
 B1 und B2 wurden in Studio tatsächlich mit Desktop 1511×758 sowie iPhone-XR-Emulation 413×814/801×413 geprüft; dies ist kein physischer Telefontest. Test → Device Simulator ist vor Play zu aktivieren; während Play lässt sich die Ausrichtung drehen. Für reproduzierbare Grafikchecks wurde im laufenden Client über die Studio-Commandbar ausschließlich die Testeinstellung `settings().Rendering.QualityLevel` auf Level01/Level21 gesetzt und auf Automatic zurückgestellt; eine Einstellung vor Play kann beim Start zurückgesetzt werden. Diagnosebefehle sind separat von normalen Spieleraktionen dokumentiert. Keine Grafik-/Kontoeinstellung ist Produktlogik. [B1-Run](work/runs/boltbots-m1-b1-001.md), [C1-Basisbelege](reviews/evidence/M1-B1/README.md) und [B1-C2-HUD-Closure](reviews/evidence/M1-B1/c2/README.md) halten Grenzen, Quellbindung und unabhängige Entscheidung fest.
 
 Aktuelle B2-Bindung und Prüfungen: [B2-Run](work/runs/boltbots-m1-b2-001.md) und [C1-Basisnachweise](reviews/evidence/M1-B2/README.md) und [aktuelle C2-Closure](reviews/evidence/M1-B2/c2/README.md). B2 prüft zusätzlich Kaufablehnung, Duplikate/Guards, Laufzeitwechsel, Orbit-Verpackung sowie Ausbau- und Orbitkarten in beiden schmalen Level01-Formaten. Die C2-Portraitkorrektur ist zusätzlich bei413×756/Level01 belegt. Der führende Abnahmestatus steht im Handover.
@@ -75,4 +79,6 @@ Fehlende/abweichende Tools: `setup` erneut ausführen; Downloads werden nur bei 
 Konkrete Versionen, Plugin-/Build-Nachweise und Prüfgrenzen stehen im [A2-Nachweis](reviews/evidence/M1-A2/setup-verification.json); der führende Arbeitsstand steht im [Handover](handover.md). Der vollständige Ablauf auf einem zweiten Rechner bleibt M3-Nachweis.
 
 
-B4 ergänzt die reale1/2/4-Clientbasis und die fünfteKapazitätsgrenze; hohe lokaleVierclientlast ist keineEndgerätefreigabe. Der unabhängiggeprüfte B4-Stand wurde am25.10.2026 um15:00:28 nach direktemVergleich aller9Studio-Sources mit dem gebundenenBuild durch **Save to Roblox** in demselbenprivatenZiel gespeichert. AktuellerEndzustand undGrenzen: [B4-Run](work/runs/boltbots-m1-b4-001.md). TemporäreB4-Probeskripte undWorkspaceattribute gehören nicht zum Produkt und sind entfernt; StudioEdit/Simulatoraus/Automatic,Rojo getrennt/Serverbeendet. NormalesFremdplot-Erkunden und Gesamtspielabnahme bleiben B5.
+B4 ergänzt die reale1/2/4-Clientbasis und die fünfteKapazitätsgrenze; hohe lokaleVierclientlast ist keineEndgerätefreigabe. Der unabhängiggeprüfte B4-Stand wurde am25.10.2026 um15:00:28 nach direktemVergleich aller9Studio-Sources mit dem gebundenenBuild durch **Save to Roblox** in demselbenprivatenZiel gespeichert. HistorischerB4-Endzustand undGrenzen: [B4-Run](work/runs/boltbots-m1-b4-001.md). TemporäreB4-Probeskripte undWorkspaceattribute gehören nicht zum Produkt und sind entfernt; StudioEdit/Simulatoraus/Automatic,Rojo getrennt/Serverbeendet. NormalesFremdplot-Erkunden und Gesamtspielabnahme bleiben B5.
+
+Aktueller privater B5-Teilstand: nach Neun-Sourcevergleich, Fixture-Rücknahme und abgeschalteter Teststörung am25.10.2026 um17:42:43UTC gespeichert; Rojo getrennt/Serve beendet. Eigener normaler Spielweg, Versand und Nahzoom-Bedienung unabhängig geprüft. Vollständiger B5-Abschluss bleibt für den echten Fremdplotbesuch offen. [B5-Run und Transfernachweis](work/runs/boltbots-m1-b5-001.md).

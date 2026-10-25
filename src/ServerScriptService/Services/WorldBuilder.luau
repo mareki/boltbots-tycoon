@@ -53,8 +53,16 @@ local function buildPlot(root,index,origin)
     for _,x in ipairs({-23,23}) do
         p("Rear column",Vector3.new(1.1,18,1.1),Vector3.new(x,9.5,-15),C.ivory)
         p("Column foot",Vector3.new(2,1.7,2),Vector3.new(x,1.5,-15),C.navy)
-        p("Side rail",Vector3.new(0.25,0.25,26),Vector3.new(x,3.4,-2),C.amber)
-        for z=-14,10,8 do p("Rail post",Vector3.new(0.22,2.5,0.22),Vector3.new(x,2.25,z),C.steel) end
+        if x<0 then
+            p("Side rail",Vector3.new(0.25,0.25,26),Vector3.new(x,3.4,-2),C.amber)
+        else
+            -- The dispatch opening is a real gap, never a rail across the carton path.
+            p("Rear side rail",Vector3.new(0.25,0.25,9),Vector3.new(x,3.4,-10.5),C.amber)
+            p("Front side rail",Vector3.new(0.25,0.25,5),Vector3.new(x,3.4,8.5),C.amber)
+        end
+        for z=-14,10,8 do
+            if x<0 or math.abs(z)>5 then p("Rail post",Vector3.new(0.22,2.5,0.22),Vector3.new(x,2.25,z),C.steel) end
+        end
     end
     p("Back sill",Vector3.new(47,2.3,0.65),Vector3.new(0,2.0,-15),C.ivory)
     p("Window header",Vector3.new(47,1.2,1.1),Vector3.new(0,16.8,-15),C.ivory)
@@ -153,11 +161,34 @@ local function buildPlot(root,index,origin)
     p("Packager warm strip",Vector3.new(5.5,0.12,0.13),Vector3.new(13,10.38,4.17),C.amber,Enum.Material.Neon)
     local shipping=p("Packaging label",Vector3.new(6,0.72,0.15),Vector3.new(13,10.8,4.18),C.navy)
     label(shipping,"03  VERPACKEN",C.white,58)
-    p("Outfeed chassis",Vector3.new(6.8,1.15,6.2),Vector3.new(20.3,1.75,0),C.navy)
-    for x=17.4,23,0.8 do p("Outfeed slat",Vector3.new(0.64,0.12,5.25),Vector3.new(x,2.64,0),C.steel,Enum.Material.Metal) end
+    p("Outfeed chassis",Vector3.new(13.6,1.15,6.2),Vector3.new(23.7,1.75,0),C.navy)
+    for x=17.4,30,0.8 do p("Outfeed slat",Vector3.new(0.64,0.12,5.25),Vector3.new(x,2.64,0),C.steel,Enum.Material.Metal) end
     for _,z in ipairs({-3.05,3.05}) do
-        p("Outfeed rail",Vector3.new(6.8,0.38,0.34),Vector3.new(20.3,2.52,z),C.ivory)
-        p("Outfeed guide",Vector3.new(6.6,0.09,0.12),Vector3.new(20.3,2.79,z),C.cyan,Enum.Material.Neon)
+        p("Outfeed rail",Vector3.new(13.6,0.38,0.34),Vector3.new(23.7,2.52,z),C.ivory)
+        p("Outfeed guide",Vector3.new(13.4,0.09,0.12),Vector3.new(23.7,2.79,z),C.cyan,Enum.Material.Neon)
+    end
+    -- A bounded dispatch bay receives the sealed carton. Its rolling door closes
+    -- before the client reuses the carton, including when viewed from the inlet.
+    p("Dispatch plinth",Vector3.new(10.5,1.1,10.4),Vector3.new(25.8,0.55,0),C.navy)
+    for _,z in ipairs({-3.65,3.65}) do
+        p("Dispatch wall",Vector3.new(9.4,8.5,0.55),Vector3.new(26.1,6.8,z),C.ivory)
+        p("Dispatch lower trim",Vector3.new(9.6,0.6,0.65),Vector3.new(26.1,3.05,z),C.navy)
+        p("Dispatch top trim",Vector3.new(9.6,0.35,0.65),Vector3.new(26.1,10.7,z),C.navy)
+    end
+    p("Dispatch back",Vector3.new(0.5,8.5,7.8),Vector3.new(30.8,6.8,0),C.dark)
+    p("Dispatch roof",Vector3.new(10,0.7,8.2),Vector3.new(26,11.25,0),C.ivory)
+    p("Dispatch door hood",Vector3.new(0.85,1.0,8.1),Vector3.new(21.25,11.25,0),C.navy)
+    local shutter=p("DispatchShutter",Vector3.new(0.22,8.1,6.7),Vector3.new(21.5,6.85,0),C.steel,Enum.Material.Metal)
+    shutter.CanCollide=false
+    local sill=p("DispatchShutterEdge",Vector3.new(0.3,0.16,6.7),Vector3.new(21.5,2.88,0),C.amber)
+    sill.CanCollide=false
+    local guard=p("Dispatch safety boundary",Vector3.new(0.25,8.2,7.2),Vector3.new(21.7,6.8,0),C.dark)
+    guard.Transparency=1 -- Keeps walking avatars out of the operating machine.
+    local dispatch=p("Dispatch label",Vector3.new(8.2,1.55,0.18),Vector3.new(26,8.9,3.96),C.navy)
+    label(dispatch,"04  VERSAND",C.white,68)
+    p("Dispatch ready light",Vector3.new(7.8,0.15,0.12),Vector3.new(26,7.85,4.07),C.cyan,Enum.Material.Neon)
+    for x=22,29,1.5 do
+        p("Dispatch warning mark",Vector3.new(0.65,0.04,0.85),Vector3.new(x,1.13,4.5),C.amber)
     end
     for i=1,3 do
         p("Waiting carton",Vector3.new(2.2,1.6,2.1),Vector3.new(18+(i%2)*2.3,1.8+math.floor(i/3)*1.65,-6),C.box)

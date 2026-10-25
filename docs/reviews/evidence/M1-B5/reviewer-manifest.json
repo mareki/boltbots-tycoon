@@ -1,0 +1,62 @@
+[
+  {
+    "path": "docs/reviews/evidence/M1-B5/reviewer-01-scout-explore.png",
+    "sha256": "a3f25db29720bd39a84f8baa95340e49c86c767150622214ab15e595d5f4388d"
+  },
+  {
+    "path": "docs/reviews/evidence/M1-B5/reviewer-02-scout-inlet.png",
+    "sha256": "63acc133467245d49eff3f4ef0aca006d20094586bfeeb2a3253f8e7db5982d7"
+  },
+  {
+    "path": "docs/reviews/evidence/M1-B5/reviewer-03-inlet-angle.png",
+    "sha256": "4c98517b4e0aa557ad7f511a20863e257662f9980e09823b411dbc8bffd74e07"
+  },
+  {
+    "path": "docs/reviews/evidence/M1-B5/reviewer-04-inlet-angle.png",
+    "sha256": "61f14f3d09a79c0af076680b77033f63941a367c48ebde46b7b0099ae150c515"
+  },
+  {
+    "path": "docs/reviews/evidence/M1-B5/reviewer-05-inlet-position.png",
+    "sha256": "bbb07c74db0232f34e25c52a32c40b37f12794ea51dcc6d61b919bbadeff47e1"
+  },
+  {
+    "path": "docs/reviews/evidence/M1-B5/reviewer-06-near-camera-modal-click.png",
+    "sha256": "b96e68e2a66c1ba36ee59cb95edaa8d680bf4b7730c7d4bd6ba68b59d531173d"
+  },
+  {
+    "path": "docs/reviews/evidence/M1-B5/reviewer-07-third-person-modal-click.png",
+    "sha256": "15c7575c380cbebb9842389f6bbb470ea9e438e217b64b13e89bd4b347a7c997"
+  },
+  {
+    "path": "docs/reviews/evidence/M1-B5/reviewer-observations.txt",
+    "sha256": "63b2c196f94b83c4a8cfc051853fcce41cc4eece1740353aabe0af9e686d29e1"
+  },
+  {
+    "path": "docs/reviews/evidence/M1-B5/reviewer-original-lines.json",
+    "sha256": "ab99765710187520b01ff7533b98de19434f61690e0371071199daeb43b545c6"
+  },
+  {
+    "path": "docs/reviews/evidence/M1-B5/reviewer-scout-close-0.png",
+    "sha256": "c07c0938c747a324ba8da4b2d721728022f3c2fa1bb6faf5e116669c46869ac9"
+  },
+  {
+    "path": "docs/reviews/evidence/M1-B5/reviewer-scout-close-1.png",
+    "sha256": "7b23d1a990a2c4abfbaa3f94292c6e5b7f84c09626a0efb5a7ba119317c08b3a"
+  },
+  {
+    "path": "docs/reviews/evidence/M1-B5/reviewer-scout-close-2.png",
+    "sha256": "8d7f5d1b87781f863101ae35e94a7d899e143e11b6bb6498411bbf4c1cb8a400"
+  },
+  {
+    "path": "docs/reviews/evidence/M1-B5/reviewer-scout-sequence-00.png",
+    "sha256": "ae458736e3c63488fa15cb83b0af7664114b3c9ab688a86fee14ef663f0753d9"
+  },
+  {
+    "path": "docs/reviews/evidence/M1-B5/reviewer-scout-sequence-01.png",
+    "sha256": "ba17e19466a1604587b8e7e6ffe0dcdc21a9f05745290b0159144278cfa3519b"
+  },
+  {
+    "path": "docs/reviews/evidence/M1-B5/reviewer-scout-sequence-02.png",
+    "sha256": "d4c5c16d4e2cfafdc3a8a560a2d2dd1af124f2aaf119d618bd1c0b720ec93653"
+  }
+]

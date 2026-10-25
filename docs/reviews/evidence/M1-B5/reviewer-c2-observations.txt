@@ -1,0 +1,16 @@
+B5-C2 independent focused closure /root/b4_review — 2026-10-25 17:41 UTC
+
+Scope: Spawn-cleared Run r1 B5-C2; c2-manifest SHA256 ab87c6bc5c073f587e6e976f5b725868004b230ec6977015f34fdcafdc74178f, 45 files; build 5d3332ba37558ebd917c2701138d46192ebc86d9f40e54586b6a072e7f969983. All files/build verified. Exact C1 source comparison leaves only the stated comment and b.Modal=true. All 22 C2 original log lines match native source; all four C2 PNGs actually viewed. C1 technical/shipping/quality judgement reused only for unchanged content.
+
+Independent normal Play after exclusive UI handoff:
+17:37:23 load revision62/cash6950/completed280/L2/Orbit, existing isolated fixture.
+Visible Erkunden button, ordinary scroll up2 to normal maximum zoom; visible Sammlung button opened Scout card. Visible Orbit button switched card to ORBIT (reviewer-c2-01-near-orbit.png). No M/V shortcut and no zoom-out workaround.
+17:38:55 read-only commandbar observation confirms camera distance0.5000001788139343, collection visible, ORBIT, HUD Collection.Modal=true and OrbitChoice.Modal=true. This observation did not change camera, source, design or economic state.
+Visible X closed collection; visible Assembler button opened existing L2 card (reviewer-c2-02-near-upgrade.png). Visible Abbrechen closed it; visible Werkstatt returned overview (reviewer-c2-03-overview.png). The fixture is already L2; no new purchase claimed.
+17:40:28 regular Stop released revision68/cash7675/completed309/L2/Orbit. AX returned Edit. Exclusive UI returned to Root; no source edit/cloud save/fault injection/profile reset by reviewer. Root's targeted recovery failure/retry in 0.5 zoom is separately carried by its native C2 evidence, not repeated or misrepresented as reviewer action. Right-drag was not independently exercised by this narrow probe.
+
+Decision: APPROVED for exact C2 closure and previously accepted own-play/shipping partial scope. C1-P2 is closed; no new material findings. Visually appealing: yes for this bounded M1 scene, clear consistent cards, friendly distinctive robots and credible dispatch. Desire to continue: yes for the demonstrated initial loop, upgrade and selectable Orbit; visible actions now remain usable while exploring. No full-game/Human final decision or physical-device/FPS claim.
+
+Navigation README, setup r8, handover and WP01B changes read; original actual occupied foreign-plot duty remains explicitly open. No overall B5 acceptance, no M1 increase from70% and no80%-drift pass. Event-based drift/KISS: native property in the existing helper addresses the exact defect without another camera controller, toolstack or economy expansion. Approximately78/150 minutes elapsed, cumulative7/9 corrections used,2 remain, deadline18:53:17 UTC unchanged. Next bounded action: restore all9 actual Studio sources against the same build, remove fixture/fault/probes, then authorized same-target private Save and verify actual markers. That transfer is not pre-approved as completed.
+
+Non-material index precision: c2-closure says four PNGs3420x1980; actual native images are3420x1978. No screenshot cropping or alteration inferred; frozen45-file payload left unchanged.

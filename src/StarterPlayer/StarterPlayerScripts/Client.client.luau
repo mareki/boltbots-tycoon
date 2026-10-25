@@ -36,6 +36,8 @@ local function button(parent,name,value,size,position,color)
     local b=Instance.new("TextButton");b.Name=name;b.Text=value;b.Size=size;b.Position=position
     b.BackgroundColor3=color or C.panel;b.TextColor3=if color then C.navy else C.white;b.Font=Enum.Font.GothamBold
     b.TextSize=15;b.TextWrapped=true;b.BorderSizePixel=0;b.AutoButtonColor=true;b.Selectable=true;b.Parent=parent;corner(b,13)
+    -- Keep visible HUD/dialog actions reachable even at first-person zoom; right-drag still looks around.
+    b.Modal=true
     local stroke=Instance.new("UIStroke");stroke.ApplyStrokeMode=Enum.ApplyStrokeMode.Border;stroke.Thickness=2;stroke.Color=C.white;stroke.Enabled=false;stroke.Parent=b
     b.SelectionGained:Connect(function() stroke.Enabled=true end)
     b.SelectionLost:Connect(function() stroke.Enabled=false end)
@@ -204,6 +206,11 @@ local function setOverview(value)
     else
         camera.CameraType=Enum.CameraType.Custom
         local char=player.Character;local humanoid=char and char:FindFirstChildOfClass("Humanoid")
+        if char then
+            for _,piece in ipairs(char:GetDescendants()) do
+                if piece:IsA("BasePart") then piece.LocalTransparencyModifier=0 end
+            end
+        end
         if humanoid then camera.CameraSubject=humanoid end
     end
 end
@@ -324,10 +331,13 @@ local function show(incoming)
         elseif status=="saved" then (if incoming.unsaved then "Fortschritt wird automatisch gesichert" else "✓  Fortschritt gesichert") else "Verbindung wird geprüft …"
     if incoming.ready~=true then cash.Text="—";objective.Text="Deine Werkstatt wird geladen …";phase.Text="Fortschritt noch nicht bestätigt";return end
     local stateWasLoaded=state~=nil
+    local previousPlot=if state then state.plotIndex else nil
     local oldLevel=if state then state.level else incoming.level
     state=incoming;cash.Text=tostring(incoming.cash)
     local plot=Workspace:WaitForChild("BoltBotsWorld"):FindFirstChild("FactoryPlot_"..incoming.plotIndex)
     if plot then ownOrigin=plot:GetAttribute("Origin") end
+    -- A real DataStore load can finish after initial camera setup.
+    if not stateWasLoaded or previousPlot~=incoming.plotIndex then setOverview(overview) end
     collectionButton.Text="Sammlung  "..((if incoming.unlockedScout then 1 else 0)+(if incoming.unlockedOrbit then 1 else 0)).."/2"
     eyebrow.Text=if incoming.level==2 then "DEIN NÄCHSTES DESIGN" else "DEIN NÄCHSTER AUSBAU"
     local selectedName=if incoming.selectedDesign=="orbit" then "Orbit" else "Scout"
@@ -440,7 +450,8 @@ for _,plot in ipairs(world:GetChildren()) do
         local loose=Instance.new("Part");loose.Name="IncomingBody";loose.Size=Vector3.new(2,1.8,1.5)
         loose.Color=Color3.fromRGB(242,237,217);loose.Anchored=true;loose.CanCollide=false;loose.CanQuery=false;loose.Parent=container
         local mesh=Instance.new("SpecialMesh");mesh.MeshType=Enum.MeshType.Sphere;mesh.Parent=loose
-        table.insert(visuals,{plot=plot,origin=plot:GetAttribute("Origin"),container=container,ownerLabel=plot:FindFirstChild("OwnerLabel",true),bot=bot,builder=Scout,design="scout",crate=crate,loose=loose})
+        table.insert(visuals,{plot=plot,origin=plot:GetAttribute("Origin"),container=container,ownerLabel=plot:FindFirstChild("OwnerLabel",true),bot=bot,builder=Scout,design="scout",crate=crate,loose=loose,
+            shutter=plot:FindFirstChild("DispatchShutter"),shutterEdge=plot:FindFirstChild("DispatchShutterEdge"),lastCycle=nil,lastFraction=0,received=false})
     end
 end
 setOverview(true)
@@ -451,20 +462,20 @@ RunService.RenderStepped:Connect(function()
     local character=player.Character
     local touchGui=player.PlayerGui:FindFirstChild("TouchGui")
     if touchGui and touchGui:IsA("ScreenGui") then touchGui.Enabled=not overview and not shade.Visible and not inputBlocked end
-    if character then
+    if character and overview then
         for _,piece in ipairs(character:GetDescendants()) do
-            if piece:IsA("BasePart") then piece.LocalTransparencyModifier=if overview then 1 else 0 end
+            if piece:IsA("BasePart") then piece.LocalTransparencyModifier=1 end
         end
     end
     if overview and camera then
         local narrow=camera.ViewportSize.X<700
         camera.FieldOfView=if narrow then 65 else 48
-        camera.CFrame=CFrame.lookAt(ownOrigin+(if narrow then Vector3.new(12,46,64) else Vector3.new(21,18,32)),ownOrigin+Vector3.new(-1,4.3,-0.4))
+        camera.CFrame=CFrame.lookAt(ownOrigin+(if narrow then Vector3.new(12,59,92) else Vector3.new(27,23,44)),ownOrigin+Vector3.new(3,4.3,-0.4))
     end
     if reward.Visible and os.clock()>rewardUntil then reward.Visible=false end
     if state and state.productionActive then
         local f=math.clamp(((state.pausedAt or now)-state.cycleStart)/state.cycleSeconds,0,1)
-        local label=if f<0.20 then "Teile bereitstellen" elseif f<0.42 then (if state.currentDesign=="orbit" then "Orbit montieren" else "Scout montieren") elseif f<0.72 then "Auf dem Förderband" elseif f<0.92 then "Verpacken" else "Fertig zum Versand"
+        local label=if f<0.20 then "Teile bereitstellen" elseif f<0.42 then (if state.currentDesign=="orbit" then "Orbit montieren" else "Scout montieren") elseif f<0.72 then "Auf dem Förderband" elseif f<0.92 then "Verpacken" else "Zum Versand"
         phase.Text=(if state.pausedAt then "Sicher pausiert" else label).."  ·  +"..state.cashPerRobot.." Cash / "..state.cycleSeconds.."s"
         progressFill.Size=UDim2.fromScale(f,1)
     end
@@ -481,18 +492,37 @@ RunService.RenderStepped:Connect(function()
         local duration=v.plot:GetAttribute("CycleSeconds") or 9
         local visualNow=v.plot:GetAttribute("PausedAt") or now
         local f=math.clamp((visualNow-start)/duration,0,1)
+        if v.lastCycle~=start then
+            v.received=active and v.lastCycle~=nil and v.lastFraction>=0.92
+            v.lastCycle=start
+        end
+        if not active or f>=0.12 then v.received=false end
+        v.lastFraction=f
         local design=v.plot:GetAttribute("DesignId") or "scout"
         if design~=v.design and builders[design] then
             v.bot.Model:Destroy();v.design=design;v.builder=builders[design];v.bot=v.builder.Build(v.container,1)
-            v.crate.Mark.Text=string.upper(design).."\n↑  BOLT BOTS"
         end
-        v.builder.Visible(v.bot,active and f>=0.18 and f<0.92)
-        v.loose.Transparency=if active and f<0.20 then 0 else 1
+        if not v.received then v.crate.Mark.Text=string.upper(design).."\n↑  BOLT BOTS" end
+        local inView=not overview or v.origin==ownOrigin
+        v.builder.Visible(v.bot,active and inView and f>=0.18 and f<0.92)
+        v.loose.Transparency=if active and inView and f<0.20 then 0 else 1
         v.loose.CFrame=CFrame.new(v.origin+Vector3.new(-16+11*math.clamp(f/0.2,0,1),3.7,0))
-        local x=if f<0.42 then -5 elseif f<0.72 then -5+18*(f-0.42)/0.30 elseif f<0.92 then 13 else 13+7*(f-0.92)/0.08
+        local x=if f<0.42 then -5 elseif f<0.72 then -5+18*(f-0.42)/0.30 elseif f<0.92 then 13 else 13+13.8*(f-0.92)/0.08
         local lift=if f<0.34 then (1-math.clamp((f-0.18)/0.16,0,1))*2.2 else 0
         v.builder.Pose(v.bot,CFrame.new(v.origin+Vector3.new(x,if f>=0.72 then 2.9 else 2.82,0))*CFrame.Angles(0,0.12,0),visualNow,reduced or f>=0.72,lift)
-        poseCrate(v.crate,CFrame.new(v.origin+Vector3.new(x,2.70,0)),f,active and f>=0.72 and (not overview or v.origin==ownOrigin))
+        -- Hold the delivered carton until the rolling shutter fully closes.
+        -- Recycling is hidden even from an exploration camera facing the inlet.
+        local closing=v.received and f<0.12
+        local open=if closing then 1-math.clamp(f/0.10,0,1) else math.clamp((f-0.84)/0.08,0,1)
+        if not active then open=0 end
+        if v.shutter and v.shutterEdge then
+            local height=math.max(0.08,8.1*(1-open))
+            v.shutter.Size=Vector3.new(0.22,height,6.7)
+            v.shutter.CFrame=CFrame.new(v.origin+Vector3.new(21.5,10.9-height/2,0))
+            v.shutterEdge.CFrame=CFrame.new(v.origin+Vector3.new(21.5,10.9-height+0.08,0))
+        end
+        poseCrate(v.crate,CFrame.new(v.origin+Vector3.new(if closing then 26.8 else x,2.70,0)),if closing then 1 else f,
+            active and (f>=0.72 or closing) and (not overview or v.origin==ownOrigin))
     end
 end)
-print("BOLTBOTS_CLIENT_BOOT", "development-b3", "view="..tostring(Workspace.CurrentCamera.ViewportSize))
+print("BOLTBOTS_CLIENT_BOOT", require(ReplicatedStorage.Shared.GameConfig).versionLabel, "view="..tostring(Workspace.CurrentCamera.ViewportSize))

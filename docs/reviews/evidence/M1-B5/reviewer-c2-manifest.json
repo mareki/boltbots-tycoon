@@ -1,0 +1,26 @@
+{
+  "candidate": "B5-C2 independent closure evidence",
+  "reviewed_manifest": "ab87c6bc5c073f587e6e976f5b725868004b230ec6977015f34fdcafdc74178f",
+  "files": [
+    {
+      "path": "docs/reviews/evidence/M1-B5/reviewer-c2-01-near-orbit.png",
+      "sha256": "0fee73e31786138249decaaad3b75d0e1e9cdf0369904125e5ae21689f04c920"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B5/reviewer-c2-02-near-upgrade.png",
+      "sha256": "0d5dc0da5896e9ea970f05517f17a6532df9a8beebc1c36e8b60c679721d2e5e"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B5/reviewer-c2-03-overview.png",
+      "sha256": "2927959c0bf41baa18e61fdfdaae74d82eef9b3a044e016b306007f7add6e512"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B5/reviewer-c2-observations.txt",
+      "sha256": "920ede22a8fca2ed0f33fee4ba4fd67bef99826c0a59d15d10e7500febfff2a7"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B5/reviewer-c2-original-lines.json",
+      "sha256": "a916f1bc3a4a40c330ed14f7eabe500a68c9034d9f2502b26f7c7c1c5d633809"
+    }
+  ]
+}

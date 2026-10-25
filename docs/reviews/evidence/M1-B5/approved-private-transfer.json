@@ -1,0 +1,31 @@
+{
+  "candidate_manifest": "ab87c6bc5c073f587e6e976f5b725868004b230ec6977015f34fdcafdc74178f",
+  "build_sha256": "5d3332ba37558ebd917c2701138d46192ebc86d9f40e54586b6a072e7f969983",
+  "source_log": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+  "ui_action": "native File > Save to Roblox in existing private target; no Publish to Roblox menu action",
+  "universe_id": 10772906084,
+  "place_id": 112662761038118,
+  "lines": [
+    {
+      "line_number": 15750,
+      "text": "2026-10-25T17:41:34.751Z,4476.751953,144ea000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_SOURCE_MATCH 9 5d3332ba37558ebd917c2701138d46192ebc86d9f40e54586b6a072e7f969983"
+    },
+    {
+      "line_number": 15767,
+      "text": "2026-10-25T17:41:50.868Z,4492.868652,142e7000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_FINAL_CLEAN 10772906084 112662761038118 Enum.QualityLevel.Automatic false"
+    },
+    {
+      "line_number": 15798,
+      "text": "2026-10-25T17:42:42.264Z,4544.264648,f43de40,6,Info [DFLog::StudioPerformanceMeasurementsSummary] StudioPerformanceMeasurements summary for StudioSavePlaceToCloud: 3035ms"
+    },
+    {
+      "line_number": 15800,
+      "text": "2026-10-25T17:42:42.265Z,4544.265625,14ca1000,6,Debug [FLog::PublishSessionStateController] Go to PublishSuccessful"
+    },
+    {
+      "line_number": 15801,
+      "text": "2026-10-25T17:42:43.668Z,4545.668945,f43de40,6,Info [FLog::CreatorOutput] Saved new changes in \"BoltBots B3-Test 20261025\" to Roblox."
+    }
+  ],
+  "limits": "Direct nine-source byte equality before save and native save-success evidence; no cloud cold reload claim."
+}

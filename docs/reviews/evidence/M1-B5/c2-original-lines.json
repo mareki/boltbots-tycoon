@@ -1,0 +1,27 @@
+{
+  "source": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+  "lines": [
+    "2026-10-25T17:28:16.385Z,3678.385498,144ea000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_SOURCE_MATCH 9 5d3332ba37558ebd917c2701138d46192ebc86d9f40e54586b6a072e7f969983",
+    "2026-10-25T17:28:42.714Z,3704.714355,144ea000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_FIXTURE_KEY_READY fixture_b5_gameplay_20261025_ one source substitution; personal player_ key untouched",
+    "2026-10-25T17:29:17.510Z,3739.510010,144ea000,6,Info [FLog::CreatorOutput] BOLTBOTS_SERVER_BOOT BoltBotsTycoon development-b5",
+    "2026-10-25T17:29:23.114Z,3745.114990,144ea000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_START loaded revision=55 cash=6150 completed=248 level=2 design=orbit",
+    "2026-10-25T17:29:23.251Z,3745.251221,144ea000,6,Info [FLog::CreatorOutput] BOLTBOTS_CLIENT_BOOT development-b5 view=1511, 761",
+    "2026-10-25T17:29:35.213Z,3757.213623,142e7000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=2 cash=6200 completed=250 scout=true design=orbit seconds=6",
+    "2026-10-25T17:29:53.975Z,3775.975830,144ea000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=56 cash=6250 completed=252 level=2 design=orbit",
+    "2026-10-25T17:30:24.858Z,3806.858887,142e7000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=57 cash=6375 completed=257 level=2 design=orbit",
+    "2026-10-25T17:30:28.875Z,3810.875977,14ea4000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_C2_NEAR_MODAL 0.49999964237213135 true ORBIT true true Enum.MouseBehavior.LockCenter",
+    "2026-10-25T17:30:37.449Z,3819.449219,14ea4000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=12 cash=6450 completed=260 scout=true design=orbit seconds=6",
+    "2026-10-25T17:30:55.923Z,3837.923584,150a7000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=58 cash=6500 completed=262 level=2 design=orbit",
+    "2026-10-25T17:31:27.039Z,3869.039795,14ea4000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=59 cash=6625 completed=267 level=2 design=orbit",
+    "2026-10-25T17:31:37.858Z,3879.858887,154ad000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_C2_RECOVERY_PROBE true",
+    "2026-10-25T17:31:39.955Z,3881.955811,150a7000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=22 cash=6700 completed=270 scout=true design=orbit seconds=6",
+    "2026-10-25T17:31:57.712Z,3899.712891,142e7000,6,Warning [FLog::CreatorWarning] Warning: BOLTBOTS_SAVE_FAILED store_error revision=59",
+    "2026-10-25T17:32:17.946Z,3919.946289,144ea000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_C2_RECOVERY_PROBE nil",
+    "2026-10-25T17:32:36.391Z,3938.391113,14ca1000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=60 cash=6750 completed=272 level=2 design=orbit",
+    "2026-10-25T17:33:07.137Z,3969.137207,14ca1000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=61 cash=6875 completed=277 level=2 design=orbit",
+    "2026-10-25T17:33:17.016Z,3979.016113,142e7000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_C2_RECOVERED_NEAR 0.5000001788139343 false nil",
+    "2026-10-25T17:33:20.757Z,3982.757324,14ca1000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=32 cash=6950 completed=280 scout=true design=orbit seconds=6",
+    "2026-10-25T17:33:24.518Z,3986.518555,142e7000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE released revision=62 cash=6950 completed=280 level=2 design=orbit",
+    "2026-10-25T17:33:24.520Z,3986.520508,142e7000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_END released"
+  ]
+}
