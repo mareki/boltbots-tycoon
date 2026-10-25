@@ -2,15 +2,15 @@
 
 > Artifact ID: `BOLTBOTS-RUN-M1-B5-001`
 > Artifact class: Work contract
-> Operativer Creator/Lead `/root`, unabhängiger Reviewer `/root/b4_review`, kurzzeitiger Startreviewer `/root/b4_spawn`; gewünschte Strategie Astra/xhigh. Kein weiterer Creator.
-> Teilstand unabhängig approved und privat gespeichert; M1 **70%**. B5 bleibt wegen fehlender tatsächlicher Fremdplotbedienung unvollständig.
+> Operativer Creator/Lead `/root/b4_creator` (r2; zuvor `/root`), unabhängiger Reviewer `/root/b4_review`, kurzzeitiger Startreviewer `/root/b4_spawn`; gewünschte Strategie Astra/xhigh. Kein weiterer Creator.
+> Gesamt-B5 unabhängig APPROVED; unveränderte C2-Runtime privat gespeichert. M1 **80%**, unabhängiger80%-Drift positiv. Human-M1-Endentscheidung bleibt offen.
 
 <!-- run-contract:start -->
 ```json
 {
   "schema_version": "1",
-  "revision": 1,
-  "status": "blocked",
+  "revision": 2,
+  "status": "completed",
   "harness_version": "1.5.3",
   "run_kind": "product_delivery",
   "decision_class": "D3",
@@ -93,11 +93,11 @@
   ],
   "decision": {
     "authority": "Human Marek",
-    "approval_ref": "human-approved:20261025-B5-end-to-end-162317UTC",
-    "lead": "/root",
+    "approval_ref": "human-approved:20261025-B5-resume-official-StudioMCP-Astra-xhigh",
+    "lead": "/root/b4_creator",
     "reasoning": "xhigh",
     "agents": [
-      "/root",
+      "/root/b4_creator",
       "/root/b4_review",
       "/root/b4_spawn"
     ],
@@ -109,14 +109,14 @@
   },
   "external_actions": {
     "allowed": [
-      "Normales eingebettetes StudioPlay, bestehende native Testmodi und begrenzte klar markierte Diagnostik im genehmigten privaten Testziel; keine Umgehung der macOS-CUA-Grenzen",
+      "Bestehende native Testmodi plus ausdrücklich autorisierter offizieller StudioMCP über minimalen temporären stdio-Caller; zwei echte Clients, normales Spieler-Input und read-only Beobachtung im genehmigten privaten Ziel.",
       "Ausschließlich bestehende private Universe10772906084/Place112662761038118 (BoltBots B3 Test 20261025), isolierter Store BoltBots_B3_20261025 mit eigenen/synthetischen Profilen; geprüfte B5-Quelländerung dort privat speichern",
       "Normaler Commit/Push codex/initialize-boltbots zu origin ohne Force/Merge"
     ],
     "prohibited": [
       "Öffentliche Veröffentlichung, Produktions-/fremde Daten oder Konto-/Credentialänderung",
       "Bestehenden Standard-Place überschreiben",
-      "Core-/Import-/FrozenFoundationmutation, zusätzlicheTools/Plugins/Agenten"
+      "Core-/Import-/FrozenFoundationmutation, zusätzliche Plattformen/Plugins/Agenten; keine synthetische Ersetzung des echten Fremdplotbesuchs."
     ]
   },
   "completion_evidence": [
@@ -131,7 +131,7 @@
     "spawn_reviewer": "/root/b4_spawn",
     "clearance": "pass",
     "cleared_agents": [
-      "/root",
+      "/root/b4_creator",
       "/root/b4_review",
       "/root/b4_spawn"
     ]
@@ -143,8 +143,8 @@
 <!-- task-controls:start -->
 ```json
 {
-  "checked_revision": 1,
-  "progress": 70,
+  "checked_revision": 2,
+  "progress": 80,
   "updates": [
     {
       "percent": 10,
@@ -173,6 +173,10 @@
     {
       "percent": 70,
       "evidence": "B4 unabhängig approved durch /root/b4_review auf Manifest41ff75e3…af7b/30Dateien und Build28c95843…2654. Reale1/2/4Clients, Eigentum/Geld/Manipulation/Parallelität und5.Join/Retry belegt; kleineOwner-/no_plotSichtclosure positiv. AktuellerCleanup bestätigt. NeunStudioquellen direkt gegenapprovedBuild15:00:04 bytegleich; gleicherprivaterSave15:00:28, Transfermechanik unabhängig bestätigt. KeinFlüssigkeits-/Mobil-/Gesamtspielpass. NächsterSchrittGitabschluss; B5/normalerFremdplotpfad/Humanversand-/Endqualität offen."
+    },
+    {
+      "percent": 80,
+      "evidence": "Gesamt-B5 unabhängig APPROVED durch b4_review auf Finalmanifest035cb9fc…d3d1f/54Dateien+Build5d3332ba…969983. OriginaleigenerLoop/Versand/C2Bedienung/B3B4 bleiben gültig; echterClient−2 liefnormal zuraktivenFremdwerkstatt−1,4JPEGs/34MCPpaare/11Logzeilen. Source/Cleanup bestätigt, privaterC2Save unverändertgültig. Unabhängiger80%-Drift positiv; nächsteAktion Dokumentation/Git/Humanübergabe, keineM1End-/MVP-/Endgerätefreigabe."
     }
   ],
   "drift_checks": [
@@ -205,32 +209,38 @@
         "id": "BOLTBOTS-RUN-M1-B3-001",
         "revision": 1
       }
+    },
+    {
+      "percent": 80,
+      "reviewer": "/root/b4_review",
+      "decision": "continue",
+      "evidence": "OriginalB5Umfang jetzt vollständigagentenseitigbelegt; aktiveFindingsgeschlossen. DreiB5Runtimepfade fürVersionlabel/kompaktenVersand/Kamera/Modal-Mausfix, keineWirtschafts-/Kontexterweiterung. Wiederaufnahme nur offiziellerMCP-Standardbibliothekcaller undBesuchsbelege, keineRuntimeänderung/Plattform/M2; bestehendeC2/B3/B4Belege angemessenwiederverwendet.7/9Korrekturen genutzt2übrig; ursprünglichesFenster16:23:17–18:53:17UTC, Reviewgegen18:40UTCca137/150min. Continue ausschließlichDocs/Git/Humanübergabe; keinezusätzlichenWerkzeugexperimente. Human-M1-Endentscheidung offen."
     }
   ],
   "obligations": {
     "entry_integrity": {
       "state": "satisfied",
-      "evidence": "Pflichtkette und Originalroute gelesen; Root und Spawn bestätigen95Coredateien und externen Manifestanker. B4 HEAD und liveRemote3683527f68150a8905e96530dbf3a482ca697f66 sauber."
+      "evidence": "Pflichtkette/Originalroute gelesen; Manifestanker und95Coredateien aktuell bestätigt. r2-Baseline28db08ec2436dc0d3897cf6c1d08152b70228ae4 sauber, gleicheBranch/Remote.54Payloaddateien+Build unverändert. DirekterCheck nur bekannteHuman-disponierteFoundationabweichung, keinFakePASS."
     },
     "scope_authority": {
       "state": "satisfied",
-      "evidence": "Human beauftragt B5 jetzt end-to-end nach akzeptierter Strategie Root+einReviewer und kurzem separatem Spawncheck. Bestehendes private Testziel/Store unverändert autorisiert."
+      "evidence": "Human B5end-to-end und Wiederaufnahme überoffiziellenStudioMCP mit zweiAstra/xhighArbeitsrollen autorisiert; b4_creator alleinoperativ, b4_review unabhängig, RootRelay. GleichesprivateZiel/Store, keinScope-/Budgetreset."
     },
     "agent_start_review": {
       "state": "satisfied",
-      "evidence": "16:35UTC b4_spawn PASS run_activation Root r1 und separater PASS früher b4_review-Inhaltsauftrag auf exakt Design-/Prüfdelta. Spawn nur Bootstrap-Startrolle unter Collaboration§1.1, keine Selbst-Produktfreigabe."
+      "evidence": "b4_spawn PASS Vorbereitung/Aktivierung b4_creator aufr2, separaterfinalerReviewstart b4_review auf035cb9fc…/54Dateien+Build. b4_review Gesamt-B5APPROVED und80%-DriftPASS. Spawn integritätsgeprüfteRollenbootstrap-Ausnahme, keineSelbst-/Produktreview."
     },
     "human_gates": {
       "state": "satisfied",
       "evidence": "Foundation, Designr3 und M1-Paket wirksam genehmigt; B5 end-to-end aktuell beauftragt. Finale Human-M1-Abnahme ist Folgegate, kein Ausführungsblocker."
     },
     "capability": {
-      "state": "blocked",
-      "evidence": "B5-eigener Spiel-/Versand-/UIteil einschließlich unabhängiger C2-Closure erfolgreich; tatsächlicher normaler Besuch eines belegten fremden Plots mangels unterstützter CUA-Bindung der realen Studio-Childclients weiterhin nicht ausführbar. Nur dieser Originalpfad blockiert den Gesamtabschluss; keine formale Foundationblockade. Geprüfte Teilergebnisse privat und anschließend in Git sichern."
+      "state": "satisfied",
+      "evidence": "EchteMCP-Clientinputs undFremdplotbesuch unabhängigbestätigt; TestregulärEndTest, beideProfile released, nurOriginaleditor/Edit,9Sourcesbytegleich,Probe/Faultfrei,Rojoportfrei,temporärerMCP-Callerbeendet. PrivaterC2Save17:42:43weitergültig."
     },
     "mutation_boundary": {
       "state": "satisfied",
-      "evidence": "Nur Root implementiert/bedient UI; b4_review read-only unabhängig und b4_spawn nur Start. Kein weiterer Creator aktiviert."
+      "evidence": "Ab r2 ausschließlich b4_creator operativ/UI/MCP/Writer; Root Relay/Keepawake/mechanisch, b4_review unabhängig, Spawn Start-only."
     },
     "budget_stop": {
       "state": "satisfied",
@@ -332,3 +342,50 @@ EigenerRojoServe58821 danach regulär perCtrl-C beendet(WrapperExit130); Port348
 17:44UTC b4_review bestätigt den engen privatenTransfer **APPROVED**: alle fünfOriginalzeilen und derenZeilennummern gegenlokalenUrsprungslog, Sourceguard ausC2Build, ausgeführterCleanupbefehl, Erfolgsmarker und tatsächlicherSave. Port34872 unabhängig frei;45Dateien+Build unverändert. Dokumentations-/Gitabschluss imTeilstatus freigegeben. KeinweitererKorrekturzyklus.
 
 17:45UTC eigeneKeepawake-Session46987/PID19583 beendet; `pmset -g assertions` zeigt keineeigeneAssertionmehr. FremdeWakeprozesse nichtverändert. OperativerTeilabschlussnachca82/150Minuten, keinBudgetende vorgeschoben. StopgrundnurkonkreteunerfüllteFremdplotfähigkeit; nächsterSchritt unterstütztenrealenTestclientzugriff nachweisen undnormalenBesuch durchführen. SämtlichebereitsgeltendenFreigaben bleibenwirksam, Originalumfangbleibterhalten. DanachGesamt-B5-Review undHuman-M1-Qualitätsentscheidung. KeineautomatischeweitereWerkzeuginstallation/öffentlicheFreigabe ausdiesemTeilabschluss ableiten.
+
+
+## Wiederaufnahme r2 — offizieller StudioMCP, gleicher B5-Auftrag
+
+Human bestätigte zwei arbeitende Astra/xhigh-Rollen und „Gut, einverstanden, führ das jetzt auch durch.“ Ab r2 ist `/root/b4_creator` alleiniger Creator/Lead/Writer, b4_review unabhängig; Root ausschließlich Relay/Keepawake/Gitmechanik. b4_spawn ist Startreviewer, dessen integritätsgeprüfte Rollen-/Pflichteinstieg-Bootstrap-Ausnahme keine Selbst-/Produktreview begründet. Frühere Root-Ausführung und C2-/B3-/B4-Belege bleiben gültige Historie. Preparation-Pass18:13:35UTC; Fenster16:23:17–18:53:17UTC, kumulativ7/9Korrekturen genutzt,2verbleiben, M1weiter70%; kein Reset.
+
+Baseline28db08ec2436dc0d3897cf6c1d08152b70228ae4 sauber, Branchcodex/initialize-boltbots, originGitHub mareki/boltbots-tycoon. Coreanker/95Dateien durch Root und Spawn aktuell bestätigt. Zielgruppe: zugängliche attraktive Roboterfabrik, CTX-FACTORY, kleine M1-Referenz. Originalpflicht WP01B§6/M1/F-VIEW: normaler Besuch einer tatsächlich verbundenen fremden belegten Werkstatt, öffentliche Optik ohne fremde Schreibrechte.
+
+Human autorisierte Studio-Assistant→MCP Servers→Quick connect ChatGPT(codex). Vorhandener offizieller `/Applications/RobloxStudio.app/Contents/MacOS/StudioMCP` spricht stdioJSON-RPC; temporärer Python-Standardbibliothekcaller hält ausschließlich diese Verbindung, keine Plattform/Installation. Tatsächliche tools/list:28Tools; studio_id6b509673-2b64-4c43-a24b-546d9d401ec3 ist Place112662761038118, get_studio_state Edit. start_stop_play bietet nur Start/Stop, keine Mehrclientzahl. user_keyboard_input/user_mouse_input/character_navigation adressieren ausdrücklich studio_id+Client.
+
+Nach Aktivierung kleinster Fähigkeitsversuch: natives Testmenü Server+zwei echte Clients, dann list_roblox_studios/get_studio_state für tatsächlich angebotene IDs. Nur bei erreichbarem echten Client normale Eingaben/Erkunden zum belegten fremden Plot, Screens und read-only Beobachtung authentifizierter Spieler/Owner/Position. Kein CFrame/Teleport oder Ownerfixture als normaler Besuch. Nach zwei gezielten Fehlschlägen Ansatzstopp; keine Wiederholung gescheiterter CUA-Childwindowroutes. Keine Produktänderung geplant; nur gemappte Defekte innerhalb zwei verbleibender Korrekturen.
+
+Dann exakte unabhängige Ergebnisreview plus80%-Drift/KISS. Unveränderte C2-Quellen und privatenSave wiederverwenden, aktuellen Source-/Probe-/Editcleanup bestätigen, Docs und normalenCommit/Push. Nur bei Quellkorrektur neuer bytegebundener privaterSave. Gleiches Universe10772906084/Place112662761038118/StoreBoltBots_B3_20261025, eigene/synthetische Profile; keinöffentlichesPublish/anderesZiel/Credentials. Root besitzt WakeguardSession74587; keinzweiter durchCreator.
+
+b4_spawn **PASS run_activation** für b4_creator auf r2 §Wiederaufnahme r2, exakter oben beschriebener Capability-/Spielpfad. Direkter Check nach Clearance meldet nur die bekannte Human-disponierte Foundationstatusabweichung; kein falscher PASS.
+
+Capabilitypräzisierung r2: Der native Start verwendete die vorhandene Anzahl0; reguläres Test→End Session beendet. Kein echter Zweiclient-Routingfehlschlag daraus. Toolbar-Koordinaten waren nicht erreichbar. Die aktuelle offizielle [StudioTestService-Dokumentation](https://create.roblox.com/docs/reference/engine/classes/StudioTestService) beschreibt ExecuteMultiplayerTestAsync(numPlayers,args) mit PluginSecurity ausdrücklich für denselben Server+Clientstart. Der vorhandene offizielle MCP execute_luau ruft diesen APIweg mit2 auf; keine neue Plattform oder Produktquelle, gleiche Methode/Autorität des begrenzten Zweiclienttests. Keine synthetischen Player/Owner oder Teleports.
+
+
+## Finaler B5-Kandidat — echter Fremdplotpfad
+
+18:35UTC Vorbereitung der finalen Ergebnisreview: unveränderte C2-Quellen plus tatsächlicher normaler Besuch durch Client−2 auf dem aktiven Plot des verbundenen Client−1. Belegindex `docs/reviews/evidence/M1-B5/mcp-visit.md`,34MCPRequest/Responsepaare, vierOriginalJPEGs und11Engineoriginalzeilen. V→Erkunden, vierSekundenA, normale weitereBewegung/Mausrad; keine Positions-/Owner-/Kamerafixture. Sourcebytes vor/nachTest gleich, regulärerEndTest, beideProfile released, nurOriginaleditornachher, Port34872frei. Details und ehrliche Kamera-/Capturegrenzen imIndex. Keine Runtimeänderung undkein neuerKorrekturzyklus;7/9genutzt2übrig. PrivaterC2Save17:42:43 bleibt gültig.
+
+Exakter unabhängiger Auftrag an b4_review nach Startpass: `final-manifest.json` mit unverändertem C2-/Transferumfang und engem neuen echtenFremdplotbeleg gegen Originalkriterien WP01B§6/M1/F-VIEW prüfen; vier tatsächlicheBilder ansehen,34MCPzeilen gegenOriginaltranskript und11Logzeilen gegenOriginale, tatsächlicheIDs/Inputs/Positionen/Owner/öffentlicheAnsicht undCleanup prüfen. BestehendeC2/B3/B4-Technik-/Spiel-/Premium-/Transferurteile gezielt wiederverwenden. Eigenes Urteil getrennt menschlichansprechend/Spielanreiz; Originalkriterien vollständig abgleichen. Unabhängiger80%-Drift/KISS mit tatsächlichemUmfang, minimalemoffiziellenCaller,7/9Verbrauch undStop18:53:17. KeinHuman-M1-Endpass/Endgeräte-/Langzeitclaim. Nurbei vollständigtragendemB5Ergebnis M180; anschließendeDocs/Git. Reviewer erhält exklusiveUI nur aufgesondertenHandoff, aktuellRead-onlyDateibelege ausreichend undkein parallelesUI.
+
+Kandidatenbindung: SHA256 `035cb9fce33399e9510da188b584d883ffb4ab489cb0a74821ddffbfccfd3d1f`, 54Dateien plus Build `5d3332ba37558ebd917c2701138d46192ebc86d9f40e54586b6a072e7f969983`. Approvalmetadaten bleiben außerhalbPayload.
+
+18:35UTC temporärer offiziellerMCP-Caller nach reguläremTestcleanup beendet; keine eigene Rojo-/Test-/Transportinstanz weiter nötig. Die vomHuman autorisierte StudioMCP-Konfiguration bleibt erhalten. Gitdiffcheck ohneWhitespacefehler; unveränderte45C2Dateien+Build erneutbytegleich.
+
+Finaler Startpass: b4_spawn hat b4_review auf exakt Manifest035cb9fc…3d1f/54Dateien+Build5d3332ba…969983 und obigenAuftrag freigegeben; alleBindungen mechanischbestätigt. Keine Produktentscheidung durchSpawn. UIpausiert; Ergebnisreview entscheidetOriginaldeckung/Premium/80%-Drift.
+
+
+## Finale unabhängige Ergebnisreview — Gesamt-B5 APPROVED
+
+`b4_review` bestätigt **APPROVED** für Manifest `035cb9fce33399e9510da188b584d883ffb4ab489cb0a74821ddffbfccfd3d1f` /54 Dateien und Build `5d3332ba37558ebd917c2701138d46192ebc86d9f40e54586b6a072e7f969983`. Keine materiellen Findings, kein weiterer Korrekturzyklus. Alle55 Datei-/Buildbindungen stimmen; alle34 Request/Responsepaare wurden gegen das Originaltranskript geprüft, einschließlich vier bytegleicher JPEG-Dekodierungen. Alle11 Enginezeilen stimmen, alle vier Bilder wurden tatsächlich angesehen. Die Sourceassertions vor/nach Test enthalten exakt neun Buildquellen; keine verborgene Mutation.
+
+**Originalkriterien:** F-START/F-FIRST/F-UPGRADE/F-COLLECT tragen C1/C2 mit eigenem Einstieg, Scout, Kaufabbruch,50Cash-L2, Orbit und normalem Spielweg einschließlich unabhängigem Reviewerplay. F-RECOVER tragen reale B3/B5-Save/Rejoin-, Pause-, Retry- und letzter-bestätigter-Stand-Belege. Geld, Isolation, Kapazität und2–4-Clientprofiling tragen unveränderte B4-Belege. Desktop, schmale Lowansicht, Fokus/44px und korrigierte Nahzoomtasten tragen Interaktion. Der Human-Versandbefund ist durch die kompakte Aufnahme geschlossen.
+
+Nun ist auch F-VIEW/WP01B§6 erfüllt: Der echte verbundene Client−2 läuft von Plot2 perV/A auf den aktiven Plot1 von−1, danach W/A/Mausrad. Client und Server bestätigen Identität, Position und Owner; Bilder zeigen beide Avatare, öffentliche Produktion und „ANDERE WERKSTATT“. Es gibt keine fremden Bearbeitungskontrollen. Das HUD bleibt eigener Zustand; technische Fremdschreibguards tragen B4-Proben. Der neue Besuch mit Automatic-Grafik ist kein zusätzlicher Low-/FPS-Beleg.
+
+**Menschlich ansprechend: JA**, für die kleine M1-Referenz: freundliche eigenständige Figuren, konsistente Ivory/Navy/Cyan-Gliederung und räumlich verständliche Montage/Verpackung/Annahme. Die fremde aktive Werkstatt wirkt bewohnt. **Spielanreiz: JA**, für den kurzen Kern: sichtbares Entstehen, konkretes L2-/Orbit-Ziel und erkundbare fremde Produktion. Besitzschild, Figur/Band/HUD, bestehender6s-Takt und lesbare Kontrollen tragen Orientierung, Feedback, Tempo und Roboterwirkung. Der weit gezoomte Rahmen verdeckt einen Zwischenblick; normale Bewegung/Zoom löst dies sichtbar. Kein neuer Blocker und keine Retention-, Hardware-, Langzeit- oder Human-Endqualitätsbehauptung.
+
+**Unabhängiger80%-Drift/KISS: PASS.** Alle aktiven Findings sind geschlossen. B5 bleibt auf drei Runtime-Dateien für Versionlabel, kompakte Versand-/Kameradarstellung und native Modal-Eigenschaft beschränkt. Die neue offizielle MCP-Fähigkeit erfüllt genau die offene Originalpflicht: temporärer Standardbibliothekcaller, keine neue Plattform/Runtime/M2. Weitere Vollmessungen oder Werkzeugexperimente entfallen. **7/9 Korrekturen verbraucht,2 verbleiben**, Ende18:53:17UTC unverändert. Entscheidung: `continue` ausschließlich für Dokumentation/Git/Humanübergabe; **M1=80%, B5 abgeschlossen**.
+
+Regulärer EndTest, zwei freigegebene Profile, Originaleditor/Edit, Sourcegleichheit und Probe-/Faultfreiheit sind unabhängig bestätigt. Der bestätigte private C2-Save17:42:43 bleibt gültig; kein neuer Save oder Kaltabruf behauptet. Die Setup-MCP-Ergänzung stimmt mit dem tatsächlichen Weg überein. Der Reviewer bediente in der finalen Runde keine UI; seine Entscheidung beruht unabhängig auf den Originalbelegen. Die Humanbewertung der echten privaten Version bleibt offen, kein M1-100%-Pass. Normaler Commit/Push sichert diesen Abschluss; die tatsächliche Commit-/Remote-ID steht in der Abschlussnachricht und im Gitverlauf.
+
+Root bestätigte das Ende seines eigenen Wakeguards PID9308/Session74587 per SIGTERM/Exit143. Fremde Wachhalteprozesse blieben unberührt. Keine weiteren Gameplayaktionen nach der finalen Review.

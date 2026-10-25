@@ -1,0 +1,57 @@
+[
+  {
+    "path": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T182247Z_Studio_5bd98_last.log",
+    "line_number": 1228,
+    "text": "2026-10-25T18:23:19.374Z,31.374334,1b63c000,6 [FLog::Output] Player -1 added, there are now 1 players total"
+  },
+  {
+    "path": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T182247Z_Studio_5bd98_last.log",
+    "line_number": 1255,
+    "text": "2026-10-25T18:23:20.804Z,32.804092,1bb66000,6 [FLog::Output] Player -2 added, there are now 2 players total"
+  },
+  {
+    "path": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T182247Z_Studio_5bd98_last.log",
+    "line_number": 1277,
+    "text": "2026-10-25T18:23:22.802Z,34.802486,1b439000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_START loaded revision=63 cash=5725 completed=231 level=2 design=scout"
+  },
+  {
+    "path": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T182247Z_Studio_5bd98_last.log",
+    "line_number": 1278,
+    "text": "2026-10-25T18:23:22.812Z,34.812565,1bd69000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_START loaded revision=84 cash=10000 completed=402 level=2 design=scout"
+  },
+  {
+    "path": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T182247Z_Studio_5bd98_last.log",
+    "line_number": 1472,
+    "text": "2026-10-25T18:32:04.507Z,556.507629,1bf6c000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE released revision=79 cash=7700 completed=310 level=2 design=scout"
+  },
+  {
+    "path": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T182247Z_Studio_5bd98_last.log",
+    "line_number": 1473,
+    "text": "2026-10-25T18:32:04.541Z,556.541809,1bf6c000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_END released"
+  },
+  {
+    "path": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T182247Z_Studio_5bd98_last.log",
+    "line_number": 1474,
+    "text": "2026-10-25T18:32:04.769Z,556.769836,1b439000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE released revision=101 cash=12000 completed=482 level=2 design=scout"
+  },
+  {
+    "path": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T182247Z_Studio_5bd98_last.log",
+    "line_number": 1475,
+    "text": "2026-10-25T18:32:04.770Z,556.770935,1b439000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_END released"
+  },
+  {
+    "path": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line_number": 17460,
+    "text": "2026-10-25T18:19:42.739Z,6764.739258,142e7000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_MCP_SOURCE_MATCH 9 5d3332ba37558ebd917c2701138d46192ebc86d9f40e54586b6a072e7f969983 10772906084 112662761038118"
+  },
+  {
+    "path": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line_number": 17704,
+    "text": "2026-10-25T18:32:02.358Z,7504.358887,14ca1000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_MCP_MULTITEST_END true B5 normal foreign visit captured"
+  },
+  {
+    "path": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T162657Z_Studio_07ba5_last.log",
+    "line_number": 17717,
+    "text": "2026-10-25T18:32:22.559Z,7524.559082,144ea000,6,Info [FLog::CreatorOutput] BOLTBOTS_B5_MCP_SOURCE_MATCH 9 5d3332ba37558ebd917c2701138d46192ebc86d9f40e54586b6a072e7f969983 10772906084 112662761038118"
+  }
+]
