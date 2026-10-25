@@ -1,5 +1,5 @@
 --!strict
--- B1 local session adapter. Persistence and purchase commands arrive in B2/B3.
+-- Local authoritative session adapter. Real persistence remains B3.
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Workspace = game:GetService("Workspace")
@@ -19,6 +19,9 @@ stateChanged.Parent = remotes
 local getSnapshot = Instance.new("RemoteFunction")
 getSnapshot.Name = "GetSnapshot"
 getSnapshot.Parent = remotes
+local command = Instance.new("RemoteFunction")
+command.Name = "Command"
+command.Parent = remotes
 
 local function snapshot(player: Player, notice: string?)
     local session = sessions[player]
@@ -27,10 +30,14 @@ local function snapshot(player: Player, notice: string?)
     local cycle = profile.cycle
     return {
         ready = true, cash = profile.cash, completed = profile.completed,
-        unlockedScout = profile.unlockedScout, stateVersion = profile.stateVersion,
+        unlockedScout = profile.unlockedScout, unlockedOrbit = profile.unlockedOrbit, level = profile.level,
+        selectedDesign = profile.selectedDesign, currentDesign = if cycle then cycle.designId else profile.selectedDesign,
+        upgradePrice = Config.firstUpgradePrice, catalogVersion = Config.catalogVersion,
+        nextCycleSeconds = Rules.cycleSeconds(profile), upgradedCycleSeconds = Config.upgradedCycleSeconds,
+        stateVersion = profile.stateVersion,
         plotIndex = session.plot.Index, cycleStart = if cycle then cycle.startedAt else 0,
         cycleId = if cycle then cycle.id else profile.lastCycleId,
-        cycleSeconds = Config.baseCycleSeconds, cashPerRobot = Config.creditsPerRobot,
+        cycleSeconds = if cycle then cycle.completesAt-cycle.startedAt else Rules.cycleSeconds(profile), cashPerRobot = Config.creditsPerRobot,
         productionActive = cycle ~= nil, notice = notice,
         saveStatus = "local_session_only", version = Config.versionLabel,
     }
@@ -43,7 +50,8 @@ local function startCycle(session)
     local cycle = session.profile.cycle
     if ok and cycle then
         session.plot.Model:SetAttribute("CycleStart", cycle.startedAt)
-        session.plot.Model:SetAttribute("CycleSeconds", Config.baseCycleSeconds)
+        session.plot.Model:SetAttribute("CycleSeconds", cycle.completesAt-cycle.startedAt)
+        session.plot.Model:SetAttribute("DesignId", cycle.designId)
         session.plot.Model:SetAttribute("CycleId", cycle.id)
         session.plot.Model:SetAttribute("Active", true)
     else
@@ -58,6 +66,27 @@ getSnapshot.OnServerInvoke = function(player: Player, ...)
     return snapshot(player)
 end
 
+command.OnServerInvoke = function(player: Player, kind, payload, ...)
+    local session = sessions[player]
+    if not session then return {ok=false,code="inactive",view=snapshot(player)} end
+    local now = os.clock()
+    if now-session.commandWindow >= 1 then session.commandWindow=now;session.commandCount=0 end
+    session.commandCount += 1
+    if session.commandCount > 6 then return {ok=false,code="rate_limited",view=snapshot(player)} end
+    if select("#",...) ~= 0 then return {ok=false,code="invalid_request",view=snapshot(player)} end
+    local previousLevel=session.profile.level
+    local result=Rules.command(session.profile,kind,payload)
+    if session.profile.level ~= previousLevel then
+        WorldBuilder.SetLevel(session.plot,session.profile.level)
+        print("BOLTBOTS_MACHINE_PURCHASE","starter","level=2","price="..Config.firstUpgradePrice,"cash="..session.profile.cash)
+        print("BOLTBOTS_ROBOT_UNLOCKED","orbit")
+        publish(player,"L2 ist da! Orbit freigeschaltet.")
+    elseif result.ok and kind=="select" then
+        publish(player)
+    end
+    return {requestId=result.requestId,ok=result.ok,code=result.code,stateVersion=result.stateVersion,view=snapshot(player)}
+end
+
 local function assignPlayer(player: Player)
     if sessions[player] then return end
     local plot = nil
@@ -67,9 +96,10 @@ local function assignPlayer(player: Player)
     if not plot then player:Kick("Alle Werkstätten sind belegt. Bitte einem anderen Server beitreten."); return end
     plot.Occupied = true
     player.RespawnLocation = plot.Spawn
-    local session = { profile = Rules.newProfile(), plot = plot }
+    local session = { profile = Rules.newProfile(), plot = plot, commandWindow = 0, commandCount = 0 }
     sessions[player] = session
     WorldBuilder.SetOccupied(plot, true)
+    WorldBuilder.SetLevel(plot, 1)
     local function relocate(character: Model)
         local root = character:WaitForChild("HumanoidRootPart", 10)
         if root and sessions[player] == session then character:PivotTo(plot.SpawnCFrame) end
@@ -105,7 +135,7 @@ task.spawn(function()
                     local profile = session.profile
                     if profile.completed <= 3 or profile.completed % 10 == 0 then
                         print("BOLTBOTS_COMPLETE", "cycle=" .. cycle.id, "cash=" .. profile.cash,
-                            "completed=" .. profile.completed, "scout=" .. tostring(profile.unlockedScout))
+                            "completed=" .. profile.completed, "scout=" .. tostring(profile.unlockedScout), "design="..cycle.designId, "seconds="..(cycle.completesAt-cycle.startedAt))
                     end
                     if profile.completed == 1 then print("BOLTBOTS_ROBOT_UNLOCKED", "scout") end
                     startCycle(session)

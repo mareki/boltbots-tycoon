@@ -125,7 +125,18 @@ local function buildPlot(root,index,origin)
     for _,side in ipairs({-1,1}) do cylinder(model,"Crown rounded end",origin+Vector3.new(ax+side*4.4,9.3,-2.6),3.8,1.8,C.ivory) end
     p("Crown seam",Vector3.new(8.8,0.13,0.12),Vector3.new(ax,8.65,-0.65),C.amber,Enum.Material.Neon)
     local machineLabel=p("Assembler label",Vector3.new(7,0.85,0.12),Vector3.new(ax,9.5,-0.65),C.navy)
-    label(machineLabel,"ASSEMBLER  /  L1",C.white,60)
+    local levelLabel=label(machineLabel,"ASSEMBLER  /  L1",C.white,60)
+    local upgradeParts={}
+    -- L2 adds a real rear power module and paired cooling fins, within the existing station.
+    local power=p("L2 power core",Vector3.new(5.4,2.8,2.2),Vector3.new(ax,5.2,-5.2),C.navy)
+    table.insert(upgradeParts,power)
+    for i=-2,2 do
+        table.insert(upgradeParts,p("L2 cooling fin",Vector3.new(0.38,2.4,2.7),Vector3.new(ax+i*0.85,5.2,-5.2),C.steel,Enum.Material.Metal))
+    end
+    table.insert(upgradeParts,p("L2 violet rail",Vector3.new(7.4,0.28,0.34),Vector3.new(ax,10.35,-2.2),Color3.fromRGB(167,132,247),Enum.Material.Neon))
+    for _,side in ipairs({-1,1}) do
+        table.insert(upgradeParts,p("L2 status beacon",Vector3.new(0.65,1.1,0.65),Vector3.new(ax+side*3.1,10.7,-2.6),Color3.fromRGB(167,132,247),Enum.Material.Neon))
+    end
     p("Tool spindle",Vector3.new(0.6,1.2,0.6),Vector3.new(ax,7.95,-1.8),C.steel,Enum.Material.Metal)
     local stage=p("Assembly stage",Vector3.new(5.4,0.15,5.2),Vector3.new(ax,2.72,0),C.navy)
     stage.CanCollide=false
@@ -164,7 +175,7 @@ local function buildPlot(root,index,origin)
     spawn.Position=origin+Vector3.new(0,1.2,12);spawn.Anchored=true;spawn.Transparency=1
     spawn.CanCollide=false;spawn.Neutral=true;spawn.Duration=0;spawn.Parent=model
     return {Index=index,Model=model,Origin=origin,OwnerLabel=ownerLabel,Occupied=false,Spawn=spawn,
-        SpawnCFrame=CFrame.new(origin+Vector3.new(0,4.5,12))}
+        LevelLabel=levelLabel,UpgradeParts=upgradeParts,SpawnCFrame=CFrame.new(origin+Vector3.new(0,4.5,12))}
 end
 
 function World.Build()
@@ -172,7 +183,9 @@ function World.Build()
     local root=Instance.new("Folder");root.Name="BoltBotsWorld";root.Parent=Workspace
     part(root,"Courtyard",Vector3.new(180,1,170),CFrame.new(30,-1.2,20),Color3.fromRGB(142,175,161),Enum.Material.Grass)
     local locations={Vector3.new(0,0,0),Vector3.new(65,0,0),Vector3.new(0,0,55),Vector3.new(65,0,55)}
-    local plots={};for i=1,Config.maxPlots do table.insert(plots,buildPlot(root,i,locations[i])) end
+    local plots={};for i=1,Config.maxPlots do
+        local plot=buildPlot(root,i,locations[i]);World.SetLevel(plot,1);table.insert(plots,plot)
+    end
     -- Distant low-detail garden, with no imported asset dependency.
     for i=0,10 do
         local pos=Vector3.new(-35+i*13,0,-32-math.sin(i)*5)
@@ -192,6 +205,11 @@ function World.Build()
     local grade=Instance.new("ColorCorrectionEffect");grade.Name="BoltBotsColor"
     grade.Brightness=-0.035;grade.Contrast=0.06;grade.Saturation=0.02;grade.TintColor=Color3.fromRGB(255,248,231);grade.Parent=Lighting
     return plots
+end
+function World.SetLevel(plot,level)
+    plot.Model:SetAttribute("Level",level)
+    plot.LevelLabel.Text="ASSEMBLER  /  L"..level
+    for _,p in ipairs(plot.UpgradeParts) do p.Transparency=if level>=2 then 0 else 1;p.CanCollide=level>=2 end
 end
 function World.SetOccupied(plot,occupied)
     plot.Model:SetAttribute("Active",false)

@@ -5,13 +5,14 @@ local GameConfig = {
     displayName = "BoltBots Tycoon",
     schemaVersion = 1,
     catalogVersion = 1,
-    versionLabel = "development-b1",
+    versionLabel = "development-b2",
     maxPlots = 4,
     starterCash = 0,
     baseCycleSeconds = 9,
     creditsPerRobot = 25,
     maxCash = 1_000_000_000,
     firstUpgradePrice = 50,
+    upgradedCycleSeconds = 6,
     firstRobotId = "scout",
 }
 return table.freeze(GameConfig)

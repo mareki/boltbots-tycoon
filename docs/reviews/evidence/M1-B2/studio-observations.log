@@ -1,0 +1,186 @@
+41601: 2026-10-25T08:25:16.929Z,46264.929688,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_SERVER_BOOT BoltBotsTycoon development-b2
+41691: 2026-10-25T08:25:17.242Z,46265.242188,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_START slot=1 development-b2 local_session_only
+42050: 2026-10-25T08:25:20.554Z,46268.554688,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_CLIENT_BOOT development-b2 view=1511, 758
+42088: 2026-10-25T08:25:26.320Z,46274.320312,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=1 cash=25 completed=1 scout=true design=scout seconds=9
+42089: 2026-10-25T08:25:26.320Z,46274.320312,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_ROBOT_UNLOCKED scout
+42091: 2026-10-25T08:25:35.367Z,46283.367188,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=2 cash=50 completed=2 scout=true design=scout seconds=9
+42096: 2026-10-25T08:25:44.484Z,46292.484375,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=3 cash=75 completed=3 scout=true design=scout seconds=9
+42103: 2026-10-25T08:26:17.824Z,46325.824219,17723000,6,Info [FLog::CreatorOutput] > local v=game.ReplicatedStorage.BoltBotsRemotes.GetSnapshot:InvokeServer();print("BOLTBOTS_B2_CANCEL",v.cash,v.completed,v.level,v.unlockedOrbit,v.selectedDesign,v.cycleSeconds)
+42105: 2026-10-25T08:26:17.949Z,46325.949219,186e6000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_CANCEL 150 6 1 false scout 9
+42107: 2026-10-25T08:26:19.417Z,46327.417969,184e3000,6,Info [FLog::CreatorOutput] BOLTBOTS_MACHINE_PURCHASE starter level=2 price=50 cash=100
+42108: 2026-10-25T08:26:19.417Z,46327.417969,184e3000,6,Info [FLog::CreatorOutput] BOLTBOTS_ROBOT_UNLOCKED orbit
+42112: 2026-10-25T08:26:38.914Z,46346.914062,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=10 cash=200 completed=10 scout=true design=scout seconds=6
+42124: 2026-10-25T08:27:39.531Z,46407.531250,184e3000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=20 cash=450 completed=20 scout=true design=scout seconds=6
+42125: 2026-10-25T08:27:53.253Z,46421.253906,17723000,6,Info [FLog::CreatorOutput] > local v=game.ReplicatedStorage.BoltBotsRemotes.GetSnapshot:InvokeServer();print("BOLTBOTS_B2_BEFORE_SELECT",v.cash,v.completed,v.level,v.unlockedOrbit,v.selectedDesign,v.currentDesign,v.cycleId,v.cycleStart,v.cycleSeconds);task.spawn(function() for i=1,16 do local n=game.ReplicatedStorage.BoltBotsRemotes.GetSnapshot:InvokeServer();print("BOLTBOTS_B2_SELECTION_TRACE",n.cash,n.completed,n.selectedDesign,n.currentDesign,n.cycleId,n.cycleStart,n.cycleSeconds);task.wait(0.5) end end)
+42127: 2026-10-25T08:27:53.328Z,46421.328125,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_BEFORE_SELECT 500 22 2 true scout scout 23 1792916870.420534 6
+42128: 2026-10-25T08:27:53.378Z,46421.378906,184e3000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_SELECTION_TRACE 500 22 scout scout 23 1792916870.420534 6
+42130: 2026-10-25T08:27:53.945Z,46421.945312,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_SELECTION_TRACE 500 22 scout scout 23 1792916870.420534 6
+42132: 2026-10-25T08:27:54.496Z,46422.496094,184e3000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_SELECTION_TRACE 500 22 orbit scout 23 1792916870.420534 6
+42133: 2026-10-25T08:27:55.062Z,46423.062500,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_SELECTION_TRACE 500 22 orbit scout 23 1792916870.420534 6
+42134: 2026-10-25T08:27:55.628Z,46423.628906,184e3000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_SELECTION_TRACE 500 22 orbit scout 23 1792916870.420534 6
+42135: 2026-10-25T08:27:56.195Z,46424.195312,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_SELECTION_TRACE 500 22 orbit scout 23 1792916870.420534 6
+42138: 2026-10-25T08:27:56.746Z,46424.746094,188e9000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_SELECTION_TRACE 500 22 orbit scout 23 1792916870.420534 6
+42139: 2026-10-25T08:27:57.296Z,46425.296875,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_SELECTION_TRACE 500 22 orbit scout 23 1792916870.420534 6
+42140: 2026-10-25T08:27:57.863Z,46425.863281,188e9000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_SELECTION_TRACE 525 23 orbit orbit 24 1792916876.421667 6
+42141: 2026-10-25T08:27:58.410Z,46426.410156,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_SELECTION_TRACE 525 23 orbit orbit 24 1792916876.421667 6
+42142: 2026-10-25T08:27:58.964Z,46426.964844,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_SELECTION_TRACE 525 23 orbit orbit 24 1792916876.421667 6
+42143: 2026-10-25T08:27:59.531Z,46427.531250,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_SELECTION_TRACE 525 23 orbit orbit 24 1792916876.421667 6
+42144: 2026-10-25T08:28:00.097Z,46428.097656,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_SELECTION_TRACE 525 23 orbit orbit 24 1792916876.421667 6
+42145: 2026-10-25T08:28:00.664Z,46428.664062,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_SELECTION_TRACE 525 23 orbit orbit 24 1792916876.421667 6
+42146: 2026-10-25T08:28:01.210Z,46429.210938,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_SELECTION_TRACE 525 23 orbit orbit 24 1792916876.421667 6
+42147: 2026-10-25T08:28:01.777Z,46429.777344,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_SELECTION_TRACE 525 23 orbit orbit 24 1792916876.421667 6
+42175: 2026-10-25T08:28:39.960Z,46467.960938,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=30 cash=700 completed=30 scout=true design=orbit seconds=6
+42189: 2026-10-25T08:29:39.441Z,46527.441406,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_ORBIT_CLEARANCE 80 0  enclosure_samples=3 0  cash=850->925 completed=36->39 orbit
+42190: 2026-10-25T08:29:40.640Z,46528.640625,184e3000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=40 cash=950 completed=40 scout=true design=orbit seconds=6
+42202: 2026-10-25T08:30:41.156Z,46589.156250,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=50 cash=1200 completed=50 scout=true design=orbit seconds=6
+42214: 2026-10-25T08:31:41.671Z,46649.671875,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=60 cash=1450 completed=60 scout=true design=orbit seconds=6
+42439: 2026-10-25T08:32:17.316Z,46685.316406,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_END slot=1 not_persisted
+42964: 2026-10-25T08:32:32.906Z,46700.906250,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_SERVER_BOOT BoltBotsTycoon development-b2
+43052: 2026-10-25T08:32:33.027Z,46701.027344,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_START slot=1 development-b2 local_session_only
+43410: 2026-10-25T08:32:35.488Z,46703.488281,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_CLIENT_BOOT development-b2 view=1, 1
+43451: 2026-10-25T08:32:42.101Z,46710.101562,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=1 cash=25 completed=1 scout=true design=scout seconds=9
+43452: 2026-10-25T08:32:42.105Z,46710.105469,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_ROBOT_UNLOCKED scout
+43458: 2026-10-25T08:32:51.167Z,46719.167969,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=2 cash=50 completed=2 scout=true design=scout seconds=9
+43466: 2026-10-25T08:33:00.250Z,46728.250000,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=3 cash=75 completed=3 scout=true design=scout seconds=9
+43469: 2026-10-25T08:33:09.234Z,46737.234375,184e3000,6,Info [FLog::CreatorOutput] BOLTBOTS_MACHINE_PURCHASE starter level=2 price=50 cash=25
+43470: 2026-10-25T08:33:09.238Z,46737.238281,184e3000,6,Info [FLog::CreatorOutput] BOLTBOTS_ROBOT_UNLOCKED orbit
+43478: 2026-10-25T08:33:45.664Z,46773.664062,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=10 cash=200 completed=10 scout=true design=scout seconds=6
+43492: 2026-10-25T08:34:46.148Z,46834.148438,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=20 cash=450 completed=20 scout=true design=scout seconds=6
+43506: 2026-10-25T08:35:46.542Z,46894.542969,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=30 cash=700 completed=30 scout=true design=scout seconds=6
+43518: 2026-10-25T08:36:46.976Z,46954.976562,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=40 cash=950 completed=40 scout=true design=scout seconds=6
+43739: 2026-10-25T08:37:08.871Z,46976.871094,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_END slot=1 not_persisted
+44264: 2026-10-25T08:37:11.359Z,46979.359375,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_SERVER_BOOT BoltBotsTycoon development-b2
+44354: 2026-10-25T08:37:11.539Z,46979.539062,184e3000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_START slot=1 development-b2 local_session_only
+44711: 2026-10-25T08:37:14.535Z,46982.535156,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_CLIENT_BOOT development-b2 view=1511, 758
+44751: 2026-10-25T08:37:20.589Z,46988.589844,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=1 cash=25 completed=1 scout=true design=scout seconds=9
+44752: 2026-10-25T08:37:20.589Z,46988.589844,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_ROBOT_UNLOCKED scout
+44754: 2026-10-25T08:37:29.656Z,46997.656250,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=2 cash=50 completed=2 scout=true design=scout seconds=9
+44759: 2026-10-25T08:37:38.675Z,47006.675781,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=3 cash=75 completed=3 scout=true design=scout seconds=9
+44770: 2026-10-25T08:38:25.500Z,47053.500000,17723000,6,Info [FLog::CreatorOutput] > task.spawn(function() for i=1,40 do local p=game.Players.LocalPlayer;local g=p.PlayerGui.BoltBotsHUD;local s=game.ReplicatedStorage.BoltBotsRemotes.GetSnapshot:InvokeServer();print("BOLTBOTS_B2_MODAL",i,workspace.CurrentCamera.CameraType.Name,g.CollectionOverlay.Visible,g.CollectionOverlay.UpgradeCard.Visible,game:GetService("GuiService").SelectedObject and game:GetService("GuiService").SelectedObject.Name,p.Character.HumanoidRootPart.Position,s.cash,s.level,s.unlockedOrbit);task.wait(0.5) end end)
+44772: 2026-10-25T08:38:25.570Z,47053.570312,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 1 Scriptable true false Close 0, 4.977497577667236, 12 200 1 false
+44773: 2026-10-25T08:38:26.136Z,47054.136719,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 2 Scriptable false false nil 0, 4.977497577667236, 12 200 1 false
+44774: 2026-10-25T08:38:26.687Z,47054.687500,18aec000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 3 Custom false false nil 0, 4.977497577667236, 12 200 1 false
+44775: 2026-10-25T08:38:27.238Z,47055.238281,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 4 Custom true true Cancel 0, 4.977497577667236, 12 200 1 false
+44776: 2026-10-25T08:38:27.804Z,47055.804688,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 5 Custom true true Cancel 0, 4.977497577667236, 12 200 1 false
+44785: 2026-10-25T08:38:28.632Z,47056.632812,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 6 Custom true true Cancel 0, 4.977497577667236, 12 200 1 false
+44786: 2026-10-25T08:38:29.187Z,47057.187500,184e3000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 7 Custom true true Buy 0, 4.977497577667236, 12 200 1 false
+44787: 2026-10-25T08:38:29.753Z,47057.753906,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 8 Custom true true CloseUpgrade 0, 4.977497577667236, 12 200 1 false
+44788: 2026-10-25T08:38:30.304Z,47058.304688,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 9 Custom true true CloseUpgrade 0, 4.977497577667236, 12 200 1 false
+44789: 2026-10-25T08:38:30.871Z,47058.871094,184e3000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 10 Custom false true nil 2.622905969619751, 4.928807258605957, 15.863842010498047 200 1 false
+44793: 2026-10-25T08:38:31.421Z,47059.421875,18aec000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 11 Custom false true nil 6.402919769287109, 3.2404956817626953, 21.431177139282227 200 1 false
+44811: 2026-10-25T08:38:31.972Z,47059.972656,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 12 Custom false true nil 6.402919769287109, 3.2404966354370117, 21.43117332458496 200 1 false
+44812: 2026-10-25T08:38:32.519Z,47060.519531,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 13 Custom false true nil 6.402919769287109, 3.2404966354370117, 21.431175231933594 200 1 false
+44813: 2026-10-25T08:38:33.074Z,47061.074219,184e3000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 14 Custom false true nil 6.402919769287109, 3.2404966354370117, 21.43117332458496 200 1 false
+44814: 2026-10-25T08:38:33.636Z,47061.636719,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 15 Custom false true nil 6.402919769287109, 3.2404966354370117, 21.431175231933594 225 1 false
+44815: 2026-10-25T08:38:34.187Z,47062.187500,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 16 Custom false true nil 6.402919769287109, 3.2404966354370117, 21.43117332458496 225 1 false
+44816: 2026-10-25T08:38:34.757Z,47062.757812,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 17 Custom false true nil 6.402919769287109, 3.2404966354370117, 21.431175231933594 225 1 false
+44817: 2026-10-25T08:38:35.304Z,47063.304688,184e3000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 18 Custom false true nil 9.663352966308594, 3.2404966354370117, 26.23290252685547 225 1 false
+44818: 2026-10-25T08:38:35.855Z,47063.855469,186e6000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 19 Custom false true nil 12.619614601135254, 3.2404966354370117, 30.586700439453125 225 1 false
+44821: 2026-10-25T08:38:36.421Z,47064.421875,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 20 Custom false true nil 12.619614601135254, 3.2404966354370117, 30.586700439453125 225 1 false
+44822: 2026-10-25T08:38:36.988Z,47064.988281,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 21 Custom false true nil 12.619614601135254, 3.2404966354370117, 30.586700439453125 225 1 false
+44823: 2026-10-25T08:38:37.554Z,47065.554688,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 22 Custom false true nil 12.619614601135254, 3.2404966354370117, 30.586700439453125 225 1 false
+44824: 2026-10-25T08:38:38.121Z,47066.121094,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 23 Custom false true nil 12.619614601135254, 3.2404966354370117, 30.586700439453125 225 1 false
+44825: 2026-10-25T08:38:38.667Z,47066.667969,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 24 Custom false true nil 12.619614601135254, 3.2404966354370117, 30.586700439453125 225 1 false
+44826: 2026-10-25T08:38:39.218Z,47067.218750,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 25 Custom false true nil 12.619614601135254, 3.2404966354370117, 30.586700439453125 225 1 false
+44827: 2026-10-25T08:38:39.769Z,47067.769531,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 26 Custom false true nil 12.619614601135254, 3.2404966354370117, 30.586700439453125 225 1 false
+44828: 2026-10-25T08:38:40.320Z,47068.320312,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 27 Custom false true nil 12.619614601135254, 3.2404966354370117, 30.586700439453125 225 1 false
+44829: 2026-10-25T08:38:40.886Z,47068.886719,188e9000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 28 Custom false true nil 12.619614601135254, 3.2404966354370117, 30.586700439453125 225 1 false
+44830: 2026-10-25T08:38:41.453Z,47069.453125,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 29 Custom false true nil 12.619614601135254, 3.2404966354370117, 30.586700439453125 225 1 false
+44831: 2026-10-25T08:38:42.003Z,47070.003906,186e6000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 30 Custom false true nil 12.619614601135254, 3.2404966354370117, 30.586700439453125 225 1 false
+44832: 2026-10-25T08:38:42.105Z,47070.105469,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=10 cash=250 completed=10 scout=true design=scout seconds=9
+44833: 2026-10-25T08:38:42.570Z,47070.570312,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 31 Custom false true nil 12.619614601135254, 3.2404966354370117, 30.586700439453125 250 1 false
+44834: 2026-10-25T08:38:43.136Z,47071.136719,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 32 Custom false true nil 12.619614601135254, 3.2404966354370117, 30.586700439453125 250 1 false
+44835: 2026-10-25T08:38:43.703Z,47071.703125,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 33 Custom false true nil 12.619614601135254, 3.2404966354370117, 30.586700439453125 250 1 false
+44836: 2026-10-25T08:38:44.253Z,47072.253906,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 34 Custom false true nil 12.619614601135254, 3.2404966354370117, 30.586700439453125 250 1 false
+44837: 2026-10-25T08:38:44.804Z,47072.804688,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 35 Custom false true nil 12.619614601135254, 3.2404966354370117, 30.586700439453125 250 1 false
+44838: 2026-10-25T08:38:45.371Z,47073.371094,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 36 Custom false true nil 12.619614601135254, 3.2404966354370117, 30.586700439453125 250 1 false
+44839: 2026-10-25T08:38:45.937Z,47073.937500,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 37 Custom false true nil 12.619614601135254, 3.2404966354370117, 30.586700439453125 250 1 false
+44840: 2026-10-25T08:38:46.484Z,47074.484375,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 38 Custom false true nil 12.619614601135254, 3.2404966354370117, 30.586700439453125 250 1 false
+44841: 2026-10-25T08:38:47.035Z,47075.035156,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 39 Custom false true nil 12.619614601135254, 3.2404966354370117, 30.586700439453125 250 1 false
+44842: 2026-10-25T08:38:47.585Z,47075.585938,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_MODAL 40 Custom false true nil 12.619614601135254, 3.2404966354370117, 30.586700439453125 250 1 false
+44850: 2026-10-25T08:39:15.855Z,47103.855469,17723000,6,Info [FLog::CreatorOutput] > local p=game.Players.LocalPlayer;print("BOLTBOTS_B2_ESCAPE_RESUME",p.PlayerGui.BoltBotsHUD.CollectionOverlay.Visible,game:GetService("GuiService").SelectedObject,p.Character.HumanoidRootPart.Position)
+44852: 2026-10-25T08:39:15.871Z,47103.871094,186e6000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_ESCAPE_RESUME false nil 19.23703384399414, 5.370497226715088, 40.33218002319336
+44863: 2026-10-25T08:39:58.656Z,47146.656250,17723000,6,Info [FLog::CreatorOutput] > task.spawn(function() for i=1,20 do local s=game.ReplicatedStorage.BoltBotsRemotes.GetSnapshot:InvokeServer();local p=workspace.BoltBotsWorld.FactoryPlot_1;print("BOLTBOTS_B2_UPGRADE_TIMING",i,s.cash,s.completed,s.level,s.unlockedOrbit,p:GetAttribute("CycleId"),p:GetAttribute("CycleStart"),p:GetAttribute("CycleSeconds"),#p:GetChildren());task.wait(0.6) end end)
+44865: 2026-10-25T08:39:58.746Z,47146.746094,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_UPGRADE_TIMING 1 450 18 1 false 19 1792917593.373686 9 215
+44866: 2026-10-25T08:39:59.398Z,47147.398438,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_UPGRADE_TIMING 2 450 18 1 false 19 1792917593.373686 9 215
+44868: 2026-10-25T08:39:59.527Z,47147.527344,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_MACHINE_PURCHASE starter level=2 price=50 cash=400
+44869: 2026-10-25T08:39:59.527Z,47147.527344,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_ROBOT_UNLOCKED orbit
+44870: 2026-10-25T08:40:00.066Z,47148.066406,188e9000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_UPGRADE_TIMING 3 400 18 2 true 19 1792917593.373686 9 215
+44871: 2026-10-25T08:40:00.718Z,47148.718750,186e6000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_UPGRADE_TIMING 4 400 18 2 true 19 1792917593.373686 9 215
+44872: 2026-10-25T08:40:01.371Z,47149.371094,186e6000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_UPGRADE_TIMING 5 400 18 2 true 19 1792917593.373686 9 215
+44873: 2026-10-25T08:40:02.035Z,47150.035156,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_UPGRADE_TIMING 6 400 18 2 true 19 1792917593.373686 9 215
+44874: 2026-10-25T08:40:02.683Z,47150.683594,188e9000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_UPGRADE_TIMING 7 400 18 2 true 19 1792917593.373686 9 215
+44875: 2026-10-25T08:40:03.339Z,47151.339844,186e6000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_UPGRADE_TIMING 8 400 18 2 true 19 1792917593.373686 9 215
+44876: 2026-10-25T08:40:04.000Z,47152.000000,186e6000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_UPGRADE_TIMING 9 425 19 2 true 20 1792917602.430736 6 215
+44877: 2026-10-25T08:40:04.652Z,47152.652344,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_UPGRADE_TIMING 10 425 19 2 true 20 1792917602.430736 6 215
+44878: 2026-10-25T08:40:05.316Z,47153.316406,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_UPGRADE_TIMING 11 425 19 2 true 20 1792917602.430736 6 215
+44879: 2026-10-25T08:40:05.984Z,47153.984375,184e3000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_UPGRADE_TIMING 12 425 19 2 true 20 1792917602.430736 6 215
+44880: 2026-10-25T08:40:06.632Z,47154.632812,186e6000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_UPGRADE_TIMING 13 425 19 2 true 20 1792917602.430736 6 215
+44881: 2026-10-25T08:40:07.285Z,47155.285156,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_UPGRADE_TIMING 14 425 19 2 true 20 1792917602.430736 6 215
+44882: 2026-10-25T08:40:07.933Z,47155.933594,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_UPGRADE_TIMING 15 425 19 2 true 20 1792917602.430736 6 215
+44883: 2026-10-25T08:40:08.601Z,47156.601562,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_UPGRADE_TIMING 16 425 19 2 true 20 1792917602.430736 6 215
+44884: 2026-10-25T08:40:09.250Z,47157.250000,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_UPGRADE_TIMING 17 425 19 2 true 20 1792917602.430736 6 215
+44885: 2026-10-25T08:40:09.765Z,47157.765625,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=20 cash=450 completed=20 scout=true design=scout seconds=6
+44886: 2026-10-25T08:40:09.917Z,47157.917969,186e6000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_UPGRADE_TIMING 18 450 20 2 true 21 1792917608.48034 6 215
+44887: 2026-10-25T08:40:10.582Z,47158.582031,188e9000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_UPGRADE_TIMING 19 450 20 2 true 21 1792917608.48034 6 215
+44888: 2026-10-25T08:40:11.234Z,47159.234375,188e9000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_UPGRADE_TIMING 20 450 20 2 true 21 1792917608.48034 6 215
+45101: 2026-10-25T08:40:36.046Z,47184.046875,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_END slot=1 not_persisted
+45650: 2026-10-25T08:41:03.976Z,47211.976562,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_SERVER_BOOT BoltBotsTycoon development-b2
+45738: 2026-10-25T08:41:04.175Z,47212.175781,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_START slot=1 development-b2 local_session_only
+46094: 2026-10-25T08:41:08.078Z,47216.078125,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_CLIENT_BOOT development-b2 view=801, 413
+46133: 2026-10-25T08:41:13.222Z,47221.222656,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=1 cash=25 completed=1 scout=true design=scout seconds=9
+46134: 2026-10-25T08:41:13.222Z,47221.222656,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_ROBOT_UNLOCKED scout
+46137: 2026-10-25T08:41:16.289Z,47224.289062,17723000,6,Info [FLog::CreatorOutput] > settings().Rendering.QualityLevel=Enum.QualityLevel.Level01;print("BOLTBOTS_B2_QUALITY",settings().Rendering.QualityLevel,workspace.CurrentCamera.ViewportSize)
+46139: 2026-10-25T08:41:16.300Z,47224.300781,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_QUALITY Enum.QualityLevel.Level01 801, 413
+46142: 2026-10-25T08:41:22.230Z,47230.230469,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=2 cash=50 completed=2 scout=true design=scout seconds=9
+46146: 2026-10-25T08:41:31.261Z,47239.261719,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=3 cash=75 completed=3 scout=true design=scout seconds=9
+46156: 2026-10-25T08:42:18.773Z,47286.773438,17723000,6,Info [FLog::CreatorOutput] > local g=game.Players.LocalPlayer.PlayerGui.BoltBotsHUD;local low={};local clip={};local count=0;for _,v in ipairs(g:GetDescendants()) do if v:IsA("TextLabel") or v:IsA("TextButton") then local visible=v.Visible;local a=v.Parent;while a and a~=g do if a:IsA("GuiObject") and not a.Visible then visible=false end;a=a.Parent end;if visible then count+=1;if v.TextSize<14 then table.insert(low,v.Name) end;if not v.TextFits then table.insert(clip,v.Name) end end end end;print("BOLTBOTS_B2_LAYOUT",workspace.CurrentCamera.ViewportSize,settings().Rendering.QualityLevel,g.CollectionOverlay.Visible,g.CollectionOverlay.UpgradeCard.Visible,count,"low="..table.concat(low,","),"clip="..table.concat(clip,","),g.CollectionOverlay.UpgradeCard.Buy.AbsoluteSize)
+46158: 2026-10-25T08:42:18.785Z,47286.785156,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_LAYOUT 801, 413 Enum.QualityLevel.Level01 true true 19 low= clip= 472, 44
+46160: 2026-10-25T08:42:19.664Z,47287.664062,184e3000,6,Info [FLog::CreatorOutput] BOLTBOTS_MACHINE_PURCHASE starter level=2 price=50 cash=150
+46161: 2026-10-25T08:42:19.664Z,47287.664062,184e3000,6,Info [FLog::CreatorOutput] BOLTBOTS_ROBOT_UNLOCKED orbit
+46163: 2026-10-25T08:42:31.746Z,47299.746094,184e3000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=10 cash=200 completed=10 scout=true design=scout seconds=6
+46166: 2026-10-25T08:42:52.921Z,47320.921875,17723000,6,Info [FLog::CreatorOutput] > local g=game.Players.LocalPlayer.PlayerGui.BoltBotsHUD;local low={};local clip={};local count=0;for _,v in ipairs(g:GetDescendants()) do if v:IsA("TextLabel") or v:IsA("TextButton") then local visible=v.Visible;local a=v.Parent;while a and a~=g do if a:IsA("GuiObject") and not a.Visible then visible=false end;a=a.Parent end;if visible then count+=1;if v.TextSize<14 then table.insert(low,v.Name) end;if not v.TextFits then table.insert(clip,v.Name) end end end end;print("BOLTBOTS_B2_LAYOUT",workspace.CurrentCamera.ViewportSize,settings().Rendering.QualityLevel,g.CollectionOverlay.Visible,g.CollectionOverlay.UpgradeCard.Visible,count,"low="..table.concat(low,","),"clip="..table.concat(clip,","),g.CollectionOverlay.UpgradeCard.Buy.AbsoluteSize)
+46168: 2026-10-25T08:42:52.937Z,47320.937500,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_LAYOUT 801, 413 Enum.QualityLevel.Level01 true false 19 low= clip= 472, 44
+46180: 2026-10-25T08:43:32.257Z,47360.257812,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=20 cash=450 completed=20 scout=true design=scout seconds=6
+46181: 2026-10-25T08:43:34.496Z,47362.496094,17723000,6,Info [FLog::CreatorOutput] > local g=game.Players.LocalPlayer.PlayerGui.BoltBotsHUD;local low={};local clip={};local count=0;for _,v in ipairs(g:GetDescendants()) do if v:IsA("TextLabel") or v:IsA("TextButton") then local visible=v.Visible;local a=v.Parent;while a and a~=g do if a:IsA("GuiObject") and not a.Visible then visible=false end;a=a.Parent end;if visible then count+=1;if v.TextSize<14 then table.insert(low,v.Name) end;if not v.TextFits then table.insert(clip,v.Name) end end end end;print("BOLTBOTS_B2_LAYOUT",workspace.CurrentCamera.ViewportSize,settings().Rendering.QualityLevel,g.CollectionOverlay.Visible,g.CollectionOverlay.UpgradeCard.Visible,count,"low="..table.concat(low,","),"clip="..table.concat(clip,","),g.CollectionOverlay.UpgradeCard.Buy.AbsoluteSize)
+46183: 2026-10-25T08:43:34.503Z,47362.503906,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_LAYOUT 413, 814 Enum.QualityLevel.Level01 true false 20 low= clip= 341, 44
+46186: 2026-10-25T08:43:53.855Z,47381.855469,17723000,6,Info [FLog::CreatorOutput] > local g=game.Players.LocalPlayer.PlayerGui.BoltBotsHUD;local low={};local clip={};local count=0;for _,v in ipairs(g:GetDescendants()) do if v:IsA("TextLabel") or v:IsA("TextButton") then local visible=v.Visible;local a=v.Parent;while a and a~=g do if a:IsA("GuiObject") and not a.Visible then visible=false end;a=a.Parent end;if visible then count+=1;if v.TextSize<14 then table.insert(low,v.Name) end;if not v.TextFits then table.insert(clip,v.Name) end end end end;print("BOLTBOTS_B2_LAYOUT",workspace.CurrentCamera.ViewportSize,settings().Rendering.QualityLevel,g.CollectionOverlay.Visible,g.CollectionOverlay.UpgradeCard.Visible,count,"low="..table.concat(low,","),"clip="..table.concat(clip,","),g.CollectionOverlay.UpgradeCard.Buy.AbsoluteSize)
+46188: 2026-10-25T08:43:53.859Z,47381.859375,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_LAYOUT 413, 814 Enum.QualityLevel.Level01 true true 18 low= clip= 341, 44
+46204: 2026-10-25T08:44:32.656Z,47420.656250,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=30 cash=700 completed=30 scout=true design=orbit seconds=6
+46232: 2026-10-25T08:45:16.246Z,47464.246094,17723000,6,Info [FLog::CreatorOutput] > local g=game.Players.LocalPlayer.PlayerGui.BoltBotsHUD;local low={};local clip={};local count=0;for _,v in ipairs(g:GetDescendants()) do if v:IsA("TextLabel") or v:IsA("TextButton") then local visible=v.Visible;local a=v.Parent;while a and a~=g do if a:IsA("GuiObject") and not a.Visible then visible=false end;a=a.Parent end;if visible then count+=1;if v.TextSize<14 then table.insert(low,v.Name) end;if not v.TextFits then table.insert(clip,v.Name) end end end end;print("BOLTBOTS_B2_LAYOUT",workspace.CurrentCamera.ViewportSize,settings().Rendering.QualityLevel,g.CollectionOverlay.Visible,g.CollectionOverlay.UpgradeCard.Visible,count,"low="..table.concat(low,","),"clip="..table.concat(clip,","),g.CollectionOverlay.UpgradeCard.Buy.AbsoluteSize)
+46236: 2026-10-25T08:45:16.250Z,47464.250000,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_LAYOUT 413, 814 Enum.QualityLevel.Level01 false true 12 low= clip= 341, 44
+46242: 2026-10-25T08:45:33.222Z,47481.222656,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=40 cash=950 completed=40 scout=true design=orbit seconds=6
+46245: 2026-10-25T08:45:37.453Z,47485.453125,17723000,6,Info [FLog::CreatorOutput] > task.spawn(function() local r=game.ReplicatedStorage.BoltBotsRemotes;local before=r.GetSnapshot:InvokeServer();local cases={{"duplicate","upgrade",{requestId="1",machineId="starter",expectedLevel=1,catalogVersion=1}},{"foreign","upgrade",{requestId="100",machineId="other-owner",expectedLevel=2,catalogVersion=1}},{"stale","upgrade",{requestId="101",machineId="starter",expectedLevel=1,catalogVersion=1}},{"maxlevel","upgrade",{requestId="102",machineId="starter",expectedLevel=2,catalogVersion=1}},{"unknown","select",{requestId="103",designId="unknown"}},{"fields","select",{requestId="104",designId="scout",cash=999}}};for _,c in ipairs(cases) do local a=r.Command:InvokeServer(c[2],c[3]);print("BOLTBOTS_B2_REMOTE",c[1],a.ok,a.code,a.view and a.view.cash,a.view and a.view.level,a.view and a.view.selectedDesign);task.wait(0.21) end;task.wait(1.1);for i=1,8 do local a=r.Command:InvokeServer("select",{requestId=tostring(200+i),designId="un
+46247: 2026-10-25T08:45:37.554Z,47485.554688,188e9000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_REMOTE duplicate true upgraded 950 2 orbit
+46248: 2026-10-25T08:45:37.820Z,47485.820312,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_REMOTE foreign false forbidden 950 2 orbit
+46249: 2026-10-25T08:45:38.089Z,47486.089844,18aec000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_REMOTE stale false stale_state 950 2 orbit
+46250: 2026-10-25T08:45:38.355Z,47486.355469,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_REMOTE maxlevel false level_limit 950 2 orbit
+46251: 2026-10-25T08:45:38.621Z,47486.621094,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_REMOTE unknown false unknown_design 950 2 orbit
+46252: 2026-10-25T08:45:38.886Z,47486.886719,184e3000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_REMOTE fields false invalid_request 950 2 orbit
+46253: 2026-10-25T08:45:40.269Z,47488.269531,186e6000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_RATE 1 unknown_design
+46254: 2026-10-25T08:45:40.320Z,47488.320312,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_RATE 2 unknown_design
+46255: 2026-10-25T08:45:40.371Z,47488.371094,184e3000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_RATE 3 unknown_design
+46256: 2026-10-25T08:45:40.421Z,47488.421875,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_RATE 4 unknown_design
+46257: 2026-10-25T08:45:40.472Z,47488.472656,184e3000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_RATE 5 unknown_design
+46258: 2026-10-25T08:45:40.519Z,47488.519531,186e6000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_RATE 6 unknown_design
+46259: 2026-10-25T08:45:40.570Z,47488.570312,184e3000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_RATE 7 rate_limited
+46260: 2026-10-25T08:45:40.621Z,47488.621094,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_RATE 8 rate_limited
+46261: 2026-10-25T08:45:40.671Z,47488.671875,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_REMOTE_DELTA 950 975 40 41 2 2 orbit orbit unexpected=0
+46271: 2026-10-25T08:46:33.734Z,47541.734375,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=50 cash=1200 completed=50 scout=true design=orbit seconds=6
+46274: 2026-10-25T08:46:41.929Z,47549.929688,17723000,6,Info [FLog::CreatorOutput] > settings().Rendering.QualityLevel=Enum.QualityLevel.Automatic;print("BOLTBOTS_B2_RESTORE",settings().Rendering.QualityLevel)
+46276: 2026-10-25T08:46:41.937Z,47549.937500,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_RESTORE Enum.QualityLevel.Automatic
+46501: 2026-10-25T08:46:43.625Z,47551.625000,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_END slot=1 not_persisted
+47041: 2026-10-25T08:47:06.128Z,47574.128906,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_SERVER_BOOT BoltBotsTycoon development-b2
+47129: 2026-10-25T08:47:06.289Z,47574.289062,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_START slot=1 development-b2 local_session_only
+47486: 2026-10-25T08:47:10.167Z,47578.167969,18aec000,6,Info [FLog::CreatorOutput] BOLTBOTS_CLIENT_BOOT development-b2 view=1511, 758
+47523: 2026-10-25T08:47:15.386Z,47583.386719,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=1 cash=25 completed=1 scout=true design=scout seconds=9
+47524: 2026-10-25T08:47:15.386Z,47583.386719,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_ROBOT_UNLOCKED scout
+47531: 2026-10-25T08:47:24.417Z,47592.417969,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=2 cash=50 completed=2 scout=true design=scout seconds=9
+47534: 2026-10-25T08:47:33.511Z,47601.511719,184e3000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=3 cash=75 completed=3 scout=true design=scout seconds=9
+47544: 2026-10-25T08:48:17.632Z,47645.632812,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_MACHINE_PURCHASE starter level=2 price=50 cash=125
+47545: 2026-10-25T08:48:17.632Z,47645.632812,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_ROBOT_UNLOCKED orbit
+47548: 2026-10-25T08:48:30.898Z,47658.898438,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=10 cash=200 completed=10 scout=true design=scout seconds=6
+47581: 2026-10-25T08:49:31.695Z,47719.695312,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=20 cash=450 completed=20 scout=true design=orbit seconds=6
+47591: 2026-10-25T08:50:17.039Z,47765.039062,17723000,6,Info [FLog::CreatorOutput] > local g=game.Players.LocalPlayer.PlayerGui.BoltBotsHUD;local low={};local clip={};for _,v in ipairs(g:GetDescendants()) do if v:IsA("TextLabel") or v:IsA("TextButton") then if v.TextSize<14 then table.insert(low,v.Name) end;if not v.TextFits then table.insert(clip,v.Name) end end end;print("BOLTBOTS_B2_DESKTOP_BIND",workspace.CurrentCamera.ViewportSize,settings().Rendering.QualityLevel,#game.Players.LocalPlayer.PlayerScripts.Client.Source,#game.ReplicatedStorage.Shared.OrbitModel.Source,require(game.ReplicatedStorage.Shared.GameConfig).versionLabel,"low="..table.concat(low,","),"clip="..table.concat(clip,","))
+47593: 2026-10-25T08:50:17.046Z,47765.046875,18aec000,6,Info [FLog::CreatorOutput] BOLTBOTS_B2_DESKTOP_BIND 1511, 758 Enum.QualityLevel.Automatic 32571 6832 development-b2 low= clip=
+47801: 2026-10-25T08:50:17.742Z,47765.742188,186e6000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_END slot=1 not_persisted

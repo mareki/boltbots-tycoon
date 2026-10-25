@@ -1,7 +1,7 @@
 # Lokales Setup — geführt durch Codex
 
 > Artifact ID: `BOLTBOTS-SETUP-001`
-> Revision: 5 · Status: A2/A3 und B1 lokal geprüft und unabhängig approved; Grenzen siehe Run
+> Revision: 6 · Status: A2/A3, B1 und B2-C2 unabhängig approved; Grenzen siehe Run
 
 Nach einem Checkout übernimmt Codex Werkzeugprüfung, Installation, Build und die verfügbare Studio-Bedienung. Der Human liefert Ideen, prüft Qualität und erledigt bei Bedarf persönliche Anmeldung oder Systembestätigung. Passwörter, Roblox-Cookies und API-Schlüssel gehören nicht in Chat oder Repository.
 
@@ -27,7 +27,7 @@ Die Rojo-Auswahl richtet sich nach der ausführenden Python-Architektur. Ein unt
 
 `doctor` unterscheidet Dateifund, tatsächliche Ausführung und fehlende Anforderungen. Ein gefundener Studio-/Pluginpfad beweist weder Anmeldung noch funktionierende Verbindung. `check` kompiliert alle aktiven Luau-Dateien, prüft reine Regelmodule auf Typfehler und führt die Basistests aus. Für die Standalone-CLI wird ausschließlich die Roblox-`script.Parent.GameConfig`-Importzeile in einer temporären Kopie auf einen Dateipfad adaptiert; die Regellogik bleibt unverändert. Keine Simulation behauptet einen Roblox-Spieltest oder vollständige Roblox-API-Typprüfung.
 
-`build` erzeugt `build/BoltBots.rbxlx` und gibt den SHA256 aus. `build/` ist generiert und ignoriert; `src/` plus `default.project.json` sind die Quelle. Die aktive B1-Quelle umfasst sechs Runtime-Dateien: Regeln/Konfiguration, Serveradapter, Werkstatt, Scout-Bauer und Clientansicht. Sie ersetzt die frühere A2-Diagnosebasis. `development-b1` ist ein lokales Entwicklungslabel. Upgrade/Orbit, Persistenz, integrierte Mehrspielerprüfung und vollständige M1-Spielabnahme bleiben B2–B5.
+`build` erzeugt `build/BoltBots.rbxlx` und gibt den SHA256 aus. `build/` ist generiert und ignoriert; `src/` plus `default.project.json` sind die Quelle. Die aktive B2-Quelle umfasst sieben Runtime-Dateien: Regeln/Konfiguration, Serveradapter, Werkstatt, Scout-/Orbit-Bauer und Clientansicht. Sie ersetzt die frühere A2-Diagnosebasis. `development-b2` ist ein lokales Entwicklungslabel. Persistenz, integrierte Mehrspielerprüfung und vollständige M1-Spielabnahme bleiben B3–B5.
 
 ## Studio starten und lokal verbinden — A3, tatsächlich geprüft
 
@@ -45,13 +45,17 @@ Der Server bindet ausschließlich `127.0.0.1`. Im Rojo-Plugin `localhost`, Port 
 
 A3-Nachweis: [Screens/Logs und Hashbindung](reviews/evidence/M1-A3/studio-verification.json). CreatorOutput meldete Serverboot, Clientboot und ersten Roboter. Keine passenden Produktskriptfehler im untersuchten Zeitfenster; Avatar-Asset-403 und Plattform-Telemetrie-Timeouts wurden separat beobachtet. Keine pauschale Fehlerfreiheit behauptet. Die native Bedienung und visuelle Prüfung gelten für diesen beobachteten Studio-Stand. Bei offenem Menü und fehlendem Screenshot half dessen exponierte Cancel-Aktion, ohne neue Automatisierung.
 
-## Aktueller B1-Start und Bedienung
+## Aktueller B2-Start und Bedienung
 
 Nach Build und File → Open startet Play die kleine Werkstatt serverseitig; die leere Editansicht ist erwartet. Scout wird montiert, fährt durch das offene Verpackungsportal und verlässt es als geschlossener Karton. Erst der serverseitige 9-Sekunden-Abschluss schreibt 25 Cash und beim ersten Mal das Scout-Designrecht gut. Die Sammlung ist kein Einzelroboterlager. Die sichtbare Kennzeichnung „Lokale Vorschau · ohne Speichern“ gilt für die gesamte Sitzung.
 
-„Sammlung“ öffnet das echte 3D-Scout-Porträt und sperrt darunterliegende Aktionen. × oder M schließen; Escape öffnet Roblox' reserviertes Menü und schließt dabei die Sammlung. Im Erkunden wird anschließend normale Maus-/Tastaturbewegung wieder frei. „Erkunden“ gibt normale Kamera und Spielersteuerung frei; „Werkstatt“ stellt die eigene feste Ansicht wieder her. „Bewegung: ruhig“ unterdrückt dekoratives Winken/Neigen, der Produktionsweg bleibt sichtbar. In der festen Ansicht werden Nachbarslots lokal ausgeblendet und Touch-Steuerkreise verborgen; Erkunden stellt sie wieder her.
+„Ausbauen“ zeigt50Cash für AssemblerL2,9→6Sekunden ab dem nächsten Zyklus, unverändert25Cash pro Roboter sowie Orbit und ein sichtbares Maschinenmodul. Abbrechen/×/M/Escape bewirken keinen Kauf. Ein erfolgreicher serverseitiger Kauf zieht genau50Cash ab und gewährt L2 und das Orbit-Designrecht gemeinsam. Die Werte sind lokale Testbalance. Der laufende Zyklus behält seine Dauer und Familie.
 
-B1 wurde in Studio tatsächlich mit Desktop 1511×758 sowie iPhone-XR-Emulation 413×814/801×413 geprüft; dies ist kein physischer Telefontest. Test → Device Simulator ist vor Play zu aktivieren; während Play lässt sich die Ausrichtung drehen. Für reproduzierbare Grafikchecks wurde im laufenden Client über die Studio-Commandbar ausschließlich die Testeinstellung `settings().Rendering.QualityLevel` auf Level01/Level21 gesetzt und auf Automatic zurückgestellt; eine Einstellung vor Play kann beim Start zurückgesetzt werden. Diagnosebefehle sind separat von normalen Spieleraktionen dokumentiert. Keine Grafik-/Kontoeinstellung ist Produktlogik. [B1-Run](work/runs/boltbots-m1-b1-001.md), [C1-Basisbelege](reviews/evidence/M1-B1/README.md) und [aktuelle C2-HUD-Closure](reviews/evidence/M1-B1/c2/README.md) halten Grenzen, Quellbindung und unabhängige Entscheidung fest.
+„Sammlung“ zeigt getrennte Scout-/Orbit-Details und eine ausdrückliche Produktionswahl für den nächsten Zyklus. Orbit bleibt bis L2 gesperrt; Ansehen allein wählt oder gewährt nichts. Der vollständige Orbit läuft durch dieselbe passende Verpackung. Beide Karten sperren darunterliegende Aktionen. × oder M schließen; Escape öffnet Roblox' reserviertes Menü und schließt dabei die Sammlung. Im Erkunden wird anschließend normale Maus-/Tastaturbewegung wieder frei. „Erkunden“ gibt normale Kamera und Spielersteuerung frei; „Werkstatt“ stellt die eigene feste Ansicht wieder her. „Bewegung: ruhig“ unterdrückt dekoratives Winken/Neigen, der Produktionsweg bleibt sichtbar. In der festen Ansicht werden Nachbarslots lokal ausgeblendet und Touch-Steuerkreise verborgen; Erkunden stellt sie wieder her.
+
+B1 und B2 wurden in Studio tatsächlich mit Desktop 1511×758 sowie iPhone-XR-Emulation 413×814/801×413 geprüft; dies ist kein physischer Telefontest. Test → Device Simulator ist vor Play zu aktivieren; während Play lässt sich die Ausrichtung drehen. Für reproduzierbare Grafikchecks wurde im laufenden Client über die Studio-Commandbar ausschließlich die Testeinstellung `settings().Rendering.QualityLevel` auf Level01/Level21 gesetzt und auf Automatic zurückgestellt; eine Einstellung vor Play kann beim Start zurückgesetzt werden. Diagnosebefehle sind separat von normalen Spieleraktionen dokumentiert. Keine Grafik-/Kontoeinstellung ist Produktlogik. [B1-Run](work/runs/boltbots-m1-b1-001.md), [C1-Basisbelege](reviews/evidence/M1-B1/README.md) und [B1-C2-HUD-Closure](reviews/evidence/M1-B1/c2/README.md) halten Grenzen, Quellbindung und unabhängige Entscheidung fest.
+
+Aktuelle B2-Bindung und Prüfungen: [B2-Run](work/runs/boltbots-m1-b2-001.md) und [C1-Basisnachweise](reviews/evidence/M1-B2/README.md) und [aktuelle C2-Closure](reviews/evidence/M1-B2/c2/README.md). B2 prüft zusätzlich Kaufablehnung, Duplikate/Guards, Laufzeitwechsel, Orbit-Verpackung sowie Ausbau- und Orbitkarten in beiden schmalen Level01-Formaten. Die C2-Portraitkorrektur ist zusätzlich bei413×756/Level01 belegt. Der führende Abnahmestatus steht im Handover.
 
 ## Spiel und Speichern — weitere M1-Schritte
 

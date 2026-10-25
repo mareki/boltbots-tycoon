@@ -1,0 +1,47 @@
+{
+  "candidate": "B2-C2",
+  "baseline": "bade48f70116a34e68f8f341ce8108991a43e60a",
+  "previous_candidate": {
+    "path": "docs/reviews/evidence/M1-B2/candidate-manifest.json",
+    "sha256": "2b7d3c9bc0f31802ee00b9de6299dc90df5d6862a78dc207c3a3d05f7c2e8c0c"
+  },
+  "build": {
+    "path": "build/BoltBots.rbxlx",
+    "sha256": "fba4955d43952eb6d83e4e620ed38919555b122aff622828c7222967d0b9388c"
+  },
+  "files": {
+    "default.project.json": "f6a3816f633f9fe1e6c345658da05c2a73e12079cd8cca738fb2fe29d1192bce",
+    "docs/reviews/evidence/M1-B2/README.md": "d50c95f61fd390407bd6f8040b225511a33f6ae3b29eaa28561b6ad0f01cbc5f",
+    "docs/reviews/evidence/M1-B2/c2/README.md": "b77c49a6b7f7712fd088b65a53be244b8a7970179ffeb6918a9260df6b5d546a",
+    "docs/reviews/evidence/M1-B2/c2/portrait-reward-level01.png": "34b8ae9241edb31a7d97d59098cce6568eef6406ccc1647cc1ab7c8193ac4206",
+    "docs/reviews/evidence/M1-B2/c2/portrait-upgrade-level01.png": "a06b02da5ba1ff452c96f0a09eb252b9fa9d9c9fa3683ce338025604d695bbb0",
+    "docs/reviews/evidence/M1-B2/c2/studio-observations.log": "285b3c0350822bc12a8a1daece11e92be03bb27757764f67d1e2602f1e305c89",
+    "docs/reviews/evidence/M1-B2/candidate-manifest.json": "2b7d3c9bc0f31802ee00b9de6299dc90df5d6862a78dc207c3a3d05f7c2e8c0c",
+    "docs/reviews/evidence/M1-B2/checks.txt": "a82a6173d11c2d0bac7c9ba5b86a889d147a0c59aad8ecabc161063b329b806e",
+    "docs/reviews/evidence/M1-B2/desktop.png": "09a805d939b675a1dfe091928fe6db797a1c99d4cb301abe0768245340a77bd7",
+    "docs/reviews/evidence/M1-B2/funds-denied.png": "c07042c9428ba13426b9f9630e921a71503d6fdd1b433a0d54896ebe0dce897a",
+    "docs/reviews/evidence/M1-B2/landscape-orbit-level01.png": "2d24fb3c9be97048724272964c3a5d99d18ef4b40db69a2d5c5caf2812cbdcb2",
+    "docs/reviews/evidence/M1-B2/landscape-upgrade-level01.png": "95e6ef32bbfb15082dbfedb09daf4ad7302b1d0e47f1ec1979e40ddd807c9180",
+    "docs/reviews/evidence/M1-B2/landscape-world-level01.png": "0767d3dec9e35fe5dab54231014cfe365e6d9952512c950a42cfc362e989d77c",
+    "docs/reviews/evidence/M1-B2/orbit-belt.png": "3488cd3491483f7fa3345c49a475bfd48a6dde06524ddd8649abda37183935d0",
+    "docs/reviews/evidence/M1-B2/orbit-early.png": "aba3cb8d375649e0a088c143f8a660ec100cbb9a6f6f4c222baa4e01ed614231",
+    "docs/reviews/evidence/M1-B2/orbit-locked.png": "f7d61ceab82eb0147fcab0f7b130a5d533e1b8d6cce18f3f1a121cf47c8110a3",
+    "docs/reviews/evidence/M1-B2/orbit-outfeed.png": "3d81606ca6c099495d7ec46301b036c7e0fdb1df6bfa0f8631c8473fc76269cb",
+    "docs/reviews/evidence/M1-B2/orbit-packing.png": "99b03fd2f62e4bb0f7ab2a84c3d7d0e17cb48f97bbff6c20ee1bb66ba4c1b9cc",
+    "docs/reviews/evidence/M1-B2/orbit-sealed.png": "2ea7579a9ed9fe70903976bd8233c1b4c3fb0b1c00ecf3fcf1ce5fcba6c3b695",
+    "docs/reviews/evidence/M1-B2/orbit.png": "d1ee30f89b21c69a8104a89b3c254abf7004e99db124f366cc30c5637b9ff4f9",
+    "docs/reviews/evidence/M1-B2/portrait-orbit-level01.png": "e9423ce5c244f43541224af206afcc51571d97597116f08a6929b0737820ac03",
+    "docs/reviews/evidence/M1-B2/portrait-upgrade-level01.png": "c889ac15003d2ea774ac107a85407dfedbce91732c652a3607faa522f1721267",
+    "docs/reviews/evidence/M1-B2/portrait-world-level01.png": "738b0c1c760cfabf40929125e83effba064f22359b1cea05ec3d95cd50b40232",
+    "docs/reviews/evidence/M1-B2/studio-observations.log": "15f5a3a5048dc16961d192a8b3ffcf2b4461c713dcdc23164543af5ab2974582",
+    "docs/reviews/evidence/M1-B2/upgrade.png": "447c726a0d0de7fd5987ed370173d13802a86ca1bfb1737e22c5a6c31e625116",
+    "src/ReplicatedStorage/Shared/EconomyRules.luau": "fdb88b81613bc9a78dbac6a111e34a5a79928fec5d14fd13b7a85a9a04a74977",
+    "src/ReplicatedStorage/Shared/GameConfig.luau": "24793911bc5bac0a68fe02f5ce63400d322b140bafa90ce469ef54b5d8d0890a",
+    "src/ReplicatedStorage/Shared/OrbitModel.luau": "50193a3f6c28182c52991fb2a97be8531773d8a963eefeed5e7feb6784dc962e",
+    "src/ReplicatedStorage/Shared/ScoutModel.luau": "7466cae0c79ca21126e8a5d2e9cafb3e1915edd5796255112a0c38a60ba59ed2",
+    "src/ServerScriptService/Main.server.luau": "22a9b68f495d2bc3881d7f5f3868036a0b031c989ca2c6ba494c46ac09dba3f3",
+    "src/ServerScriptService/Services/WorldBuilder.luau": "3ce7772f0bc400d9453ee6c645a5959a811b238869bc49bb99e1ec051f8dfce4",
+    "src/StarterPlayer/StarterPlayerScripts/Client.client.luau": "135700b00cff44ae9db00183eec3f0c8029daa4c0f340cc8b9854ed49e391c4e",
+    "tests/economy-rules.luau": "6d70460164946d1fe482042ec7e6ebdbb0d2fb0c27901b6937f1a3f0155de806"
+  }
+}

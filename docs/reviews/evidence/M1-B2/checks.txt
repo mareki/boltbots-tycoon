@@ -1,0 +1,4 @@
+B1 rules: due completion, cash + Scout atomic, duplicate/old/unknown/early denial, stop, finite values and exact/overflow limits OK
+B2 rules: exact-price atomic L2/Orbit, funds/stale/foreign/unknown denial, duplicate and evicted replay, next-cycle design AND timing, Orbit completion and bounded history OK
+Syntax OK: 7 runtime files
+Rule tests/type checks OK. Roblox API typing, Play and multiplayer are not covered.
