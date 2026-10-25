@@ -1,7 +1,7 @@
 # Lokales Setup — geführt durch Codex
 
 > Artifact ID: `BOLTBOTS-SETUP-001`
-> Revision: 6 · Status: A2/A3, B1 und B2-C2 unabhängig approved; Grenzen siehe Run
+> Revision: 7 · Status: A2/A3 und B1–B3 unabhängig approved; Grenzen siehe Run
 
 Nach einem Checkout übernimmt Codex Werkzeugprüfung, Installation, Build und die verfügbare Studio-Bedienung. Der Human liefert Ideen, prüft Qualität und erledigt bei Bedarf persönliche Anmeldung oder Systembestätigung. Passwörter, Roblox-Cookies und API-Schlüssel gehören nicht in Chat oder Repository.
 
@@ -25,9 +25,9 @@ Die Rojo-Auswahl richtet sich nach der ausführenden Python-Architektur. Ein unt
 
 `plugin-install` verwendet den [offiziellen CLI-Weg](https://rojo.space/docs/v7/getting-started/installation/), erzeugt `~/Documents/Roblox/Plugins/RojoManagedPlugin.rbxm` und prüft den eingebetteten Pluginhash. Dieser unterscheidet sich beobachtet vom separat veröffentlichten `Rojo.rbxm`-Asset; beide sind im Toolpin ausdrücklich getrennt. Ein bereits vorhandenes abweichendes Managed-Plugin wird nicht automatisch überschrieben. Studio nach der Installation neu starten. Die Startseiten-Verwaltung zeigte das lokale Plugin im beobachteten Ablauf nicht an; maßgeblich ist der Plugin-Nachweis im leeren Studio-Dokument, nicht diese Marketplace-Liste.
 
-`doctor` unterscheidet Dateifund, tatsächliche Ausführung und fehlende Anforderungen. Ein gefundener Studio-/Pluginpfad beweist weder Anmeldung noch funktionierende Verbindung. `check` kompiliert alle aktiven Luau-Dateien, prüft reine Regelmodule auf Typfehler und führt die Basistests aus. Für die Standalone-CLI wird ausschließlich die Roblox-`script.Parent.GameConfig`-Importzeile in einer temporären Kopie auf einen Dateipfad adaptiert; die Regellogik bleibt unverändert. Keine Simulation behauptet einen Roblox-Spieltest oder vollständige Roblox-API-Typprüfung.
+`doctor` unterscheidet Dateifund, tatsächliche Ausführung und fehlende Anforderungen. Ein gefundener Studio-/Pluginpfad beweist weder Anmeldung noch funktionierende Verbindung. `check` kompiliert alle aktiven Luau-Dateien, prüft reine Regelmodule auf Typfehler und führt die Basistests aus. Für die Standalone-CLI werden ausschließlich die Roblox-Importzeilen von GameConfig, ProfileSchema und ProfileStore in temporären Kopien auf Dateipfade adaptiert; Regel- und Adapterlogik bleiben unverändert. Keine Simulation behauptet einen Roblox-Spieltest oder vollständige Roblox-API-Typprüfung.
 
-`build` erzeugt `build/BoltBots.rbxlx` und gibt den SHA256 aus. `build/` ist generiert und ignoriert; `src/` plus `default.project.json` sind die Quelle. Die aktive B2-Quelle umfasst sieben Runtime-Dateien: Regeln/Konfiguration, Serveradapter, Werkstatt, Scout-/Orbit-Bauer und Clientansicht. Sie ersetzt die frühere A2-Diagnosebasis. `development-b2` ist ein lokales Entwicklungslabel. Persistenz, integrierte Mehrspielerprüfung und vollständige M1-Spielabnahme bleiben B3–B5.
+`build` erzeugt `build/BoltBots.rbxlx` und gibt den SHA256 aus. `build/` ist generiert und ignoriert; `src/` plus `default.project.json` sind die Quelle. Die aktive B3-Quelle umfasst neun Runtime-Dateien: Regeln/Konfiguration, Profilformat und Speicheradapter, Serveradapter, Werkstatt, Scout-/Orbit-Bauer und Clientansicht. `development-b3` ist ein Entwicklungslabel. Ein aus dem Checkout gebauter Place bleibt lokale Vorschau ohne Speichern. Nur das unten benannte private Testziel verwendet den echten Store; integrierte Mehrspielerprüfung und vollständige M1-Spielabnahme bleiben B4/B5.
 
 ## Studio starten und lokal verbinden — A3, tatsächlich geprüft
 
@@ -45,9 +45,9 @@ Der Server bindet ausschließlich `127.0.0.1`. Im Rojo-Plugin `localhost`, Port 
 
 A3-Nachweis: [Screens/Logs und Hashbindung](reviews/evidence/M1-A3/studio-verification.json). CreatorOutput meldete Serverboot, Clientboot und ersten Roboter. Keine passenden Produktskriptfehler im untersuchten Zeitfenster; Avatar-Asset-403 und Plattform-Telemetrie-Timeouts wurden separat beobachtet. Keine pauschale Fehlerfreiheit behauptet. Die native Bedienung und visuelle Prüfung gelten für diesen beobachteten Studio-Stand. Bei offenem Menü und fehlendem Screenshot half dessen exponierte Cancel-Aktion, ohne neue Automatisierung.
 
-## Aktueller B2-Start und Bedienung
+## Lokaler Start und Bedienung
 
-Nach Build und File → Open startet Play die kleine Werkstatt serverseitig; die leere Editansicht ist erwartet. Scout wird montiert, fährt durch das offene Verpackungsportal und verlässt es als geschlossener Karton. Erst der serverseitige 9-Sekunden-Abschluss schreibt 25 Cash und beim ersten Mal das Scout-Designrecht gut. Die Sammlung ist kein Einzelroboterlager. Die sichtbare Kennzeichnung „Lokale Vorschau · ohne Speichern“ gilt für die gesamte Sitzung.
+Nach Build und File → Open startet Play die kleine Werkstatt serverseitig; die leere Editansicht ist erwartet. Scout wird montiert, fährt durch das offene Verpackungsportal und verlässt es als geschlossener Karton. Erst der serverseitige 9-Sekunden-Abschluss schreibt 25 Cash und beim ersten Mal das Scout-Designrecht gut. Die Sammlung ist kein Einzelroboterlager. Bei einem lokalen, unveröffentlichten Build (GameId0) gilt die sichtbare Kennzeichnung „Lokale Vorschau · ohne Speichern“ für die gesamte Sitzung.
 
 „Ausbauen“ zeigt50Cash für AssemblerL2,9→6Sekunden ab dem nächsten Zyklus, unverändert25Cash pro Roboter sowie Orbit und ein sichtbares Maschinenmodul. Abbrechen/×/M/Escape bewirken keinen Kauf. Ein erfolgreicher serverseitiger Kauf zieht genau50Cash ab und gewährt L2 und das Orbit-Designrecht gemeinsam. Die Werte sind lokale Testbalance. Der laufende Zyklus behält seine Dauer und Familie.
 
@@ -57,9 +57,16 @@ B1 und B2 wurden in Studio tatsächlich mit Desktop 1511×758 sowie iPhone-XR-Em
 
 Aktuelle B2-Bindung und Prüfungen: [B2-Run](work/runs/boltbots-m1-b2-001.md) und [C1-Basisnachweise](reviews/evidence/M1-B2/README.md) und [aktuelle C2-Closure](reviews/evidence/M1-B2/c2/README.md). B2 prüft zusätzlich Kaufablehnung, Duplikate/Guards, Laufzeitwechsel, Orbit-Verpackung sowie Ausbau- und Orbitkarten in beiden schmalen Level01-Formaten. Die C2-Portraitkorrektur ist zusätzlich bei413×756/Level01 belegt. Der führende Abnahmestatus steht im Handover.
 
-## Spiel und Speichern — weitere M1-Schritte
+## Privates B3-Testziel und Speichern
 
 Produktion, Cash, Upgrade/Abbruch, Sammlung und Plotisolation werden an der echten Szene geprüft. Speichern nur in einer separat benannten und autorisierten privaten Testexperience mit passend eingerichtetem DataStore-Zugriff. Kein Upload-/API-/Cookie-Setup gehört zum lokalen Rojo-Build. Ohne realen Save/Rejoin ist Persistenz nicht abgenommen. Codex hält Build, Aktionen, Screenshots/Logs, Grenzen und nächste Arbeit fest; Human beurteilt die tatsächliche Qualität.
+
+Die ausdrücklich autorisierte eigene private Experience **BoltBots B3 Test 20261025** hat UniverseId `10772906084` und PlaceId `112662761038118`. Nur dieses Paar darf den isolierten Store `BoltBots_B3_20261025` verwenden. Studio API Services sind dort eingeschaltet; eine andere externe Experience wird ohne Storezugriff gesperrt. Den lokalen Build nicht als Ersatz für das private Ziel öffnen, wenn ein realer Save geprüft werden soll: das private Ziel in Studio öffnen und dort Rojo verbinden. Die externe Zielberechtigung ist kein allgemeiner Upload-/Produktionsauftrag.
+
+Das Profil speichert Cash, Abschlüsse, Lifetime-Ertrag, L1/L2, Scout-/Orbitrechte und Produktionswahl. Es speichert keine Plotposition, Einzelroboter oder Offlineproduktion. Schema1 wird ausdrücklich zu Schema2 migriert; unbekannte oder beschädigte Daten werden abgewiesen. Bestätigte exklusive Sitzung90s, Autosave30s/spätestens5s vor Ablauf, manueller Retry frühestens3s und Leave-/Shutdownwartefenster25s. Während Save pausiert die Produktion zeitlich; ein Fehler hält sie und Käufe an. Ungeklärtes Laden erzeugt keine Ersatzdefaults. Bei abgelaufener Sitzung erhält erneuter Beitritt nur den letzten bestätigten Stand; kein Nullverlustversprechen.
+
+[Realer B3-Nachweis](reviews/evidence/M1-B3/README.md) trennt normale Spiel-/Save-/Rejoinaktionen von bewusster API-Abschaltung und Studio-only Schreibfehlerdiagnose. `B3RejectStoreWrites` ist ausschließlich eine serverseitige Studio-Diagnose, kein Spielerfeature; Live-Server ignorieren sie. Nach Tests ist der Schalter aus, die API wieder an. Der approved B3-Stand wurde am25.10.2026 um10:52:01 nach bytegleicher Prüfung aller9Studioquellen erfolgreich privat gespeichert; genaue Bindung und Grenzen stehen im [B3-Run](work/runs/boltbots-m1-b3-001.md).
+
 
 ## Fehler und Wiederholung
 

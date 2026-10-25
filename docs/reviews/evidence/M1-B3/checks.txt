@@ -1,0 +1,14 @@
+Tool-result transcript, 2026-10-25 about10:36UTC; exact current source.
+$ bash scripts/check.sh
+B1 rules: due completion, cash + Scout atomic, duplicate/old/unknown/early denial, stop, finite values and exact/overflow limits OK
+B2 rules: exact-price atomic L2/Orbit, funds/stale/foreign/unknown denial, duplicate and evicted replay, next-cycle design AND timing, Orbit completion and bounded history OK
+B3 profile tests OK: migration/corruption, repeated callbacks, failed load, ambiguous save/release, frozen snapshot, exclusive/expired lease, revision conflict and rejoin; callbacks=36
+Syntax OK: 9 runtime files
+Rule tests/type checks OK. Roblox API typing, Play and multiplayer are not covered.
+Exit0
+$ bash scripts/build.sh
+Building project 'BoltBotsTycoon'
+Built project to BoltBots.rbxlx
+Build SHA256: 1879055e10d1535c1c0e2e166e3f51c8f936e7cb7b7be5bbd5feaac57d893e3b
+Exit0
+Resume direct --check-run10:32: only known Human-disposed CTX-FACTORY Foundation mismatch, exit1. No validator PASS claimed.

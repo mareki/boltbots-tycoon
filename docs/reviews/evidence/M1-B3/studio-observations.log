@@ -1,0 +1,106 @@
+original-line 51518: 2026-10-25T09:48:14.015Z,51242.015625,17723000,6,Info [FLog::CreatorOutput] > print("BOLTBOTS_B3_TARGET",game.GameId,game.PlaceId,game.CreatorType.Name,game.CreatorId)
+original-line 51520: 2026-10-25T09:48:14.042Z,51242.042969,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_B3_TARGET 10772906084 112662761038118 User 0
+original-line 52052: 2026-10-25T09:56:06.023Z,51714.023438,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_SERVER_BOOT BoltBotsTycoon development-b3
+original-line 52468: 2026-10-25T09:56:12.671Z,51720.671875,18aec000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_START new revision=0 cash=0 completed=0 level=1 design=scout
+original-line 52505: 2026-10-25T09:56:15.472Z,51723.472656,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_CLIENT_BOOT development-b3 view=1511, 758
+original-line 52526: 2026-10-25T09:56:21.671Z,51729.671875,184e3000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=1 cash=25 completed=1 scout=true design=scout seconds=9
+original-line 52527: 2026-10-25T09:56:21.671Z,51729.671875,184e3000,6,Info [FLog::CreatorOutput] BOLTBOTS_ROBOT_UNLOCKED scout
+original-line 52530: 2026-10-25T09:56:30.761Z,51738.761719,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=2 cash=50 completed=2 scout=true design=scout seconds=9
+original-line 52533: 2026-10-25T09:56:39.835Z,51747.835938,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=3 cash=75 completed=3 scout=true design=scout seconds=9
+original-line 52534: 2026-10-25T09:56:43.578Z,51751.578125,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=1 cash=75 completed=3 level=1 design=scout
+original-line 52540: 2026-10-25T09:57:14.453Z,51782.453125,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=2 cash=150 completed=6 level=1 design=scout
+original-line 52547: 2026-10-25T09:57:45.328Z,51813.328125,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=3 cash=225 completed=9 level=1 design=scout
+original-line 52548: 2026-10-25T09:57:45.839Z,51813.839844,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=10 cash=250 completed=10 scout=true design=scout seconds=9
+original-line 52554: 2026-10-25T09:58:16.128Z,51844.128906,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=4 cash=325 completed=13 level=1 design=scout
+original-line 52568: 2026-10-25T09:58:47.410Z,51875.410156,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=5 cash=400 completed=16 level=1 design=scout
+original-line 52600: 2026-10-25T09:59:18.191Z,51906.191406,186e6000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=6 cash=475 completed=19 level=1 design=scout
+original-line 52601: 2026-10-25T09:59:19.109Z,51907.109375,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=20 cash=500 completed=20 scout=true design=scout seconds=9
+original-line 52606: 2026-10-25T09:59:36.648Z,51924.648438,180dd000,6,Info [FLog::CreatorOutput] > local g=game.Players.LocalPlayer.PlayerGui.BoltBotsHUD;local s=game.ReplicatedStorage.BoltBotsRemotes.GetSnapshot:InvokeServer();print("BOLTBOTS_B3_UI_READ",s.saveStatus,s.stateVersion,g.CollectionOverlay.UpgradeCard.Buy.Active,g.RecoveryOverlay.Visible,g.CollectionOverlay.Visible,game:GetService("GuiService").SelectedObject)
+original-line 52608: 2026-10-25T09:59:36.726Z,51924.726562,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B3_UI_READ saved 37 true false true nil
+original-line 52609: 2026-10-25T09:59:49.039Z,51937.039062,184e3000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=7 cash=575 completed=23 level=1 design=scout
+original-line 52616: 2026-10-25T10:00:09.964Z,51957.964844,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_MACHINE_PURCHASE starter level=2 price=50 cash=575
+original-line 52617: 2026-10-25T10:00:09.964Z,51957.964844,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_ROBOT_UNLOCKED orbit
+original-line 52620: 2026-10-25T10:00:19.824Z,51967.824219,188e9000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=8 cash=600 completed=26 level=2 design=scout
+original-line 52626: 2026-10-25T10:00:39.121Z,51987.121094,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=30 cash=700 completed=30 scout=true design=scout seconds=6
+original-line 52627: 2026-10-25T10:00:51.003Z,51999.003906,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=9 cash=725 completed=31 level=2 design=scout
+original-line 52635: 2026-10-25T10:01:21.953Z,52029.953125,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=10 cash=850 completed=36 level=2 design=scout
+original-line 52640: 2026-10-25T10:01:41.652Z,52049.652344,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=40 cash=950 completed=40 scout=true design=orbit seconds=6
+original-line 52641: 2026-10-25T10:01:52.683Z,52060.683594,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=11 cash=975 completed=41 level=2 design=orbit
+original-line 52871: 2026-10-25T10:02:11.183Z,52079.183594,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE released revision=12 cash=1050 completed=44 level=2 design=orbit
+original-line 52872: 2026-10-25T10:02:11.183Z,52079.183594,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_END released
+original-line 53409: 2026-10-25T10:02:54.566Z,52122.566406,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_SERVER_BOOT BoltBotsTycoon development-b3
+original-line 53873: 2026-10-25T10:02:59.632Z,52127.632812,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_START loaded revision=12 cash=1050 completed=44 level=2 design=orbit
+original-line 53876: 2026-10-25T10:02:59.750Z,52127.750000,186e6000,6,Info [FLog::CreatorOutput] BOLTBOTS_CLIENT_BOOT development-b3 view=1, 1
+original-line 53914: 2026-10-25T10:03:30.382Z,52158.382812,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=13 cash=1150 completed=48 level=2 design=orbit
+original-line 53918: 2026-10-25T10:03:36.832Z,52164.832031,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=6 cash=1200 completed=50 scout=true design=orbit seconds=6
+original-line 53924: 2026-10-25T10:04:01.097Z,52189.097656,188e9000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=14 cash=1275 completed=53 level=2 design=orbit
+original-line 53939: 2026-10-25T10:04:31.812Z,52219.812500,184e3000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=15 cash=1400 completed=58 level=2 design=orbit
+original-line 53943: 2026-10-25T10:04:39.011Z,52227.011719,184e3000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=16 cash=1450 completed=60 scout=true design=orbit seconds=6
+original-line 53969: 2026-10-25T10:05:02.812Z,52250.812500,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=16 cash=1525 completed=63 level=2 design=orbit
+original-line 53974: 2026-10-25T10:05:33.578Z,52281.578125,184e3000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=17 cash=1650 completed=68 level=2 design=orbit
+original-line 53977: 2026-10-25T10:05:41.277Z,52289.277344,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=26 cash=1700 completed=70 scout=true design=orbit seconds=6
+original-line 53983: 2026-10-25T10:06:04.507Z,52312.507812,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=18 cash=1775 completed=73 level=2 design=orbit
+original-line 54214: 2026-10-25T10:06:15.062Z,52323.062500,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE released revision=19 cash=1825 completed=75 level=2 design=orbit
+original-line 54215: 2026-10-25T10:06:15.062Z,52323.062500,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_END released
+original-line 54791: 2026-10-25T10:09:33.285Z,52521.285156,184e3000,6,Info [FLog::CreatorOutput] BOLTBOTS_SERVER_BOOT BoltBotsTycoon development-b3
+original-line 54891: 2026-10-25T10:09:33.753Z,52521.753906,17723000,6,Error [FLog::CreatorError] Error: DataStoreService: StudioAccessToApisNotAllowed: Cannot write to DataStore from studio if API access is not enabled. API: UpdateAsync, Data Store: BoltBots_B3_20261025
+original-line 54892: 2026-10-25T10:09:33.773Z,52521.773438,17723000,6,Warning [FLog::CreatorWarning] Warning: BOLTBOTS_LOAD_FAILED store_error
+original-line 55255: 2026-10-25T10:09:37.761Z,52525.761719,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_CLIENT_BOOT development-b3 view=1511, 758
+original-line 55308: 2026-10-25T10:11:34.832Z,52642.832031,17926000,6,Error [FLog::CreatorError] Error: DataStoreService: StudioAccessToApisNotAllowed: Cannot write to DataStore from studio if API access is not enabled. API: UpdateAsync, Data Store: BoltBots_B3_20261025
+original-line 55309: 2026-10-25T10:11:34.839Z,52642.839844,17723000,6,Warning [FLog::CreatorWarning] Warning: BOLTBOTS_LOAD_FAILED store_error
+original-line 55313: 2026-10-25T10:11:46.414Z,52654.414062,17723000,6,Info [FLog::CreatorOutput] > local s=game.ReplicatedStorage.BoltBotsRemotes.GetSnapshot:InvokeServer();local n=0;for _,p in ipairs(workspace.BoltBotsWorld:GetChildren()) do if p:GetAttribute("Active") then n+=1 end end;print("BOLTBOTS_B3_LOAD_DENIED",s.ready,s.saveStatus,s.cash,n);settings().Rendering.QualityLevel=Enum.QualityLevel.Level01
+original-line 55315: 2026-10-25T10:11:46.472Z,52654.472656,184e3000,6,Info [FLog::CreatorOutput] BOLTBOTS_B3_LOAD_DENIED false load_failed nil 0
+original-line 55535: 2026-10-25T10:12:37.097Z,52705.097656,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_END load_failed
+original-line 56105: 2026-10-25T10:13:55.164Z,52783.164062,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_SERVER_BOOT BoltBotsTycoon development-b3
+original-line 56207: 2026-10-25T10:13:55.601Z,52783.601562,184e3000,6,Error [FLog::CreatorError] Error: DataStoreService: StudioAccessToApisNotAllowed: Cannot write to DataStore from studio if API access is not enabled. API: UpdateAsync, Data Store: BoltBots_B3_20261025
+original-line 56257: 2026-10-25T10:13:55.605Z,52783.605469,17723000,6,Warning [FLog::CreatorWarning] Warning: BOLTBOTS_LOAD_FAILED store_error
+original-line 56572: 2026-10-25T10:14:00.371Z,52788.371094,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_CLIENT_BOOT development-b3 view=801, 413
+original-line 56684: 2026-10-25T10:16:55.906Z,52963.906250,17723000,6,Info [FLog::CreatorOutput] > local g=game.Players.LocalPlayer.PlayerGui.BoltBotsHUD;local bad={};for _,v in ipairs(g.RecoveryOverlay:GetDescendants()) do if v:IsA("TextLabel") or v:IsA("TextButton") then if v.TextSize<14 or not v.TextFits then table.insert(bad,v.Name) end end end;print("BOLTBOTS_B3_PORTRAIT",g.AbsoluteSize,settings().Rendering.QualityLevel,table.concat(bad,","),g.RecoveryOverlay.Visible,g.CashPanel.Cash.Text)
+original-line 56686: 2026-10-25T10:16:55.910Z,52963.910156,184e3000,6,Info [FLog::CreatorOutput] BOLTBOTS_B3_PORTRAIT 413, 756 Enum.QualityLevel.Automatic  true —
+original-line 56696: 2026-10-25T10:17:40.347Z,53008.347656,17723000,6,Info [FLog::CreatorOutput] > settings().Rendering.QualityLevel=Enum.QualityLevel.Level01;print("BOLTBOTS_B3_PORTRAIT_GRAPHICS",settings().Rendering.QualityLevel,game.Players.LocalPlayer.PlayerGui.BoltBotsHUD.AbsoluteSize)
+original-line 56698: 2026-10-25T10:17:40.359Z,53008.359375,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_B3_PORTRAIT_GRAPHICS Enum.QualityLevel.Level01 413, 756
+original-line 56941: 2026-10-25T10:19:00.589Z,53088.589844,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_END load_failed
+original-line 57497: 2026-10-25T10:20:51.710Z,53199.710938,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_SERVER_BOOT BoltBotsTycoon development-b3
+original-line 57959: 2026-10-25T10:20:55.953Z,53203.953125,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_START loaded revision=19 cash=1825 completed=75 level=2 design=orbit
+original-line 57962: 2026-10-25T10:20:56.148Z,53204.148438,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_CLIENT_BOOT development-b3 view=801, 413
+original-line 58001: 2026-10-25T10:21:27.179Z,53235.179688,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=20 cash=1925 completed=79 level=2 design=orbit
+original-line 58002: 2026-10-25T10:21:27.363Z,53235.363281,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=5 cash=1950 completed=80 scout=true design=orbit seconds=6
+original-line 58037: 2026-10-25T10:21:58.046Z,53266.046875,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=21 cash=2050 completed=84 level=2 design=orbit
+original-line 58040: 2026-10-25T10:22:22.617Z,53290.617188,17723000,6,Info [FLog::CreatorOutput] > assert(game:GetService("RunService"):IsServer());workspace:SetAttribute("B3RejectStoreWrites",true);print("BOLTBOTS_B3_SAVE_FAULT_ON");task.delay(40,function() workspace:SetAttribute("B3RejectStoreWrites",nil);print("BOLTBOTS_B3_SAVE_FAULT_OFF") end)
+original-line 58042: 2026-10-25T10:22:22.621Z,53290.621094,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_B3_SAVE_FAULT_ON
+original-line 58061: 2026-10-25T10:22:28.652Z,53296.652344,17723000,6,Error [FLog::CreatorError] Error: DataStoreService: CantStoreValue: Cannot store  in data store. Data stores can only accept valid UTF-8 characters. API: UpdateAsync, Data Store: BoltBots_B3_20261025
+original-line 58062: 2026-10-25T10:22:28.660Z,53296.660156,184e3000,6,Warning [FLog::CreatorWarning] Warning: BOLTBOTS_SAVE_FAILED store_error revision=21
+original-line 58070: 2026-10-25T10:23:02.628Z,53330.628906,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_B3_SAVE_FAULT_OFF
+original-line 58071: 2026-10-25T10:23:14.062Z,53342.062500,17723000,6,Info [FLog::CreatorOutput] > settings().Rendering.QualityLevel=Enum.QualityLevel.Level01;local r=game.ReplicatedStorage.BoltBotsRemotes;local s=r.GetSnapshot:InvokeServer();local x=r.Command:InvokeServer("select",{requestId="9000",designId="scout"});print("BOLTBOTS_B3_SAVE_PAUSED",s.saveStatus,s.cash,s.completed,s.pausedAt,x.ok,x.code,settings().Rendering.QualityLevel);task.delay(8,function() local t=r.GetSnapshot:InvokeServer();print("BOLTBOTS_B3_STILL_PAUSED",t.saveStatus,t.cash,t.completed,t.pausedAt) end)
+original-line 58074: 2026-10-25T10:23:14.183Z,53342.183594,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_B3_SAVE_PAUSED save_failed 2175 89 1792923746.858481 false inactive Enum.QualityLevel.Level01
+original-line 58077: 2026-10-25T10:23:22.230Z,53350.230469,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_B3_STILL_PAUSED save_failed 2175 89 1792923746.858481
+original-line 58163: 2026-10-25T10:28:44.851Z,53672.851562,17723000,6,Warning [FLog::CreatorWarning] Warning: BOLTBOTS_SAVE_FAILED lease_lost revision=21
+original-line 58259: 2026-10-25T10:32:07.261Z,53875.261719,17723000,6,Error [FLog::CreatorError] Error: Services is not a valid member of ServerScriptService "ServerScriptService"
+original-line 58264: 2026-10-25T10:32:07.292Z,53875.292969,188e9000,6,Error [FLog::CreatorError] Error: Services is not a valid member of ServerScriptService "ServerScriptService"
+original-line 58287: 2026-10-25T10:32:37.910Z,53905.910156,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B3_REAL_FIXTURE migrated session_locked ambiguous_write_once 2 7 100 orbit released
+original-line 58291: 2026-10-25T10:32:46.402Z,53914.402344,17723000,6,Info [FLog::CreatorOutput] > print("BOLTBOTS_B3_FAULT_CLEAR",workspace:GetAttribute("B3RejectStoreWrites"))
+original-line 58293: 2026-10-25T10:32:46.406Z,53914.406250,184e3000,6,Info [FLog::CreatorOutput] BOLTBOTS_B3_FAULT_CLEAR nil
+original-line 58514: 2026-10-25T10:32:49.554Z,53917.554688,180dd000,6,Warning [FLog::CreatorWarning] Warning: BOLTBOTS_SAVE_FAILED lease_lost revision=21
+original-line 58515: 2026-10-25T10:32:49.558Z,53917.558594,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_END save_failed
+original-line 59049: 2026-10-25T10:33:06.082Z,53934.082031,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_SERVER_BOOT BoltBotsTycoon development-b3
+original-line 59318: 2026-10-25T10:33:07.824Z,53935.824219,184e3000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_START loaded revision=21 cash=2050 completed=84 level=2 design=orbit
+original-line 59505: 2026-10-25T10:33:09.453Z,53937.453125,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_CLIENT_BOOT development-b3 view=801, 413
+original-line 59579: 2026-10-25T10:33:37.417Z,53965.417969,17723000,6,Info [FLog::CreatorOutput] > assert(game:GetService("RunService"):IsServer());workspace:SetAttribute("B3RejectStoreWrites",true);print("BOLTBOTS_B3_SHORT_FAULT_ON");task.spawn(function() local deadline=os.clock()+35;repeat task.wait(.1) until workspace.BoltBotsWorld.FactoryPlot_1:GetAttribute("PausedAt") or os.clock()>deadline;task.wait(2);workspace:SetAttribute("B3RejectStoreWrites",nil);print("BOLTBOTS_B3_SHORT_FAULT_OFF") end)
+original-line 59581: 2026-10-25T10:33:37.421Z,53965.421875,184e3000,6,Info [FLog::CreatorOutput] BOLTBOTS_B3_SHORT_FAULT_ON
+original-line 59597: 2026-10-25T10:33:38.367Z,53966.367188,17723000,6,Error [FLog::CreatorError] Error: DataStoreService: CantStoreValue: Cannot store  in data store. Data stores can only accept valid UTF-8 characters. API: UpdateAsync, Data Store: BoltBots_B3_20261025
+original-line 59598: 2026-10-25T10:33:38.375Z,53966.375000,17723000,6,Warning [FLog::CreatorWarning] Warning: BOLTBOTS_SAVE_FAILED store_error revision=21
+original-line 59599: 2026-10-25T10:33:40.136Z,53968.136719,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_B3_SHORT_FAULT_OFF
+original-line 59600: 2026-10-25T10:33:46.246Z,53974.246094,17723000,6,Info [FLog::CreatorOutput] > settings().Rendering.QualityLevel=Enum.QualityLevel.Level01;local r=game.ReplicatedStorage.BoltBotsRemotes;local s=r.GetSnapshot:InvokeServer();print("BOLTBOTS_B3_SHORT_FAULT_VIEW",s.saveStatus,s.cash,s.completed,s.savedRevision,game.Players.LocalPlayer.PlayerGui.BoltBotsHUD.AbsoluteSize,settings().Rendering.QualityLevel)
+original-line 59602: 2026-10-25T10:33:46.320Z,53974.320312,186e6000,6,Info [FLog::CreatorOutput] BOLTBOTS_B3_SHORT_FAULT_VIEW save_failed 2150 88 21 801, 355 Enum.QualityLevel.Level01
+original-line 59608: 2026-10-25T10:33:59.070Z,53987.070312,186e6000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=22 cash=2150 completed=88 level=2 design=orbit
+original-line 59609: 2026-10-25T10:34:05.152Z,53993.152344,17723000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=6 cash=2200 completed=90 scout=true design=orbit seconds=6
+original-line 59611: 2026-10-25T10:34:09.644Z,53997.644531,17723000,6,Info [FLog::CreatorOutput] > local s=game.ReplicatedStorage.BoltBotsRemotes.GetSnapshot:InvokeServer();local g=game.Players.LocalPlayer.PlayerGui.BoltBotsHUD;print("BOLTBOTS_B3_RETRY_CONFIRMED",s.saveStatus,s.cash,s.completed,s.savedRevision,s.pausedAt,g.RecoveryOverlay.Visible,game:GetService("GuiService").SelectedObject);task.delay(8,function() local t=game.ReplicatedStorage.BoltBotsRemotes.GetSnapshot:InvokeServer();print("BOLTBOTS_B3_RETRY_PRODUCING",t.saveStatus,t.cash,t.completed,t.savedRevision,t.pausedAt) end)
+original-line 59613: 2026-10-25T10:34:09.726Z,53997.726562,182e0000,6,Info [FLog::CreatorOutput] BOLTBOTS_B3_RETRY_CONFIRMED saved 2200 90 22 nil false nil
+original-line 59616: 2026-10-25T10:34:17.789Z,54005.789062,180dd000,6,Info [FLog::CreatorOutput] BOLTBOTS_B3_RETRY_PRODUCING saved 2250 92 22 nil
+original-line 59619: 2026-10-25T10:34:29.867Z,54017.867188,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=23 cash=2275 completed=93 level=2 design=orbit
+original-line 59626: 2026-10-25T10:35:00.585Z,54048.585938,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE saved revision=24 cash=2400 completed=98 level=2 design=orbit
+original-line 59627: 2026-10-25T10:35:06.019Z,54054.019531,180dd000,6,Info [FLog::CreatorOutput] > local g=game.Players.LocalPlayer.PlayerGui.BoltBotsHUD;local bad={};for _,v in ipairs(g:GetDescendants()) do if (v:IsA("TextLabel") or v:IsA("TextButton")) and (v.TextSize<14 or not v.TextFits) then table.insert(bad,v:GetFullName()) end end;print("BOLTBOTS_B3_TEXT_CHECK",g.AbsoluteSize,settings().Rendering.QualityLevel,table.concat(bad,","));settings().Rendering.QualityLevel=Enum.QualityLevel.Automatic
+original-line 59629: 2026-10-25T10:35:06.039Z,54054.039062,17926000,6,Info [FLog::CreatorOutput] BOLTBOTS_B3_TEXT_CHECK 801, 355 Enum.QualityLevel.Level01 
+original-line 59654: 2026-10-25T10:35:06.953Z,54054.953125,184e3000,6,Info [FLog::CreatorOutput] BOLTBOTS_COMPLETE cycle=16 cash=2450 completed=100 scout=true design=orbit seconds=6
+original-line 59862: 2026-10-25T10:35:09.203Z,54057.203125,188e9000,6,Info [FLog::CreatorOutput] BOLTBOTS_SAVE released revision=25 cash=2450 completed=100 level=2 design=orbit
+original-line 59863: 2026-10-25T10:35:09.203Z,54057.203125,188e9000,6,Info [FLog::CreatorOutput] BOLTBOTS_SESSION_END released

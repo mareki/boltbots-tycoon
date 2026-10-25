@@ -1,0 +1,42 @@
+{
+  "candidate": "B3-C1",
+  "baseline": "dd6aa9a6fece90f1d59b1bc67654cdea9daef65c",
+  "build": {
+    "path": "build/BoltBots.rbxlx",
+    "sha256": "1879055e10d1535c1c0e2e166e3f51c8f936e7cb7b7be5bbd5feaac57d893e3b"
+  },
+  "reused_evidence": {
+    "path": "docs/reviews/evidence/M1-B2/c2/candidate-manifest.json",
+    "sha256": "db9e3807d0535a0a48bfe8fe05c02a109931801d876e0144e73d8a0136d570ed"
+  },
+  "files": {
+    "default.project.json": "f6a3816f633f9fe1e6c345658da05c2a73e12079cd8cca738fb2fe29d1192bce",
+    "docs/reviews/evidence/M1-B3/README.md": "4bc9bde2bb070bfe78124fe97dbbdf9333d6ebbaa95da930ca9aa4bb0ce37abe",
+    "docs/reviews/evidence/M1-B3/after-rejoin.png": "94cd3291511212208d20d9ae0af259d79e9f7271d56584ebb00162e205924c52",
+    "docs/reviews/evidence/M1-B3/before-rejoin.png": "1418d9b663f4464b1d08c9bd4f4ddec3087a5aff11efadcd62a47a0f87a952ec",
+    "docs/reviews/evidence/M1-B3/checks.txt": "6ef9497704975984737d090a583f725e22cd00d22b9ebf4404ca0eba2b8f1294",
+    "docs/reviews/evidence/M1-B3/lease-expired-landscape.png": "30a00bda4ce2a5290b051c4a245f43dc36a22314c7d925957917d4670dc1e8f9",
+    "docs/reviews/evidence/M1-B3/load-failed-api.png": "2890111b23eb6c1bd3c32d651d5783e98b6055e780f6cc8c6e9577a360988131",
+    "docs/reviews/evidence/M1-B3/load-failed-portrait-level01.png": "aac77a4092c59d0b933311f36c22e800fe3422e5ad9c6b10a17f8b49ca943fbe",
+    "docs/reviews/evidence/M1-B3/retry-resumed-landscape-level01.png": "1ed231bccec09db0b857131e5bc9b9cf331c75c0e7af81f89238fe4bcb9de0c8",
+    "docs/reviews/evidence/M1-B3/save-failed-landscape-level01.png": "71b863876e5354d7910884bc5f6c7547d35900fe05adc081cc24090ceef543fb",
+    "docs/reviews/evidence/M1-B3/store-fixture-probe.luau": "61c190f60b33d41abd0f953951b1beb70609d4e351b9b4b81d953df702b9df63",
+    "docs/reviews/evidence/M1-B3/studio-api-enabled.png": "e59442b77ea629d42a3974d0b86eb380f4e20f9085baa39c4e226368cc893859",
+    "docs/reviews/evidence/M1-B3/studio-observations.log": "4635d317c79422aea683717b5492f665ebe6f3a6cba1a38669b2b59fda258704",
+    "docs/reviews/evidence/M1-B3/target-created.png": "e0850ad7ac450d114607f7847cf92f04dcc8da5915a44fa7623a780067ce073f",
+    "docs/reviews/evidence/M1-B3/target-private.png": "fbc78d98844256dcc330601e83d8a23939592ffb061715b6669122a97e7b1375",
+    "scripts/dev.py": "226e5a28a6b4b815b7007d14e6157770acda6eae97fede26a32e4f15ba02c6cc",
+    "src/ReplicatedStorage/Shared/EconomyRules.luau": "fdb88b81613bc9a78dbac6a111e34a5a79928fec5d14fd13b7a85a9a04a74977",
+    "src/ReplicatedStorage/Shared/GameConfig.luau": "b5155af09b9a7827aa4e3a5ec142fc09a800fd1f801cf7ff89486e0c16829b26",
+    "src/ReplicatedStorage/Shared/OrbitModel.luau": "50193a3f6c28182c52991fb2a97be8531773d8a963eefeed5e7feb6784dc962e",
+    "src/ReplicatedStorage/Shared/ProfileSchema.luau": "03c0c2ff547f6320272f6fa4dd54e7ff8eb4e46f51c749e2c2edda826a64c67f",
+    "src/ReplicatedStorage/Shared/ScoutModel.luau": "7466cae0c79ca21126e8a5d2e9cafb3e1915edd5796255112a0c38a60ba59ed2",
+    "src/ServerScriptService/Main.server.luau": "6bc0f78e459b5b1c42803ecfdf4b5ec92a8f7565cbbb9c8355e629bf843c49e4",
+    "src/ServerScriptService/Services/ProfileStore.luau": "f79f2dfa6c0f5d70ba6cc9f5d9ff6e5760b9dc751244adaa6c544a312c7fe395",
+    "src/ServerScriptService/Services/WorldBuilder.luau": "3ce7772f0bc400d9453ee6c645a5959a811b238869bc49bb99e1ec051f8dfce4",
+    "src/StarterPlayer/StarterPlayerScripts/Client.client.luau": "fb5881884735379f26311d7b8ad0fce8b454726edf7b905e50ab6850e102652c",
+    "tests/economy-rules.luau": "6d70460164946d1fe482042ec7e6ebdbb0d2fb0c27901b6937f1a3f0155de806",
+    "tests/profile-store.luau": "cb48500446014d0a3f9a333ce1c1f2346f3c35f531c602f7d8fa425f6c6378de",
+    "toolchain.json": "0e1dca8613a6e1b3e7704d83e31c4b2ddfc68dd9b4be1d48fb3f4c986c8821d4"
+  }
+}

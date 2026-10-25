@@ -161,6 +161,19 @@ def check():
         run([BIN / "luau-analyze", temp / "GameConfig.luau", temp / "EconomyRules.luau",
              temp / "economy-rules.luau"])
         run([BIN / "luau", temp / "economy-rules.luau"])
+        schema = (shared / "ProfileSchema.luau").read_text()
+        if schema.count(dependency) != 1:
+            raise RuntimeError("Profile schema import changed")
+        (temp / "ProfileSchema.luau").write_text(schema.replace(dependency, 'local Config = require("./GameConfig")'))
+        adapter = (ROOT / "src/ServerScriptService/Services/ProfileStore.luau").read_text()
+        adapter_import = 'local Schema = require(game:GetService("ReplicatedStorage").Shared.ProfileSchema)'
+        if adapter.count(adapter_import) != 1:
+            raise RuntimeError("Profile adapter import changed")
+        (temp / "ProfileStore.luau").write_text(adapter.replace(adapter_import, 'local Schema = require("./ProfileSchema")'))
+        shutil.copy2(ROOT / "tests/profile-store.luau", temp / "profile-store.luau")
+        run([BIN / "luau-analyze", temp / "ProfileSchema.luau", temp / "ProfileStore.luau", temp / "profile-store.luau"])
+        run([BIN / "luau", temp / "profile-store.luau"])
+
     print("Rule tests/type checks OK. Roblox API typing, Play and multiplayer are not covered.")
 
 

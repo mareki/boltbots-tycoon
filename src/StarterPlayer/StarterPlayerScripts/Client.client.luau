@@ -47,7 +47,7 @@ brand.Font=Enum.Font.GothamBlack
 local preview=text(gui,"SessionNotice","Lokale Vorschau · ohne Speichern",UDim2.fromOffset(290,23),UDim2.fromOffset(22,45),14,C.muted)
 local cashPanel=frame(gui,"CashPanel",UDim2.fromOffset(210,72),UDim2.new(1,-232,0,12))
 local cashCaption=text(cashPanel,"CashCaption","FACTORY CASH",UDim2.new(1,-28,0,20),UDim2.fromOffset(14,8),14,C.muted)
-local cash=text(cashPanel,"Cash","0",UDim2.new(1,-28,0,36),UDim2.fromOffset(14,27),29,C.amber);cash.Font=Enum.Font.GothamBold
+local cash=text(cashPanel,"Cash","—",UDim2.new(1,-28,0,36),UDim2.fromOffset(14,27),29,C.amber);cash.Font=Enum.Font.GothamBold
 local goal=frame(gui,"Goal",UDim2.fromOffset(310,88),UDim2.fromOffset(22,86))
 local eyebrow=text(goal,"Eyebrow","DEIN ERSTER ROBOTER",UDim2.new(1,-28,0,20),UDim2.fromOffset(14,10),14,C.cyan)
 local objective=text(goal,"Objective","Sieh deinem ersten Scout zu.",UDim2.new(1,-28,0,42),UDim2.fromOffset(14,31),17)
@@ -93,6 +93,15 @@ local buyButton=button(upgradeCard,"Buy","Für 50 Cash verbessern",UDim2.new(1,-
 local cancelButton=button(upgradeCard,"Cancel","Abbrechen",UDim2.new(1,-48,0,44),UDim2.fromOffset(24,276));cancelButton.ZIndex=13
 for _,label in ipairs({upgradeTitle,upgradeLevel,upgradeEffect,upgradeStatus}) do label.ZIndex=12 end
 
+-- Persistence uses its own blocking status card so platform menus never dismiss an unsafe state.
+local recovery=frame(gui,"RecoveryOverlay",UDim2.fromScale(1,1),UDim2.fromScale(0,0),C.navy)
+recovery.BackgroundTransparency=0.18;recovery.ZIndex=20;recovery.Active=true
+local recoveryCard=frame(recovery,"RecoveryCard",UDim2.fromOffset(490,270),UDim2.new(0.5,-245,0.5,-135));recoveryCard.ZIndex=21
+local recoveryTitle=text(recoveryCard,"RecoveryTitle","Deine Werkstatt wartet",UDim2.new(1,-40,0,54),UDim2.fromOffset(20,14),24,C.cyan);recoveryTitle.ZIndex=22
+local recoveryText=text(recoveryCard,"RecoveryText","Dein Fortschritt wird sicher geladen …",UDim2.new(1,-40,0,100),UDim2.fromOffset(20,76),17,C.white);recoveryText.ZIndex=22
+local retryButton=button(recoveryCard,"Retry","Erneut versuchen",UDim2.new(1,-40,0,48),UDim2.fromOffset(20,200),C.cyan);retryButton.ZIndex=22;retryButton.Visible=false
+local inputBlocked=true
+local lastViewVersion=-1
 local state=nil
 local detailDesign="scout"
 local portraitBuilder=Scout
@@ -114,6 +123,8 @@ local function layout()
     local width=gui.AbsoluteSize.X;local height=gui.AbsoluteSize.Y
     layoutWidth=width
     layoutHeight=height
+    local rw=math.min(490,width-24)
+    recoveryCard.Size=UDim2.fromOffset(rw,270);recoveryCard.Position=UDim2.new(0.5,-rw/2,0.5,-135)
     local narrow=width<700
     local short=height<500 and width>600
     brand.TextSize=if narrow then 20 else 24
@@ -198,7 +209,7 @@ local function setOverview(value)
 end
 local function setNavigationEnabled(enabled)
     for _,action in ipairs({collectionButton,cameraButton,motionButton,upgradeButton}) do
-        action.Active=enabled;action.Selectable=enabled
+        action.Active=enabled and not inputBlocked;action.Selectable=action.Active
     end
 end
 local function closeCollection()
@@ -206,16 +217,17 @@ local function closeCollection()
     -- Controller navigation returns to its trigger. Pointer/keyboard players resume world input.
     local gamepad=string.sub(UserInputService:GetLastInputType().Name,1,7)=="Gamepad"
     GuiService.SelectedObject=if gamepad then (if modal=="upgrade" then upgradeButton else collectionButton) else nil
-    if not overview then controls:Enable() end
+    if not overview and not inputBlocked then controls:Enable() end
 end
 local function openCollection()
+    if inputBlocked or not state then return end
     modal="collection";card.Visible=true;upgradeCard.Visible=false
     shade.Visible=true;setNavigationEnabled(false);GuiService.SelectedObject=close
     if refreshDialogs then refreshDialogs() end
     controls:Disable()
 end
 local function openUpgrade()
-    if shade.Visible or not state then return end
+    if inputBlocked or shade.Visible or not state then return end
     modal="upgrade";offer={level=state.level,catalogVersion=state.catalogVersion,price=state.upgradePrice}
     card.Visible=false;upgradeCard.Visible=true;shade.Visible=true;setNavigationEnabled(false)
     GuiService.SelectedObject=cancelButton;controls:Disable()
@@ -228,9 +240,9 @@ upgradeButton.Activated:Connect(openUpgrade)
 -- Escape belongs to Roblox's platform menu; dismiss our modal when that menu opens.
 GuiService.MenuOpened:Connect(function() if shade.Visible then closeCollection() end end)
 collectionButton.Activated:Connect(function() if not shade.Visible then openCollection() end end)
-cameraButton.Activated:Connect(function() if not shade.Visible then setOverview(not overview) end end)
+cameraButton.Activated:Connect(function() if not inputBlocked and not shade.Visible then setOverview(not overview) end end)
 motionButton.Activated:Connect(function()
-    if shade.Visible then return end
+    if inputBlocked or shade.Visible then return end
     reduced=not reduced;motionButton.Text=if reduced then "Bewegung: ruhig" else "Bewegung: an"
 end)
 ContextActionService:BindActionAtPriority("CloseScoutCollection",function(_,inputState)
@@ -238,7 +250,7 @@ ContextActionService:BindActionAtPriority("CloseScoutCollection",function(_,inpu
     return Enum.ContextActionResult.Pass
 end,false,3000,Enum.KeyCode.ButtonB)
 UserInputService.InputBegan:Connect(function(input,processed)
-    if GuiService.MenuIsOpen or UserInputService:GetFocusedTextBox() then return end
+    if inputBlocked or GuiService.MenuIsOpen or UserInputService:GetFocusedTextBox() then return end
     -- M remains a modal close shortcut even while GUI selection consumes other keys.
     if input.KeyCode==Enum.KeyCode.M then
         if shade.Visible then closeCollection() elseif not processed then openCollection() end
@@ -283,9 +295,35 @@ end
 scoutChoice.Activated:Connect(function() if not pending then setDetail("scout") end end)
 orbitChoice.Activated:Connect(function() if not pending then setDetail("orbit") end end)
 local function show(incoming)
-    if incoming.ready~=true then objective.Text=incoming.notice or "Werkstatt wird geladen …";return end
-    if state and incoming.stateVersion<state.stateVersion then return end
-    local oldLevel=if state then state.level else 1
+    if type(incoming.stateVersion)~="number" or incoming.stateVersion<lastViewVersion then return end
+    lastViewVersion=incoming.stateVersion
+    local status=incoming.saveStatus
+    local wasBlocked=inputBlocked
+    inputBlocked=status~="saved" and status~="local_session_only"
+    recovery.Visible=status=="loading" or status=="load_failed" or status=="save_failed"
+    if recovery.Visible then
+        shade.Visible=false;reward.Visible=false;controls:Disable()
+        local loading=status=="loading"
+        recoveryTitle.Text=if loading then "Deine Werkstatt wartet" elseif status=="load_failed" then "Noch nicht verbunden" else "Sicher pausiert"
+        recoveryText.Text=if loading then "Dein Fortschritt wird sicher geladen …" elseif incoming.saveError=="session_locked" then "Deine Werkstatt ist noch in einer anderen Sitzung geöffnet. Warte kurz und versuche es erneut."
+            elseif incoming.saveError=="lease_lost" or incoming.saveError=="revision_conflict" then "Diese Sitzung ist abgelaufen. Dein letzter gesicherter Stand bleibt erhalten. Bitte tritt erneut bei."
+            elseif status=="load_failed" then "Dein Fortschritt konnte nicht bestätigt werden. Es wird keine neue Fabrik angelegt. Versuche es erneut."
+            else "Speichern ist noch nicht bestätigt. Produktion und Käufe pausieren. Dein aktueller Stand bleibt hier erhalten."
+        retryButton.Visible=not loading and incoming.saveError~="lease_lost" and incoming.saveError~="revision_conflict"
+        retryButton.Active=incoming.canRetry==true;retryButton.Selectable=retryButton.Active
+        retryButton.Text=if incoming.canRetry then "Erneut versuchen" else "Wird geprüft …"
+        GuiService.SelectedObject=if retryButton.Visible and retryButton.Active then retryButton else nil
+    elseif wasBlocked and not inputBlocked then
+        if shade.Visible then
+            GuiService.SelectedObject=if modal=="upgrade" then cancelButton else close
+        else GuiService.SelectedObject=nil;if not overview then controls:Enable() end end
+    end
+    setNavigationEnabled(not shade.Visible)
+    preview.Text=if status=="local_session_only" then "Lokale Vorschau · ohne Speichern" elseif status=="saving" then "Fortschritt wird gesichert …"
+        elseif status=="saved" then (if incoming.unsaved then "Fortschritt wird automatisch gesichert" else "✓  Fortschritt gesichert") else "Verbindung wird geprüft …"
+    if incoming.ready~=true then cash.Text="—";objective.Text="Deine Werkstatt wird geladen …";phase.Text="Fortschritt noch nicht bestätigt";return end
+    local stateWasLoaded=state~=nil
+    local oldLevel=if state then state.level else incoming.level
     state=incoming;cash.Text=tostring(incoming.cash)
     local plot=Workspace:WaitForChild("BoltBotsWorld"):FindFirstChild("FactoryPlot_"..incoming.plotIndex)
     if plot then ownOrigin=plot:GetAttribute("Origin") end
@@ -295,7 +333,7 @@ local function show(incoming)
     local currentName=if incoming.currentDesign=="orbit" then "Orbit" else "Scout"
     objective.Text=if incoming.level==2 then (if incoming.selectedDesign~=incoming.currentDesign then selectedName.." folgt nach diesem "..currentName.."." elseif incoming.selectedDesign=="scout" then "Orbit ist frei! Wähle ihn in der Sammlung." else "Orbit läuft. Scout bleibt wählbar.") elseif incoming.unlockedScout then "Spare 50 Cash für Assembler L2 + Orbit." else "Sieh deinem ersten Scout zu."
     upgradeButton.Text=if incoming.level==2 then "Assembler L2  ·  6s / Roboter" else "Ausbauen  ·  50 Cash"
-    if incoming.completed>lastCompleted then
+    if stateWasLoaded and incoming.completed>lastCompleted then
         rewardText.Text=if lastCompleted==0 then "Scout entdeckt!  +25 Cash" else "+25 Factory Cash  ·  Fertig verpackt"
         rewardUntil=os.clock()+2.8;reward.Visible=true
     end
@@ -308,7 +346,7 @@ local errors={funds="Noch nicht genug Cash. Warte auf die nächste Produktion.",
     forbidden="Diese Maschine gehört nicht zu deiner Werkstatt.",locked="Orbit braucht den Assembler auf L2.",rate_limited="Einen Moment bitte. Versuche es gleich erneut.",
     level_limit="Dein Assembler ist bereits auf L2.",inactive="Die Sitzung ist nicht bereit.",stale_request="Diese Anfrage ist veraltet. Öffne die Ansicht erneut."}
 local function sendIntent(kind,payload)
-    if pending or not state then return end
+    if inputBlocked or pending or not state then return end
     pending=true;requestSequence+=1;payload.requestId=tostring(requestSequence);refreshDialogs()
     task.spawn(function()
         local ok,response=pcall(function() return command:InvokeServer(kind,payload) end)
@@ -340,6 +378,15 @@ buyButton.Activated:Connect(function()
 end)
 selectButton.Activated:Connect(function()
     if shade.Visible and modal=="collection" and (detailDesign=="scout" or state and state.unlockedOrbit) then sendIntent("select",{designId=detailDesign}) end
+end)
+retryButton.Activated:Connect(function()
+    if not retryButton.Active then return end
+    retryButton.Active=false;retryButton.Selectable=false;retryButton.Text="Wird geprüft …"
+    task.spawn(function()
+        local ok,response=pcall(function() return command:InvokeServer("retry",{}) end)
+        if ok and type(response)=="table" and type(response.view)=="table" then show(response.view)
+        else retryButton.Active=true;retryButton.Selectable=true;retryButton.Text="Erneut versuchen" end
+    end)
 end)
 changed.OnClientEvent:Connect(show)
 local success,initial=pcall(function() return query:InvokeServer() end)
@@ -402,7 +449,7 @@ RunService.RenderStepped:Connect(function()
     if camera and (math.abs(gui.AbsoluteSize.X-layoutWidth)>1 or math.abs(gui.AbsoluteSize.Y-layoutHeight)>1) then layout() end
     local character=player.Character
     local touchGui=player.PlayerGui:FindFirstChild("TouchGui")
-    if touchGui and touchGui:IsA("ScreenGui") then touchGui.Enabled=not overview and not shade.Visible end
+    if touchGui and touchGui:IsA("ScreenGui") then touchGui.Enabled=not overview and not shade.Visible and not inputBlocked end
     if character then
         for _,piece in ipairs(character:GetDescendants()) do
             if piece:IsA("BasePart") then piece.LocalTransparencyModifier=if overview then 1 else 0 end
@@ -415,9 +462,9 @@ RunService.RenderStepped:Connect(function()
     end
     if reward.Visible and os.clock()>rewardUntil then reward.Visible=false end
     if state and state.productionActive then
-        local f=math.clamp((now-state.cycleStart)/state.cycleSeconds,0,1)
+        local f=math.clamp(((state.pausedAt or now)-state.cycleStart)/state.cycleSeconds,0,1)
         local label=if f<0.20 then "Teile bereitstellen" elseif f<0.42 then (if state.currentDesign=="orbit" then "Orbit montieren" else "Scout montieren") elseif f<0.72 then "Auf dem Förderband" elseif f<0.92 then "Verpacken" else "Fertig zum Versand"
-        phase.Text=label.."  ·  +"..state.cashPerRobot.." Cash / "..state.cycleSeconds.."s"
+        phase.Text=(if state.pausedAt then "Sicher pausiert" else label).."  ·  +"..state.cashPerRobot.." Cash / "..state.cycleSeconds.."s"
         progressFill.Size=UDim2.fromScale(f,1)
     end
     -- 30Hz presentation; one reused robot/carton per plot, no growing output list.
@@ -428,7 +475,8 @@ RunService.RenderStepped:Connect(function()
         local active=v.plot:GetAttribute("Active")==true
         local start=v.plot:GetAttribute("CycleStart") or now
         local duration=v.plot:GetAttribute("CycleSeconds") or 9
-        local f=math.clamp((now-start)/duration,0,1)
+        local visualNow=v.plot:GetAttribute("PausedAt") or now
+        local f=math.clamp((visualNow-start)/duration,0,1)
         local design=v.plot:GetAttribute("DesignId") or "scout"
         if design~=v.design and builders[design] then
             v.bot.Model:Destroy();v.design=design;v.builder=builders[design];v.bot=v.builder.Build(v.container,1)
@@ -439,8 +487,8 @@ RunService.RenderStepped:Connect(function()
         v.loose.CFrame=CFrame.new(v.origin+Vector3.new(-16+11*math.clamp(f/0.2,0,1),3.7,0))
         local x=if f<0.42 then -5 elseif f<0.72 then -5+18*(f-0.42)/0.30 elseif f<0.92 then 13 else 13+7*(f-0.92)/0.08
         local lift=if f<0.34 then (1-math.clamp((f-0.18)/0.16,0,1))*2.2 else 0
-        v.builder.Pose(v.bot,CFrame.new(v.origin+Vector3.new(x,if f>=0.72 then 2.9 else 2.82,0))*CFrame.Angles(0,0.12,0),now,reduced or f>=0.72,lift)
+        v.builder.Pose(v.bot,CFrame.new(v.origin+Vector3.new(x,if f>=0.72 then 2.9 else 2.82,0))*CFrame.Angles(0,0.12,0),visualNow,reduced or f>=0.72,lift)
         poseCrate(v.crate,CFrame.new(v.origin+Vector3.new(x,2.70,0)),f,active and f>=0.72 and (not overview or v.origin==ownOrigin))
     end
 end)
-print("BOLTBOTS_CLIENT_BOOT", "development-b2", "view="..tostring(Workspace.CurrentCamera.ViewportSize))
+print("BOLTBOTS_CLIENT_BOOT", "development-b3", "view="..tostring(Workspace.CurrentCamera.ViewportSize))

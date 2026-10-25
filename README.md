@@ -2,7 +2,7 @@
 
 Ein zugängliches Roblox-Fabrikspiel: Roboter sichtbar produzieren, Maschinen verbessern, fünf Designs sammeln und die eigene Fabrik gestalten. Ziel und geplanter Umfang stehen in [Vision/MVP](docs/product/vision-and-mvp.md). Der aktuelle Arbeitsstand steht ausschließlich im [Handover](docs/handover.md).
 
-**Entwicklung auf einem neuen Rechner:** [Codex-geführter Setup-Guide](docs/setup.md). Die Initialisierung und M1 sind [vom Human freigegeben](docs/reviews/20261024-1.5.3-boltbots-initialization-review.md); A2 stellt die lokalen [Setup-/Buildbefehle](docs/setup.md) bereit; A3 weist den tatsächlichen lokalen Studio-Spielstart und Rojo-Sync nach. Die aktive B2-Quelle baut eine kleine Werkstatt mit Scout, L2-Ausbau und wählbarem Orbit; Prüfstand und offene Schritte stehen im Handover. Der unveränderte Ausgangsprototyp unter `docs/product/reference/boltbots-v0.2/` ist Referenzmaterial und kein bereits abgenommenes Spiel.
+**Entwicklung auf einem neuen Rechner:** [Codex-geführter Setup-Guide](docs/setup.md). Die Initialisierung und M1 sind [vom Human freigegeben](docs/reviews/20261024-1.5.3-boltbots-initialization-review.md); A2 stellt die lokalen [Setup-/Buildbefehle](docs/setup.md) bereit; A3 weist den tatsächlichen lokalen Studio-Spielstart und Rojo-Sync nach. Die aktive B3-Quelle ergänzt zur Werkstatt mit Scout, L2 und Orbit den realen Speicherpfad für das ausdrücklich autorisierte private Testziel; Prüfstand und offene Schritte stehen im Handover. Der unveränderte Ausgangsprototyp unter `docs/product/reference/boltbots-v0.2/` ist Referenzmaterial und kein bereits abgenommenes Spiel.
 
 > Artifact class: Navigation
 > Linked owners: root `AGENTS.md`, `AH-SPEC-DISTRIBUTION-001`, and product artifacts named below
@@ -51,7 +51,7 @@ rolling plan, and Human Initialization Review Pack. Both gates stop before funct
 
 ## Product Orientation
 
-Product routes: [Foundation und Humanentscheidung](docs/reviews/20261024-1.5.3-boltbots-domain-foundation-review.md), [Factory Module Entry Map](docs/specs/factory-module.md), [Meilensteine/M1](docs/planning/milestones.md), [Designreferenz](docs/design/design-reference.md), [Technik, Release und Recovery](docs/specs/technical-foundation.md). Es gibt noch keine bereitgestellte Spielumgebung. Keine Initialisierungsdatei beweist einen erfolgreichen Studio-Spieltest.
+Product routes: [Foundation und Humanentscheidung](docs/reviews/20261024-1.5.3-boltbots-domain-foundation-review.md), [Factory Module Entry Map](docs/specs/factory-module.md), [Meilensteine/M1](docs/planning/milestones.md), [Designreferenz](docs/design/design-reference.md), [Technik, Release und Recovery](docs/specs/technical-foundation.md). Es gibt eine separat autorisierte private B3-Testexperience; keine öffentliche Spielveröffentlichung. Tatsächliche Studio-/Storebelege und ihre Grenzen stehen im Handover.
 
 Current product status and the next safe action live only in `docs/handover.md`.
 

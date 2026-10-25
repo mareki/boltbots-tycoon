@@ -3,9 +3,9 @@
 local GameConfig = {
     project = "BoltBotsTycoon",
     displayName = "BoltBots Tycoon",
-    schemaVersion = 1,
+    schemaVersion = 2,
     catalogVersion = 1,
-    versionLabel = "development-b2",
+    versionLabel = "development-b3",
     maxPlots = 4,
     starterCash = 0,
     baseCycleSeconds = 9,
