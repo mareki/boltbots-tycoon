@@ -39,7 +39,7 @@ Initialization replaces this initial map with narrow routes to actual global spe
 - Fachliche Grundlage (Humanfreigabe im verlinkten Review erteilt; Kandidatenbytes unverändert): [Domain Foundation, Kontext CTX-FACTORY und gebundene Diagramme](../domains/domain-foundation.md).
 - Human-Domain-Entscheidung und unabhängige Review: [Review-Paket](../reviews/20261024-1.5.3-boltbots-domain-foundation-review.md). Der Run hält den offenen Validatorbefund F-02 und den sicheren Wiederaufnahmestand.
 
-## Freigegebene Produktgrundlage und nächster M1-Schritt
+## Freigegebene Produktgrundlage und abgeschlossener M1
 
 - Abgeschlossener führender [Initialisierungs-Run](../work/runs/boltbots-initialization-001.md); Domain-Run ist historischer Vorgänger.
 - Pflichtkontext nach Foundation: [Vision/MVP r2](../product/vision-and-mvp.md), wirksam durch die externe Human-Gesamtfreigabe. Die eingefrorenen Kandidatenheader sind historische Metadaten; genehmigte Inhalte bleiben bytegleich.
@@ -49,4 +49,4 @@ Initialization replaces this initial map with narrow routes to actual global spe
 - Meilensteine, Walking Skeleton, WP/Run-Vorschläge: [Plan r2](../planning/milestones.md).
 - Lokale Einrichtung und nachgewiesene Grenzen: [Setup r1](../setup.md).
 
-M1 ist vom Human genehmigt, aber noch nicht umgesetzt. Nächster Ausführungsschritt: bestehenden Plan in den konkreten M1-Auftrag übernehmen, tatsächliche Fähigkeiten/Tools prüfen und anschließend lokale Umgebung sowie erste echte Spielversion aufbauen. Keine erneute Fach-/Bild-/Initialisierungsfreigabe für unveränderte Inhalte.
+M1 ist umgesetzt, unabhängig geprüft und am 25.10.2026 ausdrücklich vom Human abgenommen. Aktueller Abschluss, neue Erweiterungswünsche und nächster Auftrag stehen im [Handover](../handover.md). Der bisherige M2/M3-Plan bleibt unverändert; sein Abgleich mit dem neuen Feedback folgt erst danach. Keine erneute Fach-/Bild-/Initialisierungsfreigabe für unveränderte Inhalte.

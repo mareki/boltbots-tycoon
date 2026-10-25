@@ -3,7 +3,7 @@
 > Artifact ID: `BOLTBOTS-RUN-M1-B5-001`
 > Artifact class: Work contract
 > Operativer Creator/Lead `/root/b4_creator` (r2; zuvor `/root`), unabhängiger Reviewer `/root/b4_review`, kurzzeitiger Startreviewer `/root/b4_spawn`; gewünschte Strategie Astra/xhigh. Kein weiterer Creator.
-> Gesamt-B5 unabhängig APPROVED; unveränderte C2-Runtime privat gespeichert. M1 **80%**, unabhängiger80%-Drift positiv. Human-M1-Endentscheidung bleibt offen.
+> Gesamt-B5 unabhängig APPROVED; unveränderte C2-Runtime privat gespeichert. M1 **100%, Human-abgenommen**; Abschlussentscheidung am Dokumentende. Der abgeschlossene Ausführungsvertrag und seine Kontrollen unten dokumentieren den historischen B5-Stand bei 80%; die anschließende Human-Abnahme eröffnet keinen neuen Run.
 
 <!-- run-contract:start -->
 ```json
@@ -389,3 +389,14 @@ Nun ist auch F-VIEW/WP01B§6 erfüllt: Der echte verbundene Client−2 läuft vo
 Regulärer EndTest, zwei freigegebene Profile, Originaleditor/Edit, Sourcegleichheit und Probe-/Faultfreiheit sind unabhängig bestätigt. Der bestätigte private C2-Save17:42:43 bleibt gültig; kein neuer Save oder Kaltabruf behauptet. Die Setup-MCP-Ergänzung stimmt mit dem tatsächlichen Weg überein. Der Reviewer bediente in der finalen Runde keine UI; seine Entscheidung beruht unabhängig auf den Originalbelegen. Die Humanbewertung der echten privaten Version bleibt offen, kein M1-100%-Pass. Normaler Commit/Push sichert diesen Abschluss; die tatsächliche Commit-/Remote-ID steht in der Abschlussnachricht und im Gitverlauf.
 
 Root bestätigte das Ende seines eigenen Wakeguards PID9308/Session74587 per SIGTERM/Exit143. Fremde Wachhalteprozesse blieben unberührt. Keine weiteren Gameplayaktionen nach der finalen Review.
+
+
+## Human-Abnahme und M1-Abschluss — 25.10.2026
+
+Nach der Gesamt-B5-Review wurde die echte private Spielversion für den gemeinsamen Human-Durchgang erneut in Studio gestartet. Der gespeicherte Stand war bereits L2/Orbit; in dieser Vorführung wurde kein neues Upgrade gekauft. Der Human bewertete den Gesamteindruck positiv, verzichtete ausdrücklich auf den vorgeschlagenen Level-eins-Neustart und erklärte abschließend: „Ich habe es dir abgenommen. Wir können M1 abschließen.“ Der Playtest wurde gestoppt; kein lokaler Neustart durchgeführt.
+
+**Human Gate erfüllt; M1 accepted / 100%.** 90% bezeichnete die erteilte Human-Abnahme und die laufende Abschlussdokumentation; 100% den dokumentierten Abschluss. Die finale Nachricht bestätigt Commit/Push erst nach tatsächlichem Transfer. Es handelt sich um die routinemäßige Aufzeichnung einer ausdrücklich erteilten Humanentscheidung, keine neue Ausführung des abgelaufenen B5-Fensters und keine zusätzliche Produktreview. Der unveränderte technische Kandidat und die unabhängige Gesamt-B5-Review bleiben Grundlage; das neue Humanfeedback ist im Handover erhalten.
+
+**Abschließender Drift-/Verkomplizierungscheck:** ursprünglicher M1-Umfang A1–A3/B1–B5 durch bestehende Nachweise und unabhängige Review gedeckt; nun zusätzlich ausdrückliche Human-Abnahme der tatsächlichen Szene. Keine Runtimeänderung, neue Infrastruktur, Wiederholung unveränderter Spieltests oder nachträgliche Ausweitung der Kriterien. Neue Montage-/Bahn-/Upgrade-/Robux-/Namenswünsche sind ausschließlich spätere Anforderungen; deren Planabgleich hat der Human ausdrücklich auf danach verschoben. Unveränderte Belege werden wiederverwendet, Korrekturverbrauch bleibt 7/9; daraus folgt keine neue Ausführungsreserve. Zweitrechner-, physische Geräte-, Novizen- und Langzeitqualität bleiben spätere Nachweise; hohe lokale Vierclientlast bleibt offengelegt. Kein Gesamt-MVP- oder öffentlicher Releaseclaim.
+
+D0-Abschluss durch Root: vorhandene Navigation und Humanentscheid aktualisieren, fokussierter Dokumentationsdiff und Unverändertheit von Core/Reviewpayload prüfen, danach ausdrücklich autorisierter normaler Commit/Push auf dem bestehenden Branch. Kein neuer Run, Agent oder Freigabetor für diese Aufzeichnung. Die bisherige Planung bleibt bytegleich. Nächster fachlicher Auftrag: erst nach diesem Abschluss die Erweiterungen gemeinsam mit dem bestehenden Plan abgleichen.
