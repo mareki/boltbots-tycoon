@@ -1,0 +1,962 @@
+[
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261024T193411Z_Studio_4f78a_last.log",
+    "line": 63412,
+    "text": "2026-10-25T11:29:48.585Z,57336.585938,17926000,6,Info [FLog::CreatorOutput] B4_PROBES_INSTALLED 2086 5477 10772906084 112662761038118"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T113053Z_Studio_eb607_last.log",
+    "line": 898,
+    "text": "2026-10-25T11:31:20.951Z,24.951180,179fe000,6,Info [FLog::CreatorOutput] B4_CLIENT_READY {\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":false,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":9,\"cash\":725,\"plotIndex\":1,\"cycleStart\":1792927877.181043,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":6,\"ready\":true,\"catalogVersion\":1,\"completed\":29,\"canRetry\":true,\"version\":\"development-b3\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":1,\"cashPerRobot\":25},\"user\":-1,\"players\":1,\"placeId\":112662761038118,\"run\":\"one\",\"gameId\":10772906084}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T113027Z_Studio_7d6cf_last.log",
+    "line": 1260,
+    "text": "2026-10-25T11:32:34.622Z,124.622856,1bb35000,6,Info [FLog::CreatorOutput] B4_SERVER_METRICS {\"p50\":16.66754111647606,\"after\":{\"players\":[-1],\"memoryMB\":2164.72265625,\"active\":1,\"cycles\":{\"FactoryPlot_1\":{\"cycle\":8,\"level\":1,\"active\":true},\"FactoryPlot_2\":{\"level\":1,\"active\":false},\"FactoryPlot_4\":{\"level\":1,\"active\":false},\"FactoryPlot_3\":{\"level\":1,\"active\":false}},\"instances\":49358},\"elapsed\":60.01396445813589,\"placeId\":112662761038118,\"run\":\"one\",\"before\":{\"players\":[-1],\"memoryMB\":2157.54296875,\"active\":1,\"cycles\":{\"FactoryPlot_1\":{\"cycle\":2,\"level\":1,\"active\":true},\"FactoryPlot_2\":{\"level\":1,\"active\":false},\"FactoryPlot_4\":{\"level\":1,\"active\":false},\"FactoryPlot_3\":{\"level\":1,\"active\":false}},\"instances\":49358},\"p95\":24.19983223080635,\"gameId\":10772906084,\"max\":69.8527917265892,\"samples\":3561}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261024T193411Z_Studio_4f78a_last.log",
+    "line": 63529,
+    "text": "2026-10-25T11:35:33.195Z,57681.195312,17926000,6,Info [FLog::CreatorOutput] B4_PROBE_UPDATED 5502"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T113621Z_Studio_4f2c5_last.log",
+    "line": 1150,
+    "text": "2026-10-25T11:36:56.037Z,33.037880,1c780000,6,Info [FLog::CreatorOutput] B4_CLIENT_READY {\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":false,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":17,\"cash\":1325,\"plotIndex\":1,\"cycleStart\":1792928203.526864,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":6,\"ready\":true,\"catalogVersion\":1,\"completed\":53,\"canRetry\":true,\"version\":\"development-b3\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":1,\"cashPerRobot\":25},\"user\":-1,\"players\":1,\"placeId\":112662761038118,\"run\":\"one-r2\",\"gameId\":10772906084}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T113554Z_Studio_d1666_last.log",
+    "line": 1253,
+    "text": "2026-10-25T11:38:01.014Z,124.014946,141f2000,6,Info [FLog::CreatorOutput] B4_SERVER_METRICS {\"p50\":16.670290380716325,\"after\":{\"players\":[-1],\"memoryMB\":2075.76513671875,\"active\":1,\"cycles\":{\"FactoryPlot_1\":{\"cycle\":8,\"level\":1,\"active\":true},\"FactoryPlot_2\":{\"level\":1,\"active\":false},\"FactoryPlot_4\":{\"level\":1,\"active\":false},\"FactoryPlot_3\":{\"level\":1,\"active\":false}},\"instances\":49357},\"elapsed\":60.00762883317657,\"placeId\":112662761038118,\"run\":\"one-r2\",\"before\":{\"players\":[-1],\"memoryMB\":2069.89794921875,\"active\":1,\"cycles\":{\"FactoryPlot_1\":{\"cycle\":2,\"level\":1,\"active\":true},\"FactoryPlot_2\":{\"level\":1,\"active\":false},\"FactoryPlot_4\":{\"level\":1,\"active\":false},\"FactoryPlot_3\":{\"level\":1,\"active\":false}},\"instances\":49357},\"p95\":22.502541542053224,\"gameId\":10772906084,\"max\":79.98842000961304,\"samples\":3571}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T113621Z_Studio_4f2c5_last.log",
+    "line": 2082,
+    "text": "2026-10-25T11:38:11.731Z,108.731888,1c57d000,6,Info [FLog::CreatorOutput] B4_CLIENT_METRICS {\"p50\":33.71937572956085,\"after\":{\"models\":8,\"memoryMB\":2340.4375,\"containers\":4,\"children\":12,\"instances\":53255},\"user\":-1,\"elapsed\":60.049341208068657,\"samples\":1711,\"run\":\"one-r2\",\"before\":{\"models\":8,\"memoryMB\":2326.4765625,\"containers\":4,\"children\":12,\"instances\":53255},\"p95\":60.27437373995781,\"viewport\":\"1081, 693\",\"players\":1,\"max\":184.82641875743867,\"quality\":\"Studio child; parent Automatic, no privileged client settings read\"}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261024T193411Z_Studio_4f78a_last.log",
+    "line": 64506,
+    "text": "2026-10-25T11:42:06.632Z,58074.632812,17926000,6,Info [FLog::CreatorOutput] B4_CLIENT_READY {\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"orbit\",\"unsaved\":false,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":29,\"cash\":2800,\"plotIndex\":1,\"cycleStart\":1792928519.937845,\"cycleSeconds\":6,\"nextCycleSeconds\":6,\"stateVersion\":6,\"ready\":true,\"catalogVersion\":1,\"completed\":114,\"canRetry\":true,\"version\":\"development-b3\",\"unlockedOrbit\":true,\"selectedDesign\":\"orbit\",\"upgradePrice\":50,\"cycleId\":1,\"cashPerRobot\":25},\"user\":1916047606,\"players\":1,\"placeId\":112662761038118,\"run\":\"one-r2\",\"gameId\":10772906084}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261024T193411Z_Studio_4f78a_last.log",
+    "line": 64983,
+    "text": "2026-10-25T11:46:55.464Z,58363.464844,17723000,6,Info [FLog::CreatorOutput] B4_PRODUCT_SYNC_VERIFIED 28c95843a8fb9ecc12d1abf4f9b26e99a819e2a24b771b2d670903b1e5882654 2261 5660 10772906084 112662761038118 Enum.QualityLevel.Automatic"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T114858Z_Studio_a5b30_last.log",
+    "line": 884,
+    "text": "2026-10-25T11:49:30.888Z,28.888624,137d4000,6,Info [FLog::CreatorOutput] B4_CLIENT_READY {\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":false,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":26,\"cash\":2000,\"plotIndex\":1,\"cycleStart\":1792928964.471776,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":6,\"ready\":true,\"catalogVersion\":1,\"completed\":80,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":1,\"cashPerRobot\":25},\"user\":-1,\"players\":1,\"placeId\":112662761038118,\"run\":\"two\",\"gameId\":10772906084}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T114858Z_Studio_a5b30_last.log",
+    "line": 2877,
+    "text": "2026-10-25T11:51:56.469Z,174.469589,12ca1000,6,Info [FLog::CreatorOutput] B4_CLIENT_METRICS {\"p50\":33.41054171323776,\"after\":{\"models\":8,\"memoryMB\":2380.54345703125,\"containers\":4,\"children\":12,\"instances\":53254},\"user\":-1,\"elapsed\":60.031652374891567,\"samples\":1686,\"run\":\"two\",\"before\":{\"models\":8,\"memoryMB\":2375.53955078125,\"containers\":4,\"children\":12,\"instances\":53254},\"p95\":54.409291595220569,\"viewport\":\"1081, 693\",\"players\":1,\"max\":173.33203554153443,\"quality\":\"Studio child; parent Automatic, no privileged client settings read\"}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T114858Z_Studio_a5b30_last.log",
+    "line": 2890,
+    "text": "2026-10-25T11:51:56.694Z,174.694336,12ea4000,6,Info [FLog::CreatorOutput] B4_REMOTE {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":30,\"cash\":2375,\"plotIndex\":1,\"cycleStart\":1792929103.634344,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":30,\"ready\":true,\"catalogVersion\":1,\"completed\":95,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":16,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":30,\"cash\":2375,\"plotIndex\":1,\"cycleStart\":1792929103.634344,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":32,\"ready\":true,\"catalogVersion\":1,\"completed\":95,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":16,\"cashPerRobot\":25},"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T114858Z_Studio_a5b30_last.log",
+    "line": 2937,
+    "text": "2026-10-25T11:51:58.045Z,176.045090,12ca1000,6,Info [FLog::CreatorOutput] B4_REMOTE {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":30,\"cash\":2375,\"plotIndex\":1,\"cycleStart\":1792929103.634344,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":33,\"ready\":true,\"catalogVersion\":1,\"completed\":95,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":16,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":30,\"cash\":2375,\"plotIndex\":1,\"cycleStart\":1792929103.634344,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":35,\"ready\":true,\"catalogVersion\":1,\"completed\":95,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":16,\"cashPerRobot\":25},"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T114858Z_Studio_a5b30_last.log",
+    "line": 3005,
+    "text": "2026-10-25T11:51:59.345Z,177.345016,135d1000,6,Info [FLog::CreatorOutput] B4_REMOTE {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":30,\"cash\":2400,\"plotIndex\":1,\"cycleStart\":1792929112.678282,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":37,\"ready\":true,\"catalogVersion\":1,\"completed\":96,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":17,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":30,\"cash\":2400,\"plotIndex\":1,\"cycleStart\":1792929112.678282,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":39,\"ready\":true,\"catalogVersion\":1,\"completed\":96,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":17,\"cashPerRobot\":25},"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T114858Z_Studio_a5b30_last.log",
+    "line": 3063,
+    "text": "2026-10-25T11:52:00.711Z,178.711624,12ea4000,6,Info [FLog::CreatorOutput] B4_REMOTE {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":30,\"cash\":2400,\"plotIndex\":1,\"cycleStart\":1792929112.678282,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":40,\"ready\":true,\"catalogVersion\":1,\"completed\":96,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":17,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":30,\"cash\":2400,\"plotIndex\":1,\"cycleStart\":1792929112.678282,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":42,\"ready\":true,\"catalogVersion\":1,\"completed\":96,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":17,\"cashPerRobot\":25},"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T114858Z_Studio_a5b30_last.log",
+    "line": 3132,
+    "text": "2026-10-25T11:52:02.048Z,180.048492,12ea4000,6,Info [FLog::CreatorOutput] B4_REMOTE {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":30,\"cash\":2400,\"plotIndex\":1,\"cycleStart\":1792929112.678282,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":43,\"ready\":true,\"catalogVersion\":1,\"completed\":96,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":17,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":30,\"cash\":2400,\"plotIndex\":1,\"cycleStart\":1792929112.678282,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":45,\"ready\":true,\"catalogVersion\":1,\"completed\":96,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":17,\"cashPerRobot\":25},"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T114858Z_Studio_a5b30_last.log",
+    "line": 3187,
+    "text": "2026-10-25T11:52:03.399Z,181.399429,135d1000,6,Info [FLog::CreatorOutput] B4_NUMERIC_GUARD {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":30,\"cash\":2400,\"plotIndex\":1,\"cycleStart\":1792929112.678282,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":46,\"ready\":true,\"catalogVersion\":1,\"completed\":96,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":17,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":30,\"cash\":2400,\"plotIndex\":1,\"cycleStart\":1792929112.678282,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":48,\"ready\":true,\"catalogVersion\":1,\"completed\":96,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":17,\"cashPerRobo"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T114858Z_Studio_a5b30_last.log",
+    "line": 3250,
+    "text": "2026-10-25T11:52:04.827Z,182.827713,133ce000,6,Info [FLog::CreatorOutput] B4_NUMERIC_GUARD {\"before\":{\"pausedAt\":1792929117.95765,\"saveStatus\":\"saving\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"unlockedOrbit\":false,\"unlockedScout\":true,\"ready\":true,\"level\":1,\"plotIndex\":1,\"cycleSeconds\":9,\"cash\":2400,\"nextCycleSeconds\":9,\"cycleStart\":1792929112.678282,\"savedRevision\":30,\"catalogVersion\":1,\"completed\":96,\"stateVersion\":50,\"version\":\"development-b4\",\"canRetry\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":17,\"cashPerRobot\":25},\"after\":{\"pausedAt\":1792929117.95765,\"saveStatus\":\"saving\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"unlockedOrbit\":false,\"unlockedScout\":true,\"ready\":true,\"level\":1,\"plotIndex\":1,\"cycleSeconds\":9,\"cash\":2400,\"nextCycleSeconds\":9,\"cycleStart\":1792929112.678282,\"savedRevision\":30,\"catalogVersion\":1,\"completed\":96,\"stateVersion\":52,\"version\":\"development-b4\",\"canRetry\":false,\"selecte"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T115455Z_Studio_5c907_last.log",
+    "line": 1152,
+    "text": "2026-10-25T11:55:47.087Z,50.087963,19a38000,6,Info [FLog::CreatorOutput] B4_CLIENT_READY {\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":0,\"cash\":25,\"plotIndex\":2,\"cycleStart\":1792929342.322773,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":7,\"ready\":true,\"catalogVersion\":1,\"completed\":1,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":2,\"cashPerRobot\":25},\"user\":-2,\"players\":2,\"placeId\":112662761038118,\"run\":\"two\",\"gameId\":10772906084}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T115455Z_Studio_8faad_last.log",
+    "line": 1152,
+    "text": "2026-10-25T11:55:47.317Z,50.317268,1cc6d000,6,Info [FLog::CreatorOutput] B4_CLIENT_READY {\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":false,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":32,\"cash\":2400,\"plotIndex\":1,\"cycleStart\":1792929329.529887,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":7,\"ready\":true,\"catalogVersion\":1,\"completed\":96,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":1,\"cashPerRobot\":25},\"user\":-1,\"players\":2,\"placeId\":112662761038118,\"run\":\"two\",\"gameId\":10772906084}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T115429Z_Studio_d792c_last.log",
+    "line": 1301,
+    "text": "2026-10-25T11:56:48.495Z,138.495499,16e9a000,6,Info [FLog::CreatorOutput] B4_SERVER_METRICS {\"p50\":16.823917627334596,\"after\":{\"players\":[-2,-1],\"memoryMB\":2174.15625,\"active\":2,\"cycles\":{\"FactoryPlot_1\":{\"cycle\":9,\"level\":1,\"active\":true},\"FactoryPlot_2\":{\"cycle\":8,\"level\":1,\"active\":true},\"FactoryPlot_4\":{\"level\":1,\"active\":false},\"FactoryPlot_3\":{\"level\":1,\"active\":false}},\"instances\":50274},\"elapsed\":60.01062662503682,\"placeId\":112662761038118,\"run\":\"two\",\"before\":{\"players\":[-2,-1],\"memoryMB\":2202.45703125,\"active\":2,\"cycles\":{\"FactoryPlot_1\":{\"cycle\":2,\"level\":1,\"active\":true},\"FactoryPlot_2\":{\"cycle\":2,\"level\":1,\"active\":true},\"FactoryPlot_4\":{\"level\":1,\"active\":false},\"FactoryPlot_3\":{\"level\":1,\"active\":false}},\"instances\":50274},\"p95\":57.86079168319702,\"gameId\":10772906084,\"max\":298.11686277389529,\"samples\":2856}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T115455Z_Studio_5c907_last.log",
+    "line": 2426,
+    "text": "2026-10-25T11:57:03.241Z,126.241661,188fe000,6,Info [FLog::CreatorOutput] B4_CLIENT_METRICS {\"p50\":52.09645628929138,\"after\":{\"models\":8,\"memoryMB\":2413.23876953125,\"containers\":4,\"children\":12,\"instances\":53600},\"user\":-2,\"elapsed\":60.02802399988286,\"samples\":1142,\"run\":\"two\",\"before\":{\"models\":8,\"memoryMB\":2363.89111328125,\"containers\":4,\"children\":12,\"instances\":53600},\"p95\":81.20328933000565,\"viewport\":\"1081, 693\",\"players\":2,\"max\":151.19832754135133,\"quality\":\"Studio child; parent Automatic, no privileged client settings read\"}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T115455Z_Studio_5c907_last.log",
+    "line": 2438,
+    "text": "2026-10-25T11:57:03.605Z,126.605934,18b01000,6,Info [FLog::CreatorOutput] B4_REMOTE {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":2,\"cash\":225,\"plotIndex\":2,\"cycleStart\":1792929416.219257,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":20,\"ready\":true,\"catalogVersion\":1,\"completed\":9,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":10,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":2,\"cash\":225,\"plotIndex\":2,\"cycleStart\":1792929416.219257,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":22,\"ready\":true,\"catalogVersion\":1,\"completed\":9,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":10,\"cashPerRobot\":25},\"user\""
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T115455Z_Studio_5c907_last.log",
+    "line": 2488,
+    "text": "2026-10-25T11:57:04.936Z,127.936287,188fe000,6,Info [FLog::CreatorOutput] B4_REMOTE {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":2,\"cash\":225,\"plotIndex\":2,\"cycleStart\":1792929416.219257,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":23,\"ready\":true,\"catalogVersion\":1,\"completed\":9,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":10,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":2,\"cash\":225,\"plotIndex\":2,\"cycleStart\":1792929416.219257,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":25,\"ready\":true,\"catalogVersion\":1,\"completed\":9,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":10,\"cashPerRobot\":25},\"user\""
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T115455Z_Studio_8faad_last.log",
+    "line": 3362,
+    "text": "2026-10-25T11:57:05.405Z,128.405807,1c53f000,6,Info [FLog::CreatorOutput] B4_CLIENT_METRICS {\"p50\":68.66183131933212,\"after\":{\"models\":8,\"memoryMB\":2332.41455078125,\"containers\":4,\"children\":12,\"instances\":53600},\"user\":-1,\"elapsed\":60.01096833287738,\"samples\":756,\"run\":\"two\",\"before\":{\"models\":8,\"memoryMB\":2353.73486328125,\"containers\":4,\"children\":12,\"instances\":53600},\"p95\":121.2734580039978,\"viewport\":\"1081, 693\",\"players\":2,\"max\":341.1022126674652,\"quality\":\"Studio child; parent Automatic, no privileged client settings read\"}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T115455Z_Studio_8faad_last.log",
+    "line": 3370,
+    "text": "2026-10-25T11:57:05.596Z,128.596558,1c33c000,6,Info [FLog::CreatorOutput] B4_REMOTE {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":34,\"cash\":2625,\"plotIndex\":1,\"cycleStart\":1792929414.053364,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":21,\"ready\":true,\"catalogVersion\":1,\"completed\":105,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":10,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":34,\"cash\":2625,\"plotIndex\":1,\"cycleStart\":1792929414.053364,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":23,\"ready\":true,\"catalogVersion\":1,\"completed\":105,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":10,\"cashPerRobot\":25"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T115455Z_Studio_5c907_last.log",
+    "line": 2538,
+    "text": "2026-10-25T11:57:06.370Z,129.370178,18b01000,6,Info [FLog::CreatorOutput] B4_REMOTE {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":2,\"cash\":225,\"plotIndex\":2,\"cycleStart\":1792929416.219257,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":26,\"ready\":true,\"catalogVersion\":1,\"completed\":9,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":10,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":2,\"cash\":225,\"plotIndex\":2,\"cycleStart\":1792929416.219257,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":28,\"ready\":true,\"catalogVersion\":1,\"completed\":9,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":10,\"cashPerRobot\":25},\"user\""
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T115455Z_Studio_8faad_last.log",
+    "line": 3421,
+    "text": "2026-10-25T11:57:06.865Z,129.865784,1ce70000,6,Info [FLog::CreatorOutput] B4_REMOTE {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":false,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":35,\"cash\":2625,\"plotIndex\":1,\"cycleStart\":1792929415.001994,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":26,\"ready\":true,\"catalogVersion\":1,\"completed\":105,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":10,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":false,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":35,\"cash\":2625,\"plotIndex\":1,\"cycleStart\":1792929415.001994,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":28,\"ready\":true,\"catalogVersion\":1,\"completed\":105,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":10,\"cashPerRobot\":"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T115455Z_Studio_5c907_last.log",
+    "line": 2564,
+    "text": "2026-10-25T11:57:07.796Z,130.796432,18b01000,6,Info [FLog::CreatorOutput] B4_REMOTE {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":2,\"cash\":225,\"plotIndex\":2,\"cycleStart\":1792929416.219257,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":29,\"ready\":true,\"catalogVersion\":1,\"completed\":9,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":10,\"cashPerRobot\":25},\"after\":{\"pausedAt\":1792929424.501692,\"saveStatus\":\"saving\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"unlockedOrbit\":false,\"unlockedScout\":true,\"ready\":true,\"level\":1,\"plotIndex\":2,\"cycleSeconds\":9,\"cash\":225,\"nextCycleSeconds\":9,\"cycleStart\":1792929416.219257,\"savedRevision\":2,\"catalogVersion\":1,\"completed\":9,\"stateVersion\":32,\"version\":\"development-b4\",\"canRetry\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleI"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T115455Z_Studio_8faad_last.log",
+    "line": 3422,
+    "text": "2026-10-25T11:57:08.147Z,131.147995,1ca6a000,6,Info [FLog::CreatorOutput] B4_REMOTE {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":35,\"cash\":2650,\"plotIndex\":1,\"cycleStart\":1792929424.029689,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":30,\"ready\":true,\"catalogVersion\":1,\"completed\":106,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":11,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":35,\"cash\":2650,\"plotIndex\":1,\"cycleStart\":1792929424.029689,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":32,\"ready\":true,\"catalogVersion\":1,\"completed\":106,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":11,\"cashPerRobot\":25"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T115455Z_Studio_5c907_last.log",
+    "line": 2565,
+    "text": "2026-10-25T11:57:09.193Z,132.193802,18b01000,6,Info [FLog::CreatorOutput] B4_REMOTE {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":250,\"plotIndex\":2,\"cycleStart\":1792929425.801934,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":35,\"ready\":true,\"catalogVersion\":1,\"completed\":10,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":11,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":250,\"plotIndex\":2,\"cycleStart\":1792929425.801934,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":37,\"ready\":true,\"catalogVersion\":1,\"completed\":10,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":11,\"cashPerRobot\":25},\"use"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T115455Z_Studio_8faad_last.log",
+    "line": 3423,
+    "text": "2026-10-25T11:57:09.395Z,132.395844,1c53f000,6,Info [FLog::CreatorOutput] B4_REMOTE {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":35,\"cash\":2650,\"plotIndex\":1,\"cycleStart\":1792929424.029689,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":33,\"ready\":true,\"catalogVersion\":1,\"completed\":106,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":11,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":35,\"cash\":2650,\"plotIndex\":1,\"cycleStart\":1792929424.029689,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":35,\"ready\":true,\"catalogVersion\":1,\"completed\":106,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":11,\"cashPerRobot\":25"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T115455Z_Studio_5c907_last.log",
+    "line": 2566,
+    "text": "2026-10-25T11:57:10.679Z,133.679749,18b01000,6,Info [FLog::CreatorOutput] B4_NUMERIC_GUARD {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":250,\"plotIndex\":2,\"cycleStart\":1792929425.801934,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":38,\"ready\":true,\"catalogVersion\":1,\"completed\":10,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":11,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":250,\"plotIndex\":2,\"cycleStart\":1792929425.801934,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":40,\"ready\":true,\"catalogVersion\":1,\"completed\":10,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":11,\"cashPerRobot\":2"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T115455Z_Studio_8faad_last.log",
+    "line": 3424,
+    "text": "2026-10-25T11:57:10.734Z,133.734680,1d073000,6,Info [FLog::CreatorOutput] B4_REMOTE {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":35,\"cash\":2650,\"plotIndex\":1,\"cycleStart\":1792929424.029689,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":36,\"ready\":true,\"catalogVersion\":1,\"completed\":106,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":11,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":35,\"cash\":2650,\"plotIndex\":1,\"cycleStart\":1792929424.029689,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":38,\"ready\":true,\"catalogVersion\":1,\"completed\":106,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":11,\"cashPerRobot\":25"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T115455Z_Studio_8faad_last.log",
+    "line": 3425,
+    "text": "2026-10-25T11:57:11.996Z,134.996170,1c33c000,6,Info [FLog::CreatorOutput] B4_NUMERIC_GUARD {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":35,\"cash\":2650,\"plotIndex\":1,\"cycleStart\":1792929424.029689,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":39,\"ready\":true,\"catalogVersion\":1,\"completed\":106,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":11,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":35,\"cash\":2650,\"plotIndex\":1,\"cycleStart\":1792929424.029689,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":41,\"ready\":true,\"catalogVersion\":1,\"completed\":106,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":11,\"cashPerRo"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T115455Z_Studio_5c907_last.log",
+    "line": 2567,
+    "text": "2026-10-25T11:57:12.217Z,135.217560,188fe000,6,Info [FLog::CreatorOutput] B4_NUMERIC_GUARD {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":250,\"plotIndex\":2,\"cycleStart\":1792929425.801934,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":41,\"ready\":true,\"catalogVersion\":1,\"completed\":10,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":11,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":250,\"plotIndex\":2,\"cycleStart\":1792929425.801934,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":43,\"ready\":true,\"catalogVersion\":1,\"completed\":10,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":11,\"cashPerRobot\":2"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T115455Z_Studio_8faad_last.log",
+    "line": 3426,
+    "text": "2026-10-25T11:57:13.546Z,136.546066,1ca6a000,6,Info [FLog::CreatorOutput] B4_NUMERIC_GUARD {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":35,\"cash\":2650,\"plotIndex\":1,\"cycleStart\":1792929424.029689,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":42,\"ready\":true,\"catalogVersion\":1,\"completed\":106,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":11,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":35,\"cash\":2650,\"plotIndex\":1,\"cycleStart\":1792929424.029689,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":44,\"ready\":true,\"catalogVersion\":1,\"completed\":106,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":11,\"cashPerRo"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T115455Z_Studio_5c907_last.log",
+    "line": 2573,
+    "text": "2026-10-25T11:57:13.810Z,136.810745,188fe000,6,Info [FLog::CreatorOutput] B4_REMOTE {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":250,\"plotIndex\":2,\"cycleStart\":1792929425.801934,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":44,\"ready\":true,\"catalogVersion\":1,\"completed\":10,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":11,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":250,\"plotIndex\":2,\"cycleStart\":1792929425.801934,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":46,\"ready\":true,\"catalogVersion\":1,\"completed\":10,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":11,\"cashPerRobot\":25},\"use"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T115455Z_Studio_8faad_last.log",
+    "line": 3427,
+    "text": "2026-10-25T11:57:15.030Z,138.030029,1cc6d000,6,Info [FLog::CreatorOutput] B4_REMOTE {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":35,\"cash\":2650,\"plotIndex\":1,\"cycleStart\":1792929424.029689,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":45,\"ready\":true,\"catalogVersion\":1,\"completed\":106,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":11,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":35,\"cash\":2650,\"plotIndex\":1,\"cycleStart\":1792929424.029689,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":47,\"ready\":true,\"catalogVersion\":1,\"completed\":106,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":11,\"cashPerRobot\":25"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T115455Z_Studio_5c907_last.log",
+    "line": 2574,
+    "text": "2026-10-25T11:57:15.270Z,138.270660,19029000,6,Info [FLog::CreatorOutput] B4_REMOTE {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":250,\"plotIndex\":2,\"cycleStart\":1792929425.801934,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":47,\"ready\":true,\"catalogVersion\":1,\"completed\":10,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":11,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":250,\"plotIndex\":2,\"cycleStart\":1792929425.801934,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":49,\"ready\":true,\"catalogVersion\":1,\"completed\":10,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":11,\"cashPerRobot\":25},\"use"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T115455Z_Studio_8faad_last.log",
+    "line": 3428,
+    "text": "2026-10-25T11:57:16.645Z,139.645966,1cc6d000,6,Info [FLog::CreatorOutput] B4_REMOTE {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":35,\"cash\":2675,\"plotIndex\":1,\"cycleStart\":1792929433.039861,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":49,\"ready\":true,\"catalogVersion\":1,\"completed\":107,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":12,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":35,\"cash\":2675,\"plotIndex\":1,\"cycleStart\":1792929433.039861,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":51,\"ready\":true,\"catalogVersion\":1,\"completed\":107,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":12,\"cashPerRobot\":25"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T115455Z_Studio_5c907_last.log",
+    "line": 2575,
+    "text": "2026-10-25T11:57:16.881Z,139.881226,18b01000,6,Info [FLog::CreatorOutput] B4_REMOTE {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":250,\"plotIndex\":2,\"cycleStart\":1792929425.801934,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":50,\"ready\":true,\"catalogVersion\":1,\"completed\":10,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":11,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":250,\"plotIndex\":2,\"cycleStart\":1792929425.801934,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":52,\"ready\":true,\"catalogVersion\":1,\"completed\":10,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":11,\"cashPerRobot\":25},\"use"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T115455Z_Studio_8faad_last.log",
+    "line": 3429,
+    "text": "2026-10-25T11:57:18.113Z,141.113922,1c33c000,6,Info [FLog::CreatorOutput] B4_REMOTE {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":35,\"cash\":2675,\"plotIndex\":1,\"cycleStart\":1792929433.039861,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":52,\"ready\":true,\"catalogVersion\":1,\"completed\":107,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":12,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":35,\"cash\":2675,\"plotIndex\":1,\"cycleStart\":1792929433.039861,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":54,\"ready\":true,\"catalogVersion\":1,\"completed\":107,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":12,\"cashPerRobot\":25"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T115455Z_Studio_5c907_last.log",
+    "line": 2576,
+    "text": "2026-10-25T11:57:18.460Z,141.460846,188fe000,6,Info [FLog::CreatorOutput] B4_PARALLEL_DISTINCT {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":275,\"plotIndex\":2,\"cycleStart\":1792929434.885703,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":54,\"ready\":true,\"catalogVersion\":1,\"completed\":11,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":12,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":225,\"plotIndex\":2,\"cycleStart\":1792929434.885703,\"cycleSeconds\":9,\"nextCycleSeconds\":6,\"stateVersion\":59,\"ready\":true,\"catalogVersion\":1,\"completed\":11,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":12,\"cashPerRobot"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T115455Z_Studio_8faad_last.log",
+    "line": 3430,
+    "text": "2026-10-25T11:57:19.589Z,142.589722,1d073000,6,Info [FLog::CreatorOutput] B4_PARALLEL_DUPLICATE {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":35,\"cash\":2675,\"plotIndex\":1,\"cycleStart\":1792929433.039861,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":55,\"ready\":true,\"catalogVersion\":1,\"completed\":107,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":12,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":35,\"cash\":2625,\"plotIndex\":1,\"cycleStart\":1792929433.039861,\"cycleSeconds\":9,\"nextCycleSeconds\":6,\"stateVersion\":60,\"ready\":true,\"catalogVersion\":1,\"completed\":107,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":12,\"cashP"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T115455Z_Studio_5c907_last.log",
+    "line": 2577,
+    "text": "2026-10-25T11:57:21.198Z,144.198013,188fe000,6,Info [FLog::CreatorOutput] B4_RATE_BURST {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":225,\"plotIndex\":2,\"cycleStart\":1792929434.885703,\"cycleSeconds\":9,\"nextCycleSeconds\":6,\"stateVersion\":60,\"ready\":true,\"catalogVersion\":1,\"completed\":11,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":12,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":225,\"plotIndex\":2,\"cycleStart\":1792929434.885703,\"cycleSeconds\":9,\"nextCycleSeconds\":6,\"stateVersion\":81,\"ready\":true,\"catalogVersion\":1,\"completed\":11,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":12,\"cashPerRobot\":25},\"u"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T115455Z_Studio_5c907_last.log",
+    "line": 2578,
+    "text": "2026-10-25T11:57:21.271Z,144.271027,19029000,6,Info [FLog::CreatorOutput] B4_QUERY_EXTRA {\"response\":{\"notice\":\"Ungültige Anfrage.\",\"ready\":false},\"run\":\"two\",\"user\":-2}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T115455Z_Studio_5c907_last.log",
+    "line": 2579,
+    "text": "2026-10-25T11:57:21.397Z,144.397690,188fe000,6,Info [FLog::CreatorOutput] B4_PUBLIC_WORLD {\"own\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":225,\"plotIndex\":2,\"cycleStart\":1792929434.885703,\"cycleSeconds\":9,\"nextCycleSeconds\":6,\"stateVersion\":82,\"ready\":true,\"catalogVersion\":1,\"completed\":11,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":12,\"cashPerRobot\":25},\"plots\":{\"FactoryPlot_1\":{\"OwnerUserId\":-1,\"Origin\":\"0, 0, 0\",\"CycleSeconds\":9,\"Active\":true,\"CycleId\":12,\"DesignId\":\"scout\",\"Level\":2,\"CycleStart\":1792929433.039861},\"FactoryPlot_4\":{\"Level\":1,\"Origin\":\"65, 0, 55\",\"Active\":false},\"FactoryPlot_2\":{\"CycleSeconds\":9,\"DesignId\":\"scout\",\"OwnerUserId\":-2,\"Active\":true,\"CycleId\":12,\"Level\":2,\"CycleStart\":1792929434.885703,\"Origin\":\"65, 0, 0\"},\"FactoryPlot_3\":{\"Level\":1,\"Origin\":\"0, 0, 55\",\"Active\":false}},\"run\":\"two\",\"u"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T115455Z_Studio_8faad_last.log",
+    "line": 3431,
+    "text": "2026-10-25T11:57:21.736Z,144.736252,1ca6a000,6,Info [FLog::CreatorOutput] B4_RATE_BURST {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":35,\"cash\":2625,\"plotIndex\":1,\"cycleStart\":1792929433.039861,\"cycleSeconds\":9,\"nextCycleSeconds\":6,\"stateVersion\":61,\"ready\":true,\"catalogVersion\":1,\"completed\":107,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":12,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":35,\"cash\":2625,\"plotIndex\":1,\"cycleStart\":1792929433.039861,\"cycleSeconds\":9,\"nextCycleSeconds\":6,\"stateVersion\":80,\"ready\":true,\"catalogVersion\":1,\"completed\":107,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":12,\"cashPerRobot\":"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T115455Z_Studio_8faad_last.log",
+    "line": 3432,
+    "text": "2026-10-25T11:57:21.912Z,144.912567,1c33c000,6,Info [FLog::CreatorOutput] B4_QUERY_EXTRA {\"response\":{\"notice\":\"Ungültige Anfrage.\",\"ready\":false},\"run\":\"two\",\"user\":-1}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T115455Z_Studio_8faad_last.log",
+    "line": 3433,
+    "text": "2026-10-25T11:57:21.948Z,144.948151,1c53f000,6,Info [FLog::CreatorOutput] B4_PUBLIC_WORLD {\"own\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":35,\"cash\":2625,\"plotIndex\":1,\"cycleStart\":1792929433.039861,\"cycleSeconds\":9,\"nextCycleSeconds\":6,\"stateVersion\":81,\"ready\":true,\"catalogVersion\":1,\"completed\":107,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":12,\"cashPerRobot\":25},\"plots\":{\"FactoryPlot_1\":{\"CycleSeconds\":9,\"DesignId\":\"scout\",\"OwnerUserId\":-1,\"Active\":true,\"CycleId\":12,\"Level\":2,\"CycleStart\":1792929433.039861,\"Origin\":\"0, 0, 0\"},\"FactoryPlot_2\":{\"CycleSeconds\":9,\"DesignId\":\"scout\",\"OwnerUserId\":-2,\"Active\":true,\"CycleId\":12,\"Level\":2,\"CycleStart\":1792929434.885703,\"Origin\":\"65, 0, 0\"},\"FactoryPlot_4\":{\"Level\":1,\"Origin\":\"65, 0, 55\",\"Active\":false},\"FactoryPlot_3\":{\"Level\":1,\"Origin\":\"0, 0, 55\",\"Active\":false}},\"run\":\"two\""
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261024T193411Z_Studio_4f78a_last.log",
+    "line": 65244,
+    "text": "2026-10-25T12:02:57.386Z,59325.386719,17926000,6,Info [FLog::CreatorOutput] B4_FOUR_INSTALLED 2573 6494"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e3931_last.log",
+    "line": 970,
+    "text": "2026-10-25T12:06:25.062Z,93.062927,1771c000,6,Info [FLog::CreatorOutput] B4_CLIENT_READY {\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":false,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":46,\"cash\":3825,\"plotIndex\":1,\"cycleStart\":1792929970.293544,\"cycleSeconds\":6,\"nextCycleSeconds\":6,\"stateVersion\":6,\"ready\":true,\"catalogVersion\":1,\"completed\":155,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":1,\"cashPerRobot\":25},\"user\":-1,\"players\":4,\"placeId\":112662761038118,\"run\":\"four\",\"gameId\":10772906084}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e3931_last.log",
+    "line": 971,
+    "text": "2026-10-25T12:06:25.067Z,93.067451,1771c000,6,Info [FLog::CreatorOutput] B4_RECOVERY_UI {\"visible\":false,\"title\":\"Deine Werkstatt wartet\",\"user\":-1,\"bodyFits\":true,\"titleFits\":true,\"run\":\"four\",\"body\":\"Dein Fortschritt wird sicher geladen …\"}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_56375_last.log",
+    "line": 971,
+    "text": "2026-10-25T12:06:30.495Z,98.495667,16c55000,6,Info [FLog::CreatorOutput] B4_CLIENT_READY {\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":false,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":14,\"cash\":1425,\"plotIndex\":2,\"cycleStart\":1792929975.570075,\"cycleSeconds\":6,\"nextCycleSeconds\":6,\"stateVersion\":6,\"ready\":true,\"catalogVersion\":1,\"completed\":59,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":1,\"cashPerRobot\":25},\"user\":-2,\"players\":4,\"placeId\":112662761038118,\"run\":\"four\",\"gameId\":10772906084}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_56375_last.log",
+    "line": 972,
+    "text": "2026-10-25T12:06:30.497Z,98.497047,16c55000,6,Info [FLog::CreatorOutput] B4_RECOVERY_UI {\"visible\":false,\"title\":\"Deine Werkstatt wartet\",\"user\":-2,\"bodyFits\":true,\"titleFits\":true,\"run\":\"four\",\"body\":\"Dein Fortschritt wird sicher geladen …\"}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1286,
+    "text": "2026-10-25T12:07:11.705Z,139.705765,17015000,6,Info [FLog::CreatorOutput] B4_CLIENT_READY {\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":1,\"cash\":100,\"plotIndex\":4,\"cycleStart\":1792930021.174736,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":13,\"ready\":true,\"catalogVersion\":1,\"completed\":4,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":5,\"cashPerRobot\":25},\"user\":-4,\"players\":4,\"placeId\":112662761038118,\"run\":\"four\",\"gameId\":10772906084}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1287,
+    "text": "2026-10-25T12:07:11.706Z,139.706985,17015000,6,Info [FLog::CreatorOutput] B4_RECOVERY_UI {\"visible\":false,\"title\":\"Deine Werkstatt wartet\",\"user\":-4,\"bodyFits\":true,\"titleFits\":true,\"run\":\"four\",\"body\":\"Dein Fortschritt wird sicher geladen …\"}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 1205,
+    "text": "2026-10-25T12:07:17.970Z,145.970459,193fb000,6,Info [FLog::CreatorOutput] B4_CLIENT_READY {\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":1,\"cash\":100,\"plotIndex\":3,\"cycleStart\":1792930020.807093,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":12,\"ready\":true,\"catalogVersion\":1,\"completed\":4,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":5,\"cashPerRobot\":25},\"user\":-3,\"players\":4,\"placeId\":112662761038118,\"run\":\"four\",\"gameId\":10772906084}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 1206,
+    "text": "2026-10-25T12:07:17.972Z,145.972015,193fb000,6,Info [FLog::CreatorOutput] B4_RECOVERY_UI {\"visible\":false,\"title\":\"Deine Werkstatt wartet\",\"user\":-3,\"bodyFits\":true,\"titleFits\":true,\"run\":\"four\",\"body\":\"Dein Fortschritt wird sicher geladen …\"}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120409Z_Studio_07070_last.log",
+    "line": 1413,
+    "text": "2026-10-25T12:07:31.880Z,200.880615,13688000,6,Info [FLog::CreatorOutput] B4_CHUNK four-server-1 SERVER_METRICS 1 2 {\"p50\":17.71516539156437,\"after\":{\"players\":[-4,-3,-2,-1],\"memoryMB\":2208.171875,\"active\":4,\"cycles\":{\"FactoryPlot_1\":{\"cycle\":12,\"level\":2,\"active\":true},\"FactoryPlot_2\":{\"cycle\":10,\"level\":2,\"active\":true},\"FactoryPlot_4\":{\"cycle\":7,\"level\":1,\"active\":true},\"FactoryPlot_3\":{\"cycle\":7,\"level\":1,\"active\":true}},\"instances\":52108},\"elapsed\":60.03603500011377,\"placeId\":112662761038118,\"run\":\"four\",\"before\":{\"players\":[-4,-3,-2,-1],\"memoryMB\":2202.30078125,\"active\":4,\"cycles\":{\"FactoryPlot_1\":{\"cycle\":3,\"level\":2,\"active\":true},\"FactoryPlot_2\":{\"cycle\":2,\"level\":2,\"active\":true},\"FactoryPlot_4\":{\"cycle\":1,\"level\":1,\"active\":true},\"FactoryPlot_3\""
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120409Z_Studio_07070_last.log",
+    "line": 1414,
+    "text": "2026-10-25T12:07:31.881Z,200.881348,13688000,6,Info [FLog::CreatorOutput] B4_CHUNK four-server-1 SERVER_METRICS 2 2 :{\"cycle\":2,\"level\":1,\"active\":true}},\"instances\":52108},\"p95\":78.23708653450012,\"gameId\":10772906084,\"max\":1082.9238891601563,\"samples\":2168}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_56375_last.log",
+    "line": 1302,
+    "text": "2026-10-25T12:07:46.514Z,174.514511,16a52000,6,Info [FLog::CreatorOutput] B4_CLIENT_METRICS {\"p50\":100.98341852426529,\"after\":{\"models\":8,\"memoryMB\":2381.590576171875,\"containers\":4,\"children\":12,\"instances\":54292},\"user\":-2,\"elapsed\":60.00537912501022,\"samples\":395,\"run\":\"four\",\"before\":{\"models\":8,\"memoryMB\":2307.13720703125,\"containers\":4,\"children\":12,\"instances\":54245},\"p95\":401.8216133117676,\"viewport\":\"1081, 693\",\"players\":4,\"max\":1730.2651405334473,\"quality\":\"Studio child; parent Automatic, no privileged client settings read\"}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e3931_last.log",
+    "line": 1323,
+    "text": "2026-10-25T12:08:00.451Z,188.451080,16f69000,6,Info [FLog::CreatorOutput] B4_CLIENT_METRICS {\"p50\":149.37403798103333,\"after\":{\"models\":8,\"memoryMB\":2298.29736328125,\"containers\":4,\"children\":12,\"instances\":54292},\"user\":-1,\"elapsed\":60.01240854198113,\"samples\":256,\"run\":\"four\",\"before\":{\"models\":8,\"memoryMB\":2119.375244140625,\"containers\":4,\"children\":12,\"instances\":52735},\"p95\":470.0762629508972,\"viewport\":\"1081, 693\",\"players\":4,\"max\":3714.540719985962,\"quality\":\"Studio child; parent Automatic, no privileged client settings read\"}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_56375_last.log",
+    "line": 1430,
+    "text": "2026-10-25T12:08:14.738Z,202.738937,16a52000,6,Info [FLog::CreatorOutput] B4_CONTROL_AFTER_OTHER_COMMANDS {\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":17,\"cash\":1800,\"plotIndex\":2,\"cycleStart\":1792930079.794142,\"cycleSeconds\":6,\"nextCycleSeconds\":6,\"stateVersion\":28,\"ready\":true,\"catalogVersion\":1,\"completed\":74,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":16,\"cashPerRobot\":25},\"user\":-2,\"players\":4,\"placeId\":112662761038118,\"run\":\"four\",\"gameId\":10772906084}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1567,
+    "text": "2026-10-25T12:08:27.822Z,215.822815,16e12000,6,Info [FLog::CreatorOutput] B4_CLIENT_METRICS {\"p50\":70.10053843259812,\"after\":{\"models\":8,\"memoryMB\":2349.62158203125,\"containers\":4,\"children\":12,\"instances\":54291},\"user\":-4,\"elapsed\":60.0995644161012,\"samples\":734,\"run\":\"four\",\"before\":{\"models\":8,\"memoryMB\":2289.359619140625,\"containers\":4,\"children\":12,\"instances\":54291},\"p95\":171.90666496753694,\"viewport\":\"1081, 693\",\"players\":4,\"max\":433.14841389656069,\"quality\":\"Studio child; parent Automatic, no privileged client settings read\"}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1576,
+    "text": "2026-10-25T12:08:28.266Z,216.266708,16e12000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-4 REMOTE 1 3 {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":300,\"plotIndex\":4,\"cycleStart\":1792930099.075025,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":26,\"ready\":true,\"catalogVersion\":1,\"completed\":12,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":13,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":300,\"plo"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1577,
+    "text": "2026-10-25T12:08:28.267Z,216.267578,16e12000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-4 REMOTE 2 3 tIndex\":4,\"cycleStart\":1792930099.075025,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":28,\"ready\":true,\"catalogVersion\":1,\"completed\":12,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":13,\"cashPerRobot\":25},\"user\":-4,\"request\":{\"kind\":\"upgrade\",\"payload\":{\"playerId\":-999,\"requestId\":\"101\",\"expectedLevel\":1,\"machineId\":\"starter\",\"catalogVersion\":1}},\"label\":\"foreign_player\",\"run\":\"four\",\"response\":{\"ok\":false,\"code\":\"invalid_request\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlocked"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1578,
+    "text": "2026-10-25T12:08:28.267Z,216.267776,16e12000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-4 REMOTE 3 3 Scout\":true,\"savedRevision\":3,\"cash\":300,\"plotIndex\":4,\"cycleStart\":1792930099.075025,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":27,\"ready\":true,\"catalogVersion\":1,\"completed\":12,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":13,\"cashPerRobot\":25},\"requestId\":\"101\"}}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e3931_last.log",
+    "line": 1565,
+    "text": "2026-10-25T12:08:28.575Z,216.575653,17519000,6,Info [FLog::CreatorOutput] B4_CONTROL_AFTER_OTHER_COMMANDS {\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":49,\"cash\":4300,\"plotIndex\":1,\"cycleStart\":1792930096.222366,\"cycleSeconds\":6,\"nextCycleSeconds\":6,\"stateVersion\":32,\"ready\":true,\"catalogVersion\":1,\"completed\":174,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":20,\"cashPerRobot\":25},\"user\":-1,\"players\":4,\"placeId\":112662761038118,\"run\":\"four\",\"gameId\":10772906084}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1613,
+    "text": "2026-10-25T12:08:29.931Z,217.931351,17015000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-5 REMOTE 1 3 {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":300,\"plotIndex\":4,\"cycleStart\":1792930099.075025,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":29,\"ready\":true,\"catalogVersion\":1,\"completed\":12,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":13,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":300,\"plo"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1614,
+    "text": "2026-10-25T12:08:29.931Z,217.931671,17015000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-5 REMOTE 2 3 tIndex\":4,\"cycleStart\":1792930099.075025,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":31,\"ready\":true,\"catalogVersion\":1,\"completed\":12,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":13,\"cashPerRobot\":25},\"user\":-4,\"request\":{\"kind\":\"upgrade\",\"payload\":{\"plotIndex\":1,\"requestId\":\"102\",\"expectedLevel\":1,\"machineId\":\"starter\",\"catalogVersion\":1}},\"label\":\"foreign_plot\",\"run\":\"four\",\"response\":{\"ok\":false,\"code\":\"invalid_request\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScou"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1615,
+    "text": "2026-10-25T12:08:29.931Z,217.931824,17015000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-5 REMOTE 3 3 t\":true,\"savedRevision\":3,\"cash\":300,\"plotIndex\":4,\"cycleStart\":1792930099.075025,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":30,\"ready\":true,\"catalogVersion\":1,\"completed\":12,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":13,\"cashPerRobot\":25},\"requestId\":\"102\"}}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1648,
+    "text": "2026-10-25T12:08:31.577Z,219.577332,16e12000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-6 REMOTE 1 3 {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":300,\"plotIndex\":4,\"cycleStart\":1792930099.075025,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":32,\"ready\":true,\"catalogVersion\":1,\"completed\":12,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":13,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":300,\"plo"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1649,
+    "text": "2026-10-25T12:08:31.577Z,219.577637,16e12000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-6 REMOTE 2 3 tIndex\":4,\"cycleStart\":1792930099.075025,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":34,\"ready\":true,\"catalogVersion\":1,\"completed\":12,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":13,\"cashPerRobot\":25},\"user\":-4,\"request\":{\"kind\":\"upgrade\",\"payload\":{\"requestId\":\"103\",\"expectedLevel\":1,\"machineId\":\"FactoryPlot_2/starter\",\"catalogVersion\":1}},\"label\":\"foreign_machine\",\"run\":\"four\",\"response\":{\"ok\":false,\"code\":\"forbidden\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1650,
+    "text": "2026-10-25T12:08:31.577Z,219.577759,16e12000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-6 REMOTE 3 3 true,\"savedRevision\":3,\"cash\":300,\"plotIndex\":4,\"cycleStart\":1792930099.075025,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":33,\"ready\":true,\"catalogVersion\":1,\"completed\":12,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":13,\"cashPerRobot\":25},\"requestId\":\"103\"}}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1670,
+    "text": "2026-10-25T12:08:33.190Z,221.190918,16e12000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-7 REMOTE 1 3 {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":300,\"plotIndex\":4,\"cycleStart\":1792930099.075025,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":35,\"ready\":true,\"catalogVersion\":1,\"completed\":12,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":13,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":300,\"plo"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1671,
+    "text": "2026-10-25T12:08:33.191Z,221.191223,16e12000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-7 REMOTE 2 3 tIndex\":4,\"cycleStart\":1792930099.075025,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":37,\"ready\":true,\"catalogVersion\":1,\"completed\":12,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":13,\"cashPerRobot\":25},\"user\":-4,\"request\":{\"kind\":\"upgrade\",\"payload\":{\"requestId\":\"104\",\"expectedLevel\":-1,\"machineId\":\"starter\",\"catalogVersion\":1}},\"label\":\"negative_level\",\"run\":\"four\",\"response\":{\"ok\":false,\"code\":\"stale_state\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedR"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1672,
+    "text": "2026-10-25T12:08:33.191Z,221.191345,16e12000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-7 REMOTE 3 3 evision\":3,\"cash\":300,\"plotIndex\":4,\"cycleStart\":1792930099.075025,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":36,\"ready\":true,\"catalogVersion\":1,\"completed\":12,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":13,\"cashPerRobot\":25},\"requestId\":\"104\"}}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 1649,
+    "text": "2026-10-25T12:08:33.698Z,221.698746,18ff5000,6,Info [FLog::CreatorOutput] B4_CLIENT_METRICS {\"p50\":130.22996485233308,\"after\":{\"models\":8,\"memoryMB\":2364.3984375,\"containers\":4,\"children\":12,\"instances\":54293},\"user\":-3,\"elapsed\":60.094437832944098,\"samples\":395,\"run\":\"four\",\"before\":{\"models\":8,\"memoryMB\":2313.92578125,\"containers\":4,\"children\":12,\"instances\":54293},\"p95\":292.47984290122988,\"viewport\":\"1081, 693\",\"players\":4,\"max\":784.7833037376404,\"quality\":\"Studio child; parent Automatic, no privileged client settings read\"}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 1661,
+    "text": "2026-10-25T12:08:34.010Z,222.010498,18ff5000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-4 REMOTE 1 3 {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":300,\"plotIndex\":3,\"cycleStart\":1792930099.074745,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":25,\"ready\":true,\"catalogVersion\":1,\"completed\":12,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":13,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":300,\"plo"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 1662,
+    "text": "2026-10-25T12:08:34.010Z,222.010742,18ff5000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-4 REMOTE 2 3 tIndex\":3,\"cycleStart\":1792930099.074745,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":27,\"ready\":true,\"catalogVersion\":1,\"completed\":12,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":13,\"cashPerRobot\":25},\"user\":-3,\"request\":{\"kind\":\"upgrade\",\"payload\":{\"playerId\":-999,\"requestId\":\"101\",\"expectedLevel\":1,\"machineId\":\"starter\",\"catalogVersion\":1}},\"label\":\"foreign_player\",\"run\":\"four\",\"response\":{\"ok\":false,\"code\":\"invalid_request\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlocked"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 1663,
+    "text": "2026-10-25T12:08:34.010Z,222.010849,18ff5000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-4 REMOTE 3 3 Scout\":true,\"savedRevision\":3,\"cash\":300,\"plotIndex\":3,\"cycleStart\":1792930099.074745,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":26,\"ready\":true,\"catalogVersion\":1,\"completed\":12,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":13,\"cashPerRobot\":25},\"requestId\":\"101\"}}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1695,
+    "text": "2026-10-25T12:08:34.664Z,222.664551,17015000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-8 REMOTE 1 3 {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":300,\"plotIndex\":4,\"cycleStart\":1792930099.075025,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":38,\"ready\":true,\"catalogVersion\":1,\"completed\":12,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":13,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":300,\"plo"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1696,
+    "text": "2026-10-25T12:08:34.664Z,222.664795,17015000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-8 REMOTE 2 3 tIndex\":4,\"cycleStart\":1792930099.075025,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":40,\"ready\":true,\"catalogVersion\":1,\"completed\":12,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":13,\"cashPerRobot\":25},\"user\":-4,\"request\":{\"kind\":\"upgrade\",\"payload\":{\"requestId\":\"105\",\"expectedLevel\":\"1\",\"machineId\":\"starter\",\"catalogVersion\":1}},\"label\":\"string_level\",\"run\":\"four\",\"response\":{\"ok\":false,\"code\":\"stale_state\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRe"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1697,
+    "text": "2026-10-25T12:08:34.664Z,222.664978,17015000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-8 REMOTE 3 3 vision\":3,\"cash\":300,\"plotIndex\":4,\"cycleStart\":1792930099.075025,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":39,\"ready\":true,\"catalogVersion\":1,\"completed\":12,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":13,\"cashPerRobot\":25},\"requestId\":\"105\"}}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 1699,
+    "text": "2026-10-25T12:08:35.350Z,223.350952,18ff5000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-5 REMOTE 1 3 {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":300,\"plotIndex\":3,\"cycleStart\":1792930099.074745,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":28,\"ready\":true,\"catalogVersion\":1,\"completed\":12,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":13,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":300,\"plo"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 1700,
+    "text": "2026-10-25T12:08:35.351Z,223.351242,18ff5000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-5 REMOTE 2 3 tIndex\":3,\"cycleStart\":1792930099.074745,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":30,\"ready\":true,\"catalogVersion\":1,\"completed\":12,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":13,\"cashPerRobot\":25},\"user\":-3,\"request\":{\"kind\":\"upgrade\",\"payload\":{\"plotIndex\":1,\"requestId\":\"102\",\"expectedLevel\":1,\"machineId\":\"starter\",\"catalogVersion\":1}},\"label\":\"foreign_plot\",\"run\":\"four\",\"response\":{\"ok\":false,\"code\":\"invalid_request\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScou"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 1701,
+    "text": "2026-10-25T12:08:35.351Z,223.351395,18ff5000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-5 REMOTE 3 3 t\":true,\"savedRevision\":3,\"cash\":300,\"plotIndex\":3,\"cycleStart\":1792930099.074745,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":29,\"ready\":true,\"catalogVersion\":1,\"completed\":12,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":13,\"cashPerRobot\":25},\"requestId\":\"102\"}}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1731,
+    "text": "2026-10-25T12:08:36.092Z,224.092453,17c56000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-9 NUMERIC_GUARD 1 3 {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":300,\"plotIndex\":4,\"cycleStart\":1792930099.075025,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":41,\"ready\":true,\"catalogVersion\":1,\"completed\":12,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":13,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":325,\"plo"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1732,
+    "text": "2026-10-25T12:08:36.092Z,224.092712,17c56000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-9 NUMERIC_GUARD 2 3 tIndex\":4,\"cycleStart\":1792930108.129149,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":44,\"ready\":true,\"catalogVersion\":1,\"completed\":13,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\"cashPerRobot\":25},\"user\":-4,\"label\":\"nan\",\"run\":\"four\",\"response\":{\"ok\":false,\"code\":\"stale_state\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":325,\"plotIndex\":4,\"cycleStart\":1792930108.129149,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":43,\"ready\""
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1733,
+    "text": "2026-10-25T12:08:36.092Z,224.092865,17c56000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-9 NUMERIC_GUARD 3 3 :true,\"catalogVersion\":1,\"completed\":13,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\"cashPerRobot\":25},\"requestId\":\"106\"}}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 1747,
+    "text": "2026-10-25T12:08:36.733Z,224.733246,193fb000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-6 REMOTE 1 3 {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":300,\"plotIndex\":3,\"cycleStart\":1792930099.074745,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":31,\"ready\":true,\"catalogVersion\":1,\"completed\":12,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":13,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":300,\"plo"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 1748,
+    "text": "2026-10-25T12:08:36.733Z,224.733475,193fb000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-6 REMOTE 2 3 tIndex\":3,\"cycleStart\":1792930099.074745,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":33,\"ready\":true,\"catalogVersion\":1,\"completed\":12,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":13,\"cashPerRobot\":25},\"user\":-3,\"request\":{\"kind\":\"upgrade\",\"payload\":{\"requestId\":\"103\",\"expectedLevel\":1,\"machineId\":\"FactoryPlot_2/starter\",\"catalogVersion\":1}},\"label\":\"foreign_machine\",\"run\":\"four\",\"response\":{\"ok\":false,\"code\":\"forbidden\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 1749,
+    "text": "2026-10-25T12:08:36.733Z,224.733643,193fb000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-6 REMOTE 3 3 true,\"savedRevision\":3,\"cash\":300,\"plotIndex\":3,\"cycleStart\":1792930099.074745,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":32,\"ready\":true,\"catalogVersion\":1,\"completed\":12,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":13,\"cashPerRobot\":25},\"requestId\":\"103\"}}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1764,
+    "text": "2026-10-25T12:08:37.834Z,225.834747,1764d000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-10 NUMERIC_GUARD 1 3 {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":325,\"plotIndex\":4,\"cycleStart\":1792930108.129149,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":45,\"ready\":true,\"catalogVersion\":1,\"completed\":13,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":325,\"plo"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1765,
+    "text": "2026-10-25T12:08:37.835Z,225.835236,1764d000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-10 NUMERIC_GUARD 2 3 tIndex\":4,\"cycleStart\":1792930108.129149,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":47,\"ready\":true,\"catalogVersion\":1,\"completed\":13,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\"cashPerRobot\":25},\"user\":-4,\"label\":\"infinity\",\"run\":\"four\",\"response\":{\"ok\":false,\"code\":\"stale_state\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":325,\"plotIndex\":4,\"cycleStart\":1792930108.129149,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":46,\"r"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1766,
+    "text": "2026-10-25T12:08:37.835Z,225.835464,1764d000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-10 NUMERIC_GUARD 3 3 eady\":true,\"catalogVersion\":1,\"completed\":13,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\"cashPerRobot\":25},\"requestId\":\"107\"}}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 1795,
+    "text": "2026-10-25T12:08:38.312Z,226.312195,18ff5000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-7 REMOTE 1 3 {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":325,\"plotIndex\":3,\"cycleStart\":1792930108.128672,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":35,\"ready\":true,\"catalogVersion\":1,\"completed\":13,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":3,\"cash\":325,\"plo"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 1796,
+    "text": "2026-10-25T12:08:38.312Z,226.312485,18ff5000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-7 REMOTE 2 3 tIndex\":3,\"cycleStart\":1792930108.128672,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":37,\"ready\":true,\"catalogVersion\":1,\"completed\":13,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\"cashPerRobot\":25},\"user\":-3,\"request\":{\"kind\":\"upgrade\",\"payload\":{\"requestId\":\"104\",\"expectedLevel\":-1,\"machineId\":\"starter\",\"catalogVersion\":1}},\"label\":\"negative_level\",\"run\":\"four\",\"response\":{\"ok\":false,\"code\":\"stale_state\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedR"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 1797,
+    "text": "2026-10-25T12:08:38.312Z,226.312592,18ff5000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-7 REMOTE 3 3 evision\":3,\"cash\":325,\"plotIndex\":3,\"cycleStart\":1792930108.128672,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":36,\"ready\":true,\"catalogVersion\":1,\"completed\":13,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\"cashPerRobot\":25},\"requestId\":\"104\"}}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1799,
+    "text": "2026-10-25T12:08:39.669Z,227.669189,17015000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-11 REMOTE 1 3 {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":false,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":325,\"plotIndex\":4,\"cycleStart\":1792930108.7248319,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":50,\"ready\":true,\"catalogVersion\":1,\"completed\":13,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":false,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":325,\""
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1800,
+    "text": "2026-10-25T12:08:39.669Z,227.669479,17015000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-11 REMOTE 2 3 plotIndex\":4,\"cycleStart\":1792930108.7248319,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":52,\"ready\":true,\"catalogVersion\":1,\"completed\":13,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\"cashPerRobot\":25},\"user\":-4,\"request\":{\"kind\":\"select\",\"payload\":{\"requestId\":\"108\",\"designId\":\"admin_robot\"}},\"label\":\"unknown_design\",\"run\":\"four\",\"response\":{\"ok\":false,\"code\":\"unknown_design\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":false,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":325,\"plotI"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1801,
+    "text": "2026-10-25T12:08:39.669Z,227.669617,17015000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-11 REMOTE 3 3 ndex\":4,\"cycleStart\":1792930108.7248319,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":51,\"ready\":true,\"catalogVersion\":1,\"completed\":13,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\"cashPerRobot\":25},\"requestId\":\"108\"}}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 1834,
+    "text": "2026-10-25T12:08:39.734Z,227.734238,18ff5000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-8 REMOTE 1 3 {\"before\":{\"pausedAt\":1792930110.108139,\"saveStatus\":\"saving\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"unlockedOrbit\":false,\"unlockedScout\":true,\"ready\":true,\"level\":1,\"plotIndex\":3,\"cycleSeconds\":9,\"cash\":325,\"nextCycleSeconds\":9,\"cycleStart\":1792930108.128672,\"savedRevision\":3,\"catalogVersion\":1,\"completed\":13,\"stateVersion\":39,\"version\":\"development-b4\",\"canRetry\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\"cashPerRobot\":25},\"after\":{\"pausedAt\":1792930110.108139,\"saveStatus\":\"saving\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"un"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 1835,
+    "text": "2026-10-25T12:08:39.734Z,227.734482,18ff5000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-8 REMOTE 2 3 lockedOrbit\":false,\"unlockedScout\":true,\"ready\":true,\"level\":1,\"plotIndex\":3,\"cycleSeconds\":9,\"cash\":325,\"nextCycleSeconds\":9,\"cycleStart\":1792930108.128672,\"savedRevision\":3,\"catalogVersion\":1,\"completed\":13,\"stateVersion\":41,\"version\":\"development-b4\",\"canRetry\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\"cashPerRobot\":25},\"user\":-3,\"request\":{\"kind\":\"upgrade\",\"payload\":{\"requestId\":\"105\",\"expectedLevel\":\"1\",\"machineId\":\"starter\",\"catalogVersion\":1}},\"label\":\"string_level\",\"run\":\"four\",\"response\":{\"ok\":false,\"view\":{\"pausedAt\":1792930110.108139,\"saveStatus\":\"saving\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 1836,
+    "text": "2026-10-25T12:08:39.734Z,227.734589,18ff5000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-8 REMOTE 3 3 \":true,\"upgradedCycleSeconds\":6,\"unlockedOrbit\":false,\"unlockedScout\":true,\"ready\":true,\"level\":1,\"plotIndex\":3,\"cycleSeconds\":9,\"cash\":325,\"nextCycleSeconds\":9,\"cycleStart\":1792930108.128672,\"savedRevision\":3,\"catalogVersion\":1,\"completed\":13,\"stateVersion\":40,\"version\":\"development-b4\",\"canRetry\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\"cashPerRobot\":25},\"code\":\"inactive\"}}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 1875,
+    "text": "2026-10-25T12:08:41.350Z,229.350555,18732000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-9 NUMERIC_GUARD 1 3 {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":false,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":325,\"plotIndex\":3,\"cycleStart\":1792930108.7725628,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":43,\"ready\":true,\"catalogVersion\":1,\"completed\":13,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":false,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":325,\""
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 1876,
+    "text": "2026-10-25T12:08:41.351Z,229.351013,18732000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-9 NUMERIC_GUARD 2 3 plotIndex\":3,\"cycleStart\":1792930108.7725628,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":45,\"ready\":true,\"catalogVersion\":1,\"completed\":13,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\"cashPerRobot\":25},\"user\":-3,\"label\":\"nan\",\"run\":\"four\",\"response\":{\"ok\":false,\"code\":\"stale_state\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":false,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":325,\"plotIndex\":3,\"cycleStart\":1792930108.7725628,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":44,\""
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 1877,
+    "text": "2026-10-25T12:08:41.351Z,229.351135,18732000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-9 NUMERIC_GUARD 3 3 ready\":true,\"catalogVersion\":1,\"completed\":13,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\"cashPerRobot\":25},\"requestId\":\"106\"}}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1837,
+    "text": "2026-10-25T12:08:41.420Z,229.420837,17c56000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-12 REMOTE 1 3 {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":false,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":325,\"plotIndex\":4,\"cycleStart\":1792930108.7248319,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":53,\"ready\":true,\"catalogVersion\":1,\"completed\":13,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":false,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":325,\""
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1838,
+    "text": "2026-10-25T12:08:41.421Z,229.421234,17c56000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-12 REMOTE 2 3 plotIndex\":4,\"cycleStart\":1792930108.7248319,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":55,\"ready\":true,\"catalogVersion\":1,\"completed\":13,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\"cashPerRobot\":25},\"user\":-4,\"request\":{\"kind\":\"complete\",\"payload\":{\"cycleId\":3,\"requestId\":\"109\"}},\"label\":\"client_complete\",\"run\":\"four\",\"response\":{\"ok\":false,\"code\":\"invalid_request\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":false,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":325,\"plotIndex\":4,\""
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1839,
+    "text": "2026-10-25T12:08:41.421Z,229.421509,17c56000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-12 REMOTE 3 3 cycleStart\":1792930108.7248319,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":54,\"ready\":true,\"catalogVersion\":1,\"completed\":13,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\"cashPerRobot\":25},\"requestId\":\"109\"}}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 1914,
+    "text": "2026-10-25T12:08:42.905Z,230.905121,191f8000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-10 NUMERIC_GUARD 1 3 {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":false,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":325,\"plotIndex\":3,\"cycleStart\":1792930108.7725628,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":46,\"ready\":true,\"catalogVersion\":1,\"completed\":13,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":false,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":325,\""
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 1915,
+    "text": "2026-10-25T12:08:42.905Z,230.905396,191f8000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-10 NUMERIC_GUARD 2 3 plotIndex\":3,\"cycleStart\":1792930108.7725628,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":48,\"ready\":true,\"catalogVersion\":1,\"completed\":13,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\"cashPerRobot\":25},\"user\":-3,\"label\":\"infinity\",\"run\":\"four\",\"response\":{\"ok\":false,\"code\":\"stale_state\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":false,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":325,\"plotIndex\":3,\"cycleStart\":1792930108.7725628,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\""
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 1916,
+    "text": "2026-10-25T12:08:42.905Z,230.905533,191f8000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-10 NUMERIC_GUARD 3 3 :47,\"ready\":true,\"catalogVersion\":1,\"completed\":13,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\"cashPerRobot\":25},\"requestId\":\"107\"}}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1869,
+    "text": "2026-10-25T12:08:43.026Z,231.026306,16e12000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-13 REMOTE 1 3 {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":false,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":325,\"plotIndex\":4,\"cycleStart\":1792930108.7248319,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":56,\"ready\":true,\"catalogVersion\":1,\"completed\":13,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":false,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":325,\""
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1870,
+    "text": "2026-10-25T12:08:43.026Z,231.026520,16e12000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-13 REMOTE 2 3 plotIndex\":4,\"cycleStart\":1792930108.7248319,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":58,\"ready\":true,\"catalogVersion\":1,\"completed\":13,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\"cashPerRobot\":25},\"user\":-4,\"request\":{\"extra\":true,\"kind\":\"select\",\"payload\":{\"requestId\":\"110\",\"designId\":\"scout\"}},\"label\":\"extra_argument\",\"run\":\"four\",\"response\":{\"ok\":false,\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":false,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":325,\"plotIndex\":4,\"cycleSta"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1871,
+    "text": "2026-10-25T12:08:43.026Z,231.026688,16e12000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-13 REMOTE 3 3 rt\":1792930108.7248319,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":57,\"ready\":true,\"catalogVersion\":1,\"completed\":13,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\"cashPerRobot\":25},\"code\":\"invalid_request\"}}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 1945,
+    "text": "2026-10-25T12:08:44.216Z,232.216187,18ff5000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-11 REMOTE 1 3 {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":false,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":325,\"plotIndex\":3,\"cycleStart\":1792930108.7725628,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":49,\"ready\":true,\"catalogVersion\":1,\"completed\":13,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":false,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":325,\""
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 1946,
+    "text": "2026-10-25T12:08:44.216Z,232.216705,18ff5000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-11 REMOTE 2 3 plotIndex\":3,\"cycleStart\":1792930108.7725628,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":51,\"ready\":true,\"catalogVersion\":1,\"completed\":13,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\"cashPerRobot\":25},\"user\":-3,\"request\":{\"kind\":\"select\",\"payload\":{\"requestId\":\"108\",\"designId\":\"admin_robot\"}},\"label\":\"unknown_design\",\"run\":\"four\",\"response\":{\"ok\":false,\"code\":\"unknown_design\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":false,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":325,\"plotI"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 1947,
+    "text": "2026-10-25T12:08:44.216Z,232.216843,18ff5000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-11 REMOTE 3 3 ndex\":3,\"cycleStart\":1792930108.7725628,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":50,\"ready\":true,\"catalogVersion\":1,\"completed\":13,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\"cashPerRobot\":25},\"requestId\":\"108\"}}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1902,
+    "text": "2026-10-25T12:08:44.617Z,232.617020,17e59000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-14 PARALLEL_DISTINCT 1 4 {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":false,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":325,\"plotIndex\":4,\"cycleStart\":1792930108.7248319,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":59,\"ready\":true,\"catalogVersion\":1,\"completed\":13,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":275,\"p"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1903,
+    "text": "2026-10-25T12:08:44.617Z,232.617310,17e59000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-14 PARALLEL_DISTINCT 2 4 lotIndex\":4,\"cycleStart\":1792930108.7248319,\"cycleSeconds\":9,\"nextCycleSeconds\":6,\"stateVersion\":64,\"ready\":true,\"catalogVersion\":1,\"completed\":13,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\"cashPerRobot\":25},\"user\":-4,\"replies\":[{\"ok\":true,\"code\":\"upgraded\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":275,\"plotIndex\":4,\"cycleStart\":1792930108.7248319,\"cycleSeconds\":9,\"nextCycleSeconds\":6,\"stateVersion\":61,\"ready\":true,\"catalogVersion\":1,\"co"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1904,
+    "text": "2026-10-25T12:08:44.617Z,232.617401,17e59000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-14 PARALLEL_DISTINCT 3 4 mpleted\":13,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\"cashPerRobot\":25},\"requestId\":\"112\"},{\"ok\":false,\"code\":\"stale_state\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":275,\"plotIndex\":4,\"cycleStart\":1792930108.7248319,\"cycleSeconds\":9,\"nextCycleSeconds\":6,\"stateVersion\":62,\"ready\":true,\"catalogVersion\":1,\"completed\":13,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\""
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1905,
+    "text": "2026-10-25T12:08:44.617Z,232.617493,17e59000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-14 PARALLEL_DISTINCT 4 4 cashPerRobot\":25},\"requestId\":\"113\"},{\"ok\":false,\"code\":\"stale_state\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":275,\"plotIndex\":4,\"cycleStart\":1792930108.7248319,\"cycleSeconds\":9,\"nextCycleSeconds\":6,\"stateVersion\":63,\"ready\":true,\"catalogVersion\":1,\"completed\":13,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\"cashPerRobot\":25},\"requestId\":\"114\"}],\"run\":\"four\",\"requestIds\":[\"112\",\"113\",\"114\"]}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 1985,
+    "text": "2026-10-25T12:08:45.561Z,233.561127,18ff5000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-12 REMOTE 1 3 {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":false,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":325,\"plotIndex\":3,\"cycleStart\":1792930108.7725628,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":52,\"ready\":true,\"catalogVersion\":1,\"completed\":13,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":false,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":325,\""
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 1986,
+    "text": "2026-10-25T12:08:45.561Z,233.561295,18ff5000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-12 REMOTE 2 3 plotIndex\":3,\"cycleStart\":1792930108.7725628,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":54,\"ready\":true,\"catalogVersion\":1,\"completed\":13,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\"cashPerRobot\":25},\"user\":-3,\"request\":{\"kind\":\"complete\",\"payload\":{\"cycleId\":2,\"requestId\":\"109\"}},\"label\":\"client_complete\",\"run\":\"four\",\"response\":{\"ok\":false,\"code\":\"invalid_request\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":false,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":325,\"plotIndex\":3,\""
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 1987,
+    "text": "2026-10-25T12:08:45.561Z,233.561371,18ff5000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-12 REMOTE 3 3 cycleStart\":1792930108.7725628,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":53,\"ready\":true,\"catalogVersion\":1,\"completed\":13,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\"cashPerRobot\":25},\"requestId\":\"109\"}}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 2020,
+    "text": "2026-10-25T12:08:46.964Z,234.964264,18935000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-13 REMOTE 1 3 {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":false,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":325,\"plotIndex\":3,\"cycleStart\":1792930108.7725628,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":55,\"ready\":true,\"catalogVersion\":1,\"completed\":13,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":false,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":325,\""
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 2021,
+    "text": "2026-10-25T12:08:46.964Z,234.964539,18935000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-13 REMOTE 2 3 plotIndex\":3,\"cycleStart\":1792930108.7725628,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":57,\"ready\":true,\"catalogVersion\":1,\"completed\":13,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\"cashPerRobot\":25},\"user\":-3,\"request\":{\"extra\":true,\"kind\":\"select\",\"payload\":{\"requestId\":\"110\",\"designId\":\"scout\"}},\"label\":\"extra_argument\",\"run\":\"four\",\"response\":{\"ok\":false,\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":false,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":325,\"plotIndex\":3,\"cycleSta"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 2022,
+    "text": "2026-10-25T12:08:46.964Z,234.964630,18935000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-13 REMOTE 3 3 rt\":1792930108.7725628,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":56,\"ready\":true,\"catalogVersion\":1,\"completed\":13,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":14,\"cashPerRobot\":25},\"code\":\"invalid_request\"}}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1984,
+    "text": "2026-10-25T12:08:48.163Z,236.163620,1764d000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-15 RATE_BURST 1 11 {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":300,\"plotIndex\":4,\"cycleStart\":1792930117.838486,\"cycleSeconds\":6,\"nextCycleSeconds\":6,\"stateVersion\":66,\"ready\":true,\"catalogVersion\":1,\"completed\":14,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":300,\"plot"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1985,
+    "text": "2026-10-25T12:08:48.164Z,236.164093,1764d000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-15 RATE_BURST 2 11 Index\":4,\"cycleStart\":1792930117.838486,\"cycleSeconds\":6,\"nextCycleSeconds\":6,\"stateVersion\":91,\"ready\":true,\"catalogVersion\":1,\"completed\":14,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRobot\":25},\"user\":-4,\"run\":\"four\",\"replies\":[{\"ok\":true,\"code\":\"selected\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":300,\"plotIndex\":4,\"cycleStart\":1792930117.838486,\"cycleSeconds\":6,\"nextCycleSeconds\":6,\"stateVersion\":68,\"ready\":true,\"catalogVersio"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1986,
+    "text": "2026-10-25T12:08:48.164Z,236.164200,1764d000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-15 RATE_BURST 3 11 n\":1,\"completed\":14,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRobot\":25},\"requestId\":\"115\"},{\"ok\":true,\"code\":\"selected\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":300,\"plotIndex\":4,\"cycleStart\":1792930117.838486,\"cycleSeconds\":6,\"nextCycleSeconds\":6,\"stateVersion\":70,\"ready\":true,\"catalogVersion\":1,\"completed\":14,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":1"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1987,
+    "text": "2026-10-25T12:08:48.164Z,236.164276,1764d000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-15 RATE_BURST 4 11 5,\"cashPerRobot\":25},\"requestId\":\"116\"},{\"ok\":true,\"code\":\"selected\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":300,\"plotIndex\":4,\"cycleStart\":1792930117.838486,\"cycleSeconds\":6,\"nextCycleSeconds\":6,\"stateVersion\":72,\"ready\":true,\"catalogVersion\":1,\"completed\":14,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRobot\":25},\"requestId\":\"117\"},{\"ok\":true,\"code\":\"selected\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\""
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1988,
+    "text": "2026-10-25T12:08:48.164Z,236.164352,1764d000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-15 RATE_BURST 5 11 productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":300,\"plotIndex\":4,\"cycleStart\":1792930117.838486,\"cycleSeconds\":6,\"nextCycleSeconds\":6,\"stateVersion\":74,\"ready\":true,\"catalogVersion\":1,\"completed\":14,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRobot\":25},\"requestId\":\"118\"},{\"ok\":true,\"code\":\"selected\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":300,\"plotIndex\":4,\"cycleStart\":179"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1989,
+    "text": "2026-10-25T12:08:48.164Z,236.164429,1764d000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-15 RATE_BURST 6 11 2930117.838486,\"cycleSeconds\":6,\"nextCycleSeconds\":6,\"stateVersion\":76,\"ready\":true,\"catalogVersion\":1,\"completed\":14,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRobot\":25},\"requestId\":\"119\"},{\"ok\":true,\"code\":\"selected\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":300,\"plotIndex\":4,\"cycleStart\":1792930117.838486,\"cycleSeconds\":6,\"nextCycleSeconds\":6,\"stateVersion\":78,\"ready\":true,\"catalogVersion\":1,\"completed\":14,\"canRetry\":true,\"ver"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1990,
+    "text": "2026-10-25T12:08:48.164Z,236.164505,1764d000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-15 RATE_BURST 7 11 sion\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRobot\":25},\"requestId\":\"120\"},{\"ok\":true,\"code\":\"selected\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":300,\"plotIndex\":4,\"cycleStart\":1792930117.838486,\"cycleSeconds\":6,\"nextCycleSeconds\":6,\"stateVersion\":80,\"ready\":true,\"catalogVersion\":1,\"completed\":14,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRobot\":25},\"requestId\":\"121\"},"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1991,
+    "text": "2026-10-25T12:08:48.164Z,236.164566,1764d000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-15 RATE_BURST 8 11 {\"ok\":true,\"code\":\"selected\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":300,\"plotIndex\":4,\"cycleStart\":1792930117.838486,\"cycleSeconds\":6,\"nextCycleSeconds\":6,\"stateVersion\":82,\"ready\":true,\"catalogVersion\":1,\"completed\":14,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRobot\":25},\"requestId\":\"122\"},{\"ok\":true,\"code\":\"selected\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSec"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1992,
+    "text": "2026-10-25T12:08:48.165Z,236.165009,1764d000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-15 RATE_BURST 9 11 onds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":300,\"plotIndex\":4,\"cycleStart\":1792930117.838486,\"cycleSeconds\":6,\"nextCycleSeconds\":6,\"stateVersion\":84,\"ready\":true,\"catalogVersion\":1,\"completed\":14,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRobot\":25},\"requestId\":\"123\"},{\"ok\":true,\"code\":\"selected\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":300,\"plotIndex\":4,\"cycleStart\":1792930117.838486,\"cycleSeconds\":6,\"nextCyc"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1993,
+    "text": "2026-10-25T12:08:48.165Z,236.165131,1764d000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-15 RATE_BURST 10 11 leSeconds\":6,\"stateVersion\":86,\"ready\":true,\"catalogVersion\":1,\"completed\":14,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRobot\":25},\"requestId\":\"124\"},{\"ok\":true,\"code\":\"selected\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":300,\"plotIndex\":4,\"cycleStart\":1792930117.838486,\"cycleSeconds\":6,\"nextCycleSeconds\":6,\"stateVersion\":88,\"ready\":true,\"catalogVersion\":1,\"completed\":14,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":t"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1994,
+    "text": "2026-10-25T12:08:48.165Z,236.165253,1764d000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-15 RATE_BURST 11 11 rue,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRobot\":25},\"requestId\":\"125\"},{\"ok\":true,\"code\":\"selected\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":300,\"plotIndex\":4,\"cycleStart\":1792930117.838486,\"cycleSeconds\":6,\"nextCycleSeconds\":6,\"stateVersion\":90,\"ready\":true,\"catalogVersion\":1,\"completed\":14,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRobot\":25},\"requestId\":\"126\"}]}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 1998,
+    "text": "2026-10-25T12:08:48.247Z,236.247269,17015000,6,Info [FLog::CreatorOutput] B4_QUERY_EXTRA {\"response\":{\"notice\":\"Ungültige Anfrage.\",\"ready\":false},\"run\":\"four\",\"user\":-4}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 2003,
+    "text": "2026-10-25T12:08:48.415Z,236.415573,17015000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-17 PUBLIC_WORLD 1 2 {\"own\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":300,\"plotIndex\":4,\"cycleStart\":1792930117.838486,\"cycleSeconds\":6,\"nextCycleSeconds\":6,\"stateVersion\":92,\"ready\":true,\"catalogVersion\":1,\"completed\":14,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRobot\":25},\"plots\":{\"FactoryPlot_1\":{\"OwnerUserId\":-1,\"Origin\":\"0, 0, 0\",\"CycleSeconds\":6,\"Active\":true,\"CycleId\":23,\"DesignId\":\"scout\",\"Level\":2,\"CycleStart\":1792930115.286579},\"FactoryPlot_2\":{\"C"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 2004,
+    "text": "2026-10-25T12:08:48.415Z,236.415771,17015000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-17 PUBLIC_WORLD 2 2 ycleSeconds\":6,\"DesignId\":\"scout\",\"OwnerUserId\":-2,\"Active\":true,\"CycleId\":22,\"Level\":2,\"CycleStart\":1792930117.20217,\"Origin\":\"65, 0, 0\"},\"FactoryPlot_4\":{\"CycleSeconds\":6,\"DesignId\":\"scout\",\"OwnerUserId\":-4,\"Active\":true,\"CycleId\":15,\"Level\":2,\"CycleStart\":1792930117.838486,\"Origin\":\"65, 0, 55\"},\"FactoryPlot_3\":{\"CycleSeconds\":9,\"DesignId\":\"scout\",\"OwnerUserId\":-3,\"Active\":true,\"CycleId\":15,\"Level\":2,\"CycleStart\":1792930117.834718,\"Origin\":\"0, 0, 55\"}},\"run\":\"four\",\"user\":-4}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 2075,
+    "text": "2026-10-25T12:08:48.748Z,236.748413,18732000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-14 PARALLEL_DUPLICATE 1 4 {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":350,\"plotIndex\":3,\"cycleStart\":1792930117.834718,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":59,\"ready\":true,\"catalogVersion\":1,\"completed\":14,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":300,\"plo"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 2076,
+    "text": "2026-10-25T12:08:48.751Z,236.751495,18ff5000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-14 PARALLEL_DUPLICATE 2 4 tIndex\":3,\"cycleStart\":1792930117.834718,\"cycleSeconds\":9,\"nextCycleSeconds\":6,\"stateVersion\":64,\"ready\":true,\"catalogVersion\":1,\"completed\":14,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRobot\":25},\"user\":-3,\"replies\":[{\"ok\":true,\"code\":\"upgraded\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":300,\"plotIndex\":3,\"cycleStart\":1792930117.834718,\"cycleSeconds\":9,\"nextCycleSeconds\":6,\"stateVersion\":61,\"ready\":true,\"catalogVersion\":1,\"comple"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 2077,
+    "text": "2026-10-25T12:08:48.752Z,236.752014,18ff5000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-14 PARALLEL_DUPLICATE 3 4 ted\":14,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRobot\":25},\"requestId\":\"111\"},{\"ok\":true,\"code\":\"upgraded\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":300,\"plotIndex\":3,\"cycleStart\":1792930117.834718,\"cycleSeconds\":9,\"nextCycleSeconds\":6,\"stateVersion\":62,\"ready\":true,\"catalogVersion\":1,\"completed\":14,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRo"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 2078,
+    "text": "2026-10-25T12:08:48.752Z,236.752563,18ff5000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-14 PARALLEL_DUPLICATE 4 4 bot\":25},\"requestId\":\"111\"},{\"ok\":true,\"code\":\"upgraded\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":300,\"plotIndex\":3,\"cycleStart\":1792930117.834718,\"cycleSeconds\":9,\"nextCycleSeconds\":6,\"stateVersion\":63,\"ready\":true,\"catalogVersion\":1,\"completed\":14,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRobot\":25},\"requestId\":\"111\"}],\"run\":\"four\",\"requestIds\":[\"111\",\"111\",\"111\"]}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 2039,
+    "text": "2026-10-25T12:08:50.067Z,238.067444,16e12000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-18 REMOTE 1 3 {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":300,\"plotIndex\":4,\"cycleStart\":1792930117.838486,\"cycleSeconds\":6,\"nextCycleSeconds\":6,\"stateVersion\":93,\"ready\":true,\"catalogVersion\":1,\"completed\":14,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":300,\"plot"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 2040,
+    "text": "2026-10-25T12:08:50.068Z,238.068939,16e12000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-18 REMOTE 2 3 Index\":4,\"cycleStart\":1792930117.838486,\"cycleSeconds\":6,\"nextCycleSeconds\":6,\"stateVersion\":96,\"ready\":true,\"catalogVersion\":1,\"completed\":14,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"orbit\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRobot\":25},\"user\":-4,\"request\":{\"kind\":\"select\",\"payload\":{\"requestId\":\"127\",\"designId\":\"orbit\"}},\"label\":\"select_orbit\",\"run\":\"four\",\"response\":{\"ok\":true,\"code\":\"selected\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":300,\"plotIndex\":4,\"cycleStart\":1"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 2041,
+    "text": "2026-10-25T12:08:50.069Z,238.069092,16e12000,6,Info [FLog::CreatorOutput] B4_CHUNK four--4-18 REMOTE 3 3 792930117.838486,\"cycleSeconds\":6,\"nextCycleSeconds\":6,\"stateVersion\":95,\"ready\":true,\"catalogVersion\":1,\"completed\":14,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"orbit\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRobot\":25},\"requestId\":\"127\"}}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 2164,
+    "text": "2026-10-25T12:08:51.595Z,239.595078,191f8000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-15 RATE_BURST 1 11 {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":300,\"plotIndex\":3,\"cycleStart\":1792930117.834718,\"cycleSeconds\":9,\"nextCycleSeconds\":6,\"stateVersion\":65,\"ready\":true,\"catalogVersion\":1,\"completed\":14,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":300,\"plot"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 2165,
+    "text": "2026-10-25T12:08:51.595Z,239.595413,191f8000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-15 RATE_BURST 2 11 Index\":3,\"cycleStart\":1792930117.834718,\"cycleSeconds\":9,\"nextCycleSeconds\":6,\"stateVersion\":88,\"ready\":true,\"catalogVersion\":1,\"completed\":14,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRobot\":25},\"user\":-3,\"run\":\"four\",\"replies\":[{\"ok\":true,\"code\":\"selected\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":300,\"plotIndex\":3,\"cycleStart\":1792930117.834718,\"cycleSeconds\":9,\"nextCycleSeconds\":6,\"stateVersion\":67,\"ready\":true,\"catalogVersio"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 2166,
+    "text": "2026-10-25T12:08:51.595Z,239.595535,191f8000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-15 RATE_BURST 3 11 n\":1,\"completed\":14,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRobot\":25},\"requestId\":\"115\"},{\"ok\":true,\"code\":\"selected\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":300,\"plotIndex\":3,\"cycleStart\":1792930117.834718,\"cycleSeconds\":9,\"nextCycleSeconds\":6,\"stateVersion\":69,\"ready\":true,\"catalogVersion\":1,\"completed\":14,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":1"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 2167,
+    "text": "2026-10-25T12:08:51.595Z,239.595627,191f8000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-15 RATE_BURST 4 11 5,\"cashPerRobot\":25},\"requestId\":\"116\"},{\"ok\":true,\"code\":\"selected\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":300,\"plotIndex\":3,\"cycleStart\":1792930117.834718,\"cycleSeconds\":9,\"nextCycleSeconds\":6,\"stateVersion\":71,\"ready\":true,\"catalogVersion\":1,\"completed\":14,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRobot\":25},\"requestId\":\"117\"},{\"ok\":true,\"code\":\"selected\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\""
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 2168,
+    "text": "2026-10-25T12:08:51.595Z,239.595688,191f8000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-15 RATE_BURST 5 11 productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":300,\"plotIndex\":3,\"cycleStart\":1792930117.834718,\"cycleSeconds\":9,\"nextCycleSeconds\":6,\"stateVersion\":73,\"ready\":true,\"catalogVersion\":1,\"completed\":14,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRobot\":25},\"requestId\":\"118\"},{\"ok\":true,\"code\":\"selected\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":300,\"plotIndex\":3,\"cycleStart\":179"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 2169,
+    "text": "2026-10-25T12:08:51.595Z,239.595779,191f8000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-15 RATE_BURST 6 11 2930117.834718,\"cycleSeconds\":9,\"nextCycleSeconds\":6,\"stateVersion\":75,\"ready\":true,\"catalogVersion\":1,\"completed\":14,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRobot\":25},\"requestId\":\"119\"},{\"ok\":true,\"code\":\"selected\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":300,\"plotIndex\":3,\"cycleStart\":1792930117.834718,\"cycleSeconds\":9,\"nextCycleSeconds\":6,\"stateVersion\":77,\"ready\":true,\"catalogVersion\":1,\"completed\":14,\"canRetry\":true,\"ver"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 2170,
+    "text": "2026-10-25T12:08:51.595Z,239.595840,191f8000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-15 RATE_BURST 7 11 sion\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRobot\":25},\"requestId\":\"120\"},{\"ok\":false,\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":300,\"plotIndex\":3,\"cycleStart\":1792930117.834718,\"cycleSeconds\":9,\"nextCycleSeconds\":6,\"stateVersion\":78,\"ready\":true,\"catalogVersion\":1,\"completed\":14,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRobot\":25},\"code\":\"rate_limited\"},{\"ok\":false,\""
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 2171,
+    "text": "2026-10-25T12:08:51.595Z,239.595901,191f8000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-15 RATE_BURST 8 11 view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":300,\"plotIndex\":3,\"cycleStart\":1792930117.834718,\"cycleSeconds\":9,\"nextCycleSeconds\":6,\"stateVersion\":79,\"ready\":true,\"catalogVersion\":1,\"completed\":14,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRobot\":25},\"code\":\"rate_limited\"},{\"ok\":true,\"code\":\"selected\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlocke"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 2172,
+    "text": "2026-10-25T12:08:51.596Z,239.596268,191f8000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-15 RATE_BURST 9 11 dScout\":true,\"savedRevision\":4,\"cash\":300,\"plotIndex\":3,\"cycleStart\":1792930117.834718,\"cycleSeconds\":9,\"nextCycleSeconds\":6,\"stateVersion\":81,\"ready\":true,\"catalogVersion\":1,\"completed\":14,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRobot\":25},\"requestId\":\"123\"},{\"ok\":true,\"code\":\"selected\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":300,\"plotIndex\":3,\"cycleStart\":1792930117.834718,\"cycleSeconds\":9,\"nextCycleSeconds\":6,\"stateVersion"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 2173,
+    "text": "2026-10-25T12:08:51.596Z,239.596390,191f8000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-15 RATE_BURST 10 11 \":83,\"ready\":true,\"catalogVersion\":1,\"completed\":14,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRobot\":25},\"requestId\":\"124\"},{\"ok\":true,\"code\":\"selected\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":300,\"plotIndex\":3,\"cycleStart\":1792930117.834718,\"cycleSeconds\":9,\"nextCycleSeconds\":6,\"stateVersion\":85,\"ready\":true,\"catalogVersion\":1,\"completed\":14,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scou"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 2174,
+    "text": "2026-10-25T12:08:51.596Z,239.596512,191f8000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-15 RATE_BURST 11 11 t\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRobot\":25},\"requestId\":\"125\"},{\"ok\":true,\"code\":\"selected\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":300,\"plotIndex\":3,\"cycleStart\":1792930117.834718,\"cycleSeconds\":9,\"nextCycleSeconds\":6,\"stateVersion\":87,\"ready\":true,\"catalogVersion\":1,\"completed\":14,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRobot\":25},\"requestId\":\"126\"}]}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 2179,
+    "text": "2026-10-25T12:08:51.820Z,239.820770,18935000,6,Info [FLog::CreatorOutput] B4_QUERY_EXTRA {\"response\":{\"notice\":\"Ungültige Anfrage.\",\"ready\":false},\"run\":\"four\",\"user\":-3}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 2182,
+    "text": "2026-10-25T12:08:52.192Z,240.192673,18732000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-17 PUBLIC_WORLD 1 2 {\"own\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":300,\"plotIndex\":3,\"cycleStart\":1792930117.834718,\"cycleSeconds\":9,\"nextCycleSeconds\":6,\"stateVersion\":89,\"ready\":true,\"catalogVersion\":1,\"completed\":14,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRobot\":25},\"plots\":{\"FactoryPlot_1\":{\"OwnerUserId\":-1,\"Origin\":\"0, 0, 0\",\"CycleSeconds\":6,\"Active\":true,\"CycleId\":24,\"DesignId\":\"scout\",\"Level\":2,\"CycleStart\":1792930121.39644},\"FactoryPlot_4\":{\"Cy"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 2183,
+    "text": "2026-10-25T12:08:52.192Z,240.192902,18732000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-17 PUBLIC_WORLD 2 2 cleSeconds\":6,\"DesignId\":\"scout\",\"OwnerUserId\":-4,\"Active\":true,\"CycleId\":15,\"Level\":2,\"CycleStart\":1792930117.838486,\"Origin\":\"65, 0, 55\"},\"FactoryPlot_2\":{\"CycleSeconds\":6,\"DesignId\":\"scout\",\"OwnerUserId\":-2,\"Active\":true,\"CycleId\":22,\"Level\":2,\"CycleStart\":1792930117.20217,\"Origin\":\"65, 0, 0\"},\"FactoryPlot_3\":{\"CycleSeconds\":9,\"DesignId\":\"scout\",\"OwnerUserId\":-3,\"Active\":true,\"CycleId\":15,\"Level\":2,\"CycleStart\":1792930117.834718,\"Origin\":\"0, 0, 55\"}},\"run\":\"four\",\"user\":-3}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 2227,
+    "text": "2026-10-25T12:08:53.824Z,241.824524,191f8000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-18 REMOTE 1 3 {\"before\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":300,\"plotIndex\":3,\"cycleStart\":1792930117.834718,\"cycleSeconds\":9,\"nextCycleSeconds\":6,\"stateVersion\":90,\"ready\":true,\"catalogVersion\":1,\"completed\":14,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRobot\":25},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":300,\"plot"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 2228,
+    "text": "2026-10-25T12:08:53.838Z,241.838943,191f8000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-18 REMOTE 2 3 Index\":3,\"cycleStart\":1792930117.834718,\"cycleSeconds\":9,\"nextCycleSeconds\":6,\"stateVersion\":93,\"ready\":true,\"catalogVersion\":1,\"completed\":14,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"orbit\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRobot\":25},\"user\":-3,\"request\":{\"kind\":\"select\",\"payload\":{\"requestId\":\"127\",\"designId\":\"orbit\"}},\"label\":\"select_orbit\",\"run\":\"four\",\"response\":{\"ok\":true,\"code\":\"selected\",\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":300,\"plotIndex\":3,\"cycleStart\":1"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 2229,
+    "text": "2026-10-25T12:08:53.858Z,241.858948,191f8000,6,Info [FLog::CreatorOutput] B4_CHUNK four--3-18 REMOTE 3 3 792930117.834718,\"cycleSeconds\":9,\"nextCycleSeconds\":6,\"stateVersion\":92,\"ready\":true,\"catalogVersion\":1,\"completed\":14,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"orbit\",\"upgradePrice\":50,\"cycleId\":15,\"cashPerRobot\":25},\"requestId\":\"127\"}}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_e57f7_last.log",
+    "line": 2252,
+    "text": "2026-10-25T12:08:59.472Z,247.472183,17850000,6,Info [FLog::CreatorOutput] B4_NEXT_ORBIT_CYCLE {\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"orbit\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":350,\"plotIndex\":4,\"cycleStart\":1792930129.893816,\"cycleSeconds\":6,\"nextCycleSeconds\":6,\"stateVersion\":99,\"ready\":true,\"catalogVersion\":1,\"completed\":16,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"orbit\",\"upgradePrice\":50,\"cycleId\":17,\"cashPerRobot\":25},\"user\":-4,\"players\":4,\"placeId\":112662761038118,\"run\":\"four\",\"gameId\":10772906084}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T120448Z_Studio_3a184_last.log",
+    "line": 2474,
+    "text": "2026-10-25T12:09:03.180Z,251.180878,18ff5000,6,Info [FLog::CreatorOutput] B4_NEXT_ORBIT_CYCLE {\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"orbit\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":4,\"cash\":350,\"plotIndex\":3,\"cycleStart\":1792930132.87067,\"cycleSeconds\":6,\"nextCycleSeconds\":6,\"stateVersion\":96,\"ready\":true,\"catalogVersion\":1,\"completed\":16,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"orbit\",\"upgradePrice\":50,\"cycleId\":17,\"cashPerRobot\":25},\"user\":-3,\"players\":4,\"placeId\":112662761038118,\"run\":\"four\",\"gameId\":10772906084}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261024T193411Z_Studio_4f78a_last.log",
+    "line": 65540,
+    "text": "2026-10-25T12:19:39.324Z,60327.324219,17926000,6,Info [FLog::CreatorOutput] B4_CAPACITY_INSTALLED 2573 6494"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T122138Z_Studio_23004_last.log",
+    "line": 1244,
+    "text": "2026-10-25T12:24:22.686Z,160.686523,13a94000,6,Info [FLog::CreatorOutput] B4_CLIENT_READY {\"view\":{\"pausedAt\":1792931050.299355,\"saveStatus\":\"saving\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"unlockedOrbit\":true,\"unlockedScout\":true,\"ready\":true,\"level\":2,\"plotIndex\":1,\"cycleSeconds\":6,\"cash\":5600,\"nextCycleSeconds\":6,\"cycleStart\":1792931044.383346,\"savedRevision\":60,\"catalogVersion\":1,\"completed\":226,\"stateVersion\":11,\"version\":\"development-b4\",\"canRetry\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":5,\"cashPerRobot\":25},\"user\":-1,\"players\":5,\"placeId\":112662761038118,\"run\":\"capacity\",\"gameId\":10772906084}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T122138Z_Studio_23004_last.log",
+    "line": 1245,
+    "text": "2026-10-25T12:24:22.689Z,160.689026,13a94000,6,Info [FLog::CreatorOutput] B4_RECOVERY_UI {\"visible\":false,\"title\":\"Deine Werkstatt wartet\",\"user\":-1,\"bodyFits\":true,\"titleFits\":true,\"run\":\"capacity\",\"body\":\"Dein Fortschritt wird sicher geladen …\"}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T122138Z_Studio_5f66e_last.log",
+    "line": 1216,
+    "text": "2026-10-25T12:24:28.255Z,165.255890,14fc1000,6,Info [FLog::CreatorOutput] B4_CLIENT_READY {\"view\":{\"pausedAt\":1792931050.142011,\"saveStatus\":\"saving\",\"currentDesign\":\"orbit\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"unlockedOrbit\":true,\"unlockedScout\":true,\"ready\":true,\"level\":2,\"plotIndex\":3,\"cycleSeconds\":6,\"cash\":1500,\"nextCycleSeconds\":6,\"cycleStart\":1792931044.382749,\"savedRevision\":14,\"catalogVersion\":1,\"completed\":62,\"stateVersion\":11,\"version\":\"development-b4\",\"canRetry\":false,\"selectedDesign\":\"orbit\",\"upgradePrice\":50,\"cycleId\":5,\"cashPerRobot\":25},\"user\":-3,\"players\":5,\"placeId\":112662761038118,\"run\":\"capacity\",\"gameId\":10772906084}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T122138Z_Studio_5f66e_last.log",
+    "line": 1217,
+    "text": "2026-10-25T12:24:28.257Z,165.257141,14fc1000,6,Info [FLog::CreatorOutput] B4_RECOVERY_UI {\"visible\":false,\"title\":\"Deine Werkstatt wartet\",\"user\":-3,\"bodyFits\":true,\"titleFits\":true,\"run\":\"capacity\",\"body\":\"Dein Fortschritt wird sicher geladen …\"}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T122138Z_Studio_739cb_last.log",
+    "line": 1225,
+    "text": "2026-10-25T12:24:40.752Z,177.752090,13c90000,6,Info [FLog::CreatorOutput] B4_CLIENT_READY {\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":29,\"cash\":3250,\"plotIndex\":2,\"cycleStart\":1792931068.044233,\"cycleSeconds\":6,\"nextCycleSeconds\":6,\"stateVersion\":15,\"ready\":true,\"catalogVersion\":1,\"completed\":132,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":8,\"cashPerRobot\":25},\"user\":-2,\"players\":5,\"placeId\":112662761038118,\"run\":\"capacity\",\"gameId\":10772906084}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T122138Z_Studio_739cb_last.log",
+    "line": 1226,
+    "text": "2026-10-25T12:24:40.753Z,177.753128,13c90000,6,Info [FLog::CreatorOutput] B4_RECOVERY_UI {\"visible\":false,\"title\":\"Deine Werkstatt wartet\",\"user\":-2,\"bodyFits\":true,\"titleFits\":true,\"run\":\"capacity\",\"body\":\"Dein Fortschritt wird sicher geladen …\"}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T122057Z_Studio_6b807_last.log",
+    "line": 1603,
+    "text": "2026-10-25T12:24:52.973Z,231.973541,17639000,6,Info [FLog::CreatorOutput] B4_CHUNK capacity-server-1 SERVER_METRICS 1 2 {\"p50\":17.44675077497959,\"after\":{\"players\":[-5,-4,-3,-2,-1],\"memoryMB\":2292.668212890625,\"active\":4,\"cycles\":{\"FactoryPlot_1\":{\"cycle\":10,\"level\":2,\"active\":true},\"FactoryPlot_2\":{\"cycle\":10,\"level\":2,\"active\":true},\"FactoryPlot_4\":{\"cycle\":10,\"level\":2,\"active\":true},\"FactoryPlot_3\":{\"cycle\":10,\"level\":2,\"active\":true}},\"instances\":53025},\"elapsed\":60.02039387496188,\"placeId\":112662761038118,\"run\":\"capacity\",\"before\":{\"players\":[-5,-4,-3,-2,-1],\"memoryMB\":2260.875244140625,\"active\":4,\"cycles\":{\"FactoryPlot_1\":{\"cycle\":2,\"level\":2,\"active\":true},\"FactoryPlot_2\":{\"cycle\":1,\"level\":2,\"active\":true},\"FactoryPlot_4\":{\"cycle\":2,\"level\":2,\"active\""
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T122057Z_Studio_6b807_last.log",
+    "line": 1604,
+    "text": "2026-10-25T12:24:52.973Z,231.973892,17639000,6,Info [FLog::CreatorOutput] B4_CHUNK capacity-server-1 SERVER_METRICS 2 2 :true},\"FactoryPlot_3\":{\"cycle\":2,\"level\":2,\"active\":true}},\"instances\":52709},\"p95\":70.91416418552399,\"gameId\":10772906084,\"max\":317.5174593925476,\"samples\":2318}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T122057Z_Studio_6b807_last.log",
+    "line": 1605,
+    "text": "2026-10-25T12:24:52.975Z,231.975555,17639000,6,Info [FLog::CreatorOutput] B4_CAPACITY_FREE_SLOT {\"before\":{\"players\":[-5,-4,-3,-2,-1],\"memoryMB\":2292.668212890625,\"active\":4,\"cycles\":{\"FactoryPlot_1\":{\"cycle\":10,\"level\":2,\"active\":true},\"FactoryPlot_2\":{\"cycle\":10,\"level\":2,\"active\":true},\"FactoryPlot_4\":{\"cycle\":10,\"level\":2,\"active\":true},\"FactoryPlot_3\":{\"cycle\":10,\"level\":2,\"active\":true}},\"instances\":53025},\"run\":\"capacity\",\"user\":-1}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T122138Z_Studio_d402f_last.log",
+    "line": 1445,
+    "text": "2026-10-25T12:25:07.128Z,205.128357,18d8c000,6,Info [FLog::CreatorOutput] B4_CLIENT_READY {\"view\":{\"saveStatus\":\"load_failed\",\"version\":\"development-b4\",\"stateVersion\":5,\"saveError\":\"no_plot\",\"ready\":false,\"canRetry\":true,\"savedRevision\":0},\"user\":-5,\"players\":4,\"placeId\":112662761038118,\"run\":\"capacity\",\"gameId\":10772906084}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T122138Z_Studio_d402f_last.log",
+    "line": 1446,
+    "text": "2026-10-25T12:25:07.129Z,205.129349,18d8c000,6,Info [FLog::CreatorOutput] B4_RECOVERY_UI {\"visible\":true,\"title\":\"Alle Werkstätten sind belegt\",\"user\":-5,\"bodyFits\":true,\"titleFits\":true,\"run\":\"capacity\",\"body\":\"Hier sind gerade alle 4 Werkstätten belegt. Dein Fortschritt bleibt erhalten. Versuche es erneut, sobald ein Platz frei wird.\"}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T122057Z_Studio_6b807_last.log",
+    "line": 1636,
+    "text": "2026-10-25T12:25:37.990Z,276.990234,1783c000,6,Info [FLog::CreatorOutput] B4_CAPACITY_AFTER_RETRY {\"run\":\"capacity\",\"after\":{\"players\":[-5,-4,-3,-2],\"memoryMB\":2293.390869140625,\"active\":3,\"cycles\":{\"FactoryPlot_1\":{\"cycle\":10,\"level\":2,\"active\":false},\"FactoryPlot_2\":{\"cycle\":16,\"level\":2,\"active\":true},\"FactoryPlot_4\":{\"cycle\":16,\"level\":2,\"active\":true},\"FactoryPlot_3\":{\"cycle\":16,\"level\":2,\"active\":true}},\"instances\":52422}}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T122138Z_Studio_9eb87_last.log",
+    "line": 1576,
+    "text": "2026-10-25T12:25:44.580Z,241.580170,14baf000,6,Info [FLog::CreatorOutput] B4_CLIENT_READY {\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"orbit\",\"unsaved\":true,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":2,\"unlockedScout\":true,\"savedRevision\":17,\"cash\":1800,\"plotIndex\":4,\"cycleStart\":1792931129.901846,\"cycleSeconds\":6,\"nextCycleSeconds\":6,\"stateVersion\":27,\"ready\":true,\"catalogVersion\":1,\"completed\":74,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":true,\"selectedDesign\":\"orbit\",\"upgradePrice\":50,\"cycleId\":16,\"cashPerRobot\":25},\"user\":-4,\"players\":4,\"placeId\":112662761038118,\"run\":\"capacity\",\"gameId\":10772906084}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T122138Z_Studio_9eb87_last.log",
+    "line": 1577,
+    "text": "2026-10-25T12:25:44.583Z,241.583710,14baf000,6,Info [FLog::CreatorOutput] B4_RECOVERY_UI {\"visible\":false,\"title\":\"Deine Werkstatt wartet\",\"user\":-4,\"bodyFits\":true,\"titleFits\":true,\"run\":\"capacity\",\"body\":\"Dein Fortschritt wird sicher geladen …\"}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T122138Z_Studio_5f66e_last.log",
+    "line": 1262,
+    "text": "2026-10-25T12:25:45.047Z,242.047348,1460b000,6,Info [FLog::CreatorOutput] B4_CLIENT_METRICS {\"p50\":132.55420327186585,\"after\":{\"models\":8,\"memoryMB\":2361.30517578125,\"containers\":4,\"children\":12,\"instances\":54286},\"user\":-3,\"elapsed\":60.04327029106207,\"samples\":333,\"run\":\"capacity\",\"before\":{\"models\":8,\"memoryMB\":2294.519775390625,\"containers\":4,\"children\":12,\"instances\":54632},\"p95\":449.2908716201782,\"viewport\":\"1081, 693\",\"players\":4,\"max\":2029.2630195617676,\"quality\":\"Studio child; parent Automatic, no privileged client settings read\"}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T122138Z_Studio_739cb_last.log",
+    "line": 1472,
+    "text": "2026-10-25T12:25:56.919Z,253.919159,14644000,6,Info [FLog::CreatorOutput] B4_CLIENT_METRICS {\"p50\":136.57225668430329,\"after\":{\"models\":8,\"memoryMB\":2587.133056640625,\"containers\":4,\"children\":12,\"instances\":54297},\"user\":-2,\"elapsed\":60.205303124850619,\"samples\":342,\"run\":\"capacity\",\"before\":{\"models\":8,\"memoryMB\":2515.09765625,\"containers\":4,\"children\":12,\"instances\":54643},\"p95\":384.2397630214691,\"viewport\":\"1081, 693\",\"players\":4,\"max\":1902.4269580841065,\"quality\":\"Studio child; parent Automatic, no privileged client settings read\"}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T122138Z_Studio_d402f_last.log",
+    "line": 1810,
+    "text": "2026-10-25T12:26:54.509Z,312.509644,183d8000,6,Info [FLog::CreatorOutput] B4_CHUNK capacity--5-3 CAPACITY_RETRY 1 2 {\"before\":{\"saveStatus\":\"load_failed\",\"version\":\"development-b4\",\"stateVersion\":6,\"saveError\":\"no_plot\",\"ready\":false,\"canRetry\":true,\"savedRevision\":0},\"after\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":false,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":false,\"savedRevision\":0,\"cash\":0,\"plotIndex\":1,\"cycleStart\":1792931205.400314,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":10,\"ready\":true,\"catalogVersion\":1,\"completed\":0,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":1,\"cashPerRobot\":25},\"user\":-5,\"run\":\"capacity\",\"respo"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T122138Z_Studio_d402f_last.log",
+    "line": 1811,
+    "text": "2026-10-25T12:26:54.516Z,312.516663,183d8000,6,Info [FLog::CreatorOutput] B4_CHUNK capacity--5-3 CAPACITY_RETRY 2 2 nse\":{\"ok\":true,\"view\":{\"saveStatus\":\"saved\",\"currentDesign\":\"scout\",\"unsaved\":false,\"productionActive\":true,\"upgradedCycleSeconds\":6,\"level\":1,\"unlockedScout\":false,\"savedRevision\":0,\"cash\":0,\"plotIndex\":1,\"cycleStart\":1792931205.400314,\"cycleSeconds\":9,\"nextCycleSeconds\":9,\"stateVersion\":9,\"ready\":true,\"catalogVersion\":1,\"completed\":0,\"canRetry\":true,\"version\":\"development-b4\",\"unlockedOrbit\":false,\"selectedDesign\":\"scout\",\"upgradePrice\":50,\"cycleId\":1,\"cashPerRobot\":25},\"code\":\"saved\"}}"
+  },
+  {
+    "file": "/Users/marek/Library/Logs/Roblox/0.744.0.7441077_20261025T122138Z_Studio_9eb87_last.log",
+    "line": 3190,
+    "text": "2026-10-25T12:28:09.727Z,386.727112,13ff6000,6,Info [FLog::CreatorOutput] B4_CLIENT_METRICS {\"p50\":131.9640874862671,\"after\":{\"models\":8,\"memoryMB\":2570.285400390625,\"containers\":4,\"children\":12,\"instances\":54296},\"user\":-4,\"elapsed\":60.01531441695988,\"samples\":403,\"run\":\"capacity\",\"before\":{\"models\":8,\"memoryMB\":2566.668212890625,\"containers\":4,\"children\":12,\"instances\":54296},\"p95\":264.0254497528076,\"viewport\":\"1081, 693\",\"players\":4,\"max\":793.5389876365662,\"quality\":\"Studio child; parent Automatic, no privileged client settings read\"}"
+  }
+]

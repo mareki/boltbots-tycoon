@@ -133,7 +133,7 @@ local function reservePlot(session,player)
     for _,plot in ipairs(plots) do
         if not plot.Occupied then
             plot.Occupied=true;session.plot=plot;player.RespawnLocation=plot.Spawn
-            WorldBuilder.SetOccupied(plot,true);WorldBuilder.SetLevel(plot,1)
+            WorldBuilder.SetOccupied(plot,true,player.UserId);WorldBuilder.SetLevel(plot,1)
             return true
         end
     end

@@ -304,9 +304,10 @@ local function show(incoming)
     if recovery.Visible then
         shade.Visible=false;reward.Visible=false;controls:Disable()
         local loading=status=="loading"
-        recoveryTitle.Text=if loading then "Deine Werkstatt wartet" elseif status=="load_failed" then "Noch nicht verbunden" else "Sicher pausiert"
+        recoveryTitle.Text=if loading then "Deine Werkstatt wartet" elseif incoming.saveError=="no_plot" then "Alle Werkstätten sind belegt" elseif status=="load_failed" then "Noch nicht verbunden" else "Sicher pausiert"
         recoveryText.Text=if loading then "Dein Fortschritt wird sicher geladen …" elseif incoming.saveError=="session_locked" then "Deine Werkstatt ist noch in einer anderen Sitzung geöffnet. Warte kurz und versuche es erneut."
             elseif incoming.saveError=="lease_lost" or incoming.saveError=="revision_conflict" then "Diese Sitzung ist abgelaufen. Dein letzter gesicherter Stand bleibt erhalten. Bitte tritt erneut bei."
+            elseif incoming.saveError=="no_plot" then "Hier sind gerade alle 4 Werkstätten belegt. Dein Fortschritt bleibt erhalten. Versuche es erneut, sobald ein Platz frei wird."
             elseif status=="load_failed" then "Dein Fortschritt konnte nicht bestätigt werden. Es wird keine neue Fabrik angelegt. Versuche es erneut."
             else "Speichern ist noch nicht bestätigt. Produktion und Käufe pausieren. Dein aktueller Stand bleibt hier erhalten."
         retryButton.Visible=not loading and incoming.saveError~="lease_lost" and incoming.saveError~="revision_conflict"
@@ -439,7 +440,7 @@ for _,plot in ipairs(world:GetChildren()) do
         local loose=Instance.new("Part");loose.Name="IncomingBody";loose.Size=Vector3.new(2,1.8,1.5)
         loose.Color=Color3.fromRGB(242,237,217);loose.Anchored=true;loose.CanCollide=false;loose.CanQuery=false;loose.Parent=container
         local mesh=Instance.new("SpecialMesh");mesh.MeshType=Enum.MeshType.Sphere;mesh.Parent=loose
-        table.insert(visuals,{plot=plot,origin=plot:GetAttribute("Origin"),container=container,bot=bot,builder=Scout,design="scout",crate=crate,loose=loose})
+        table.insert(visuals,{plot=plot,origin=plot:GetAttribute("Origin"),container=container,ownerLabel=plot:FindFirstChild("OwnerLabel",true),bot=bot,builder=Scout,design="scout",crate=crate,loose=loose})
     end
 end
 setOverview(true)
@@ -472,6 +473,9 @@ RunService.RenderStepped:Connect(function()
     lastVisualTick=now
     if shade.Visible and modal=="collection" then portraitBuilder.Pose(portraitBot,CFrame.Angles(0,-0.18,0),now,reduced,0) end
     for _,v in ipairs(visuals) do
+        local owner=v.plot:GetAttribute("OwnerUserId")
+        local ownerText=if owner==player.UserId then "DEINE WERKSTATT" elseif owner~=nil then "ANDERE WERKSTATT" else "WERKSTATT  /  FREI"
+        if v.ownerLabel and v.ownerLabel.Text~=ownerText then v.ownerLabel.Text=ownerText end
         local active=v.plot:GetAttribute("Active")==true
         local start=v.plot:GetAttribute("CycleStart") or now
         local duration=v.plot:GetAttribute("CycleSeconds") or 9

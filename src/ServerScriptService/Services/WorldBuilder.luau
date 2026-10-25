@@ -170,7 +170,7 @@ local function buildPlot(root,index,origin)
     plant(model,origin+Vector3.new(-20,1,10),1)
     plant(model,origin+Vector3.new(20,1,-12),1.1)
     local info=p("Workshop front plaque",Vector3.new(10,1.2,0.25),Vector3.new(-12,1.9,15),C.navy)
-    local ownerLabel=label(info,"DEINE WERKSTATT",C.white,55)
+    local ownerLabel=label(info,"WERKSTATT  /  FREI",C.white,55);ownerLabel.Name="OwnerLabel"
     local spawn=Instance.new("SpawnLocation");spawn.Name="OwnerSpawn";spawn.Size=Vector3.new(6,0.2,4)
     spawn.Position=origin+Vector3.new(0,1.2,12);spawn.Anchored=true;spawn.Transparency=1
     spawn.CanCollide=false;spawn.Neutral=true;spawn.Duration=0;spawn.Parent=model
@@ -211,8 +211,9 @@ function World.SetLevel(plot,level)
     plot.LevelLabel.Text="ASSEMBLER  /  L"..level
     for _,p in ipairs(plot.UpgradeParts) do p.Transparency=if level>=2 then 0 else 1;p.CanCollide=level>=2 end
 end
-function World.SetOccupied(plot,occupied)
+function World.SetOccupied(plot,occupied,ownerUserId)
     plot.Model:SetAttribute("Active",false)
-    plot.OwnerLabel.Text=if occupied then "DEINE WERKSTATT" else "WERKSTATT  /  FREI"
+    plot.Model:SetAttribute("OwnerUserId",if occupied then ownerUserId else nil)
+    plot.OwnerLabel.Text=if occupied then "WERKSTATT  /  BELEGT" else "WERKSTATT  /  FREI"
 end
 return World

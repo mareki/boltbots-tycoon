@@ -1,0 +1,9 @@
+{
+  "host": "Mac14,15",
+  "cpu": "Apple M2",
+  "ram_bytes": 17179869184,
+  "os": "macOS26.5.2",
+  "studio": "0.744.0.7441077",
+  "rojo": "7.7.1",
+  "conditions": "Same Mac, separate Studio child processes; CUA binds original editor. Child windows currently not independently operable; foreground/viewport values taken from actual probes, not assumed. Other ordinary applications remain open."
+}

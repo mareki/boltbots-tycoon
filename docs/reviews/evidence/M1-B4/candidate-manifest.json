@@ -1,0 +1,98 @@
+{
+  "candidate": "B4-C1 technical partial; visual closure and cleanup open",
+  "baseline": "8857572c891fc87970f38199e5a07a7d21702ebe",
+  "build": {
+    "path": "build/BoltBots.rbxlx",
+    "sha256": "28c95843a8fb9ecc12d1abf4f9b26e99a819e2a24b771b2d670903b1e5882654"
+  },
+  "files": [
+    {
+      "path": "default.project.json",
+      "sha256": "f6a3816f633f9fe1e6c345658da05c2a73e12079cd8cca738fb2fe29d1192bce"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B4/README.md",
+      "sha256": "ffd807b7e1d59ccf10d0dc7952173dd8cafc918053a634508459464bac2575cd"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B4/client-probe-one-r2.luau",
+      "sha256": "22f782f953bf0e3b85302f0806c44982c97a319f9716cbbd26aa751228e9a1c1"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B4/client-probe-two.luau",
+      "sha256": "3547619340fcf8930ca712c4f9fcfc1b58363cabe95ee54d9c4bf472241db36b"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B4/client-probe.luau",
+      "sha256": "e68af06543ee285bbf626a389c82ee1a5637145d9f27d7e55c82494f19b3775d"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B4/events.json",
+      "sha256": "a61e1a67892f18d38be210fcc2740bd0f8048d7813a3d00ec251e187c2e5b82e"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B4/host.json",
+      "sha256": "3aa5ef0b25bc36932679520115a92e00099d4f81f708f873471063e27ccb2c1f"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B4/original-lines.json",
+      "sha256": "a9d7e293a860aaa2e2d61831e39ecb77e8e8834999f5ef0ea135b0c7552adb58"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B4/server-probe-one.luau",
+      "sha256": "bd397cb88c861069e8cc3ca2eeda6e308d5cb943a6a3a0e4faba0f74f629bae1"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B4/server-probe-two.luau",
+      "sha256": "e9eb6af90c2559b93870323d6d49d8c2c62cf225d312cbaba4a914772e2ba875"
+    },
+    {
+      "path": "docs/reviews/evidence/M1-B4/server-probe.luau",
+      "sha256": "3bd72d3b1493fe8f79664b16ea55b1a778fb71598dea59314b2388ab85e9929a"
+    },
+    {
+      "path": "src/ReplicatedStorage/Shared/EconomyRules.luau",
+      "sha256": "fdb88b81613bc9a78dbac6a111e34a5a79928fec5d14fd13b7a85a9a04a74977"
+    },
+    {
+      "path": "src/ReplicatedStorage/Shared/GameConfig.luau",
+      "sha256": "9ac2c4a850cb4ad5ee40b666fe93d96566f5ca022848a2a9c187bb2b36621793"
+    },
+    {
+      "path": "src/ReplicatedStorage/Shared/OrbitModel.luau",
+      "sha256": "50193a3f6c28182c52991fb2a97be8531773d8a963eefeed5e7feb6784dc962e"
+    },
+    {
+      "path": "src/ReplicatedStorage/Shared/ProfileSchema.luau",
+      "sha256": "03c0c2ff547f6320272f6fa4dd54e7ff8eb4e46f51c749e2c2edda826a64c67f"
+    },
+    {
+      "path": "src/ReplicatedStorage/Shared/ScoutModel.luau",
+      "sha256": "7466cae0c79ca21126e8a5d2e9cafb3e1915edd5796255112a0c38a60ba59ed2"
+    },
+    {
+      "path": "src/ServerScriptService/Main.server.luau",
+      "sha256": "5b2a67b5333036a817d1eb487b9b1da59d994c5c7893559836c23094e394c5cb"
+    },
+    {
+      "path": "src/ServerScriptService/Services/ProfileStore.luau",
+      "sha256": "f79f2dfa6c0f5d70ba6cc9f5d9ff6e5760b9dc751244adaa6c544a312c7fe395"
+    },
+    {
+      "path": "src/ServerScriptService/Services/WorldBuilder.luau",
+      "sha256": "df07190ab15be8396b19ea00540c152cd34091086ce8d43c2055f78ac0aa740a"
+    },
+    {
+      "path": "src/StarterPlayer/StarterPlayerScripts/Client.client.luau",
+      "sha256": "739f170c950d9c9245707b340328741125569ba09ed3b09eb6b710fe3efbfca1"
+    },
+    {
+      "path": "tests/economy-rules.luau",
+      "sha256": "6d70460164946d1fe482042ec7e6ebdbb0d2fb0c27901b6937f1a3f0155de806"
+    },
+    {
+      "path": "tests/profile-store.luau",
+      "sha256": "cb48500446014d0a3f9a333ce1c1f2346f3c35f531c602f7d8fa425f6c6378de"
+    }
+  ]
+}
